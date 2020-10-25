@@ -1,0 +1,39 @@
+" Mapping jk to normal mode
+inoremap jk <esc>
+
+" Split navigation
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+" Switch tabs
+nnoremap H gT
+nnoremap L gt
+
+" Resizing
+nnoremap <C-Up> :resize +2 <CR>
+nnoremap <C-Down> :resize -2 <CR>
+nnoremap <C-Left> :vertical resize +2 <CR>
+nnoremap <C-Right> :vertical resize -2 <CR>
+
+" Override default behaviour for "Y"
+nnoremap Y y$
+
+" No highlight
+nnoremap <leader><leader> :noh <CR>
+
+" Paste mode toggle
+set pastetoggle=<F3>
+
+" Edit .vimrc
+nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>
+
+" Source .vimrc
+nnoremap \r :source $MYVIMRC <CR>
+
+" Save all files
+nnoremap <leader>s :wa <CR>
+
+" Save workspace, save all files, exit
+nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>

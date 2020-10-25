@@ -1,0 +1,742 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/mnt/HDD/
+	..
+1601197409
+'b
+	/home/dylan/bin/
+	..
+1598799216
+'c
+	/home/dylan/.config/
+	..
+1600958320
+'d
+	/home/dylan/Downloads/
+	..
+1600958320
+'h
+	/home/dylan/
+	..
+1598833834
+'n
+	/mnt/HDD/NUS_EE/
+	..
+1601197409
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/mnt/HDD/NUS_EE/EE2027/Labs
+	Lab 1
+1
+d/mnt/HDD/NUS_EE/EE2027/Labs/Lab 1
+	EE2027_Lab1_MOS Characterization.pdf
+2
+d/home/dylan
+	Projects
+31
+d/home/dylan/Projects
+	..
+0
+d/home/dylan/.config
+	gnome-initial-setup-done
+38
+d/home/dylan
+	.cache
+3
+d/home/dylan/.cache
+	..
+0
+d/home/dylan
+	.cache
+3
+d/home/dylan/.cache
+	..
+0
+d/home/dylan
+	.cache
+3
+d/mnt/HDD/NUS_EE
+	EE2012A
+3
+d/mnt/HDD/NUS_EE/EE2012A
+	Whiteboard Notes
+6
+d/mnt/HDD/NUS_EE/EE2012A/Whiteboard Notes
+	Week 9b whiteboard writings.pdf
+14
+d/home/dylan
+	Desktop
+26
+d/home/dylan/Desktop
+	Tested
+1
+d/home/dylan/Desktop/Tested
+	Tutorial Week 7-8 Stakeholders without Transcripts.pdf
+8
+d/mnt/HDD/NUS_EE
+	EE2027
+4
+d/mnt/HDD/NUS_EE/EE2027
+	Lecture Notes
+3
+d/mnt/HDD/NUS_EE/EE2027/Lecture Notes
+	EE2027_5_Opamp.pdf
+6
+d/home/dylan
+	Desktop
+26
+d/home/dylan/Desktop
+	Tested
+1
+d/home/dylan/Desktop/Tested
+	L6 Modelling Decision Making.pdf
+5
+d/home/dylan/Desktop
+	..
+0
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
+	Lab 8
+8
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 8
+	lesson_plan.md
+1
+d/home/dylan/.config
+	alacritty
+4
+d/home/dylan/.config/alacritty
+	alacritty.yml
+1
+d/home/dylan/Downloads
+	EE2027_Lab1_MOS Characterization (Pang Jun Xian, Dylan).pdf
+7
+d/home/dylan
+	Downloads
+28
+d/home/dylan/.config
+	alacritty
+4
+d/mnt/HDD/NUS_EE
+	CS1010 - TA
+2
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	tutoring-guide
+5
+d/mnt/HDD/NUS_EE/CS1010 - TA/tutoring-guide
+	tut08.pptx
+19
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	Assignments
+2
+d/mnt/HDD/NUS_EE/CS1010 - TA/Assignments
+	..
+0
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	Labs
+4
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
+	Lab 7
+7
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	Assignments
+2
+d/mnt/HDD/NUS_EE/CS1010 - TA/Assignments
+	as01-grading
+1
+d/mnt/HDD/NUS_EE/CS1010 - TA/Assignments/as01-grading
+	..
+0
+d/mnt/HDD/NUS_EE/CS1010 - TA/Assignments
+	as01-grading
+1
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	Labs
+3
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
+	Lab 8
+8
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 8
+	lesson_plan.md
+1
+d/home/dylan/Downloads
+	EE2027_Lab1_MOS Characterization (Pang Jun Xian, Dylan).pdf
+7
+d/mnt/HDD/NUS_EE
+	EE2027
+4
+d/mnt/HDD/NUS_EE/EE2027
+	Lecture Notes
+3
+d/mnt/HDD/NUS_EE/EE2027/Lecture Notes
+	EE2027_5_Opamp.pdf
+6
+d/mnt/HDD/NUS_EE/EE2027
+	Tutorials.txt
+8
+d/home/dylan
+	.config
+5
+d/home/dylan/.config
+	awesome
+6
+d/home/dylan/.config/awesome
+	..
+0
+d/mnt/HDD/NUS_EE/CS1010 - TA
+	Labs
+3
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
+	Lab 8
+8
+d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 8
+	lesson_plan.md
+1
+d/home/dylan
+	Pictures
+32
+d/home/dylan/Pictures
+	Wallpapers
+1
+d/home/dylan/Pictures/Wallpapers
+	..
+0
+d/home/dylan/Pictures
+	Wallpapers
+1
+d/home/dylan/Pictures/Wallpapers
+	..
+0
+d/home/dylan/Pictures
+	..
+0
+d/home/dylan
+	Documents
+29
+d/home/dylan/Documents
+	Q11.pdf
+12
+d/home/dylan
+	Desktop
+28
+d/home/dylan/Desktop
+	..
+0
+d/home/dylan
+	Public
+34
+d/home/dylan/Public
+	..
+0
+d/home/dylan
+	.local
+10
+d/home/dylan/.local
+	..
+0
+d/home/dylan
+	.local
+10
+d/home/dylan/.local
+	share
+3
+d/home/dylan/.local/share
+	ranger
+26
+d/home/dylan/.local/share/ranger
+	..
+0
+d/home/dylan/.local/share
+	vifm
+29
+d/home/dylan/.local
+	share
+3
+d/home/dylan
+	Videos
+39
+d/home/dylan/Videos
+	..
+0
+d/home/dylan
+	screenshots
+40
+d/home/dylan/screenshots
+	2020-10-23-201019_3840x1080_scrot.png
+2
+d/home/dylan
+	Pictures
+32
+d/home/dylan/Pictures
+	Wallpapers
+1
+d/home/dylan/Pictures/Wallpapers
+	paul-gilmore-KT3WlrL_bsg-unsplash.jpg
+4
+d/home/dylan
+	Downloads
+16
+d/home/dylan/Downloads
+	archlabs-awesome-master
+4
+d/home/dylan/Downloads/archlabs-awesome-master
+	archlabs-awesome-master
+1
+d/home/dylan/Downloads/archlabs-awesome-master/archlabs-awesome-master
+	.config
+1
+d/home/dylan/Downloads/archlabs-awesome-master/archlabs-awesome-master/.config
+	awesome
+1
+d/home/dylan/Downloads/archlabs-awesome-master/archlabs-awesome-master/.config/awesome
+	themes
+1
+d/home/dylan/Downloads/archlabs-awesome-master/archlabs-awesome-master/.config/awesome/themes
+	default
+1
+d/home/dylan/Downloads
+	archlabs-awesome
+4
+d/home/dylan/Downloads/archlabs-awesome
+	.config
+1
+d/home/dylan/Downloads/archlabs-awesome/.config
+	..
+0
+d/home/dylan/Downloads/archlabs-awesome
+	.config
+1
+d/home/dylan/Downloads/archlabs-awesome/.config
+	awesome
+1
+d/home/dylan/Downloads/archlabs-awesome/.config/awesome
+	archlabs-extras
+1
+d/home/dylan/Downloads/archlabs-awesome/.config/awesome/archlabs-extras
+	exit_screen.lua
+6
+d/home/dylan/.config
+	discord
+13
+d/home/dylan/.config/awesome
+	themes
+1
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome/themes/default
+	theme.lua
+8
+d
+
+# Right window history (oldest to newest):
+D/home/dylan/.config/vifm/scripts
+	unzip-cmd
+2
+D/home
+	dylan
+1
+D/home/dylan
+	.config
+2
+D/home/dylan/.config
+	vifm
+12
+D/home/dylan
+	.config
+2
+D/home/dylan/.config
+	gtk-3.0
+7
+D/home/dylan
+	.config
+2
+D/home/dylan/.config
+	qpdfview
+14
+D/home/dylan/.config/qpdfview
+	shortcuts.conf
+2
+D/home/dylan/.config
+	discord
+5
+D/home/dylan
+	Downloads
+13
+D/home/dylan/Downloads
+	linux-configs
+4
+D/home/dylan/Downloads/linux-configs
+	README.md
+7
+D/home/dylan/Downloads
+	dotfiles
+3
+D/home/dylan/Downloads/dotfiles
+	tmux
+5
+D/home/dylan/Downloads/dotfiles/tmux
+	.tmate.conf
+1
+D/home/dylan/Downloads/dotfiles
+	bash
+2
+D/home/dylan/Downloads/dotfiles/bash
+	..
+0
+D/home/dylan/Downloads/dotfiles
+	qpdfview
+4
+D/home/dylan/Downloads/dotfiles/qpdfview
+	pdf-plugin.conf
+1
+D/home/dylan/Downloads/dotfiles
+	tmux
+5
+D/home/dylan/Downloads/dotfiles/tmux
+	.tmate.conf
+1
+D/home/dylan/Downloads/dotfiles
+	nvim
+3
+D/home/dylan/Downloads/dotfiles/nvim
+	coc-settings.json
+4
+D/home/dylan/Downloads/dotfiles
+	bash
+2
+D/home/dylan/Downloads/dotfiles/bash
+	..
+0
+D/home/dylan/Downloads/dotfiles
+	tmux
+5
+D/home/dylan/Downloads/dotfiles/tmux
+	..
+0
+D/home/dylan/Downloads/dotfiles
+	bash
+2
+D/home/dylan/Downloads/dotfiles/bash
+	.bash_aliases
+1
+D/home/dylan/Downloads/dotfiles
+	vifm
+7
+D/home/dylan/Downloads/dotfiles/vifm
+	scripts
+2
+D/home/dylan/Downloads
+	selected-downloads
+5
+D/home/dylan/.config
+	dconf
+4
+D/home/dylan/.config/dconf
+	..
+0
+D/home/dylan/.config
+	vifm
+37
+D/home/dylan/.config/vifm
+	vifminfo
+4
+D/home/dylan/Downloads
+	dotfiles
+3
+D/home/dylan/Downloads/dotfiles
+	vifm
+7
+D/home/dylan/Downloads/dotfiles/vifm
+	scripts
+2
+D/home/dylan/Downloads/dotfiles/vifm/scripts
+	..
+0
+D/home/dylan/Downloads/dotfiles/vifm
+	scripts
+2
+D/home/dylan/Downloads/dotfiles
+	alacritty
+2
+D/mnt/HDD/NUS_EE
+	CS1010 - TA
+2
+D/mnt/HDD/NUS_EE/CS1010 - TA
+	CS1010_old
+3
+D/mnt/HDD/NUS_EE/CS1010 - TA/CS1010_old
+	..
+0
+D/mnt/HDD/NUS_EE/CS1010 - TA
+	Labs
+4
+D/mnt/HDD/NUS_EE/CS1010 - TA/Labs
+	Lab 7
+7
+D/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 7
+	tut07.c
+2
+D/home/dylan/.config
+	vifm
+10
+D/home/dylan/.config/vifm
+	colors
+1
+D/home/dylan/.config
+	yelp
+35
+D/home/dylan/.config/yelp
+	..
+0
+D/home/dylan/.config
+	yelp
+35
+D/home/dylan/.config/yelp
+	yelp.cfg
+1
+D/home/dylan/.config
+	nemo
+26
+D/home/dylan/.config/nemo
+	..
+0
+D/home/dylan/.config
+	eog
+11
+D/home/dylan/.config/eog
+	..
+0
+D/home/dylan/.config
+	Microsoft
+3
+D/home/dylan/.config/Microsoft
+	..
+0
+D/home/dylan/.config
+	coc
+9
+D/home/dylan/.config/coc
+	..
+0
+D/home/dylan/.config
+	cef_user_data
+8
+D/home/dylan/.config/cef_user_data
+	..
+0
+D/home/dylan/.config
+	geary
+18
+D/home/dylan/.config/geary
+	..
+0
+D/home/dylan/.config
+	gedit
+18
+D/home/dylan/.config/gedit
+	..
+0
+D/home/dylan/.config
+	gedit
+18
+D/home/dylan/.config/gedit
+	accels
+1
+D/home/dylan/.config
+	totem
+34
+D/home/dylan/.config/totem
+	..
+0
+D/home/dylan/.config
+	nemo
+15
+D/home/dylan/Downloads
+	STM32l475vg Datasheet.pdf
+9
+D/home/dylan
+	.config
+4
+D/home/dylan/.config
+	awesome
+7
+D/home/dylan/.config/awesome
+	themes
+1
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome/themes/default
+	submenu.png
+7
+D/home/dylan/.config/awesome/themes
+	custom
+1
+D/home/dylan/.config/awesome/themes/custom
+	titlebar
+2
+D/home/dylan/.config/awesome/themes
+	custom
+1
+D/home/dylan/.config/awesome
+	themes
+3
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome
+	themes
+1
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome/themes/default
+	submenu.png
+7
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome
+	themes
+1
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome/themes/default
+	submenu.png
+7
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome
+	ws.vim
+9
+D
+
+# Command line history (oldest to newest):
+:zip
+:help %c
+:touch 
+:touch unzip.sh
+:sudo unzip
+:!chmod +x unzip-cmd
+:Z
+:touch debug.c
+:mkdir Utils
+:cd /mnt/dylan/HDD
+:!nvim
+:vim sample.md
+:!vim sample.md
+:mkdir bash
+:touch proj.md
+:touch reread.md
+:mkdir Lab 5
+:touch lessonplan.md
+:touch solutions.md
+:untar
+:mkdir "Lab 8"
+:touch lesson_plan.md
+:unzip
+:mkdir awesome
+
+# Search history (oldest to newest):
+/wa
+/pictu
+/,conf
+/.conf
+/.config
+/doc
+/documen
+/vifm
+/ala
+/awesom
+/pic
+/scree
+/con
+/awe
+/rofi
+
+# Prompt history (oldest to newest):
+punzip-cmd
+plesson_plan.md
+pLabs
+pLab 5
+ptut07.md
+plessonplan.md
+pbackground.jpg
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/dylan/.local/share/vifm/Trash/000_icons
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/dylan/.local/share/vifm/Trash/000_2020-09-24-Note-19-04.pdf
+	/home/dylan/Downloads/2020-09-24-Note-19-04.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_5
+	/mnt/HDD/NUS_EE/CS1010 - TA/Labs/5
+t/mnt/HDD/.vifm-Trash-1000/000_test
+	/mnt/HDD/NUS_EE/EE2028/Tutorial Problems/test
+t/mnt/HDD/.vifm-Trash-1000/000_test.c
+	/mnt/HDD/NUS_EE/EE2028/Tutorial Problems/test.c
+t/home/dylan/.local/share/vifm/Trash/000_test.c
+	/home/dylan/.config/vifm/test.c
+t/home/dylan/.local/share/vifm/Trash/000_blink_by_HAL
+	/home/dylan/Downloads/blink_by_HAL
+t/mnt/HDD/.vifm-Trash-1000/000_lesson_plan.md
+	/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 7/lesson_plan.md
+t/mnt/HDD/.vifm-Trash-1000/000_tut07.c
+	/mnt/HDD/NUS_EE/CS1010 - TA/tutoring-guide/tut07.c
+t/home/dylan/.local/share/vifm/Trash/000_as04-solution-master.zip
+	/home/dylan/Downloads/as04-solution-master.zip
+t/home/dylan/.local/share/vifm/Trash/000_as05-solution-master.zip
+	/home/dylan/Downloads/as05-solution-master.zip
+t/mnt/HDD/.vifm-Trash-1000/000_mos_char(1).dwf3work
+	/mnt/HDD/NUS_EE/EE2027/Labs/Lab 1/mos_char(1).dwf3work
+t/home/dylan/.local/share/vifm/Trash/000_ranger
+	/home/dylan/.config/ranger
+t/home/dylan/.local/share/vifm/Trash/000_teams
+	/home/dylan/.config/teams
+t/home/dylan/.local/share/vifm/Trash/000_Microsoft
+	/home/dylan/.config/Microsoft
+t/home/dylan/.local/share/vifm/Trash/000_geary
+	/home/dylan/.config/geary
+t/home/dylan/.local/share/vifm/Trash/000_Week 7b whiteboard writings.pdf
+	/home/dylan/Downloads/Week 7b whiteboard writings.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Assignments
+	/mnt/HDD/NUS_EE/CS1010 - TA/Assignments
+t/home/dylan/.local/share/vifm/Trash/001_ranger
+	/home/dylan/.local/share/ranger
+t/home/dylan/.local/share/vifm/Trash/000_background.png
+	/home/dylan/.config/awesome/themes/default/background.png
+t/home/dylan/.local/share/vifm/Trash/000_custom
+	/home/dylan/.config/awesome/themes/custom
+t/home/dylan/.local/share/vifm/Trash/000_archlabs-extras
+	/home/dylan/.config/awesome/archlabs-extras
+t/home/dylan/.local/share/vifm/Trash/000_icons
+	/home/dylan/.config/awesome/icons
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s0

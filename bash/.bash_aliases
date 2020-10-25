@@ -1,0 +1,8 @@
+alias ba='nvim ~/.bash_aliases'
+alias ev='nvim ~/.config/nvim/init.vim'
+alias eb='nvim ~/.bashrc'
+alias cdd='cd /mnt/c/users/Dylan'
+alias nusssh='TERM=xterm-256color ssh -t e0406237@sunfire.comp.nus.edu.sg ssh e0406237@pe111.comp.nus.edu.sg'
+alias ws='nvim -S *.vim'
+alias v='nvim'
+alias vim='nvim'
