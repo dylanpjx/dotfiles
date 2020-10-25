@@ -1,17 +1,23 @@
 # linux-configs
 
-## Currently on awesomeWM, using apt
+## Currently on AwesomeWM + PopOS
 
 ## Todo:
 
-1. xinput (Mouse + Keyboard repeat rate)
-2. Test these [brightness control apps](https://wiki.archlinux.org/index.php/backlight#Color_correction) with the relevant xinput scripts
+1. xinput (Mouse)
 
 ## Wifi setup
 
 ```
 sudo apt install bcmwl-kernel-source
 sudo reboot
+```
+
+## Keyboard (Gnome)
+
+```
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
+gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 ```
 
 ## Droidcam
@@ -28,13 +34,6 @@ sudo reboot
 2. Play some audio
 3. Go to `alsamixer` and configure accordingly
 4. Save using `sudo alsactl store`
-
-## Keyboard
-
-```
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
-gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-```
 
 ## Scroll wheel
 
