@@ -38,10 +38,8 @@ gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 ## Scroll wheel
 
 1. `sudo apt install imwheel`
-2. Download [script](http://www.nicknorton.net)
-3. `chmod +x mousewheel.sh`
-4. `./mousewheel.sh`
-5. Add `imwheel -b "4 5"` to startup
+2. Add `imwheel -b "4 5"` to startup
+3. `mv .imwheelrc ~/`
 
 ## Vimtex
 
