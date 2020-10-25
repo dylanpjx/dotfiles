@@ -19,7 +19,7 @@ hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 -- Startup
-awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+awful.spawn.with_shell("~/.config/awesome/scripts/autorun.sh")
 
 -- Load Debian menu entries
 local debian = require("debian.menu")

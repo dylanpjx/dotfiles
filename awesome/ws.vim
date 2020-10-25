@@ -13,11 +13,12 @@ badd +1 rc.lua
 badd +32 menu.lua
 badd +1 keybinds.lua
 badd +1 signals.lua
-badd +2 rules.lua
-badd +0 themes/default/theme.lua
+badd +59 rules.lua
+badd +41 themes/default/theme.lua
+badd +140 ~/Downloads/archlabs-awesome/.config/awesome/themes/archlabs/theme.lua
 argglobal
 %argdel
-$argadd themes/default/theme.lua
+$argadd ~/Downloads/archlabs-awesome/.config/awesome/themes/archlabs/theme.lua
 set stal=2
 edit rc.lua
 set splitbelow splitright
@@ -36,12 +37,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 86 - ((41 * winheight(0) + 24) / 48)
+let s:l = 22 - ((21 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-86
-normal! 06|
+22
+normal! 050|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/keybinds.lua
 set splitbelow splitright
@@ -60,12 +61,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 74 - ((4 * winheight(0) + 24) / 48)
+let s:l = 165 - ((14 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-74
-normal! 019|
+165
+normal! 0
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/wibar.lua
 set splitbelow splitright
@@ -84,12 +85,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 14 - ((13 * winheight(0) + 24) / 48)
+let s:l = 5 - ((4 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-14
-normal! 0
+5
+normal! 028|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/menu.lua
 set splitbelow splitright
@@ -108,12 +109,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 39 - ((33 * winheight(0) + 24) / 48)
+let s:l = 45 - ((44 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-39
-normal! 0
+45
+normal! 061|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/signals.lua
 set splitbelow splitright
@@ -132,12 +133,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 27 - ((10 * winheight(0) + 24) / 48)
+let s:l = 12 - ((11 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-27
-normal! 012|
+12
+normal! 05|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/rules.lua
 set splitbelow splitright
@@ -156,12 +157,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 2 - ((1 * winheight(0) + 24) / 48)
+let s:l = 59 - ((42 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-2
-normal! 0
+59
+normal! 08|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/themes/default/theme.lua
 set splitbelow splitright
@@ -171,7 +172,6 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-1argu
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -181,14 +181,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 14 - ((13 * winheight(0) + 23) / 47)
+let s:l = 52 - ((34 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-14
-normal! 045|
+52
+normal! 0
 lcd ~/.config/awesome
-tabnext 7
+tabnext 1
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

@@ -4,6 +4,7 @@
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
+local xrdb = xresources.get_current_theme()
 local dpi = xresources.apply_dpi
 
 local gfs = require("gears.filesystem")
@@ -11,7 +12,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "Font Awesome 5 Free 10"
+theme.font          = "sans 10"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
@@ -27,7 +28,7 @@ theme.fg_minimize   = "#ffffff"
 theme.useless_gap   = dpi(3)
 theme.border_width  = dpi(3)
 theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.border_focus  = "#535d6c" -- ##919ba0
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
