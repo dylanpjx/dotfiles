@@ -1,6 +1,12 @@
 -- {{{ Wibar
+
+-- Custom widgets
+-- local volume_widget = require("volume")
+local calendar = require("calendar")
+
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
+calendar({}):attach(mytextclock)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -105,7 +111,8 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-            mytextclock,
+            mytextclock,            
+            -- volume_widget({display_notification = true}),
             s.mylayoutbox,
         },
     }

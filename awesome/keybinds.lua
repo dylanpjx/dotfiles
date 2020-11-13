@@ -11,10 +11,6 @@ globalkeys = gears.table.join(
     -- System/Awesome
     awful.key({ modkey }, "F1",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
-    -- awful.key({ modkey }, "Left",   awful.tag.viewprev,
-    --           {description = "view previous", group = "tag"}),
-    -- awful.key({ modkey }, "Right",  awful.tag.viewnext,
-    --           {description = "view next", group = "tag"}),
     awful.key({ modkey }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
     awful.key({ modkey }, "r", awesome.restart,
@@ -25,6 +21,8 @@ globalkeys = gears.table.join(
               {description = "restart", group = "system"}),
     awful.key({ modkey, "Shift" }, "q", function() awful.spawn.with_shell("poweroff") end,
               {description = "shutdown", group = "system"}),
+    awful.key({ modkey, "Shift" }, "s", function() awful.spawn.with_shell("systemctl suspend") end,
+              {description = "sleep", group = "system"}),
 
     -- Default applications
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,

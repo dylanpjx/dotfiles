@@ -37,12 +37,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 22 - ((21 * winheight(0) + 23) / 47)
+let s:l = 6 - ((3 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-22
-normal! 050|
+6
+normal! 0
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/keybinds.lua
 set splitbelow splitright
@@ -61,12 +61,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 165 - ((14 * winheight(0) + 23) / 47)
+let s:l = 14 - ((11 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-165
-normal! 0
+14
+normal! 062|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/wibar.lua
 set splitbelow splitright
@@ -85,12 +85,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 5 - ((4 * winheight(0) + 23) / 47)
+let s:l = 16 - ((10 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
-normal! 028|
+16
+normal! 017|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/menu.lua
 set splitbelow splitright
@@ -109,7 +109,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 45 - ((44 * winheight(0) + 23) / 47)
+let s:l = 45 - ((40 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -133,7 +133,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 23) / 47)
+let s:l = 12 - ((10 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -157,12 +157,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 59 - ((42 * winheight(0) + 23) / 47)
+let s:l = 60 - ((44 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-59
-normal! 08|
+60
+normal! 0
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/themes/default/theme.lua
 set splitbelow splitright
@@ -181,14 +181,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 52 - ((34 * winheight(0) + 23) / 47)
+let s:l = 132 - ((39 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-52
+132
 normal! 0
 lcd ~/.config/awesome
-tabnext 1
+tabnext 3
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

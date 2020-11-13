@@ -6,3 +6,5 @@ alias nusssh='TERM=xterm-256color ssh -t e0406237@sunfire.comp.nus.edu.sg ssh e0
 alias ws='nvim -S *.vim'
 alias v='nvim'
 alias vim='nvim'
+alias hlog='heroku logs -t --app ee2028-backend'
+alias ytmusic='youtube-dl -x --audio-format mp3'

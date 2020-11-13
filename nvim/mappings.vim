@@ -24,7 +24,10 @@ nnoremap Y y$
 nnoremap <leader><leader> :noh <CR>
 
 " Paste mode toggle
-set pastetoggle=<F3>
+set pastetoggle=<F2>
+
+" Spellcheck toggle
+map <F3> :setlocal spell! <CR>
 
 " Edit .vimrc
 nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>

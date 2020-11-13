@@ -7,12 +7,13 @@ function run {
   fi
 }
 
-imwheel -b '4 5'
-xset r rate 200 25
+xset r rate 270 33
 xset s off
 xset -dpms
 xset s noblank
+imwheel -b '4 5'
+picom -b
 
-run alacritty --working-directory ~/Documents/ -e vim todo.txt
+run alacritty --working-directory ~/Documents/ -e nvim todo.txt
 run quodlibet
 run discord
