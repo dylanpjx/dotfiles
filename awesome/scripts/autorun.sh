@@ -7,7 +7,7 @@ function run {
   fi
 }
 
-xset r rate 270 33
+xset r rate 200 33
 xset s off
 xset -dpms
 xset s noblank

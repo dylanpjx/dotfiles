@@ -19,6 +19,7 @@ hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 -- Startup
+awful.spawn("/usr/lib/policykit-1/polkit-agent-helper-1")
 awful.spawn.with_shell("~/.config/awesome/scripts/autorun.sh")
 
 -- Load Debian menu entries

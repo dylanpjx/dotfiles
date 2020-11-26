@@ -2,10 +2,6 @@
 
 ## Currently on AwesomeWM + PopOS
 
-## Todo:
-
-1. xinput (Mouse)
-
 ## Wifi setup
 
 ```
@@ -49,4 +45,4 @@ sudo apt install latexmk
 sudo apt install ttf-mscorefonts-installer
 ```
 
-nvim, vifm, qpdfview, alacritty, firefox, quod libet
+nvim, vifm, qpdfview, firefox, quodlibet, ffmpeg
