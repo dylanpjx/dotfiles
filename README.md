@@ -9,11 +9,13 @@ sudo apt install bcmwl-kernel-source
 sudo reboot
 ```
 
-## Keyboard (Gnome)
+## Keyboard
 
 ```
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
+
+xset r rate 210 30
 ```
 
 ## Droidcam
@@ -43,6 +45,12 @@ gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 sudo apt install texlive-latex-extra
 sudo apt install latexmk
 sudo apt install ttf-mscorefonts-installer
+```
+
+## Vifm image preview
+
+```
+sudo pip3 install ueberzug
 ```
 
 nvim, vifm, qpdfview, firefox, quodlibet, ffmpeg

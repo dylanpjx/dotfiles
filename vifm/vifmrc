@@ -97,7 +97,11 @@ filetype ws.vim vim -S ws.vim
 
 " Pdf
 filextype *.pdf qpdfview --unique %c &, apvlv %c, xpdf %c
-fileviewer *.pdf pdftotext -nopgbrk %c -
+fileviewer *.pdf 
+        \ vifmimg pdfpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+        " \ pdftotext -nopgbrk %c -
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
@@ -164,7 +168,10 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ shotwell,
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-        \ img-cmd %px %py %pw %ph %c 
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+        " \ img-cmd %px %py %pw %ph %c 
 
 " OpenRaster
 filextype *.ora

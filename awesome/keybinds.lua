@@ -1,9 +1,9 @@
 -- {{{ Mouse bindings
-root.buttons(gears.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
-))
+-- root.buttons(gears.table.join(
+    -- awful.button({ }, 3, function () mymainmenu:toggle() end),
+    -- awful.button({ }, 4, awful.tag.viewnext),
+    -- awful.button({ }, 5, awful.tag.viewprev)
+-- ))
 -- }}}
 
 -- {{{ Key bindings
@@ -46,8 +46,8 @@ globalkeys = gears.table.join(
         {description = "focus previous by index", group = "client"}
     ),
 
-    awful.key({ modkey }, "w", function () mymainmenu:show() end,
-              {description = "show main menu", group = "awesome"}),
+    -- awful.key({ modkey }, "w", function () mymainmenu:show() end,
+    --           {description = "show main menu", group = "awesome"}),
 
     -- Moving windows
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
@@ -166,12 +166,15 @@ clientkeys = gears.table.join(
         {description = "take screenshot of entire screen", group = "screenshots"}),
     awful.key({ "Mod1" }, "Print", function () awful.util.spawn("scrot -s '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
         {description = "take screenshot of area", group = "screenshots"}),
-
     -- Brightness
     awful.key({ "Mod1" }, "Page_Up", function () awful.spawn.with_shell("~/.config/awesome/scripts/increaseBrightness.sh") end,
         {description = "increase brightness", group = "brightness"}),
     awful.key({ "Mod1" }, "Page_Down", function () awful.spawn.with_shell("~/.config/awesome/scripts/decreaseBrightness.sh") end,
-        {description = "decrease brightness", group = "brightness"})
+        {description = "decrease brightness", group = "brightness"}),
+    
+    -- Tablet
+    awful.key({  },  "Scroll_Lock", function () awful.spawn.with_shell("~/.config/awesome/scripts/tablet.sh") end,
+        {description = "restrict tablet area", group = "tablet"})
 )
 
 -- Bind all key numbers to tags.

@@ -25,11 +25,15 @@
 	/mnt/HDD/NUS_EE/
 	..
 1601197409
+'r
+	/mnt/HDD/Documents/Work/Resume/V2
+	embedded.tex
+1609001533
 
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -38,246 +42,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Downloads/archlabs-awesome/.config/awesome/archlabs-extras
-	exit_screen.lua
-6
-d/home/dylan/.config/awesome
-	themes
-1
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome/themes/default
-	submenu.png
-7
-d/tmp
-	screenshots
-12
-d/home/dylan/.config/awesome/themes/default
-	titlebar
-3
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome
-	scripts
-1
-d/home/dylan/.config/awesome/scripts
-	decreaseBrightness.sh
-2
-d/home/dylan/.config/awesome
-	keybinds.lua
-3
-d/home/dylan/Downloads/droidcam_1601174210
-	uninstall
-12
-d/home/dylan/.config/awesome
-	themes
-2
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome/themes/default
-	submenu.png
-9
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
-	Lab 9
-9
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 9
-	ws.vim
-4
-d/home/dylan
-	..
-0
-d/home
-	dylan
-1
-d/home/dylan
-	..
-0
-d/home
-	dylan
-1
-d/home/dylan
-	Downloads
-3
-d/home/dylan/Downloads
-	dotfiles
-4
-d/home/dylan
-	Public
-6
-d/home
-	dylan
-1
-d/home/dylan
-	Videos
-8
-d/home
-	dylan
-1
-d/home/dylan
-	.config
-2
-d/home/dylan/.config
-	vifm
-15
-d/home/dylan/.config/vifm
-	colors
-1
-d/home/dylan/.config/vifm/colors
-	Default.vifm
-1
-d/home/dylan/.config/vifm
-	colors
-1
-d/home/dylan/.config/vifm/colors
-	Gruvbox.vifm
-2
-d/home/dylan/.config/vifm
-	vifmrc
-5
-d/home/dylan/.config
-	alacritty
-1
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/.config
-	alacritty
-1
-d/home/dylan
-	.config
-2
-d/home/dylan/.config
-	alacritty
-1
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/.config
-	evolution
-6
-d/home/dylan
-	.config
-3
-d/home/dylan/.config
-	alacritty
-1
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/.config
-	goa-1.0
-8
-d/home/dylan
-	Documents
-12
-d/home/dylan/Documents
-	2028_Tut_4.xoj
-3
-d/home/dylan/Downloads
-	digimend-kernel-drivers-master.zip
-13
-d/home/dylan
-	Downloads
-18
-d/home/dylan/Downloads
-	FiraCode.zip
-8
-d/mnt/HDD/NUS_EE/EE2027
-	Tutorial Solutions
-6
-d/home/dylan/Downloads
-	Sample Published Paper.pdf
-12
-d/home/dylan
-	.npm
-11
-d/home/dylan/.npm
-	_locks
-2
-d/home/dylan
-	.nv
-12
-d/home/dylan/.nv
-	..
-0
-d/home/dylan
-	Projects
-26
-d/home/dylan/Projects
-	..
-0
-d/home/dylan
-	Projects
-26
-d/home/dylan/Projects
-	..
-0
-d/home/dylan/Projects/ee2028_backend
-	client_secret.json
-2
-d/mnt/HDD/Programming/Webdev/Backend/Node/Bitcoin-Ticker
-	package-lock.json
-4
-d/mnt/HDD/Programming/Webdev/Backend/Node
-	Newsletter-Signup
-3
-d/mnt/HDD/Programming/Webdev/Backend/Node/Newsletter-Signup
-	app.js
-4
-d/mnt/HDD/NUS_EE
-	EE2028
-5
-d/mnt/HDD/NUS_EE/EE2028
-	Reference Materials
-5
-d/mnt/HDD/NUS_EE/CS1010 - TA
-	Labs
-3
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
-	Lab 10
-10
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 10
-	lesson_plan.md
-1
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
-	Lab 10
-10
-d/mnt/HDD/NUS_EE/CS1010 - TA
-	Labs
-3
-d/mnt/HDD/NUS_EE
-	EE2012A
-3
-d/mnt/HDD
-	NUS_EE
-9
-d/mnt/HDD/NUS_EE
-	ES2531
-6
-d/mnt/HDD/NUS_EE/ES2531
-	Tutorials
-3
-d/home/dylan/Projects
-	ee2028-backend
-1
-d/home/dylan/Projects/ee2028-backend
-	.gitignore
-3
-d/home/dylan/Projects/EE2028-Backend
-	.gitignore
-2
-d/mnt/HDD/NUS_EE
-	ES2531
-6
-d/mnt/HDD
-	Programming
-11
-d/mnt/HDD/Programming
-	Webdev
-7
 d/mnt/HDD/Programming/Webdev
 	Backend
 1
@@ -338,183 +102,249 @@ d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 11
 d/home/dylan/Projects/EE2028-Backend
 	.gitignore
 4
+d/home/dylan/github/dotfiles
+	vifm
+8
+d/home/dylan/github/dotfiles/vifm
+	scripts
+2
+d/home/dylan/github/dotfiles/vifm/scripts
+	..
+0
+d/home/dylan/github/dotfiles/vifm
+	colors
+1
+d/home/dylan/github/dotfiles/vifm/colors
+	..
+0
+d/home/dylan/github/dotfiles/vifm
+	vifminfo_19403
+5
+d/home/dylan/github/dotfiles
+	vifm
+8
+d/home/dylan/github/dotfiles/vifm
+	vifminfo
+4
+d/home/dylan/github/dotfiles
+	alacritty
+2
+d/home/dylan/github/dotfiles/alacritty
+	alacritty.yml
+1
+d/home/dylan/github/dotfiles
+	awesome
+3
+d/home/dylan/github/dotfiles/awesome
+	calendar
+1
+d/home/dylan/github/dotfiles
+	bash
+4
+d/home/dylan/github/dotfiles/bash
+	.dircolors
+3
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/cfg/user
+	..
+0
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/cfg
+	config_default.cfg
+9
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf
+	cfg
+3
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2
+	tf
+4
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common
+	Team Fortress 2
+5
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps
+	common
+1
+d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam
+	steamapps
+18
+d/media/dylan/4E90C03390C02377/Program Files (x86)
+	Steam
+9
+d/media/dylan/4E90C03390C02377
+	Program Files (x86)
+7
+d/media/dylan
+	4E90C03390C02377
+1
+d/media
+	dylan
+1
+d/
+	lib32
+6
+d/home/dylan
+	Utils
+33
+d/home/dylan/Utils
+	deemix-pyweb
+1
+d/home/dylan/Downloads
+	droidcam_1604532509
+5
+d/home/dylan/Downloads/droidcam_1604532509
+	install-dkms
+9
+d/home/dylan/Downloads
+	Video Recordings-20201116T012142Z-001.zip
+9
+d/home/dylan/github/dotfiles
+	nvim
+5
+d/home/dylan/github/dotfiles/nvim
+	mappings.vim
+6
+d/home/dylan/github/dotfiles
+	nvim
+5
+d/home/dylan/github/dotfiles/nvim
+	colors
+2
+d/home/dylan/github/dotfiles/nvim/colors
+	..
+0
+d/home/dylan/github/dotfiles/nvim
+	autoload
+1
+d/home/dylan/github/dotfiles/nvim/autoload
+	..
+0
+d/home/dylan/github/dotfiles/nvim
+	settings.vim
+8
+d/home/dylan/github/dotfiles
+	README.md
+13
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config/awesome/scripts
+	..
+0
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config
+	awesome
+4
+d/home/dylan
+	.config
+4
+d/home
+	..
+0
+d/
+	etc
+3
+d/etc
+	..
+0
+d/
+	etc
+3
+d/etc
+	..
+0
+d/mnt/HDD/NUS_EE
+	EE2028
+5
+d/mnt/HDD/NUS_EE/EE2028
+	Assignments
+1
+d/mnt/HDD/NUS_EE/EE2028/Assignments
+	EE2028Assign1
+4
+d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1
+	Assignment1AY2021S1
+1
+d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1
+	Src
+4
+d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1/Src
+	asm_func.s
+1
+d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1
+	Src
+4
+d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1/Src
+	asm_func.s
+1
+d/home/dylan/Projects/todo-kanban/src/helpers
+	Editable.js
+6
+d/home/dylan/Downloads
+	archlabs-awesome
+3
+d/home/dylan/.config
+	awesome
+5
+d/home/dylan/.config/awesome
+	themes
+3
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome/themes/default
+	background_white.png
+5
+d/home/dylan/Downloads
+	王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
+7
+d/home/dylan/.config
+	awesome
+5
+d/home/dylan/.config/awesome
+	themes
+3
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome/themes/default
+	theme.lua
+12
+d/home/dylan/github
+	dotfiles
+2
+d/home/dylan/github/dotfiles
+	README.md
+13
+d/mnt/HDD/Documents/Work/Resume/tex
+	resume.tex
+17
+d/mnt/HDD/Documents/Work/Resume
+	tex
+1
+d/mnt/HDD/Documents/Work
+	Resume
+2
+d/mnt/HDD/Documents
+	Work
+1
+d/mnt/HDD
+	Wallpapers
+13
+d/mnt/HDD/Wallpapers
+	93cctotetpq21.jpeg
+16
+d/mnt/HDD
+	Economics
+6
+d/home/dylan/.config
+	vifm
+38
+d/home/dylan/.config/vifm
+	vifmimgpdffile
+4
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/Pictures
-	Wallpapers
-1
-D/mnt/HDD/NUS_EE
-	CS1010 - TA
-2
-D/mnt/HDD/NUS_EE/CS1010 - TA
-	tutoring-guide
-4
-D/mnt/HDD/NUS_EE/CS1010 - TA/tutoring-guide
-	tut09.md
-21
-D/mnt/HDD/NUS_EE/CS1010 - TA
-	tutoring-guide
-4
-D/mnt/HDD/NUS_EE/CS1010 - TA/tutoring-guide
-	tut09.md
-21
-D/home/dylan
-	Desktop
-1
-D/mnt
-	HDD
-1
-D/mnt/HDD
-	Economics
-5
-D/mnt/HDD/Economics
-	..
-0
-D/mnt/HDD
-	Downloads
-4
-D/mnt/HDD/Downloads
-	dotfiles
-4
-D/mnt/HDD/Downloads/dotfiles
-	vifm
-7
-D/mnt/HDD/Downloads/dotfiles/vifm
-	colors
-1
-D/mnt/HDD/Downloads/dotfiles/vifm/colors
-	Default.vifm
-1
-D/mnt/HDD/Downloads/dotfiles/vifm
-	colors
-1
-D/mnt/HDD/Downloads/dotfiles
-	vifm
-7
-D/mnt/HDD/Downloads/dotfiles/vifm
-	colors
-1
-D/mnt/HDD/Downloads/dotfiles
-	alacritty
-1
-D/mnt/HDD/Downloads/dotfiles/alacritty
-	alacritty.yml
-1
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads
-	dotfiles
-4
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	qpdfview
-5
-D/mnt/HDD/Downloads/dotfiles/qpdfview
-	qpdfview.conf
-3
-D/mnt/HDD/Downloads/dotfiles
-	tmux
-6
-D/mnt/HDD/Downloads/dotfiles/tmux
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	vifm
-7
-D/mnt/HDD/Downloads/dotfiles/vifm
-	scripts
-2
-D/mnt/HDD/Downloads/dotfiles
-	vifm
-7
-D/mnt/HDD/Downloads/dotfiles/vifm
-	colors
-1
-D/mnt/HDD/Downloads/dotfiles/vifm/colors
-	Default.vifm
-1
-D/mnt/HDD/Downloads/dotfiles/vifm
-	scripts
-2
-D/mnt/HDD/Downloads/dotfiles/vifm/scripts
-	..
-0
-D/mnt/HDD/Downloads/dotfiles/vifm
-	vifminfo
-4
-D/mnt/HDD/Downloads/dotfiles
-	windows
-8
-D/mnt/HDD/Downloads/dotfiles/windows
-	bug.n
-1
-D/mnt/HDD/Downloads/dotfiles/windows/bug.n
-	..
-0
-D/mnt/HDD/Downloads/dotfiles/windows
-	bug.n
-1
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	..
-0
-D/mnt/HDD/Downloads/dotfiles
-	bash
-3
-D/mnt/HDD/Downloads/dotfiles/bash
-	.bash_aliases
-1
-D/mnt/HDD/Downloads/dotfiles
-	nvim
-5
-D/mnt/HDD/Downloads/dotfiles/nvim
-	autoload
-1
-D/mnt/HDD/Downloads/dotfiles
-	alacritty
-2
-D/mnt/HDD/Downloads/dotfiles/alacritty
-	alacritty.yml
-1
-D/mnt/HDD/Downloads/dotfiles
-	alacritty
-2
-D/mnt/HDD/Downloads/dotfiles/alacritty
-	alacritty.yml
-1
-D/mnt/HDD/Downloads/dotfiles
-	.gitattributes
-11
-D/mnt/HDD/Downloads
-	dotfiles
-4
 D/mnt/HDD
 	Downloads
 6
@@ -639,8 +469,182 @@ D/home/dylan
 	.bash_aliases
 32
 D/home/dylan/Downloads
-	.env
-7
+	dotfiles
+5
+D/home/dylan/.config
+	droidcam
+22
+D/home/dylan
+	.bashrc
+31
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Deemix
+1
+D/mnt/HDD/Deezloader Music/Deemix
+	deemix-pyweb-main
+1
+D/mnt/HDD/Deezloader Music/Deemix/deemix-pyweb-main
+	..
+0
+D/mnt/HDD/Deezloader Music/Deemix
+	deemix-pyweb-main.zip
+1
+D/mnt/HDD/Deezloader Music
+	Sam Smith - Diamonds.mp3
+11
+D/mnt/HDD
+	Music
+8
+D/mnt/HDD/Music
+	desktop.ini
+44
+D/mnt/HDD
+	Music
+8
+D/home/dylan
+	.config
+4
+D/home/dylan/.config
+	alacritty
+3
+D/home/dylan
+	Utils
+32
+D/home/dylan/Utils
+	tablet.sh
+4
+D/home/dylan
+	github
+34
+D/mnt/HDD
+	Documents
+5
+D/mnt/HDD/Documents
+	Work
+1
+D/mnt/HDD/Documents/Work
+	Resume
+2
+D/mnt/HDD/Documents/Work/Resume
+	V2
+2
+D/mnt/HDD/Documents/Work/Resume/V2
+	resume.log
+5
+D/mnt/HDD/Documents/Work/Resume
+	V2
+2
+D/mnt/HDD/Documents/Work
+	Resume
+2
+D/mnt/HDD/Documents
+	desktop.ini
+2
+D/mnt/HDD
+	Programming
+11
+D/mnt/HDD/Programming
+	SIA Hackathon
+6
+D/mnt/HDD/Programming/SIA Hackathon
+	SIA
+1
+D/mnt/HDD/Programming/SIA Hackathon/SIA
+	client
+2
+D/mnt/HDD/Programming/SIA Hackathon/SIA/client
+	src
+4
+D/mnt/HDD/Programming/SIA Hackathon/SIA
+	client
+2
+D/mnt/HDD/Programming/SIA Hackathon
+	SIA
+1
+D/mnt/HDD/Programming
+	SIA Hackathon
+6
+D/mnt/HDD
+	Wallpapers
+13
+D/mnt/HDD/Wallpapers
+	kien-do-uUVkzxDR1D0-unsplash.jpeg
+42
+D/mnt/HDD
+	Documents
+5
+D/mnt/HDD/Documents
+	desktop.ini
+2
+D/mnt/HDD
+	Documents
+5
+D/mnt/HDD/Documents
+	Work
+1
+D/mnt/HDD/Documents/Work
+	Resume
+2
+D/mnt/HDD/Documents
+	Work
+1
+D/mnt/HDD/Documents/Work
+	Resume
+2
+D/mnt/HDD/Documents/Work/Resume
+	V2
+2
+D/mnt/HDD/Documents/Work/Resume/V2
+	embedded.tex
+8
+D/home/dylan/.config
+	vifm
+35
+D/home/dylan
+	.npm
+12
+D/mnt/HDD
+	Documents
+5
+D/mnt/HDD/Documents
+	Work
+1
+D/mnt/HDD/Documents/Work
+	Resume
+2
+D/mnt/HDD/Documents/Work/Resume
+	V2
+2
+D/mnt/HDD/Documents/Work/Resume/V2
+	resume.aux
+9
+D/mnt/HDD/Documents/Work/Resume
+	V1
+1
+D/mnt/HDD/Documents/Work/Resume/V1
+	resume.pdf
+5
+D/mnt/HDD/Documents/Work/Resume
+	V2
+1
+D/mnt/HDD/Documents/Work/Resume/V2
+	embedded.pdf
+6
+D/mnt/HDD/Documents/Work/Resume
+	tex
+1
+D/mnt/HDD/Documents/Work/Resume/tex
+	embedded.pdf
+6
+D/mnt/HDD/Documents/Work/Resume
+	tex
+1
+D/mnt/HDD/Documents/Work/Resume/tex
+	resume.aux
+9
 D
 
 # Command line history (oldest to newest):
@@ -698,8 +702,12 @@ D
 /screen
 /utils
 /imwheel
-/vifm
 /pro
+/confi
+/uti
+/kienyy
+/kien
+/vifm
 
 # Prompt history (oldest to newest):
 plab9_ans.c
@@ -723,11 +731,15 @@ popamp lectures.txt
 pee2028-25b1e5586e48.json
 pclient_secret
 pee2028-backend
+pclay-background.jpg
+pclay_background.jpg
+pembedded.tex
+ptex
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/Downloads/.env
+""/mnt/HDD/.vifm-Trash-1000/000_V1
 
 # Directory stack (oldest to newest):
 
@@ -830,6 +842,88 @@ t/home/dylan/.local/share/vifm/Trash/000_deemix-webui
 	/home/dylan/Downloads/Deemix/deemix-pyweb-main/deemix-pyweb/webui/deemix-webui
 t/home/dylan/.local/share/vifm/Trash/000_main.c
 	/home/dylan/Downloads/main.c
+t/home/dylan/.local/share/vifm/Trash/000_vifminfo_19403
+	/home/dylan/github/dotfiles/vifm/vifminfo_19403
+t/mnt/HDD/.vifm-Trash-1000/000_deemix-pyweb-main
+	/mnt/HDD/Deezloader Music/Deemix/deemix-pyweb-main
+t/mnt/HDD/.vifm-Trash-1000/000_deemix-webui-main
+	/mnt/HDD/Deezloader Music/Deemix/deemix-webui-main
+t/home/dylan/.local/share/vifm/Trash/000_EE2028A-Lab-Assignment-3 (1).pdf
+	/home/dylan/Downloads/EE2028A-Lab-Assignment-3 (1).pdf
+t/home/dylan/.local/share/vifm/Trash/000_droidcam_1604532509.zip
+	/home/dylan/Downloads/droidcam_1604532509.zip
+t/home/dylan/.local/share/vifm/Trash/000_droidcam_1604532509
+	/home/dylan/Downloads/droidcam_1604532509
+t/home/dylan/.local/share/vifm/Trash/000_memoize.c
+	/home/dylan/github/dotfiles/nvim/memoize.c
+t/mnt/HDD/.vifm-Trash-1000/000_VC_RED.MSI
+	/mnt/HDD/VC_RED.MSI
+t/mnt/HDD/.vifm-Trash-1000/000_VC_RED.cab
+	/mnt/HDD/VC_RED.cab
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1028.txt
+	/mnt/HDD/eula.1028.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1031.txt
+	/mnt/HDD/eula.1031.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1033.txt
+	/mnt/HDD/eula.1033.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1036.txt
+	/mnt/HDD/eula.1036.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1040.txt
+	/mnt/HDD/eula.1040.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1041.txt
+	/mnt/HDD/eula.1041.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.1042.txt
+	/mnt/HDD/eula.1042.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.2052.txt
+	/mnt/HDD/eula.2052.txt
+t/mnt/HDD/.vifm-Trash-1000/000_eula.3082.txt
+	/mnt/HDD/eula.3082.txt
+t/mnt/HDD/.vifm-Trash-1000/000_globdata.ini
+	/mnt/HDD/globdata.ini
+t/mnt/HDD/.vifm-Trash-1000/000_install.exe
+	/mnt/HDD/install.exe
+t/mnt/HDD/.vifm-Trash-1000/000_install.ini
+	/mnt/HDD/install.ini
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1028.dll
+	/mnt/HDD/install.res.1028.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1031.dll
+	/mnt/HDD/install.res.1031.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1033.dll
+	/mnt/HDD/install.res.1033.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1036.dll
+	/mnt/HDD/install.res.1036.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1040.dll
+	/mnt/HDD/install.res.1040.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1041.dll
+	/mnt/HDD/install.res.1041.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.1042.dll
+	/mnt/HDD/install.res.1042.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.2052.dll
+	/mnt/HDD/install.res.2052.dll
+t/mnt/HDD/.vifm-Trash-1000/000_install.res.3082.dll
+	/mnt/HDD/install.res.3082.dll
+t/mnt/HDD/.vifm-Trash-1000/000_vcredist.bmp
+	/mnt/HDD/vcredist.bmp
+t/home/dylan/.local/share/vifm/Trash/000_1819SEM1-EE2028_TEE2028.pdf
+	/home/dylan/Downloads/1819SEM1-EE2028_TEE2028.pdf
+t/home/dylan/.local/share/vifm/Trash/000_1819SEM2-EE2028.pdf
+	/home/dylan/Downloads/1819SEM2-EE2028.pdf
+t/home/dylan/.local/share/vifm/Trash/000_1920SEM1-EE2028_TEE2028.pdf
+	/home/dylan/Downloads/1920SEM1-EE2028_TEE2028.pdf
+t/home/dylan/.local/share/vifm/Trash/000_ECE-exam-cover-page-declaration.pdf
+	/home/dylan/Downloads/ECE-exam-cover-page-declaration.pdf
+t/home/dylan/.local/share/vifm/Trash/000_FTB_Launcher.jar
+	/home/dylan/Downloads/FTB_Launcher.jar
+t/home/dylan/.local/share/vifm/Trash/000_Peer Appraisal.docx
+	/home/dylan/Downloads/Peer Appraisal.docx
+t/home/dylan/.local/share/vifm/Trash/000_Peer Appraisal.pdf
+	/home/dylan/Downloads/Peer Appraisal.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Sample Published Paper.pdf
+	/home/dylan/Downloads/Sample Published Paper.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_desktop.ini
+	/mnt/HDD/Documents/desktop.ini
+t/mnt/HDD/.vifm-Trash-1000/000_V1
+	/mnt/HDD/Documents/Work/Resume/V1
 
 # State:
 f
