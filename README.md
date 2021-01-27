@@ -15,7 +15,7 @@ sudo reboot
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 
-xset r rate 210 30
+xset r rate 230 30
 ```
 
 ## Droidcam
