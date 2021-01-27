@@ -54,5 +54,6 @@ sudo apt install texlive-latex-extra latexmk ttf-mscorefonts-installer
 ```
 sudo pip3 install ueberzug
 ```
-
-`sudo apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome`
+```
+sudo apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome
+```
