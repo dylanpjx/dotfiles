@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-ZIP=$1
-DIR=${ZIP%.*}
-unzip $ZIP -d $DIR

@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "css", "markdown"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "css", "python"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.disableLanguages": [],

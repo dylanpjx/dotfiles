@@ -60,7 +60,8 @@ terminal = "alacritty"
 browser = "firefox"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
-file = "nautilus"
+file = "$HOME/.config/vifm/scripts/vifmrun"
+file_cmd = terminal .. " -e " .. file
 
 -- Default modkey
 modkey = "Mod4"

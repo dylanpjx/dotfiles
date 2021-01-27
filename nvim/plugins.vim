@@ -20,7 +20,6 @@ Plug 'vifm/vifm.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'freitass/todo.txt-vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/goyo.vim'
@@ -172,8 +171,9 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Autoinstall coc extensions
 let g:coc_global_extensions = [
       \ 'coc-tsserver',
+      \ 'coc-json',
       \ 'coc-css',
       \ 'coc-prettier',
-      \ 'coc-json',
       \ 'coc-vimtex',
+      \ 'coc-pyright'
       \ ]

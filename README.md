@@ -1,6 +1,6 @@
 # linux-configs
 
-## Currently on AwesomeWM + PopOS
+Using Pop!\_OS and AwesomeWM.
 
 ## Wifi setup
 
@@ -15,7 +15,7 @@ sudo reboot
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 
-xset r rate 230 30
+xset r rate 250 30
 ```
 
 ## Droidcam
@@ -33,6 +33,10 @@ xset r rate 230 30
 3. Go to `alsamixer` and configure accordingly
 4. Save using `sudo alsactl store`
 
+## Mouse
+
+1. `sudo apt install openrazer`
+
 ## Scroll wheel
 
 1. `sudo apt install imwheel`
@@ -42,9 +46,7 @@ xset r rate 230 30
 ## Vimtex
 
 ```
-sudo apt install texlive-latex-extra
-sudo apt install latexmk
-sudo apt install ttf-mscorefonts-installer
+sudo apt install texlive-latex-extra latexmk ttf-mscorefonts-installer
 ```
 
 ## Vifm image preview
@@ -53,4 +55,4 @@ sudo apt install ttf-mscorefonts-installer
 sudo pip3 install ueberzug
 ```
 
-nvim, vifm, qpdfview, firefox, quodlibet, ffmpeg
+`sudo apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome`

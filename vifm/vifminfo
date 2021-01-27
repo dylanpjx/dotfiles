@@ -21,6 +21,10 @@
 	/home/dylan/
 	..
 1604163573
+'m
+	/mnt/HDD/Music
+	..
+1610551104
 'n
 	/mnt/HDD/NUS_EE/
 	..
@@ -33,7 +37,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -42,612 +46,619 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/mnt/HDD/Programming/Webdev
-	Backend
-1
-d/mnt/HDD/Programming/Webdev/Backend
-	Node
-1
-d/mnt/HDD/Programming/Webdev/Backend/Node
-	Calculator
-2
-d/mnt/HDD/Programming/Webdev/Backend/Node/Calculator
-	package-lock.json
-4
-d/mnt/HDD/Programming/Webdev/Backend/Node
-	Newsletter-Signup
-3
-d/mnt/HDD/Programming/Webdev/Backend/Node/Newsletter-Signup
-	app.js
-4
-d/mnt/HDD/Programming/Webdev/Backend/Node
-	Calculator
-2
-d/mnt/HDD/Programming/Webdev/Backend/Node/Calculator
-	server.js
-5
-d/home/dylan/Downloads
-	selected-downloads.zip
-13
-d/home/dylan/.config/rofi
-	config
-1
-d/home/dylan/.config/rofi/config
-	..
-0
-d/home/dylan/.config/rofi
-	config
-1
-d/home/dylan/.config
-	totem
-28
 d/mnt/HDD/NUS_EE/CS1010 - TA
 	Labs
 3
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
-	Lab 11
-11
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 11
-	lesson_plan.md
-1
-d/mnt/HDD/NUS_EE/CS1010 - TA
-	Labs
-3
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs
-	Lab 11
-11
-d/mnt/HDD/NUS_EE/CS1010 - TA/Labs/Lab 11
-	lesson_plan.md
-1
-d/home/dylan/Projects/EE2028-Backend
-	.gitignore
-4
-d/home/dylan/github/dotfiles
-	vifm
-8
-d/home/dylan/github/dotfiles/vifm
-	scripts
-2
-d/home/dylan/github/dotfiles/vifm/scripts
-	..
-0
-d/home/dylan/github/dotfiles/vifm
-	colors
-1
-d/home/dylan/github/dotfiles/vifm/colors
-	..
-0
-d/home/dylan/github/dotfiles/vifm
-	vifminfo_19403
-5
-d/home/dylan/github/dotfiles
-	vifm
-8
-d/home/dylan/github/dotfiles/vifm
-	vifminfo
-4
-d/home/dylan/github/dotfiles
-	alacritty
-2
-d/home/dylan/github/dotfiles/alacritty
-	alacritty.yml
-1
-d/home/dylan/github/dotfiles
-	awesome
-3
-d/home/dylan/github/dotfiles/awesome
-	calendar
-1
-d/home/dylan/github/dotfiles
-	bash
-4
-d/home/dylan/github/dotfiles/bash
-	.dircolors
-3
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/cfg/user
-	..
-0
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/cfg
-	config_default.cfg
-9
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf
-	cfg
-3
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common/Team Fortress 2
-	tf
-4
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps/common
-	Team Fortress 2
-5
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam/steamapps
-	common
-1
-d/media/dylan/4E90C03390C02377/Program Files (x86)/Steam
-	steamapps
-18
-d/media/dylan/4E90C03390C02377/Program Files (x86)
-	Steam
-9
-d/media/dylan/4E90C03390C02377
-	Program Files (x86)
-7
-d/media/dylan
-	4E90C03390C02377
-1
-d/media
-	dylan
-1
-d/
-	lib32
-6
-d/home/dylan
-	Utils
-33
-d/home/dylan/Utils
-	deemix-pyweb
-1
-d/home/dylan/Downloads
-	droidcam_1604532509
-5
-d/home/dylan/Downloads/droidcam_1604532509
-	install-dkms
-9
-d/home/dylan/Downloads
-	Video Recordings-20201116T012142Z-001.zip
-9
-d/home/dylan/github/dotfiles
-	nvim
-5
-d/home/dylan/github/dotfiles/nvim
-	mappings.vim
-6
-d/home/dylan/github/dotfiles
-	nvim
-5
-d/home/dylan/github/dotfiles/nvim
-	colors
-2
-d/home/dylan/github/dotfiles/nvim/colors
-	..
-0
-d/home/dylan/github/dotfiles/nvim
-	autoload
-1
-d/home/dylan/github/dotfiles/nvim/autoload
-	..
-0
-d/home/dylan/github/dotfiles/nvim
-	settings.vim
-8
-d/home/dylan/github/dotfiles
-	README.md
-13
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config/awesome/scripts
-	..
-0
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config
-	awesome
-4
-d/home/dylan
-	.config
-4
-d/home
-	..
-0
-d/
-	etc
-3
-d/etc
-	..
-0
-d/
-	etc
-3
-d/etc
-	..
-0
 d/mnt/HDD/NUS_EE
-	EE2028
-5
-d/mnt/HDD/NUS_EE/EE2028
-	Assignments
-1
-d/mnt/HDD/NUS_EE/EE2028/Assignments
-	EE2028Assign1
-4
-d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1
-	Assignment1AY2021S1
-1
-d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1
-	Src
-4
-d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1/Src
-	asm_func.s
-1
-d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1
-	Src
-4
-d/mnt/HDD/NUS_EE/EE2028/Assignments/EE2028Assign1/Assignment1AY2021S1/Src
-	asm_func.s
-1
-d/home/dylan/Projects/todo-kanban/src/helpers
-	Editable.js
+	GES1021
 6
-d/home/dylan/Downloads
-	archlabs-awesome
-3
-d/home/dylan/.config
-	awesome
-5
-d/home/dylan/.config/awesome
-	themes
-3
-d/home/dylan/.config/awesome/themes
-	default
+d/mnt/HDD/NUS_EE/GES1021
+	Lectures
 1
-d/home/dylan/.config/awesome/themes/default
-	background_white.png
-5
+d/mnt/HDD/NUS_EE/GES1021/Lectures
+	GES1021 Lecture 5 Secondary Vegetation.pdf
+4
 d/home/dylan/Downloads
-	王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
+	..
+0
+d/home/dylan
+	Documents
+29
+d/home/dylan/Documents
+	todo.txt
+4
+d/home/dylan
+	Documents
+29
+d/mnt/HDD/NUS_EE
+	EE2029
+4
+d/mnt/HDD/NUS_EE/EE2029
+	Tutorials
+3
+d/mnt/HDD/NUS_EE/EE2029/Tutorials
+	3. Tutorial - AC Power - EE2029.pdf
+2
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2/W2
+	2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf
+4
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2/W2
+	..
+0
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
+2
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029
+	Tutorials
+3
+d/mnt/HDD/NUS_EE/EE2029/Tutorials
+	3. Tutorial - AC Power - EE2029.pdf
+2
+d/mnt/HDD/NUS_EE/EE2029
+	Tutorials
+3
+d/mnt/HDD/NUS_EE
+	EE2029
+4
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W3
+	3.1 Video Lecture pdf - What is the power in R, L and C - EE2029.pdf
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
+	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
+1
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W2
+1
+d/mnt/HDD/NUS_EE/EE2029
+	F2F
+1
+d/mnt/HDD/NUS_EE/EE2029/F2F
+	W1
+1
+d/mnt/HDD/NUS_EE/EE2029/F2F/W1
+	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
+2
+d/mnt/HDD/NUS_EE/EE2029/F2F
+	W1
+1
+d/mnt/HDD/NUS_EE/EE2029
+	F2F
+1
+d/mnt/HDD/NUS_EE
+	EE2023
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Lecture Notes
+1
+d/mnt/HDD/NUS_EE/EE2023/Lecture Notes
+	EE2023_2021s2_Gp2_Chap8.pdf
+9
+d/mnt/HDD/NUS_EE/EE2023
+	Lecture Notes
+1
+d/mnt/HDD/NUS_EE
+	EE2029
+4
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029/Lectures/W3
+	3.3 Video Lecture pdf - What is complex power - EE2029.pdf
+3
+d/mnt/HDD/NUS_EE/EE2029/Lectures
+	W3
+2
+d/mnt/HDD/NUS_EE/EE2029
+	Lectures
+2
+d/mnt/HDD/NUS_EE
+	EE2029
+4
+d/mnt/HDD
+	NUS_EE
+9
+d/mnt/HDD/NUS_EE
+	EE2211
+5
+d/mnt/HDD/NUS_EE/EE2211
+	Tutorials
+3
+d/mnt/HDD/NUS_EE/EE2211/Tutorials
+	Tut2
+3
+d/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut2
+	tut2_q2.ipynb
 7
-d/home/dylan/.config
-	awesome
-5
-d/home/dylan/.config/awesome
-	themes
+d/mnt/HDD/NUS_EE/EE2211/Tutorials
+	Tut2
 3
-d/home/dylan/.config/awesome/themes
-	default
+d/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut2
+	tut2_q3.ipynb
+9
+d/mnt/HDD/NUS_EE/EE2211/Tutorials
+	Tut2
+3
+d/mnt/HDD/NUS_EE/EE2211
+	Tutorials
+3
+d/mnt/HDD/NUS_EE
+	PC2020
+8
+d/mnt/HDD/NUS_EE/PC2020
+	Part 1
 1
-d/home/dylan/.config/awesome/themes/default
-	theme.lua
-12
-d/home/dylan/github
-	dotfiles
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	F2F
+1
+d/mnt/HDD/NUS_EE/PC2020/Part 1/F2F
+	PC2020 Lecture Group 2 Week 1 Thursday.pdf
 2
-d/home/dylan/github/dotfiles
-	README.md
-13
-d/mnt/HDD/Documents/Work/Resume/tex
-	resume.tex
-17
-d/mnt/HDD/Documents/Work/Resume
-	tex
-1
-d/mnt/HDD/Documents/Work
-	Resume
-2
-d/mnt/HDD/Documents
-	Work
-1
-d/mnt/HDD
-	Wallpapers
-13
-d/mnt/HDD/Wallpapers
-	93cctotetpq21.jpeg
-16
-d/mnt/HDD
-	Economics
-6
-d/home/dylan/.config
-	vifm
-38
-d/home/dylan/.config/vifm
-	vifmimgpdffile
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	Tutorials
 4
+d/mnt/HDD/NUS_EE/PC2020/Part 1/Tutorials
+	Tutorial 0.pdf
+2
+d/mnt/HDD/NUS_EE
+	PC2020
+8
+d/mnt/HDD/NUS_EE/PC2020
+	Part 1
+1
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	Past Test 1 Papers (12.5%)
+3
+d/mnt/HDD/NUS_EE/PC2020/Part 1/Past Test 1 Papers (12.5%)
+	PC2020 2018-19 Semester 1 Test 1.pdf
+1
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	Past Test 1 Papers (12.5%)
+3
+d/mnt/HDD/NUS_EE/PC2020
+	Part 1
+1
+d/mnt/HDD/NUS_EE
+	EE2023
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Tutorials
+2
+d/mnt/HDD/NUS_EE/EE2023/Tutorials
+	S&S-Tut-01 (Prob).pdf
+1
+d/mnt/HDD/NUS_EE/EE2023
+	Tutorials
+2
+d/mnt/HDD/NUS_EE
+	EE2023
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Lecture Notes
+1
+d/mnt/HDD/NUS_EE/EE2023/Lecture Notes
+	EE2023_2021s2_Gp2_Chap2.pdf
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Lecture Notes
+1
+d/mnt/HDD/NUS_EE
+	EE2023
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Lecture Notes
+1
+d/mnt/HDD/NUS_EE
+	EE2023
+3
+d/mnt/HDD/NUS_EE/EE2023
+	Formula sheets
+1
+d/mnt/HDD/NUS_EE/EE2023/Formula sheets
+	Formulas (QUIZ).pdf
+2
+d/mnt/HDD/NUS_EE/EE2023
+	Tutorials
+3
+d/mnt/HDD/NUS_EE/EE2023/Tutorials
+	S&S-Tut-02 (Prob).pdf
+2
+d/mnt/HDD/NUS_EE/EE2023
+	Tutorials
+3
+d/mnt/HDD/NUS_EE
+	PC2020
+8
+d/mnt/HDD/NUS_EE/PC2020
+	Part 1
+1
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	Tutorials
+4
+d/mnt/HDD/NUS_EE/PC2020/Part 1/Tutorials
+	Tutorial 2.pdf
+4
+d/mnt/HDD/NUS_EE/PC2020/Part 1
+	F2F
+1
+d/mnt/HDD/NUS_EE/PC2020/Part 1/F2F
+	PC2020 Lecture Group 2 Week 2 Monday.pdf
+3
 d
 
 # Right window history (oldest to newest):
-D/mnt/HDD
-	Downloads
-6
-D/mnt/HDD/Downloads
-	dotfiles
-4
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	Linux
-1
-D/mnt/HDD/Documents/Linux
+D/home/dylan/Downloads
+	Part I
+3
+D/home/dylan/Downloads/Part I
 	..
 0
-D/home/dylan/.config
-	vifm
-16
-D/home/dylan/.config/vifm
-	scripts
-2
-D/home/dylan/.config/vifm/scripts
-	img-cmd
-2
-D/home/dylan/.config/vifm
-	scripts
-2
-D/home/dylan/.config/vifm/scripts
-	unzip-cmd
+D/home/dylan/Downloads
+	Part I
 3
-D/home/dylan/.config/vifm
-	vifmrc
+D/home/dylan/Downloads/Part I
+	Lecture Slides
+3
+D/home/dylan/Downloads
+	lecture
 6
-D/mnt/HDD
+D/home/dylan/Downloads/lecture
+	Lecture Group 2 (Yeo Ye)
+1
+D/home/dylan/Downloads/lecture/Lecture Group 2 (Yeo Ye)
+	..
+0
+D/home/dylan/Downloads/lecture
+	Lecture Group 2 (Yeo Ye)
+1
+D/home/dylan/Downloads
+	Part I
+3
+D/home/dylan/Downloads/Part I
+	Lecture Notes
+2
+D/home/dylan/Downloads/Part I/Lecture Notes
+	..
+0
+D/home/dylan/Downloads/Part I
+	Lecture Slides
+3
+D/home/dylan/Downloads/Part I/Lecture Slides
+	Lecture 1 Electrostatic fields in vacuum.pdf
+2
+D/home/dylan/Downloads/Part I
+	Lecture Slides
+3
+D/home/dylan/Downloads
+	Tutorials
+3
+D/home/dylan/Downloads/Tutorials
+	Tutorials
+1
+D/home/dylan/Downloads/Tutorials/Tutorials
+	..
+0
+D/home/dylan/Downloads/Tutorials
+	Tutorials
+1
+D/home/dylan/Downloads
+	lecture
+5
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
+	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
+2
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads
+	lecture
+5
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
+	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
+2
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads
+	lecture
+5
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
+	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
+2
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads
+	lecture
+5
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
+	..
+0
+D/home/dylan/Downloads/lecture
+	In-Class (Zoom)  Lecture Notes
+1
+D/home/dylan/Downloads
+	Tutorials
+3
+D/home/dylan/Downloads/Tutorials
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads/Tutorials/Tutorials and Solutions
+	..
+0
+D/home/dylan/Downloads/Tutorials
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads
+	王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
+14
+D/home/dylan
 	Downloads
-6
-D/mnt/HDD/Downloads
+29
+D/home/dylan/Downloads
+	videolecture
+5
+D/home/dylan/Downloads/videolecture
+	Video LEcture PPTs
+1
+D/home/dylan/Downloads/videolecture/Video LEcture PPTs
+	Week 2 - AC Fundamentals - Video
+1
+D/home/dylan/Downloads/videolecture/Video LEcture PPTs/Week 2 - AC Fundamentals - Video
+	..
+0
+D/home/dylan/Downloads/videolecture/Video LEcture PPTs
+	Week 2 - AC Fundamentals - Video
+1
+D/home/dylan/Downloads/videolecture
+	Video LEcture PPTs
+1
+D/home/dylan/Downloads
+	sub
+5
+D/home/dylan/Downloads/sub
+	..
+0
+D/home/dylan/Downloads
+	sub
+5
+D/home/dylan/Downloads/sub
+	..
+0
+D/home/dylan/Downloads
+	sub
+5
+D/home/dylan/Downloads/sub
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads/sub/Tutorials and Solutions
+	..
+0
+D/home/dylan/Downloads/sub
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads
+	sub
+5
+D/home/dylan/Downloads/sub
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads
+	sub
+5
+D/home/dylan/Downloads/sub
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads/sub/Tutorials and Solutions
+	..
+0
+D/home/dylan/Downloads/sub
+	Tutorials and Solutions
+1
+D/home/dylan/Downloads
+	df
+4
+D/home/dylan/Downloads/df
+	df_linux
+1
+D/home/dylan/Downloads/df/df_linux
+	df
+8
+D/home/dylan/Downloads/df
+	df_linux
+1
+D/home/dylan/Downloads
 	NUS
 1
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	Linux
-1
-D/mnt/HDD/Documents/Linux
-	..
-0
-D/mnt/HDD/Documents
-	Work
-1
-D/mnt/HDD
-	NUS_EE
-9
-D/mnt
-	HDD
-1
-D/mnt/HDD
-	Pictures
-10
-D/mnt/HDD/Pictures
-	1975 Concert
-1
-D/mnt/HDD
-	Wallpapers
-13
-D/mnt/HDD/Wallpapers
-	..
-0
-D/mnt/HDD
-	Deezloader Music
-4
-D/mnt/HDD/Deezloader Music
-	Sam Smith - Diamonds.mp3
-11
-D/mnt/HDD
-	Movies & TV
-7
 D/home/dylan
-	Utils
-23
-D/home/dylan/Utils
-	deemix
-1
-D/home/dylan/Utils/deemix
-	app.py
-7
-D/home/dylan
-	.dircolors
-35
-D/mnt/HDD/NUS_EE
-	ES2531
+	.anydesk
+2
+D/home/dylan/.anydesk
+	user.conf
 6
-D/mnt/HDD
-	Pictures
-10
-D/mnt/HDD/Pictures
-	Melbourne '18
-15
-D/mnt/HDD
-	Programming
-11
-D/mnt/HDD/Programming
-	Webdev
-7
-D/mnt/HDD/Programming/Webdev
-	Backend
-1
-D/mnt/HDD/Programming/Webdev/Backend
-	Node
-1
-D/mnt/HDD/Programming/Webdev/Backend/Node
-	Bitcoin-Ticker
-1
-D/mnt/HDD/Programming/Webdev/Backend/Node/Bitcoin-Ticker
-	package-lock.json
-4
-D/home/dylan/Downloads
-	..
-0
 D/home/dylan
-	.bash_aliases
-32
-D/home/dylan/Downloads
-	dotfiles
-5
-D/home/dylan/.config
-	droidcam
-22
-D/home/dylan
-	.bashrc
+	Desktop
 31
-D/mnt/HDD
-	Deezloader Music
-4
-D/mnt/HDD/Deezloader Music
-	Deemix
+D/home/dylan/Desktop
+	dylan_resume_2021.pdf
 1
-D/mnt/HDD/Deezloader Music/Deemix
-	deemix-pyweb-main
+D/home/dylan
+	Downloads
+33
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	Lecture Notes
 1
-D/mnt/HDD/Deezloader Music/Deemix/deemix-pyweb-main
+D/home/dylan/Downloads/zip/Lecture Notes
 	..
 0
-D/mnt/HDD/Deezloader Music/Deemix
-	deemix-pyweb-main.zip
+D/home/dylan/Downloads/zip
+	Lecture Notes
 1
-D/mnt/HDD/Deezloader Music
-	Sam Smith - Diamonds.mp3
-11
-D/mnt/HDD
-	Music
-8
-D/mnt/HDD/Music
-	desktop.ini
-44
-D/mnt/HDD
-	Music
-8
-D/home/dylan
-	.config
-4
-D/home/dylan/.config
-	alacritty
-3
-D/home/dylan
-	Utils
-32
-D/home/dylan/Utils
-	tablet.sh
-4
-D/home/dylan
-	github
-34
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	Work
-1
-D/mnt/HDD/Documents/Work
-	Resume
-2
-D/mnt/HDD/Documents/Work/Resume
-	V2
-2
-D/mnt/HDD/Documents/Work/Resume/V2
-	resume.log
-5
-D/mnt/HDD/Documents/Work/Resume
-	V2
-2
-D/mnt/HDD/Documents/Work
-	Resume
-2
-D/mnt/HDD/Documents
-	desktop.ini
-2
-D/mnt/HDD
-	Programming
-11
-D/mnt/HDD/Programming
-	SIA Hackathon
-6
-D/mnt/HDD/Programming/SIA Hackathon
-	SIA
-1
-D/mnt/HDD/Programming/SIA Hackathon/SIA
-	client
-2
-D/mnt/HDD/Programming/SIA Hackathon/SIA/client
-	src
-4
-D/mnt/HDD/Programming/SIA Hackathon/SIA
-	client
-2
-D/mnt/HDD/Programming/SIA Hackathon
-	SIA
-1
-D/mnt/HDD/Programming
-	SIA Hackathon
-6
-D/mnt/HDD
-	Wallpapers
-13
-D/mnt/HDD/Wallpapers
-	kien-do-uUVkzxDR1D0-unsplash.jpeg
-42
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	desktop.ini
-2
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	Work
-1
-D/mnt/HDD/Documents/Work
-	Resume
-2
-D/mnt/HDD/Documents
-	Work
-1
-D/mnt/HDD/Documents/Work
-	Resume
-2
-D/mnt/HDD/Documents/Work/Resume
-	V2
-2
-D/mnt/HDD/Documents/Work/Resume/V2
-	embedded.tex
+D/home/dylan/Downloads
+	df_47_04_linux.tar.bz2
 8
 D/home/dylan/.config
 	vifm
-35
-D/home/dylan
-	.npm
-12
-D/mnt/HDD
-	Documents
-5
-D/mnt/HDD/Documents
-	Work
-1
-D/mnt/HDD/Documents/Work
-	Resume
+43
+D/home/dylan/.config/vifm
+	scripts
 2
-D/mnt/HDD/Documents/Work/Resume
-	V2
-2
-D/mnt/HDD/Documents/Work/Resume/V2
-	resume.aux
-9
-D/mnt/HDD/Documents/Work/Resume
-	V1
-1
-D/mnt/HDD/Documents/Work/Resume/V1
-	resume.pdf
+D/home/dylan/.config/vifm/scripts
+	vifmimg
+4
+D/home/dylan/.config/vifm
+	vifmrc
+7
+D/home/dylan/Downloads
+	Hugh T. W. Tan - The Natural Heritage of Singapore (2010) - libgen.lc.pdf
+8
+D/home/dylan/.config
+	vifm
+36
+D/home/dylan/.config/vifm
+	vifmrc
+7
+D/home/dylan/Downloads
+	zip
 5
-D/mnt/HDD/Documents/Work/Resume
-	V2
+D/home/dylan/Downloads/zip
+	Week 3 - AC Power - Video Lecture
 1
-D/mnt/HDD/Documents/Work/Resume/V2
-	embedded.pdf
-6
-D/mnt/HDD/Documents/Work/Resume
-	tex
+D/home/dylan/Downloads/zip/Week 3 - AC Power - Video Lecture
+	..
+0
+D/home/dylan/Downloads/zip
+	Week 3 - AC Power - Video Lecture
 1
-D/mnt/HDD/Documents/Work/Resume/tex
-	embedded.pdf
-6
-D/mnt/HDD/Documents/Work/Resume
-	tex
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	Week 3 - AC Power - Video Lecture
 1
-D/mnt/HDD/Documents/Work/Resume/tex
-	resume.aux
-9
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	annual-motor-vehicle-population-by-vehicle-type.csv
+1
+D/home/dylan/Downloads
+	Jim Paul, Brendan Moynihan - What I Learned Losing a Million Dollars (1994, Infrared Pr) - libgen.lc.pdf
+8
+D/home/dylan/.config
+	vifm
+36
+D/home/dylan/.config/vifm
+	vifmrc
+7
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	annual-motor-vehicle-population-by-vehicle-type.csv
+1
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	Formula sheets
+1
+D/home/dylan/Downloads/zip/Formula sheets
+	Formulas (QUIZ).pdf
+2
+D/home/dylan/Downloads/zip
+	..
+0
+D/home/dylan/Downloads
+	zip
+5
 D
 
 # Command line history (oldest to newest):
+:mkdir W1
+:mk
+:h
+:mkdir 
+:mkdir Tut1
+:mkdir Tut2
+:extrac
 :touch oraldef.md
 :touch lab9_ans.md
 :zip
@@ -681,7 +692,27 @@ D
 :touch lesson_plan.md
 :!git pull
 :cd /mnt
+:unzip Hugh\ T.\ W.\ Tan\ -\ The\ Natural\ Heritage\ of\ Singa
+:unzip Tutorials.zip
+:!chmod +x Nord.vifm
+:!chmod +x OneDark.vifm
+:mkdir F2F
+:mkdir Tutorials
 :unzip
+:extract! sub
+:extract! df
+:mkdir Answers
+:touch tut1.md
+:touch coverletter.tex
+:mkdir GES1021
+:extract! zip
+:mkdir Lectures
+:reload
+:mkdir W2
+:mkdir W3
+:annotate
+:touch tut2.md
+:extract
 
 # Search history (oldest to newest):
 /wa
@@ -689,9 +720,7 @@ D
 /,conf
 /.conf
 /.config
-/doc
 /documen
-/ala
 /awesom
 /pic
 /scree
@@ -704,12 +733,24 @@ D
 /imwheel
 /pro
 /confi
-/uti
 /kienyy
 /kien
+/gith
+/ala
+/uti
+/python
+/dee
+/justin
+/desk
+/down
 /vifm
+/doc
+/v
 
 # Prompt history (oldest to newest):
+pSolutions
+pTutorial Problems
+pTutorials
 plab9_ans.c
 pdroidcam_1601174210
 punzip-cmd
@@ -735,11 +776,22 @@ pclay-background.jpg
 pclay_background.jpg
 pembedded.tex
 ptex
+plecture.zip
+pvideolecture.zip
+pTutorials and Solutions.zip
+pTutorials.ziop
+pTutorials.zip
+pGES1021-Info.pdf
+pGES1021 Lecture 3 Primary Vegetation.pdf
+pGES1021 Lecture 5 Secondary Vegetation.pdf
+pGES1021 Lecture 2 Intertidal.pdf
+pGES1021 Lecture 4 Subtidal.pdf
+pN_SR_TSRPT.pdf
+pUnofficial_transcript
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/mnt/HDD/.vifm-Trash-1000/000_V1
 
 # Directory stack (oldest to newest):
 
@@ -924,6 +976,102 @@ t/mnt/HDD/.vifm-Trash-1000/000_desktop.ini
 	/mnt/HDD/Documents/desktop.ini
 t/mnt/HDD/.vifm-Trash-1000/000_V1
 	/mnt/HDD/Documents/Work/Resume/V1
+t/home/dylan/.local/share/vifm/Trash/000_Tutorials.zip
+	/home/dylan/Downloads/Tutorials.zip
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_2021-01-12
+	/home/dylan/Downloads/OneDrive_2021-01-12
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_2021-01-12.zip
+	/home/dylan/Downloads/OneDrive_2021-01-12.zip
+t/home/dylan/.local/share/vifm/Trash/000_video (1).mp4
+	/home/dylan/Downloads/video (1).mp4
+t/home/dylan/.local/share/vifm/Trash/000_video (2).mp4
+	/home/dylan/Downloads/video (2).mp4
+t/home/dylan/.local/share/vifm/Trash/000_video.mp4
+	/home/dylan/Downloads/video.mp4
+t/home/dylan/.local/share/vifm/Trash/000_vifminfo_10514
+	/home/dylan/.config/vifm/vifminfo_10514
+t/home/dylan/.local/share/vifm/Trash/001_vifminfo_19403
+	/home/dylan/.config/vifm/vifminfo_19403
+t/home/dylan/.local/share/vifm/Trash/000_vifminfo
+	/home/dylan/.config/vifm/vifminfo
+t/home/dylan/.local/share/vifm/Trash/000_ee2211book.pdf
+	/home/dylan/Downloads/ee2211book.pdf
+t/home/dylan/.local/share/vifm/Trash/000_2020-10-03 08.42.32 CS1010 (AY20_21 S1) - PE1 (03 OCT 0830-1200) G07 97270786861
+	/home/dylan/Documents/Zoom/2020-10-03 08.42.32 CS1010 (AY20_21 S1) - PE1 (03 OCT 0830-1200) G07 97270786861
+t/home/dylan/.local/share/vifm/Trash/000_2020-11-24 16.18.28 CS1010 FInal (24 NOV 1700-1900) - Invigilation Group - FINAL G08 84551607383
+	/home/dylan/Documents/Zoom/2020-11-24 16.18.28 CS1010 FInal (24 NOV 1700-1900) - Invigilation Group - FINAL G08 84551607383
+t/mnt/HDD/.vifm-Trash-1000/000_Justin Bieber - Lonely.mp3
+	/mnt/HDD/Deezloader Music/Justin Bieber - Lonely.mp3
+t/home/dylan/.local/share/vifm/Trash/000_lecture.zip
+	/home/dylan/Downloads/lecture.zip
+t/home/dylan/.local/share/vifm/Trash/000_lecture
+	/home/dylan/Downloads/lecture
+t/home/dylan/.local/share/vifm/Trash/000_Part I
+	/home/dylan/Downloads/Part I
+t/mnt/HDD/.vifm-Trash-1000/000_Tutorials
+	/mnt/HDD/NUS_EE/EE2023/Tutorials/Tutorials
+t/home/dylan/.local/share/vifm/Trash/000_Tutorials
+	/home/dylan/Downloads/Tutorials
+t/home/dylan/.local/share/vifm/Trash/000_videolecture.zip
+	/home/dylan/Downloads/videolecture.zip
+t/home/dylan/.local/share/vifm/Trash/000_videolecture
+	/home/dylan/Downloads/videolecture
+t/home/dylan/.local/share/vifm/Trash/000_clay-banks-u27Rrbs9Dwc-unsplash.jpg
+	/home/dylan/Downloads/clay-banks-u27Rrbs9Dwc-unsplash.jpg
+t/home/dylan/.local/share/vifm/Trash/000_label.pdf
+	/home/dylan/Downloads/label.pdf
+t/home/dylan/.local/share/vifm/Trash/000_GetImageAttachment.png
+	/home/dylan/Downloads/GetImageAttachment.png
+t/home/dylan/.local/share/vifm/Trash/000_linux-x86_64-latest.zip
+	/home/dylan/Downloads/linux-x86_64-latest.zip
+t/home/dylan/.local/share/vifm/Trash/000_sub
+	/home/dylan/Downloads/sub
+t/home/dylan/.local/share/vifm/Trash/000_Tutorials and Solutions.zip
+	/home/dylan/Downloads/Tutorials and Solutions.zip
+t/home/dylan/.local/share/vifm/Trash/000_df
+	/home/dylan/Downloads/df
+t/home/dylan/.local/share/vifm/Trash/000_zip
+	/home/dylan/Downloads/zip
+t/home/dylan/.local/share/vifm/Trash/000_Lecture Notes.zip
+	/home/dylan/Downloads/Lecture Notes.zip
+t/home/dylan/.local/share/vifm/Trash/000_df_47_04_linux.tar.bz2
+	/home/dylan/Downloads/df_47_04_linux.tar.bz2
+t/mnt/HDD/.vifm-Trash-1000/000_GES1021 Lecture 3 Primary Vegetation LumiNUS version.pptx
+	/mnt/HDD/NUS_EE/GES1021/Lectures/GES1021 Lecture 3 Primary Vegetation LumiNUS version.pptx
+t/mnt/HDD/.vifm-Trash-1000/000_GES1021 Lecture 5 Secondary Vegetation LumiNUS version.ppt
+	/mnt/HDD/NUS_EE/GES1021/Lectures/GES1021 Lecture 5 Secondary Vegetation LumiNUS version.ppt
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211 Lecture 2.pdf
+	/mnt/HDD/NUS_EE/EE2211/Lecture Notes/EE2211 Lecture 2.pdf
+t/home/dylan/.local/share/vifm/Trash/000_selected-downloads.zip
+	/home/dylan/Downloads/selected-downloads.zip
+t/home/dylan/.local/share/vifm/Trash/000_metadata-annual-motor-vehicle-population-by-vehicle-type.txt
+	/home/dylan/Downloads/zip/metadata-annual-motor-vehicle-population-by-vehicle-type.txt
+t/home/dylan/.local/share/vifm/Trash/000_annual-motor-vehicle-population-by-vehicle-type.zip
+	/home/dylan/Downloads/annual-motor-vehicle-population-by-vehicle-type.zip
+t/home/dylan/.local/share/vifm/Trash/000_government-expenditure-on-education.zip
+	/home/dylan/Downloads/government-expenditure-on-education.zip
+t/home/dylan/.local/share/vifm/Trash/000_metadata-government-expenditure-on-education.txt
+	/home/dylan/Downloads/zip/metadata-government-expenditure-on-education.txt
+t/home/dylan/.local/share/vifm/Trash/000_tut2.xoj
+	/home/dylan/Documents/tut2.xoj
+t/home/dylan/.local/share/vifm/Trash/000_tut3.xoj
+	/home/dylan/Documents/tut3.xoj
+t/mnt/HDD/.vifm-Trash-1000/000_2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf.pdf
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W2/2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf.xoj
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W2/2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf.xoj
+t/mnt/HDD/.vifm-Trash-1000/000_W2
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W2/W2
+t/home/dylan/.local/share/vifm/Trash/000_Week 3 - AC Power - Video Lecture
+	/home/dylan/Downloads/zip/Week 3 - AC Power - Video Lecture
+t/home/dylan/.local/share/vifm/Trash/000_Week 3 - AC Power - Video Lecture PDFs.zip
+	/home/dylan/Downloads/Week 3 - AC Power - Video Lecture PDFs.zip
+t/home/dylan/.local/share/vifm/Trash/000_unknown.png
+	/home/dylan/Downloads/unknown.png
+t/home/dylan/.local/share/vifm/Trash/000_N_SR_TSRPT.pdf
+	/home/dylan/Downloads/N_SR_TSRPT.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_N_SR_TSRPT.pdf.xoj
+	/mnt/HDD/NUS_EE/N_SR_TSRPT.pdf.xoj
 
 # State:
 f

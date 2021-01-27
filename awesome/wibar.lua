@@ -88,23 +88,60 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create a tasklist widget
+    -- s.mytasklist = awful.widget.tasklist {
+    --     screen  = s,
+    --     filter  = awful.widget.tasklist.filter.currenttags,
+    --     buttons = tasklist_buttons,
+    -- }
+
     s.mytasklist = awful.widget.tasklist {
-        screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = tasklist_buttons,
-        -- layout = {
-        --   spacing_widget = {
-        --     {
-        --       forced_width = 10,
-        --       shape = gears.shape.circle,
-        --       widget = wibox.widget.separator
-        --     },
-        --     valign = 'center',
-        --     halign = 'center',
-        --     widget = wibox.container.place
+      screen   = s,
+      filter   = awful.widget.tasklist.filter.currenttags,
+      buttons  = tasklist_buttons,
+      style    = {
+        border_width = 1,
+        shape        = gears.shape.rounded_bar,
+      },
+      layout   = {
+        spacing = 10,
+        -- spacing_widget = {
+        --   {
+        --     forced_width = 5,
+        --     shape        = gears.shape.circle,
+        --     widget       = wibox.widget.separator
         --   },
-        --   layout = wibox.layout.fixed.horizontal
-        -- }
+        --   valign = 'center',
+        --   halign = 'center',
+        --   widget = wibox.container.place,
+        -- },
+        layout  = wibox.layout.fixed.horizontal
+      },
+
+      widget_template = {
+        {
+          forced_width = 300,
+          {
+            {
+              {
+                id     = 'icon_role',
+                widget = wibox.widget.imagebox,
+              },
+              margins = 2,
+              widget  = wibox.container.margin,
+            },
+            {
+              id     = 'text_role',
+              widget = wibox.widget.textbox,
+            },
+            layout = wibox.layout.fixed.horizontal,
+          },
+          left  = 10,
+          right = 10,
+          widget = wibox.container.margin,
+        },
+        id     = 'background_role',
+        widget = wibox.container.background,
+      },
     }
 
     -- Create the wibox
@@ -113,6 +150,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
+        -- expand = "none",
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             -- mylauncher,
@@ -120,14 +158,18 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
+        -- mytextclock,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
+            -- mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,            
             -- volume_widget({display_notification = true}),
+            wibox.widget.textbox(' |  '),
+            awful.widget.watch('bash -c "python3 /home/dylan/.config/awesome/scripts/bat.py"', 300),
             s.mylayoutbox,
         },
+
     }
 end)
 -- }}}

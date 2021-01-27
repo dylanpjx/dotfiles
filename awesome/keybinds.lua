@@ -29,7 +29,7 @@ globalkeys = gears.table.join(
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "open a browser", group = "launcher"}),
-    awful.key({ modkey }, "e", function () awful.spawn(file) end,
+    awful.key({ modkey }, "e", function () awful.spawn("alacritty -e ./.config/vifm/scripts/vifmrun") end,
               {description = "open a file manager", group = "launcher"}),
     
     -- Focus
@@ -45,6 +45,32 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
+    
+
+    -- awful.key({ modkey }, "j",
+    --     function ()
+    --         awful.client.focus.bydirection("down")
+    --     end,
+    --     {description = "focus down", group = "client"}
+    -- ),
+    -- awful.key({ modkey }, "k",
+    --     function ()
+    --         awful.client.focus.bydirection("up")
+    --     end,
+    --     {description = "focus up", group = "client"}
+    -- ),
+    -- awful.key({ modkey }, "h",
+    --     function ()
+    --         awful.client.focus.bydirection("left")
+    --     end,
+    --     {description = "focus left", group = "client"}
+    -- ),
+    -- awful.key({ modkey }, "l",
+    --     function ()
+    --         awful.client.focus.bydirection("right")
+    --     end,
+    --     {description = "focus right", group = "client"}
+    -- ),
 
     -- awful.key({ modkey }, "w", function () mymainmenu:show() end,
     --           {description = "show main menu", group = "awesome"}),
@@ -173,7 +199,7 @@ clientkeys = gears.table.join(
         {description = "decrease brightness", group = "brightness"}),
     
     -- Tablet
-    awful.key({  },  "Scroll_Lock", function () awful.spawn.with_shell("~/.config/awesome/scripts/tablet.sh") end,
+    awful.key({ },  "Scroll_Lock", function () awful.spawn.with_shell("~/.config/awesome/scripts/tablet.sh") end,
         {description = "restrict tablet area", group = "tablet"})
 )
 
