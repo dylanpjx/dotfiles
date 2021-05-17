@@ -1,6 +1,10 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
+'D
+	/home/dylan/Desktop
+	tut2.xoj
+1612616791
 'H
 	/mnt/HDD/
 	..
@@ -17,6 +21,10 @@
 	/home/dylan/Downloads/
 	..
 1600958320
+'g
+	/home/dylan/github/dotfiles
+	nvim
+1617546274
 'h
 	/home/dylan/
 	..
@@ -28,16 +36,20 @@
 'n
 	/mnt/HDD/NUS_EE/
 	..
-1601197409
+1615948711
 'r
 	/mnt/HDD/Documents/Work/Resume/V2
 	embedded.tex
 1609001533
+'w
+	/mnt/HDD/Wallpapers
+	..
+1618623889
 
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -46,739 +58,796 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/mnt/HDD/NUS_EE/CS1010 - TA
-	Labs
-3
-d/mnt/HDD/NUS_EE
-	GES1021
-6
-d/mnt/HDD/NUS_EE/GES1021
-	Lectures
-1
-d/mnt/HDD/NUS_EE/GES1021/Lectures
-	GES1021 Lecture 5 Secondary Vegetation.pdf
+d/mnt/HDD/Programming/Java
+	code
 4
-d/home/dylan/Downloads
+d/mnt/HDD/Programming/Java/code
 	..
 0
-d/home/dylan
-	Documents
-29
-d/home/dylan/Documents
-	todo.txt
-4
-d/home/dylan
-	Documents
-29
-d/mnt/HDD/NUS_EE
-	EE2029
-4
-d/mnt/HDD/NUS_EE/EE2029
-	Tutorials
+d/mnt/HDD/Programming/Java
+	6-092-january-iap-2010
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/lecture-notes
+	MIT6_092IAP10_lec01.pdf
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	6-092iap10-th.jpg
 3
-d/mnt/HDD/NUS_EE/EE2029/Tutorials
-	3. Tutorial - AC Power - EE2029.pdf
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+1
+d/mnt/HDD/Programming/Java
+	6-851-spring-2012
 2
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
+d/mnt/HDD/Programming/Java/6-851-spring-2012
+	common
 1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2/W2
-	2.4. Video Lecture pdf - How to represent R,L & C in AC Analysis - EE2029.pdf
-4
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2/W2
+d/mnt/HDD/Programming/Java/6-851-spring-2012/common
 	..
 0
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
-2
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029
-	Tutorials
-3
-d/mnt/HDD/NUS_EE/EE2029/Tutorials
-	3. Tutorial - AC Power - EE2029.pdf
-2
-d/mnt/HDD/NUS_EE/EE2029
-	Tutorials
-3
-d/mnt/HDD/NUS_EE
-	EE2029
+d/mnt/HDD/Programming/Java/6-851-spring-2012
+	START.htm
 4
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
+d/mnt/HDD/Programming/Java
+	6-851-spring-2012
 2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W3
-	3.1 Video Lecture pdf - What is the power in R, L and C - EE2029.pdf
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W2
-	2.1. Video Lecture pdf - Why AC and not DC - EE2029.pdf
-1
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W2
-1
-d/mnt/HDD/NUS_EE/EE2029
-	F2F
-1
-d/mnt/HDD/NUS_EE/EE2029/F2F
-	W1
-1
-d/mnt/HDD/NUS_EE/EE2029/F2F/W1
-	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
-2
-d/mnt/HDD/NUS_EE/EE2029/F2F
-	W1
-1
-d/mnt/HDD/NUS_EE/EE2029
-	F2F
-1
-d/mnt/HDD/NUS_EE
-	EE2023
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Lecture Notes
-1
-d/mnt/HDD/NUS_EE/EE2023/Lecture Notes
-	EE2023_2021s2_Gp2_Chap8.pdf
-9
-d/mnt/HDD/NUS_EE/EE2023
-	Lecture Notes
-1
-d/mnt/HDD/NUS_EE
-	EE2029
-4
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029/Lectures/W3
-	3.3 Video Lecture pdf - What is complex power - EE2029.pdf
-3
-d/mnt/HDD/NUS_EE/EE2029/Lectures
-	W3
-2
-d/mnt/HDD/NUS_EE/EE2029
-	Lectures
-2
-d/mnt/HDD/NUS_EE
-	EE2029
+d/mnt/HDD/Programming
+	Java
 4
 d/mnt/HDD
-	NUS_EE
+	Movies & TV
+6
+d/mnt/HDD/Movies & TV
+	300 (2006) [1080p]
+1
+d/mnt/HDD/Movies & TV/300 (2006) [1080p]
+	..
+0
+d/mnt/HDD/Movies & TV
+	Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
+18
+d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
+	Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
+1
+d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN/Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
+	Slicon.Valley.S01E01.1080p.BluRay.x265.HEVC.6CH-MRN.mkv
+1
+d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
+	Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
+1
+d/mnt/HDD/Movies & TV
+	Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
+12
+d/mnt/HDD/Movies & TV/Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
+	RARBG_DO_NOT_MIRROR.exe
+4
+d/mnt/HDD/Movies & TV
+	Fury (2014) [1080p]
 9
-d/mnt/HDD/NUS_EE
-	EE2211
-5
-d/mnt/HDD/NUS_EE/EE2211
-	Tutorials
+d/mnt/HDD/Movies & TV/Fury (2014) [1080p]
+	Fury.2014.1080p.BluRay.x264.YIFY.mp4
+1
+d/mnt/HDD/Movies & TV
+	Christmas With The Kranks DVDRip Xvid-Inferno
+6
+d/mnt/HDD
+	Programming
+10
+d/mnt/HDD/Programming
+	Java
+4
+d/mnt/HDD/Programming/Java
+	6-092-january-iap-2010
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/lecture-notes
+	MIT6_092IAP10_lec03.pdf
 3
-d/mnt/HDD/NUS_EE/EE2211/Tutorials
-	Tut2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
+	MIT6_092IAP10_assn05.pdf
+10
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as02
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as02
+	as02.java
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as03
 3
-d/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut2
-	tut2_q2.ipynb
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as03
+	as03.java
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as03
+3
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
+	Mercury.txt
+14
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as03
+3
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as03
+	as03.java
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as03
+3
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java
+	6-092-january-iap-2010
+1
+d/mnt/HDD/Programming
+	Cpp
+3
+d/mnt/HDD/Programming/Cpp
+	6-096-january-iap-2011
+1
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011
+	contents
+1
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011/contents
+	assignments
+1
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011/contents/assignments
+	MIT6_096IAP11_assn01.pdf
+1
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011/contents/lecture-notes
+	..
+0
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Cpp/6-096-january-iap-2011
+	contents
+1
+d/mnt/HDD/Programming/Cpp
+	6-851-spring-2012
+2
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012
+	contents
+1
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012/contents
+	..
+0
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012
+	contents
+1
+d/mnt/HDD/Programming/Cpp
+	6-851-spring-2012
+2
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012
+	contents
+1
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012/contents
+	assignments
+1
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012/contents/assignments
+	MIT6_851S12_ps1.pdf
+1
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012/contents
+	assignments
+1
+d/mnt/HDD/Programming/Cpp/6-851-spring-2012
+	contents
+1
+d/mnt/HDD/Programming/Cpp
+	Algos
+3
+d/mnt/HDD/Programming
+	Cpp
+3
+d/mnt/HDD/Programming/Cpp
+	Algos
+3
+d/mnt/HDD/Programming
+	github-recovery-codes.txt
 7
-d/mnt/HDD/NUS_EE/EE2211/Tutorials
-	Tut2
-3
-d/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut2
-	tut2_q3.ipynb
-9
-d/mnt/HDD/NUS_EE/EE2211/Tutorials
-	Tut2
-3
-d/mnt/HDD/NUS_EE/EE2211
-	Tutorials
-3
-d/mnt/HDD/NUS_EE
-	PC2020
-8
-d/mnt/HDD/NUS_EE/PC2020
-	Part 1
-1
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	F2F
-1
-d/mnt/HDD/NUS_EE/PC2020/Part 1/F2F
-	PC2020 Lecture Group 2 Week 1 Thursday.pdf
-2
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	Tutorials
+d/mnt/HDD
+	Programming
+10
+d/mnt/HDD/Programming
+	Java
 4
-d/mnt/HDD/NUS_EE/PC2020/Part 1/Tutorials
-	Tutorial 0.pdf
-2
-d/mnt/HDD/NUS_EE
-	PC2020
-8
-d/mnt/HDD/NUS_EE/PC2020
-	Part 1
+d/mnt/HDD/Programming/Java
+	6-092-january-iap-2010
 1
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	Past Test 1 Papers (12.5%)
-3
-d/mnt/HDD/NUS_EE/PC2020/Part 1/Past Test 1 Papers (12.5%)
-	PC2020 2018-19 Semester 1 Test 1.pdf
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
 1
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	Past Test 1 Papers (12.5%)
-3
-d/mnt/HDD/NUS_EE/PC2020
-	Part 1
-1
-d/mnt/HDD/NUS_EE
-	EE2023
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Tutorials
-2
-d/mnt/HDD/NUS_EE/EE2023/Tutorials
-	S&S-Tut-01 (Prob).pdf
-1
-d/mnt/HDD/NUS_EE/EE2023
-	Tutorials
-2
-d/mnt/HDD/NUS_EE
-	EE2023
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Lecture Notes
-1
-d/mnt/HDD/NUS_EE/EE2023/Lecture Notes
-	EE2023_2021s2_Gp2_Chap2.pdf
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Lecture Notes
-1
-d/mnt/HDD/NUS_EE
-	EE2023
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Lecture Notes
-1
-d/mnt/HDD/NUS_EE
-	EE2023
-3
-d/mnt/HDD/NUS_EE/EE2023
-	Formula sheets
-1
-d/mnt/HDD/NUS_EE/EE2023/Formula sheets
-	Formulas (QUIZ).pdf
-2
-d/mnt/HDD/NUS_EE/EE2023
-	Tutorials
-3
-d/mnt/HDD/NUS_EE/EE2023/Tutorials
-	S&S-Tut-02 (Prob).pdf
-2
-d/mnt/HDD/NUS_EE/EE2023
-	Tutorials
-3
-d/mnt/HDD/NUS_EE
-	PC2020
-8
-d/mnt/HDD/NUS_EE/PC2020
-	Part 1
-1
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	Tutorials
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
 4
-d/mnt/HDD/NUS_EE/PC2020/Part 1/Tutorials
-	Tutorial 2.pdf
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04
+	..
+0
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
 4
-d/mnt/HDD/NUS_EE/PC2020/Part 1
-	F2F
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
 1
-d/mnt/HDD/NUS_EE/PC2020/Part 1/F2F
-	PC2020 Lecture Group 2 Week 2 Monday.pdf
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
+	Luna.txt
 3
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	lecture-notes
+2
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04
+	Book.java
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04
+	Library.java
+3
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04
+	Library.java
+3
+d/home/dylan/.config
+	vifm
+44
+d/home/dylan/.config/vifm
+	vifmrc
+8
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/Downloads
-	Part I
+D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions
+	Tut10
+10
+D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut10
+	tut10_q7.py
 3
-D/home/dylan/Downloads/Part I
-	..
-0
-D/home/dylan/Downloads
-	Part I
-3
-D/home/dylan/Downloads/Part I
-	Lecture Slides
-3
-D/home/dylan/Downloads
-	lecture
-6
-D/home/dylan/Downloads/lecture
-	Lecture Group 2 (Yeo Ye)
-1
-D/home/dylan/Downloads/lecture/Lecture Group 2 (Yeo Ye)
-	..
-0
-D/home/dylan/Downloads/lecture
-	Lecture Group 2 (Yeo Ye)
-1
-D/home/dylan/Downloads
-	Part I
-3
-D/home/dylan/Downloads/Part I
-	Lecture Notes
+D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions
+	Tut11
+11
+D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut11
+	tut11_Q6.py
 2
-D/home/dylan/Downloads/Part I/Lecture Notes
-	..
-0
-D/home/dylan/Downloads/Part I
-	Lecture Slides
-3
-D/home/dylan/Downloads/Part I/Lecture Slides
-	Lecture 1 Electrostatic fields in vacuum.pdf
-2
-D/home/dylan/Downloads/Part I
-	Lecture Slides
-3
 D/home/dylan/Downloads
-	Tutorials
-3
-D/home/dylan/Downloads/Tutorials
-	Tutorials
-1
-D/home/dylan/Downloads/Tutorials/Tutorials
-	..
-0
-D/home/dylan/Downloads/Tutorials
-	Tutorials
-1
-D/home/dylan/Downloads
-	lecture
-5
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
-	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
-2
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads
-	lecture
-5
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
-	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
-2
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads
-	lecture
-5
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
-	1.2 - In-Class Zoom Lecture - Pre-requisite Primer - EE2029.pdf
-2
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads
-	lecture
-5
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads/lecture/In-Class (Zoom)  Lecture Notes
-	..
-0
-D/home/dylan/Downloads/lecture
-	In-Class (Zoom)  Lecture Notes
-1
-D/home/dylan/Downloads
-	Tutorials
-3
-D/home/dylan/Downloads/Tutorials
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads/Tutorials/Tutorials and Solutions
-	..
-0
-D/home/dylan/Downloads/Tutorials
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads
-	王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
-14
-D/home/dylan
-	Downloads
-29
-D/home/dylan/Downloads
-	videolecture
-5
-D/home/dylan/Downloads/videolecture
-	Video LEcture PPTs
-1
-D/home/dylan/Downloads/videolecture/Video LEcture PPTs
-	Week 2 - AC Fundamentals - Video
-1
-D/home/dylan/Downloads/videolecture/Video LEcture PPTs/Week 2 - AC Fundamentals - Video
-	..
-0
-D/home/dylan/Downloads/videolecture/Video LEcture PPTs
-	Week 2 - AC Fundamentals - Video
-1
-D/home/dylan/Downloads/videolecture
-	Video LEcture PPTs
-1
-D/home/dylan/Downloads
-	sub
-5
-D/home/dylan/Downloads/sub
-	..
-0
-D/home/dylan/Downloads
-	sub
-5
-D/home/dylan/Downloads/sub
-	..
-0
-D/home/dylan/Downloads
-	sub
-5
-D/home/dylan/Downloads/sub
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads/sub/Tutorials and Solutions
-	..
-0
-D/home/dylan/Downloads/sub
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads
-	sub
-5
-D/home/dylan/Downloads/sub
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads
-	sub
-5
-D/home/dylan/Downloads/sub
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads/sub/Tutorials and Solutions
-	..
-0
-D/home/dylan/Downloads/sub
-	Tutorials and Solutions
-1
-D/home/dylan/Downloads
-	df
-4
-D/home/dylan/Downloads/df
-	df_linux
-1
-D/home/dylan/Downloads/df/df_linux
-	df
-8
-D/home/dylan/Downloads/df
-	df_linux
-1
-D/home/dylan/Downloads
-	NUS
-1
-D/home/dylan
-	.anydesk
-2
-D/home/dylan/.anydesk
-	user.conf
-6
+	Pang Jun Xian, Dylan_A0199256M.pdf
+7
 D/home/dylan
 	Desktop
-31
+30
 D/home/dylan/Desktop
-	dylan_resume_2021.pdf
-1
+	pc2020
+3
+D/home/dylan/Desktop/pc2020
+	1920s1.xoj
+3
+D/home/dylan/Desktop
+	pc2020
+3
+D/home/dylan
+	Desktop
+30
+D/home/dylan/Downloads
+	A0199256M_Design.pdf
+12
 D/home/dylan
 	Downloads
-33
+32
 D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	Lecture Notes
-1
-D/home/dylan/Downloads/zip/Lecture Notes
 	..
 0
-D/home/dylan/Downloads/zip
-	Lecture Notes
-1
-D/home/dylan/Downloads
-	df_47_04_linux.tar.bz2
-8
-D/home/dylan/.config
-	vifm
-43
-D/home/dylan/.config/vifm
-	scripts
+D/home/dylan/Desktop
+	ee2029
 2
-D/home/dylan/.config/vifm/scripts
-	vifmimg
+D/home/dylan/Desktop/ee2029
+	2029-tut2.xoj
 4
-D/home/dylan/.config/vifm
-	vifmrc
-7
-D/home/dylan/Downloads
-	Hugh T. W. Tan - The Natural Heritage of Singapore (2010) - libgen.lc.pdf
-8
-D/home/dylan/.config
-	vifm
-36
-D/home/dylan/.config/vifm
-	vifmrc
-7
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	Week 3 - AC Power - Video Lecture
-1
-D/home/dylan/Downloads/zip/Week 3 - AC Power - Video Lecture
-	..
-0
-D/home/dylan/Downloads/zip
-	Week 3 - AC Power - Video Lecture
-1
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	Week 3 - AC Power - Video Lecture
-1
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	annual-motor-vehicle-population-by-vehicle-type.csv
-1
-D/home/dylan/Downloads
-	Jim Paul, Brendan Moynihan - What I Learned Losing a Million Dollars (1994, Infrared Pr) - libgen.lc.pdf
-8
-D/home/dylan/.config
-	vifm
-36
-D/home/dylan/.config/vifm
-	vifmrc
-7
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	annual-motor-vehicle-population-by-vehicle-type.csv
-1
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	Formula sheets
-1
-D/home/dylan/Downloads/zip/Formula sheets
-	Formulas (QUIZ).pdf
+D/home/dylan/Desktop
+	ee2029
 2
+D/mnt/HDD/NUS_EE
+	EE2029
+4
+D/mnt/HDD/NUS_EE/EE2029
+	F2F
+2
+D/mnt/HDD/NUS_EE/EE2029/F2F
+	10.2 - Line Conductors - In-Class Notes - EE2029.pdf
+24
+D/mnt/HDD/NUS_EE/EE2029
+	F2F
+2
+D/mnt/HDD/NUS_EE/EE2029/F2F
+	10.1 - Line Conductors -v2- EE2029.pdf
+23
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	TUTORIALS
+2
+D/home/dylan/Downloads
+	zip
+5
+D/home/dylan/Downloads/zip
+	GES1021- Natural Heritage
+1
+D/home/dylan/Downloads/zip/GES1021- Natural Heritage
+	2. Exam Questions Bank
+2
+D/home/dylan/Downloads/zip/GES1021- Natural Heritage/2. Exam Questions Bank
+	Questions.pdf
+3
+D/home/dylan/Downloads/zip/GES1021- Natural Heritage
+	4. Finals
+4
+D/home/dylan/Downloads/zip/GES1021- Natural Heritage/4. Finals
+	Finals - all lecture notes combined.pdf
+1
+D/home/dylan/Downloads/zip/GES1021- Natural Heritage
+	4. Finals
+4
 D/home/dylan/Downloads/zip
 	..
 0
 D/home/dylan/Downloads
-	zip
+	Forms
+1
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads/Forms/AMD
+	worldwide-standards-of-business-conduct.pdf
+3
+D/home/dylan/Downloads/Forms
+	S7146129G_LPA.pdf
+4
+D/home/dylan/Downloads
+	Purgatorio.pdf
+6
+D/home/dylan
+	Downloads
+32
+D/mnt/HDD
+	Programming
+10
+D/mnt/HDD/Programming
+	Cpp
+3
+D/mnt/HDD/Programming/Cpp
+	..
+0
+D/mnt/HDD/Programming
+	Java
+4
+D/mnt/HDD/Programming/Java
+	6-851-spring-2012
+2
+D/mnt/HDD/Programming/Java/6-851-spring-2012
+	common
+1
+D/mnt/HDD/Programming/Java
+	6-092-january-iap-2010
+1
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+2
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
+	MIT6_092IAP10_assn02.pdf
 5
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	contents
+2
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
+	assignments
+1
+D/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
+	MIT6_092IAP10_assn02.pdf
+5
+D/home/dylan/Downloads
+	Purgatorio.pdf
+6
+D/home/dylan
+	Downloads
+32
+D/mnt/HDD
+	Movies & TV
+6
+D/mnt/HDD/Movies & TV
+	The.Big.Bang.Theory.S10.Season.10.Complete.720p.HDTV.H265-MRSK
+23
+D/mnt/HDD
+	Movies & TV
+6
+D/mnt/HDD/Movies & TV
+	The Sound of Music (1965) [1080p]
+21
+D/mnt/HDD/Movies & TV/The Sound of Music (1965) [1080p]
+	The.Sound.of.Music.1965.1080p.BRrip.x264.YIFY.srt
+2
+D/mnt/HDD/Movies & TV
+	The Big Bang Theory Season 09 (720p) S09 Complete 9 MP4 AAC eSub HDTV [KoTuWa]
+18
+D/home/dylan/.config
+	vifm
+39
+D/home/dylan/.config/vifm
+	colors
+1
+D/home/dylan/.config/vifm/colors
+	Gruvbox.vifm
+3
+D/home/dylan/.config/vifm
+	vifmimgpdffile
+4
+D/home/dylan/.config
+	awesome
+7
+D/home/dylan/.config/awesome
+	wibar.lua
+10
+D/mnt/HDD/Music
+	Alexander 23 - Caught in the Middle.mp3
+5
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	RuoFan Chang - Personal Angel.mp3
+7
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Harry Styles
+39
+D/mnt/HDD/Music/Harry Styles
+	Harry Styles - Golden.mp3
+4
+D/mnt/HDD/Music
+	Marshmello
+4
+D/mnt/HDD/Music/Marshmello
+	Marshmello - Be Kind.mp3
+1
+D/mnt/HDD/Music
+	Men at Work - Down Under.mp3
+44
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Marshmello - FRIENDS.mp3
+44
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Maroon 5
+4
+D/mnt/HDD/Music/Maroon 5
+	Maroon 5 - Girls Like You.mp3
+5
+D/mnt/HDD/Music
+	Mark Ronson - Find U Again.mp3
+14
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Selena Gomez - Lose You To Love Me.mp3
+44
+D/mnt/HDD
+	NUS_EE
+8
+D/mnt/HDD/NUS_EE
+	..
+0
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Selena Gomez - Wolves.mp3
+43
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Trevor Daniel - Past Life.mp3
+17
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Selena Gomez - Back To You.mp3
+4
+D/mnt/HDD/Deezloader Music
+	Trevor Daniel - Past Life.mp3
+12
+D/mnt/HDD
+	NUS_EE
+8
+D/mnt/HDD/NUS_EE
+	..
+0
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Selena Gomez - Wolves.mp3
+10
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Jp Cooper - September Song.mp3
+9
 D
 
 # Command line history (oldest to newest):
-:mkdir W1
-:mk
-:h
-:mkdir 
-:mkdir Tut1
-:mkdir Tut2
-:extrac
-:touch oraldef.md
-:touch lab9_ans.md
-:zip
-:help %c
-:touch 
-:touch unzip.sh
-:sudo unzip
-:!chmod +x unzip-cmd
-:Z
-:touch debug.c
-:mkdir Utils
-:cd /mnt/dylan/HDD
-:!nvim
-:vim sample.md
-:!vim sample.md
-:mkdir bash
-:touch proj.md
-:touch reread.md
-:mkdir Lab 5
-:touch lessonplan.md
-:touch solutions.md
-:untar
-:mkdir "Lab 8"
-:mkdir awesome
-:cd /tmp
-:mkdir screenshots
-:mkdir scripts
-:mkdir widgets
-:unzipZ
-:mkdir 'Lab 9'
-:touch lesson_plan.md
-:!git pull
-:cd /mnt
-:unzip Hugh\ T.\ W.\ Tan\ -\ The\ Natural\ Heritage\ of\ Singa
-:unzip Tutorials.zip
-:!chmod +x Nord.vifm
-:!chmod +x OneDark.vifm
-:mkdir F2F
-:mkdir Tutorials
+:!mv -t /mnt/HDD/NUS_EE/ bash/ nvim/
+:git add .
+:mkdir As01
+:ex
+:extract 
+:ext
+:mkdir "Tutorial 5:
+:mkdir "Tutorial 5"
+:mkdir Personal Notes
+:touch skeleton.tex
+:1
+:vim lab.md
+:!vim lab.md
+:touch lab1.md
+:filetype pdf
+:filetype .pdf
+:filter *.pdf
+:mkdir "T
+:select .xoj
+:select /.xoj
+:help select
+:select ".xoj"
+:select .*.xoj*.
+:select .*.xoj.*
+:select .*$xoj$
+:select *.xoj
+:mkdir PC2020
+:mkdir EE2023
 :unzip
-:extract! sub
-:extract! df
-:mkdir Answers
-:touch tut1.md
-:touch coverletter.tex
-:mkdir GES1021
-:extract! zip
-:mkdir Lectures
-:reload
-:mkdir W2
-:mkdir W3
+:mkdir Papers
+:mkdir Solutions
+:mkdir "Test 1"
+:extract test
+:mkdir "Quiz 1"
+:mkdir As02
+:mkdir W5
+:mkdir @6
+:mkdir W6
+:mkdir "W6 - Renewable Energy Sources"
+:mkdir W7
+:k
+:mkdir W7 - Transformers
+:mkdir W8
+:mkdir W9
+:As03
+:mkdir Tut9
+:mkdir Tutorial 7
+:mkdir Tut7
+:mkdir Tut8
+:touch ee2111.py
+:touch 1.in
+:mkdir ee2029
+:mkdir Tut10
+:mk
+:mkdir AMD
+:mkdir DSO
+:mkdir Keysight
+:mkdir W10
+:mkd
+:mkdir "Test 2"
+:mkdir Je
+:touch coc.vim
+:touch coc-settings.json
+:zip
+:mkdir Ebooks
+:mkdir FItness
+:mkdir Programming
+:mkdir Lab
+:mkdir Assignment
+:mkdir As03
+:annota
+:mkdir Tut11
+:mkdir Tut12
+:mkdir Tut
+:mkdir Tut1
+:dragon
+:mkdir
+:touch lstsq.py
+:touch linreg.py
+:touch decisiontree.py
+:touch kmeans.py
+:mkdi
+:mkdir jpgs
+:touch kfold.py
+:mkdir Finals
+:mkdir PYPs
 :annotate
-:touch tut2.md
+:mkdir img
+:mkdir GEQ
+:zip 
+:zip PC
+:zip %c
 :extract
+:extract %c
+:mkdir as03
+:touch as03.java
+:mkdir as04
+:touch Dracula.vifm
+:mkdir Marshmello
+:mkdir 
 
 # Search history (oldest to newest):
+/windows
+/ed shee
+/githu
+/.dir
+/after
 /wa
 /pictu
 /,conf
 /.conf
-/.config
 /documen
 /awesom
 /pic
 /scree
 /con
-/awe
 /rofi
 /bash
 /screen
-/utils
 /imwheel
 /pro
 /confi
 /kienyy
 /kien
 /gith
-/ala
 /uti
 /python
 /dee
-/justin
-/desk
-/down
-/vifm
-/doc
 /v
+/?
+/2023
+/taylor
+/justin
+/deemi
+/config
+/.config
+/.ncmp
+/mpd
+/.mpd
+/ma
+/qpdf
+/tmux
+/ala
+/test
+/doc
+/mutt
+/mutt-wiza
+/mail
+/tut
+/ee22
+/*.pdf
+/2020
+/.xoj
+/receipts
+/d
+/zip
+/desk
+/kdeconn
+/down
+/nu
+/utils
+/deemix
+/202
+/jeremy zucker
+/huga
+/pc
+/git
+/nvim
+/aronson
+/arons
+/awe
+/.pdf
+/vifm
+/zara
+/harry
+/marsh
+/maroon
+/friends
+/maro
+/selena
+/back to y
+/past
 
 # Prompt history (oldest to newest):
-pSolutions
-pTutorial Problems
-pTutorials
-plab9_ans.c
-pdroidcam_1601174210
-punzip-cmd
-plesson_plan.md
-pLabs
-pLab 5
-ptut07.md
-plessonplan.md
-pbackground.jpg
-pvolume.lua
-ppop_background.jpg
-pdaniel-plan-eyQz08OBrk8-unsplash.jpg
-pdaniel-plan-eyQz08OBrk8-unsplash.j
-pdaniel-plan-eyQz08OBrk8-unsplash
-pdaniel_background.jpg
-pbenjamin_background.jpg
-pkb_background.jpg
-popamp lectures.txt
-pee2028-25b1e5586e48.json
-pclient_secret
-pee2028-backend
-pclay-background.jpg
-pclay_background.jpg
-pembedded.tex
-ptex
-plecture.zip
-pvideolecture.zip
-pTutorials and Solutions.zip
 pTutorials.ziop
 pTutorials.zip
 pGES1021-Info.pdf
@@ -788,10 +857,104 @@ pGES1021 Lecture 2 Intertidal.pdf
 pGES1021 Lecture 4 Subtidal.pdf
 pN_SR_TSRPT.pdf
 pUnofficial_transcript
+pEE2211-tut2.zip
+pLecture Slides
+pTutorial 3 Question
+ptut2-ans
+pTutorial 2
+pW2 - AC fundamentals
+pW3 - AC power
+pW4 - Three phase systems
+pW4 - Three phase power
+pDSO Application Form (Dylan Pang).docx
+pApplication
+pApplicationForms
+pForms
+pSolutions
+pA1_A0199256M.py
+pmpd
+pTutorial4-Questions_2021.pdf
+pTutorial 4 Question
+pEE2211 Lecture 4.pdf
+pEE2211 Lecture 5.pdf
+pTutorial 4
+pmitcpp
+pmit-ocw
+pDSO Declaration Form.pdf
+pjpg2pdf.pdf
+pas01
+pdeep.z
+pEE2028
+pPersonal Notes
+pA2_StudentMatriculationNumber.py
+pA2_A0199256M
+pWorkings
+pEE2211.tex
+pPC2020 2018-19 Semester 1 Test 1 (Answers).pdf
+pProblems
+pbasicmath.pdf
+pbasic_math.pdf
+p6.1 Video Lecture pdf - Introduction to Solar Energy - EE2029.pdf
+p6.2 Video Lecture pdf - Introduction to Wind Energy - EE2029.pdf
+pA2_A0201984A.py
+ppoo.py
+pW9 - Per Unit Analysis
+p8. Tutorial - Transmission Lines.pdf
+pEE2211_Lecture9.pdf
+pEE2211 Lecture 9.pdf
+pTutorial8-Q2021.pdf
+pTutorial9-Q2021.pdf
+pTut2
+pTut3
+pTut4
+pTut5
+pTut6
+pEE2111.py
+p9. Tutorial - Per Unit Analysis - EE2029.pdf
+pA3_A0199256M.py
+pA0199256M-Graded.pdf
+p10. Tutorial - Line Conductors.pdf
+pGES-Contract of agreement-Jan 2021.pdf
+ptut10_q7.py
+ptut10_q6.py
+pEE2211 Lecture 9 - Regression Tree.pdf
+pEE2211 Lecture 10 - Evaluation metrics.pdf
+pEE2211 Lecture 10 - Evaluation Metrics.pdf
+pEE2211 Lecture 8 - Gradient Descent.pdf
+pEE2211 Lecture 7.pdf
+pEE2211 Lecture 7 - Overfitting, Bias, Variance.pdf
+pEE2211 Lecture 6 - Ridge/polynomial Regression.pdf
+pEE2211 Lecture 6 - Ridge, Polynomial.pdf
+pEE2211 Lecture 5 - Linear Regression.pdf
+pEE2211 Lecture 4 - Linear Systems.pdf
+pEE2211 Lecture 3.pdf
+pEE2211 Lecture 3 - Probability.pdf
+pEE2211 Lecture 2 - Data types.pdf
+pEE2111A.zip
+pGym
+pAlgorithms-to-Live-By.pdf
+pEE2023.xoj
+p1819s1.xoj
+pshore.jpg
+pPang Jun Xian, Dylan_A0199256M.pdf
+pGES1021 Lecture 9 Coastal vegetation LumiNUS version.pdf
+pA0199256M.pdf
+pA0199256M
+pdata.jpg
+ppaper.pdf
+pA0199256M-EE2023.pdf
+pA0199256M-EE2029-Quiz.pdf
+ppics.pdf
+pGEQ1000
+pGES1021
+pas03
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/mnt/HDD/Deezloader Music/Selena Gomez - Back To You.mp3
+""/mnt/HDD/Deezloader Music/Selena Gomez - Wolves.mp3
+""/mnt/HDD/Deezloader Music/Trevor Daniel - Past Life.mp3
 
 # Directory stack (oldest to newest):
 
@@ -1072,6 +1235,682 @@ t/home/dylan/.local/share/vifm/Trash/000_N_SR_TSRPT.pdf
 	/home/dylan/Downloads/N_SR_TSRPT.pdf
 t/mnt/HDD/.vifm-Trash-1000/000_N_SR_TSRPT.pdf.xoj
 	/mnt/HDD/NUS_EE/N_SR_TSRPT.pdf.xoj
+t/home/dylan/.local/share/vifm/Trash/000_dotfiles
+	/home/dylan/Downloads/dotfiles
+t/home/dylan/.local/share/vifm/Trash/000_openrazer
+	/home/dylan/.config/openrazer
+t/home/dylan/.local/share/vifm/Trash/000_polychromatic
+	/home/dylan/.config/polychromatic
+t/home/dylan/.local/share/vifm/Trash/000_tut2.zip
+	/home/dylan/Downloads/tut2.zip
+t/home/dylan/.local/share/vifm/Trash/000_TUTORIALS.zip
+	/home/dylan/Downloads/TUTORIALS.zip
+t/home/dylan/.local/share/vifm/Trash/000_王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
+	/home/dylan/Downloads/王菲  【匆匆那年】 歌詞  （ 至簡美詞版 ）-066cXDh9GQs.mp3
+t/mnt/HDD/.vifm-Trash-1000/000_Lecture
+	/mnt/HDD/NUS_EE/PC2020/Part 1/Lecture
+t/home/dylan/.local/share/vifm/Trash/000_Formula sheets.zip
+	/home/dylan/Downloads/Formula sheets.zip
+t/mnt/HDD/.vifm-Trash-1000/000_formula_sheet
+	/mnt/HDD/NUS_EE/PC2020/Part 1/formula_sheet
+t/home/dylan/.local/share/vifm/Trash/000_notebook.pdf
+	/home/dylan/Desktop/notebook.pdf
+t/home/dylan/.local/share/vifm/Trash/000_EE2211-tut2.zip
+	/home/dylan/Downloads/EE2211-tut2.zip
+t/home/dylan/.local/share/vifm/Trash/000_myhw.zip
+	/home/dylan/Downloads/myhw.zip
+t/mnt/HDD/.vifm-Trash-1000/000_Documents
+	/mnt/HDD/Documents
+t/home/dylan/.local/share/vifm/Trash/000_DSO Application Form (Dylan Pang).docx
+	/home/dylan/Downloads/DSO Application Form (Dylan Pang).docx
+t/home/dylan/.local/share/vifm/Trash/000_DSO Application Form - Internship_5.01.21.docx.pdf
+	/home/dylan/Downloads/DSO Application Form - Internship_5.01.21.docx.pdf
+t/home/dylan/.local/share/vifm/Trash/000_forms
+	/home/dylan/Downloads/forms
+t/home/dylan/.local/share/vifm/Trash/000_Employment_Application_Form_Singapore_-_Internship.docx
+	/home/dylan/Downloads/Employment_Application_Form_Singapore_-_Internship.docx
+t/home/dylan/.local/share/vifm/Trash/000_dylan_resume_2021.pdf
+	/home/dylan/Desktop/dylan_resume_2021.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial 3 Question.pdf
+	/mnt/HDD/NUS_EE/EE2023/Tutorials/Problems/Tutorial 3 Question.pdf
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_1_2-3-2021.zip
+	/home/dylan/Downloads/OneDrive_1_2-3-2021.zip
+t/home/dylan/.local/share/vifm/Trash/000_cover_letter_1.zip
+	/home/dylan/Downloads/cover_letter_1.zip
+t/mnt/HDD/.vifm-Trash-1000/000_Major Lazer - Cold Water (feat. Justin Bieber & MØ) (Single)
+	/mnt/HDD/Music/Major Lazer - Cold Water (feat. Justin Bieber & MØ) (Single)
+t/home/dylan/.local/share/vifm/Trash/000_.ncmpcpp
+	/home/dylan/.ncmpcpp
+t/home/dylan/.local/share/vifm/Trash/000_mpd
+	/home/dylan/.config/mpd
+t/home/dylan/.local/share/vifm/Trash/000_config
+	/home/dylan/Downloads/config
+t/home/dylan/.local/share/vifm/Trash/000_quodlibet
+	/home/dylan/github/dotfiles/quodlibet
+t/home/dylan/.local/share/vifm/Trash/000_notebook.xoj
+	/home/dylan/Desktop/notebook.xoj
+t/home/dylan/.local/share/vifm/Trash/001_tut2.xoj
+	/home/dylan/Desktop/tut2.xoj
+t/home/dylan/.local/share/vifm/Trash/000_20210208_211405.jpg
+	/home/dylan/Downloads/20210208_211405.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210208_211416.jpg
+	/home/dylan/Downloads/20210208_211416.jpg
+t/home/dylan/.local/share/vifm/Trash/000_nric.zip
+	/home/dylan/Downloads/nric.zip
+t/mnt/HDD/.vifm-Trash-1000/000_-
+	/mnt/HDD/NUS_EE/EE2029/Lectures/-
+t/mnt/HDD/.vifm-Trash-1000/000_Generators
+	/mnt/HDD/NUS_EE/EE2029/Lectures/Generators
+t/mnt/HDD/.vifm-Trash-1000/000_W5
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W5
+t/home/dylan/.local/share/vifm/Trash/000_Week 5- - Generators - Video Lect
+	/home/dylan/Downloads/zip/Week 5- - Generators - Video Lect
+t/home/dylan/.local/share/vifm/Trash/000_daniel_background.jpg
+	/home/dylan/.config/awesome/themes/default/daniel_background.jpg
+t/home/dylan/.local/share/vifm/Trash/000_paul-gilmore-KT3WlrL_bsg-unsplash.jpg
+	/home/dylan/.config/awesome/themes/default/paul-gilmore-KT3WlrL_bsg-unsplash.jpg
+t/home/dylan/.local/share/vifm/Trash/000_Mail
+	/home/dylan/Mail
+t/home/dylan/.local/share/vifm/Trash/000_.bash_aliases
+	/home/dylan/github/dotfiles/bash/.bash_aliases
+t/home/dylan/.local/share/vifm/Trash/000_.bashrc
+	/home/dylan/github/dotfiles/bash/.bashrc
+t/home/dylan/.local/share/vifm/Trash/000_.dircolors
+	/home/dylan/github/dotfiles/bash/.dircolors
+t/mnt/HDD/.vifm-Trash-1000/000_6-s096-january-iap-2014
+	/mnt/HDD/Programming/Cpp/6-s096-january-iap-2014
+t/mnt/HDD/.vifm-Trash-1000/000_zip
+	/mnt/HDD/Programming/Cpp/zip
+t/mnt/HDD/.vifm-Trash-1000/000_6-851-spring-2012.zip
+	/mnt/HDD/Programming/Cpp/6-851-spring-2012.zip
+t/mnt/HDD/.vifm-Trash-1000/000_common
+	/mnt/HDD/Programming/Cpp/6-851-spring-2012/common
+t/mnt/HDD/.vifm-Trash-1000/000_mit-ocw
+	/mnt/HDD/Programming/Cpp/mit-ocw
+t/home/dylan/.local/share/vifm/Trash/000_Assignment1.xoj
+	/home/dylan/Desktop/Assignment1.xoj
+t/home/dylan/.local/share/vifm/Trash/000_20210215_233814.jpg
+	/home/dylan/Downloads/20210215_233814.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210215_233918.jpg
+	/home/dylan/Downloads/20210215_233918.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210215_233941.jpg
+	/home/dylan/Downloads/20210215_233941.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210215_233959.jpg
+	/home/dylan/Downloads/20210215_233959.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210215_235114.jpg
+	/home/dylan/Downloads/20210215_235114.jpg
+t/home/dylan/.local/share/vifm/Trash/000_bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu7_amd64.deb
+	/home/dylan/Downloads/bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu7_amd64.deb
+t/home/dylan/.local/share/vifm/Trash/000_Week 5- - Generators - Video Lecture PDFs.zip
+	/home/dylan/Downloads/Week 5- - Generators - Video Lecture PDFs.zip
+t/home/dylan/.local/share/vifm/Trash/000_Hugh T. W. Tan - The Natural Heritage of Singapore (2010) - libgen.lc.pdf
+	/home/dylan/Downloads/Hugh T. W. Tan - The Natural Heritage of Singapore (2010) - libgen.lc.pdf
+t/home/dylan/.local/share/vifm/Trash/000_PC2020 Practical I(1).pdf
+	/home/dylan/Downloads/PC2020 Practical I(1).pdf
+t/home/dylan/.local/share/vifm/Trash/000_EE2028.zip
+	/home/dylan/Downloads/EE2028.zip
+t/mnt/HDD/.vifm-Trash-1000/001_test
+	/mnt/HDD/NUS_EE/Archived/test
+t/mnt/HDD/.vifm-Trash-1000/000_fix.zip
+	/mnt/HDD/NUS_EE/Archived/fix.zip
+t/mnt/HDD/.vifm-Trash-1000/000_EE2028.zip
+	/mnt/HDD/NUS_EE/Archived/EE2028.zip
+t/mnt/HDD/.vifm-Trash-1000/000_EE2028
+	/mnt/HDD/NUS_EE/Archived/zip/EE2028
+t/home/dylan/.local/share/vifm/Trash/000_EE2028
+	/home/dylan/Downloads/zip/EE2028
+t/mnt/HDD/.vifm-Trash-1000/000_tut5_q5.py
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut5/tut5_q5.py
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial4-Q_A_2021.pdf
+	/home/dylan/Downloads/Tutorial4-Q_A_2021.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Personal
+	/mnt/HDD/NUS_EE/EE2211/Personal
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.pdf
+	/mnt/HDD/NUS_EE/EE2211/skeleton.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_A1_A0199256M.py.30e8025fb670223670e95fa367aae215.py
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As01/A1_A0199256M.py.30e8025fb670223670e95fa367aae215.py
+t/mnt/HDD/.vifm-Trash-1000/001_zip
+	/mnt/HDD/NUS_EE/EE2023/zip
+t/mnt/HDD/.vifm-Trash-1000/000_Quizzes.zip
+	/mnt/HDD/NUS_EE/EE2023/Quizzes.zip
+t/home/dylan/.local/share/vifm/Trash/000_selected-downloads(1).zip
+	/home/dylan/Downloads/selected-downloads(1).zip
+t/home/dylan/.local/share/vifm/Trash/000_2023_tut3.xoj
+	/home/dylan/Desktop/2023_tut3.xoj
+t/home/dylan/.local/share/vifm/Trash/000_Supp.xoj
+	/home/dylan/Desktop/Supp.xoj
+t/home/dylan/.local/share/vifm/Trash/000_test1.xoj
+	/home/dylan/Desktop/test1.xoj
+t/home/dylan/.local/share/vifm/Trash/000_Tracker-5.1.5-linux-64bit-installer.run
+	/home/dylan/Downloads/Tracker-5.1.5-linux-64bit-installer.run
+t/mnt/HDD/.vifm-Trash-1000/000_.comments
+	/mnt/HDD/NUS_EE/PC2020/Part 1/Lab/.comments
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.md
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.md
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.aux
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.aux
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.dvi
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.dvi
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.fdb_latexmk
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.fdb_latexmk
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.fls
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.fls
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.log
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.log
+t/mnt/HDD/.vifm-Trash-1000/001_skeleton.pdf
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.pyg
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.pyg
+t/mnt/HDD/.vifm-Trash-1000/000_skeleton.synctex.gz
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/skeleton.synctex.gz
+t/home/dylan/.local/share/vifm/Trash/000_tsetup.2.6.1.tar.xz
+	/home/dylan/Downloads/tsetup.2.6.1.tar.xz
+t/home/dylan/.local/share/vifm/Trash/000_Lab1MotionTracker video.pptx
+	/home/dylan/Downloads/Lab1MotionTracker video.pptx
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_1_2-23-2021.zip
+	/home/dylan/Downloads/OneDrive_1_2-23-2021.zip
+t/home/dylan/.local/share/vifm/Trash/000_A2_StudentMatriculationNumber.py
+	/home/dylan/Downloads/zip/A2_StudentMatriculationNumber.py
+t/home/dylan/.local/share/vifm/Trash/000_Assignment2_2021.pdf
+	/home/dylan/Downloads/zip/Assignment2_2021.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Tutorial4-Q_A_2021.pdf
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut4/Tutorial4-Q_A_2021.pdf
+t/home/dylan/.local/share/vifm/Trash/000_v4l2loopback
+	/home/dylan/Downloads/zip/v4l2loopback
+t/home/dylan/.local/share/vifm/Trash/000_LICENSE
+	/home/dylan/Downloads/zip/LICENSE
+t/home/dylan/.local/share/vifm/Trash/000_README-DKMS.md
+	/home/dylan/Downloads/zip/README-DKMS.md
+t/home/dylan/.local/share/vifm/Trash/000_README.md
+	/home/dylan/Downloads/zip/README.md
+t/home/dylan/.local/share/vifm/Trash/000_droidcam
+	/home/dylan/Downloads/zip/droidcam
+t/home/dylan/.local/share/vifm/Trash/000_droidcam-cli
+	/home/dylan/Downloads/zip/droidcam-cli
+t/home/dylan/.local/share/vifm/Trash/000_droidcam.desktop
+	/home/dylan/Downloads/zip/droidcam.desktop
+t/home/dylan/.local/share/vifm/Trash/000_icon2.png
+	/home/dylan/Downloads/zip/icon2.png
+t/home/dylan/.local/share/vifm/Trash/000_install-client
+	/home/dylan/Downloads/zip/install-client
+t/home/dylan/.local/share/vifm/Trash/000_install-dkms
+	/home/dylan/Downloads/zip/install-dkms
+t/home/dylan/.local/share/vifm/Trash/000_install-sound
+	/home/dylan/Downloads/zip/install-sound
+t/home/dylan/.local/share/vifm/Trash/000_install-video
+	/home/dylan/Downloads/zip/install-video
+t/home/dylan/.local/share/vifm/Trash/000_install.common
+	/home/dylan/Downloads/zip/install.common
+t/home/dylan/.local/share/vifm/Trash/000_uninstall
+	/home/dylan/Downloads/zip/uninstall
+t/home/dylan/.local/share/vifm/Trash/000_uninstall-dkms
+	/home/dylan/Downloads/zip/uninstall-dkms
+t/home/dylan/.local/share/vifm/Trash/000_droidcam_1.7.1.zip
+	/home/dylan/Downloads/droidcam_1.7.1.zip
+t/home/dylan/.local/share/vifm/Trash/000_PC2020 2020-21 Semester 2 Test 1 Cover Page.pdf
+	/home/dylan/Downloads/PC2020 2020-21 Semester 2 Test 1 Cover Page.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_@6
+	/mnt/HDD/NUS_EE/EE2029/F2F/@6
+t/home/dylan/.local/share/vifm/Trash/000_4.2 Lecture Notes -  3-Phase Power (Tutorial) - EE2029.pdf
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W4 - Three phase power/4.2 Lecture Notes -  3-Phase Power (Tutorial) - EE2029.pdf
+t/home/dylan/.local/share/vifm/Trash/000_1358239.pdf
+	/home/dylan/Downloads/1358239.pdf
+t/home/dylan/.local/share/vifm/Trash/000_194848833.pdf
+	/home/dylan/Downloads/194848833.pdf
+t/home/dylan/.local/share/vifm/Trash/000_1096-4889-2-PB.pdf
+	/home/dylan/Downloads/1096-4889-2-PB.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Renewable Energy Assignment - Energy Storage Systems.pdf
+	/home/dylan/Downloads/Renewable Energy Assignment - Energy Storage Systems.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Renewable Energy Assignment - Energy Storage Systems.pdf.pdf
+	/home/dylan/Downloads/Renewable Energy Assignment - Energy Storage Systems.pdf.pdf
+t/home/dylan/.local/share/vifm/Trash/000_A2_A0201984A.py
+	/home/dylan/Downloads/A2_A0201984A.py
+t/home/dylan/.local/share/vifm/Trash/000_cover page.pdf
+	/home/dylan/Downloads/cover page.pdf
+t/home/dylan/.local/share/vifm/Trash/000_energies-10-02107-v3.pdf
+	/home/dylan/Downloads/energies-10-02107-v3.pdf
+t/home/dylan/.local/share/vifm/Trash/000_energies-13-03421.pdf
+	/home/dylan/Downloads/energies-13-03421.pdf
+t/home/dylan/.local/share/vifm/Trash/000_handbook-battery-energy-storage-system.pdf
+	/home/dylan/Downloads/handbook-battery-energy-storage-system.pdf
+t/home/dylan/.local/share/vifm/Trash/000_instructions.pdf
+	/home/dylan/Downloads/instructions.pdf
+t/home/dylan/.local/share/vifm/Trash/000_ESS_Technology_Roadmap_Singapore.pdf
+	/home/dylan/Downloads/ESS_Technology_Roadmap_Singapore.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Handbook-for-Energy-Storage-Systems.pdf
+	/home/dylan/Downloads/Handbook-for-Energy-Storage-Systems.pdf
+t/home/dylan/.local/share/vifm/Trash/000_40_PE_10a_12_185-191_zalani.pdf
+	/home/dylan/Downloads/40_PE_10a_12_185-191_zalani.pdf
+t/home/dylan/.local/share/vifm/Trash/000_S&S-Tut-05 (Prob).pdf
+	/home/dylan/Downloads/zip/S&S-Tut-05 (Prob).pdf
+t/home/dylan/.local/share/vifm/Trash/000_S&S-Tut-06 (Prob).pdf
+	/home/dylan/Downloads/zip/S&S-Tut-06 (Prob).pdf
+t/home/dylan/.local/share/vifm/Trash/000_S&S-Tut-07 (Prob).pdf
+	/home/dylan/Downloads/zip/S&S-Tut-07 (Prob).pdf
+t/home/dylan/.local/share/vifm/Trash/000_S&S-Tut-08 (Prob).pdf
+	/home/dylan/Downloads/zip/S&S-Tut-08 (Prob).pdf
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_1_3-11-2021.zip
+	/home/dylan/Downloads/OneDrive_1_3-11-2021.zip
+t/home/dylan/.local/share/vifm/Trash/000_diff.txt
+	/home/dylan/Downloads/diff.txt
+t/home/dylan/.local/share/vifm/Trash/000_A2_A0201629L.py
+	/home/dylan/Downloads/A2_A0201629L.py
+t/home/dylan/.local/share/vifm/Trash/000_out2.txt
+	/home/dylan/Downloads/out2.txt
+t/mnt/HDD/.vifm-Trash-1000/000_out1.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As02/out1.txt
+t/mnt/HDD/.vifm-Trash-1000/000_out2.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As02/out2.txt
+t/mnt/HDD/.vifm-Trash-1000/000_out3.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As02/out3.txt
+t/mnt/HDD/.vifm-Trash-1000/000_diff.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As02/diff.txt
+t/home/dylan/.local/share/vifm/Trash/000_2023_tut4.xoj
+	/home/dylan/Desktop/2023_tut4.xoj
+t/home/dylan/.local/share/vifm/Trash/000_EE2023
+	/home/dylan/Desktop/EE2023
+t/home/dylan/.local/share/vifm/Trash/000_PC2020
+	/home/dylan/Desktop/PC2020
+t/home/dylan/.local/share/vifm/Trash/000_2023-tut5.xoj
+	/home/dylan/Desktop/2023-tut5.xoj
+t/home/dylan/.local/share/vifm/Trash/000_7.1 In-Class Lecture - Transformers - EE2029.pdf
+	/home/dylan/Downloads/7.1 In-Class Lecture - Transformers - EE2029.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_W7
+	/mnt/HDD/NUS_EE/EE2029/Lectures/W7
+t/mnt/HDD/.vifm-Trash-1000/000_Transformers
+	/mnt/HDD/NUS_EE/EE2029/Lectures/Transformers
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial9.docx
+	/home/dylan/Downloads/Tutorial9.docx
+t/home/dylan/.local/share/vifm/Trash/000_EE2211_Lecture9.pptx
+	/home/dylan/Downloads/EE2211_Lecture9.pptx
+t/mnt/HDD/.vifm-Trash-1000/000_Tutorial
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tutorial
+t/mnt/HDD/.vifm-Trash-1000/000_7
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/7
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial7_with_solutions.docx
+	/home/dylan/Downloads/Tutorial7_with_solutions.docx
+t/home/dylan/.local/share/vifm/Trash/000_t_video6237802929235952199.mp4
+	/home/dylan/Downloads/t_video6237802929235952199.mp4
+t/mnt/HDD/.vifm-Trash-1000/000_S&S-Tut-06 (Prob).pdf
+	/mnt/HDD/NUS_EE/EE2023/Tutorials/Problems/S&S-Tut-06 (Prob).pdf
+t/mnt/HDD/.vifm-Trash-1000/000_unprotected.pdf
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/unprotected.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_EE2023_Quiz_2021s2.pdf
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/EE2023_Quiz_2021s2.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_pw.txt
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/pw.txt
+t/mnt/HDD/.vifm-Trash-1000/000_tut7_q4.py.86969d4a3048fa80d3dfa2a921575530.py
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut7/tut7_q4.py.86969d4a3048fa80d3dfa2a921575530.py
+t/home/dylan/.local/share/vifm/Trash/000_fake_job_postings.xls
+	/home/dylan/Downloads/fake_job_postings.xls
+t/mnt/HDD/.vifm-Trash-1000/000_9.1 Per Unit Analysis - EE2029.pdf.xoj
+	/mnt/HDD/NUS_EE/EE2029/F2F/W9/9.1 Per Unit Analysis - EE2029.pdf.xoj
+t/mnt/HDD/.vifm-Trash-1000/000_Tut8_yeo.py
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut8/Tut8_yeo.py
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114813.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114813.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114822.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114822.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114920.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114920.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114926.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114926.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114935.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114935.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210304_114943.jpg
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Quiz 1/20210304_114943.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_1.in
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/1.in
+t/mnt/HDD/.vifm-Trash-1000/000_test.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/test.txt
+t/mnt/HDD/.vifm-Trash-1000/000_test2.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/test2.txt
+t/home/dylan/.local/share/vifm/Trash/000_2029-tut5.xoj
+	/home/dylan/Desktop/2029-tut5.xoj
+t/home/dylan/.local/share/vifm/Trash/000_homework.xoj
+	/home/dylan/Desktop/homework.xoj
+t/home/dylan/.local/share/vifm/Trash/000_EE2211.pdf
+	/home/dylan/Desktop/EE2211.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_20210208_211405.jpg
+	/mnt/HDD/Work/zip/20210208_211405.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_20210208_211416.jpg
+	/mnt/HDD/Work/zip/20210208_211416.jpg
+t/mnt/HDD/.vifm-Trash-1000/002_zip
+	/mnt/HDD/Work/zip
+t/home/dylan/.local/share/vifm/Trash/000_20210323_104403569_001.jpg.part
+	/home/dylan/Downloads/20210323_104403569_001.jpg.part
+t/home/dylan/.local/share/vifm/Trash/000___pycache__
+	/home/dylan/Downloads/__pycache__
+t/mnt/HDD/.vifm-Trash-1000/001_diff.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/diff.txt
+t/mnt/HDD/.vifm-Trash-1000/001_out1.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/out1.txt
+t/mnt/HDD/.vifm-Trash-1000/001_out2.txt
+	/mnt/HDD/NUS_EE/EE2211/Assignments/As03/out2.txt
+t/home/dylan/.local/share/vifm/Trash/000_A3_A0201984A.py
+	/home/dylan/Downloads/A3_A0201984A.py
+t/home/dylan/.local/share/vifm/Trash/000_Copy of GES1021 A3.png
+	/home/dylan/Downloads/Copy of GES1021 A3.png
+t/home/dylan/.local/share/vifm/Trash/000_Files_Online2PDF.zip
+	/home/dylan/Downloads/Files_Online2PDF.zip
+t/mnt/HDD/.vifm-Trash-1000/000_W1
+	/mnt/HDD/NUS_EE/EE2029/F2F/W1
+t/mnt/HDD/.vifm-Trash-1000/001_W2
+	/mnt/HDD/NUS_EE/EE2029/F2F/W2
+t/mnt/HDD/.vifm-Trash-1000/000_W3
+	/mnt/HDD/NUS_EE/EE2029/F2F/W3
+t/mnt/HDD/.vifm-Trash-1000/000_W4
+	/mnt/HDD/NUS_EE/EE2029/F2F/W4
+t/mnt/HDD/.vifm-Trash-1000/001_W5
+	/mnt/HDD/NUS_EE/EE2029/F2F/W5
+t/mnt/HDD/.vifm-Trash-1000/000_W6
+	/mnt/HDD/NUS_EE/EE2029/F2F/W6
+t/mnt/HDD/.vifm-Trash-1000/001_W7
+	/mnt/HDD/NUS_EE/EE2029/F2F/W7
+t/mnt/HDD/.vifm-Trash-1000/000_W8
+	/mnt/HDD/NUS_EE/EE2029/F2F/W8
+t/mnt/HDD/.vifm-Trash-1000/000_W9
+	/mnt/HDD/NUS_EE/EE2029/F2F/W9
+t/mnt/HDD/.vifm-Trash-1000/000_W10
+	/mnt/HDD/NUS_EE/EE2029/F2F/W10
+t/home/dylan/.local/share/vifm/Trash/000_VID-20200710-WA0001.mp4
+	/home/dylan/Downloads/VID-20200710-WA0001.mp4
+t/home/dylan/.local/share/vifm/Trash/000_GES1021- Natural Heritage.zip
+	/home/dylan/Downloads/GES1021- Natural Heritage.zip
+t/home/dylan/.local/share/vifm/Trash/000_Past Final Exam Papers (50%).zip
+	/home/dylan/Downloads/Past Final Exam Papers (50%).zip
+t/home/dylan/.local/share/vifm/Trash/000_Lecture 6 plane wave I.pdf
+	/home/dylan/Downloads/zip/Lecture 6 plane wave I.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Lecture 7 plane wave II.pdf
+	/home/dylan/Downloads/zip/Lecture 7 plane wave II.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Lecture 8_Reflection_Transmission.pdf
+	/home/dylan/Downloads/zip/Lecture 8_Reflection_Transmission.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Lecture 9_TL.pdf
+	/home/dylan/Downloads/zip/Lecture 9_TL.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Lecture 10_Smith Chart.pdf
+	/home/dylan/Downloads/zip/Lecture 10_Smith Chart.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_10.1 - Line Conductors- EE2029.pdf
+	/mnt/HDD/NUS_EE/EE2029/F2F/10.1 - Line Conductors- EE2029.pdf
+t/home/dylan/.local/share/vifm/Trash/000_GES-Contract of agreement-Jan 2021.pdf
+	/home/dylan/Downloads/GES-Contract of agreement-Jan 2021.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Tutorial10_Questions.pdf
+	/mnt/HDD/NUS_EE/EE2211/Tutorials/Tut11/Tutorial10_Questions.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.aux
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.aux
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.fdb_latexmk
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.fdb_latexmk
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.fls
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.fls
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.log
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.log
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.pdf
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.synctex.gz
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.synctex.gz
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.tex
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.tex
+t/mnt/HDD/.vifm-Trash-1000/000__minted-skeleton
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/_minted-skeleton
+t/home/dylan/.local/share/vifm/Trash/000_test.py
+	/home/dylan/.config/nvim/test.py
+t/mnt/HDD/.vifm-Trash-1000/000_To print
+	/mnt/HDD/NUS_EE/Archived/zip/EE2111A/To print
+t/mnt/HDD/.vifm-Trash-1000/000_.gitattributes
+	/mnt/HDD/NUS_EE/Archived/zip/EE2111A/.gitattributes
+t/mnt/HDD/.vifm-Trash-1000/000_.git
+	/mnt/HDD/NUS_EE/Archived/zip/EE2111A/.git
+t/mnt/HDD/.vifm-Trash-1000/003_zip
+	/mnt/HDD/NUS_EE/Archived/zip/zip
+t/mnt/HDD/.vifm-Trash-1000/000_EE2111A.zip
+	/mnt/HDD/NUS_EE/Archived/EE2111A.zip
+t/home/dylan/.local/share/vifm/Trash/000_Resume_Gavin_Leong.pdf
+	/home/dylan/Downloads/Resume_Gavin_Leong.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Ebooks
+	/mnt/HDD/Programming/Ebooks
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_1_4-8-2021
+	/home/dylan/Downloads/OneDrive_1_4-8-2021
+t/home/dylan/.local/share/vifm/Trash/000_2020-tut7.xoj
+	/home/dylan/Desktop/2020-tut7.xoj
+t/home/dylan/.local/share/vifm/Trash/000_Past Exam Papers
+	/home/dylan/Downloads/zip/Past Exam Papers
+t/home/dylan/.local/share/vifm/Trash/000_OneDrive_2021-04-08.zip
+	/home/dylan/Downloads/OneDrive_2021-04-08.zip
+t/mnt/HDD/.vifm-Trash-1000/000_MA1508E
+	/mnt/HDD/NUS_EE/Archived/zip/MA1508E
+t/mnt/HDD/.vifm-Trash-1000/000_EE2111A
+	/mnt/HDD/NUS_EE/Archived/zip/EE2111A
+t/mnt/HDD/.vifm-Trash-1000/000_EE2027
+	/mnt/HDD/NUS_EE/Archived/zip/EE2027
+t/mnt/HDD/.vifm-Trash-1000/000_EE2012A
+	/mnt/HDD/NUS_EE/Archived/zip/EE2012A
+t/mnt/HDD/.vifm-Trash-1000/000_EE2026
+	/mnt/HDD/NUS_EE/Archived/zip/EE2026
+t/home/dylan/.local/share/vifm/Trash/000_Seating Plan.pdf
+	/home/dylan/Downloads/Seating Plan.pdf
+t/home/dylan/.local/share/vifm/Trash/000_pc2020-1920s2.xoj
+	/home/dylan/Desktop/pc2020/pc2020-1920s2.xoj
+t/home/dylan/.local/share/vifm/Trash/000_prep.xoj
+	/home/dylan/Desktop/pc2020/prep.xoj
+t/home/dylan/.local/share/vifm/Trash/000_test2.xoj
+	/home/dylan/Desktop/pc2020/test2.xoj
+t/home/dylan/.local/share/vifm/Trash/000_tut6.xoj
+	/home/dylan/Desktop/pc2020/tut6.xoj
+t/home/dylan/.local/share/vifm/Trash/000_tut7.xoj
+	/home/dylan/Desktop/pc2020/tut7.xoj
+t/home/dylan/.local/share/vifm/Trash/000_tut8.xoj
+	/home/dylan/Desktop/pc2020/tut8.xoj
+t/home/dylan/.local/share/vifm/Trash/000_tut9.xoj
+	/home/dylan/Desktop/pc2020/tut9.xoj
+t/mnt/HDD/.vifm-Trash-1000/000_2. Evaluation - Take Home Problem Set 2 - EE2029.pdf
+	/mnt/HDD/NUS_EE/EE2029/Assignments/As03/2. Evaluation - Take Home Problem Set 2 - EE2029.pdf
+t/home/dylan/.local/share/vifm/Trash/000_geq.md
+	/home/dylan/Downloads/geq.md
+t/home/dylan/.local/share/vifm/Trash/000_9.1 Per Unit Analysis - EE2029.pdf
+	/home/dylan/Downloads/9.1 Per Unit Analysis - EE2029.pdf
+t/home/dylan/.local/share/vifm/Trash/000_.env
+	/home/dylan/Downloads/.env
+t/home/dylan/.local/share/vifm/Trash/000_20210418_153922.jpg
+	/home/dylan/Downloads/20210418_153922.jpg
+t/home/dylan/.local/share/vifm/Trash/000_design-thinking-process-worksheet .pdf
+	/home/dylan/Downloads/design-thinking-process-worksheet .pdf
+t/home/dylan/.local/share/vifm/Trash/000_.comments
+	/home/dylan/Downloads/.comments
+t/home/dylan/.local/share/vifm/Trash/000_design-thinking-process-worksheet .pdf.xoj
+	/home/dylan/Downloads/design-thinking-process-worksheet .pdf.xoj
+t/mnt/HDD/.vifm-Trash-1000/000_as03.xoj
+	/mnt/HDD/NUS_EE/EE2029/Assignments/As03/as03.xoj
+t/home/dylan/.local/share/vifm/Trash/000_jpg2pdf.pdf
+	/home/dylan/Downloads/jpg2pdf.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_A0199256M.pdf
+	/mnt/HDD/NUS_EE/EE2029/Assignments/As03/A0199256M.pdf
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122338.jpg
+	/home/dylan/Downloads/20210420_122338.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122411.jpg
+	/home/dylan/Downloads/20210420_122411.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122426.jpg
+	/home/dylan/Downloads/20210420_122426.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122439.jpg
+	/home/dylan/Downloads/20210420_122439.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122456.jpg
+	/home/dylan/Downloads/20210420_122456.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_122523.jpg
+	/home/dylan/Downloads/20210420_122523.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153454.jpg
+	/home/dylan/Downloads/20210420_153454.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153509.jpg
+	/home/dylan/Downloads/20210420_153509.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153528.jpg
+	/home/dylan/Downloads/20210420_153528.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153541.jpg
+	/home/dylan/Downloads/20210420_153541.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153601.jpg
+	/home/dylan/Downloads/20210420_153601.jpg
+t/home/dylan/.local/share/vifm/Trash/000_20210420_153632.jpg
+	/home/dylan/Downloads/20210420_153632.jpg
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial9_with_solutions.docx
+	/home/dylan/Downloads/Tutorial9_with_solutions.docx
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial 1 Q&A.pdf
+	/home/dylan/Downloads/zip/Tutorial 1 Q&A.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Tutorial10_Q&A.docx
+	/home/dylan/Downloads/zip/Tutorial10_Q&A.docx
+t/home/dylan/.local/share/vifm/Trash/000_summary.pdf
+	/home/dylan/Downloads/summary.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_EE2211.md
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2211.md
+t/mnt/HDD/.vifm-Trash-1000/000_data2.jpg
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/pdf/img/data2.jpg
+t/home/dylan/.local/share/vifm/Trash/000_1819s1
+	/home/dylan/Desktop/pc2020/1819s1
+t/home/dylan/.local/share/vifm/Trash/000_jpg2pdf(1).pdf
+	/home/dylan/Downloads/jpg2pdf(1).pdf
+t/mnt/HDD/.vifm-Trash-1000/000_exam-cover page.pdf.xoj
+	/mnt/HDD/NUS_EE/EE2023/Quizzes/Finals/exam-cover page.pdf.xoj
+t/mnt/HDD/.vifm-Trash-1000/004_zip
+	/mnt/HDD/NUS_EE/zip
+t/mnt/HDD/.vifm-Trash-1000/000_GEQ1000
+	/mnt/HDD/NUS_EE/GEQ1000
+t/mnt/HDD/.vifm-Trash-1000/005_zip
+	/mnt/HDD/NUS_EE/Archived/zip
+t/mnt/HDD/.vifm-Trash-1000/000_EE2023
+	/mnt/HDD/NUS_EE/EE2023
+t/mnt/HDD/.vifm-Trash-1000/000_EE2029
+	/mnt/HDD/NUS_EE/EE2029
+t/mnt/HDD/.vifm-Trash-1000/000_PC2020
+	/mnt/HDD/NUS_EE/PC2020
+t/home/dylan/.local/share/vifm/Trash/000_TUTORIALS
+	/home/dylan/Downloads/zip/TUTORIALS
+t/mnt/HDD/.vifm-Trash-1000/000_.~lock.Cheatsheet.xlsx#
+	/mnt/HDD/NUS_EE/GES1021/.~lock.Cheatsheet.xlsx#
+t/mnt/HDD/.vifm-Trash-1000/000_ws.vim
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/pdf/ws.vim
+t/mnt/HDD/.vifm-Trash-1000/000_EE2111.py
+	/mnt/HDD/NUS_EE/EE2211/Personal Notes/EE2111.py
+t/home/dylan/.local/share/vifm/Trash/000_GES1021- Natural Heritage
+	/home/dylan/Downloads/zip/GES1021- Natural Heritage
+t/mnt/HDD/.vifm-Trash-1000/007_zip
+	/mnt/HDD/Programming/Java/zip
+t/mnt/HDD/.vifm-Trash-1000/001_6-851-spring-2012.zip
+	/mnt/HDD/Programming/Java/6-851-spring-2012.zip
+t/mnt/HDD/.vifm-Trash-1000/000_code
+	/mnt/HDD/Programming/Java/code
+t/mnt/HDD/.vifm-Trash-1000/000_Udemy - The Modern React Bootcamp (Hooks, Context, Router & More)
+	/mnt/HDD/Movies & TV/Udemy - The Modern React Bootcamp (Hooks, Context, Router & More)
+t/home/dylan/.local/share/vifm/Trash/000_dots
+	/home/dylan/Downloads/zip/dots
+t/home/dylan/.local/share/vifm/Trash/000_dots.zip
+	/home/dylan/Downloads/dots.zip
+t/mnt/HDD/.vifm-Trash-1000/000_as01
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/as01/as01
+t/mnt/HDD/.vifm-Trash-1000/000_GravityCalculator.java
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments/GravityCalculator.java
+t/mnt/HDD/.vifm-Trash-1000/000_as03.java
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as03/as03.java
+t/mnt/HDD/.vifm-Trash-1000/000_Book.java
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04/Book.java
+t/mnt/HDD/.vifm-Trash-1000/000_Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
+	/mnt/HDD/Movies & TV/Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
+t/mnt/HDD/.vifm-Trash-1000/000_How I Met Your Mother (2005) Season 1-9 S01-S09 (1080p MIXED x265 HEVC 10bit AAC 5.1 Silence)
+	/mnt/HDD/Movies & TV/How I Met Your Mother (2005) Season 1-9 S01-S09 (1080p MIXED x265 HEVC 10bit AAC 5.1 Silence)
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{00000000-0000-0000-0000-000000000000}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{00000000-0000-0000-0000-000000000000}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{00000000-0000-0000-0000-000000000000}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{00000000-0000-0000-0000-000000000000}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{2C239A27-08C5-44C1-BB7A-28B2003003AE}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{2C239A27-08C5-44C1-BB7A-28B2003003AE}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{2C239A27-08C5-44C1-BB7A-28B2003003AE}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{2C239A27-08C5-44C1-BB7A-28B2003003AE}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{48C03E12-5738-45DD-9E2A-7B08040F6B45}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{48C03E12-5738-45DD-9E2A-7B08040F6B45}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{48C03E12-5738-45DD-9E2A-7B08040F6B45}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{48C03E12-5738-45DD-9E2A-7B08040F6B45}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{AF12E34B-FEBA-4D71-937C-0DA7B5FFFBB8}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{AF12E34B-FEBA-4D71-937C-0DA7B5FFFBB8}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{AF12E34B-FEBA-4D71-937C-0DA7B5FFFBB8}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{AF12E34B-FEBA-4D71-937C-0DA7B5FFFBB8}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-0D40-616A594D3900}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-0D40-616A594D3900}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-0D40-616A594D3900}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-0D40-616A594D3900}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-3B6E-7E376B3BB600}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-3B6E-7E376B3BB600}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-3B6E-7E376B3BB600}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-3B6E-7E376B3BB600}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-9F60-C62EE83BDC00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-9F60-C62EE83BDC00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-9F60-C62EE83BDC00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-9F60-C62EE83BDC00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-10FB-ED1AF5FF6F00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-10FB-ED1AF5FF6F00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-10FB-ED1AF5FF6F00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-10FB-ED1AF5FF6F00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-14C0-4D6DE11E3900}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-14C0-4D6DE11E3900}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-14C0-4D6DE11E3900}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-14C0-4D6DE11E3900}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-17D4-D113F62C7E00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-17D4-D113F62C7E00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-17D4-D113F62C7E00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-17D4-D113F62C7E00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-37C2-2519C9879A00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-37C2-2519C9879A00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-37C2-2519C9879A00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-37C2-2519C9879A00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-72EE-CD05DB66C700}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-72EE-CD05DB66C700}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-72EE-CD05DB66C700}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-72EE-CD05DB66C700}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-113F-311009791000}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-113F-311009791000}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-113F-311009791000}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-113F-311009791000}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-395C-540B9DE9B200}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-395C-540B9DE9B200}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-395C-540B9DE9B200}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-395C-540B9DE9B200}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-525C-1E17FBEF6200}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-525C-1E17FBEF6200}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-525C-1E17FBEF6200}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-525C-1E17FBEF6200}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-5831-3E0567189000}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-5831-3E0567189000}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-5831-3E0567189000}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-5831-3E0567189000}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-9227-0A3F94D42000}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-9227-0A3F94D42000}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-9227-0A3F94D42000}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-9227-0A3F94D42000}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-AE9B-9D039D33AD00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-AE9B-9D039D33AD00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-AE9B-9D039D33AD00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-AE9B-9D039D33AD00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-AF76-E52B3459E800}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-AF76-E52B3459E800}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-AF76-E52B3459E800}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-AF76-E52B3459E800}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-BA46-CB1D4B95AC00}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-BA46-CB1D4B95AC00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-BA46-CB1D4B95AC00}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-BA46-CB1D4B95AC00}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-DC8D-0D118B4C1000}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-DC8D-0D118B4C1000}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-DC8D-0D118B4C1000}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-DC8D-0D118B4C1000}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-DCB3-056E91FE0700}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-DCB3-056E91FE0700}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-DCB3-056E91FE0700}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-DCB3-056E91FE0700}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-F226-EF1382C50200}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-F226-EF1382C50200}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-F226-EF1382C50200}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{B5020207-474E-4720-F226-EF1382C50200}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{CB90A00B-4182-4F9B-B8ED-6DD7F7286CE4}_Large.jpg
+	/mnt/HDD/Music/AlbumArt_{CB90A00B-4182-4F9B-B8ED-6DD7F7286CE4}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{CB90A00B-4182-4F9B-B8ED-6DD7F7286CE4}_Small.jpg
+	/mnt/HDD/Music/AlbumArt_{CB90A00B-4182-4F9B-B8ED-6DD7F7286CE4}_Small.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArtSmall.jpg
+	/mnt/HDD/Music/AlbumArtSmall.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_Mellow.mbp
+	/mnt/HDD/Deezloader Music/Mellow.mbp
 
 # State:
 f

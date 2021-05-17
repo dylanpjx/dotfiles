@@ -100,9 +100,9 @@ globalkeys = gears.table.join(
               {description = "increase master width factor", group = "layout"}),
     awful.key({ modkey }, "h",     function () awful.tag.incmwfact(-0.05)          end,
               {description = "decrease master width factor", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
+    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
+    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster(-1, nil, true) end,
               {description = "decrease the number of master clients", group = "layout"}),
     awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
               {description = "increase the number of columns", group = "layout"}),
@@ -188,9 +188,9 @@ clientkeys = gears.table.join(
         {description = "(un)maximize horizontally", group = "client"}),
 
     -- Screenshots
-    awful.key({ }, "Print", function () awful.util.spawn("scrot '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
+    awful.key({ }, "Print", function () awful.spawn.with_shell("scrot '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
         {description = "take screenshot of entire screen", group = "screenshots"}),
-    awful.key({ "Mod1" }, "Print", function () awful.util.spawn("scrot -s '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
+    awful.key({ "Mod1" }, "Print", function () awful.spawn.with_shell("scrot -a $(slop -f '%x,%y,%w,%h') '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
         {description = "take screenshot of area", group = "screenshots"}),
     -- Brightness
     awful.key({ "Mod1" }, "Page_Up", function () awful.spawn.with_shell("~/.config/awesome/scripts/increaseBrightness.sh") end,
@@ -198,6 +198,10 @@ clientkeys = gears.table.join(
     awful.key({ "Mod1" }, "Page_Down", function () awful.spawn.with_shell("~/.config/awesome/scripts/decreaseBrightness.sh") end,
         {description = "decrease brightness", group = "brightness"}),
     
+
+    awful.key({ modkey }, "p", function () awful.spawn.with_shell("pavucontrol") end,
+        {description = "audio mixer", group = "client"}),
+
     -- Tablet
     awful.key({ },  "Scroll_Lock", function () awful.spawn.with_shell("~/.config/awesome/scripts/tablet.sh") end,
         {description = "restrict tablet area", group = "tablet"})

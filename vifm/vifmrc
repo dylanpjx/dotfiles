@@ -9,7 +9,7 @@ set undolevels=100
 set vimhelp
 set norunexec
 
-colorscheme Gruvbox
+colorscheme Dracula
 set timefmt=%m/%d\ %H:%M
 set scrolloff=4
 " Set custom status line look
@@ -55,7 +55,7 @@ mark H /mnt/HDD/
 
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
-command! zip zip -r %f.zip %f
+command! zip zip -r %a.zip %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
@@ -64,6 +64,7 @@ command! reload :write | restart
 " command! extract extract %a %f %n
 command! extract extract -f zip %f %n 
 command! annotate xournal %f &
+command! dragon dragon -a -x %f &
 
 " ------------------------------------------------------------------------------
 
@@ -94,7 +95,7 @@ command! annotate xournal %f &
 " program.
 
 " ws.vim
-filetype ws.vim vim -S ws.vim
+filetype ws.vim nvim -S ws.vim
 
 ".xoj
 filextype *.xoj xournal %c &
@@ -173,6 +174,7 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
+        \ gthumb %c &,
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ vifmimg draw %px %py %pw %ph %c
@@ -365,7 +367,7 @@ nnoremap yn :!echo -n %c | xclip -selection clipboard %i<cr>:echo expand('%"c') 
 " Mappings for faster renaming
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
-nnoremap A cw
+nnoremap A cW
 
 " Open console in current directory
 nnoremap ,t :!xterm &<cr>
@@ -385,6 +387,13 @@ nnoremap <f5> :copy<cr>
 nnoremap <f6> :move<cr>
 nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
+
+" PDF scroll mapping
+map > :!vifmimg inc<CR>
+map < :!vifmimg dec<CR>
+
+" Dragon
+nmap <C-d> :dragon<CR>
 
 " ------------------------------------------------------------------------------
 

@@ -5,7 +5,9 @@ set t_Co=256
 
 " let g:gruvbox_hls_cursor='fg2'
 " let g:gruvbox_italic='1'
-colorscheme gruvbox
+" colorscheme gruvbox
+set termguicolors
+colorscheme dracula
 
 " Bracket colours
 " hi MatchParen cterm=underline ctermbg=none ctermfg=yellow

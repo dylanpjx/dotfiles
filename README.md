@@ -1,22 +1,6 @@
 # linux-configs
 
-Using Pop!\_OS and AwesomeWM.
-
-## Wifi setup
-
-```
-sudo apt install bcmwl-kernel-source
-sudo reboot
-```
-
-## Keyboard
-
-```
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
-gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-
-xset r rate 250 30
-```
+Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 
 ## Droidcam
 
@@ -33,29 +17,14 @@ xset r rate 250 30
 3. Go to `alsamixer` and configure accordingly
 4. Save using `sudo alsactl store`
 
-## Mouse
+## Tablet
 
-1. `sudo apt install openrazer`
+- [https://github.com/Huion-Linux/DIGImend-kernel-drivers-for-Huion](Digimend drivers)
+- [https://wiki.archlinux.org/index.php/Wacom_tablet#Mapping_pad_buttons_to_function_keys](Xsetwacom wiki)
+- `xsetwacom --list`
+- `xev -event button`: Button 1,2,3,8
 
-## Scroll wheel
-
-1. `sudo apt install imwheel`
-2. Add `imwheel -b "4 5"` to startup
-3. `mv .imwheelrc ~/`
-
-## Vimtex
-
-```
-sudo apt install texlive-latex-extra latexmk ttf-mscorefonts-installer
-```
-
-## Vifm image preview
-
-```
-sudo pip3 install ueberzug
-```
-
-## Applications
-```
-sudo apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome python3
-```
+## Other utils:
+[Dragon D&D](https://github.com/mwh/dragon)
+[Picom](https://github.com/yshui/picom)
+[FZF](https://github.com/junegunn/fzf)

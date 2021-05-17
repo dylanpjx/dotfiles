@@ -93,8 +93,23 @@ bind "set completion-map-case on"
 # Display matches for ambiguous patterns at first tab press
 bind "set show-all-if-ambiguous on"
 
-# Vim keys
-set -o vi
-
 # Autojump
 [[ -s /home/dylan/.autojump/etc/profile.d/autojump.sh ]] && source /home/dylan/.autojump/etc/profile.d/autojump.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/dylan/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/dylan/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/dylan/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/dylan/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

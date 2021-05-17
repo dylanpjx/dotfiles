@@ -66,9 +66,9 @@ screen.connect_signal("property::geometry", set_wallpaper)
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
-
+    lo = awful.layout.layouts
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, s.index == 1 and lo[1] or lo[4])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -80,6 +80,7 @@ awful.screen.connect_for_each_screen(function(s)
                            awful.button({ }, 3, function () awful.layout.inc(-1) end),
                            awful.button({ }, 4, function () awful.layout.inc( 1) end),
                            awful.button({ }, 5, function () awful.layout.inc(-1) end)))
+
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {
         screen  = s,
@@ -87,39 +88,20 @@ awful.screen.connect_for_each_screen(function(s)
         buttons = taglist_buttons
     }
 
+
     -- Create a tasklist widget
-    -- s.mytasklist = awful.widget.tasklist {
-    --     screen  = s,
-    --     filter  = awful.widget.tasklist.filter.currenttags,
-    --     buttons = tasklist_buttons,
-    -- }
-
     s.mytasklist = awful.widget.tasklist {
-      screen   = s,
-      filter   = awful.widget.tasklist.filter.currenttags,
-      buttons  = tasklist_buttons,
-      style    = {
+      style = {
         border_width = 1,
-        shape        = gears.shape.rounded_bar,
+        shape = gears.shape.rounded_bar,
       },
-      layout   = {
-        spacing = 10,
-        -- spacing_widget = {
-        --   {
-        --     forced_width = 5,
-        --     shape        = gears.shape.circle,
-        --     widget       = wibox.widget.separator
-        --   },
-        --   valign = 'center',
-        --   halign = 'center',
-        --   widget = wibox.container.place,
-        -- },
-        layout  = wibox.layout.fixed.horizontal
-      },
-
+      screen = s,
+      filter = awful.widget.tasklist.filter.currenttags,
+      buttons = tasklist_buttons,
+      layout = {spacing = 10, layout = wibox.layout.fixed.horizontal},
       widget_template = {
         {
-          forced_width = 300,
+          forced_width = 160,
           {
             {
               {
@@ -127,37 +109,38 @@ awful.screen.connect_for_each_screen(function(s)
                 widget = wibox.widget.imagebox,
               },
               margins = 2,
-              widget  = wibox.container.margin,
+              widget = wibox.container.margin,
             },
             {
-              id     = 'text_role',
-              widget = wibox.widget.textbox,
+              id = 'text_role', 
+              widget = wibox.widget.textbox
             },
-            layout = wibox.layout.fixed.horizontal,
+            layout = wibox.layout.fixed.horizontal
           },
-          left  = 10,
+          left = 10,
           right = 10,
-          widget = wibox.container.margin,
+          widget = wibox.container.margin
         },
-        id     = 'background_role',
-        widget = wibox.container.background,
+        id = 'background_role',
+        widget = wibox.container.background
       },
     }
 
+
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s})
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
-        -- expand = "none",
+        expand = "none",
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             -- mylauncher,
-            s.mytaglist,
+            s.mytaglist, 
             s.mypromptbox,
         },
-        s.mytasklist, -- Middle widget
+        {s.mytasklist, margins = 2, widget = wibox.container.margin}, -- Middle widget
         -- mytextclock,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
@@ -166,7 +149,8 @@ awful.screen.connect_for_each_screen(function(s)
             mytextclock,            
             -- volume_widget({display_notification = true}),
             wibox.widget.textbox(' |  '),
-            awful.widget.watch('bash -c "python3 /home/dylan/.config/awesome/scripts/bat.py"', 300),
+            awful.widget.watch('bash -c "python3 /home/dylan/.config/awesome/scripts/bat.py"', 200),
+            wibox.widget.textbox(' '),
             s.mylayoutbox,
         },
 

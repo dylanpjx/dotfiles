@@ -8,11 +8,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 ws.vim
-badd +132 wibar.lua
+badd +143 wibar.lua
 badd +1 rc.lua
-badd +32 menu.lua
+badd +2 menu.lua
 badd +1 keybinds.lua
-badd +1 signals.lua
+badd +6 signals.lua
 badd +59 rules.lua
 badd +41 themes/default/theme.lua
 badd +140 ~/Downloads/archlabs-awesome/.config/awesome/themes/archlabs/theme.lua
@@ -38,12 +38,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 63 - ((33 * winheight(0) + 23) / 47)
+let s:l = 87 - ((46 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-63
-normal! 09|
+87
+normal! 02|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/keybinds.lua
 set splitbelow splitright
@@ -62,60 +62,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 196 - ((7 * winheight(0) + 23) / 47)
+let s:l = 106 - ((11 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-196
-normal! 074|
-lcd ~/.config/awesome
-tabedit ~/.config/awesome/wibar.lua
-set splitbelow splitright
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 122 - ((8 * winheight(0) + 23) / 47)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-122
-normal! 028|
-lcd ~/.config/awesome
-tabedit ~/.config/awesome/menu.lua
-set splitbelow splitright
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 50 - ((44 * winheight(0) + 23) / 47)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-50
-normal! 058|
+106
+normal! 039|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/signals.lua
 set splitbelow splitright
@@ -134,12 +86,60 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 23) / 47)
+let s:l = 4 - ((3 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
+4
 normal! 05|
+lcd ~/.config/awesome
+tabedit ~/.config/awesome/menu.lua
+set splitbelow splitright
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 2 - ((0 * winheight(0) + 24) / 48)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+2
+normal! 0
+lcd ~/.config/awesome
+tabedit ~/.config/awesome/wibar.lua
+set splitbelow splitright
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 148 - ((36 * winheight(0) + 24) / 48)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+148
+normal! 035|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/rules.lua
 set splitbelow splitright
@@ -158,11 +158,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 60 - ((42 * winheight(0) + 23) / 47)
+let s:l = 1 - ((0 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-60
+1
 normal! 0
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/themes/default/theme.lua
@@ -182,14 +182,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 132 - ((39 * winheight(0) + 23) / 47)
+let s:l = 101 - ((23 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-132
-normal! 0
+101
+normal! 060|
 lcd ~/.config/awesome
-tabnext 3
+tabnext 7
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
