@@ -1,6 +1,7 @@
 alias ba='nvim ~/.bash_aliases'
 alias ev='nvim ~/.config/nvim/init.vim'
 alias eb='nvim ~/.bashrc'
+alias cpwd='pwd | xclip -selection clipboard'
 alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias hlog='heroku logs -t --app ee2028-backend'
@@ -8,6 +9,7 @@ alias ytmusic='youtube-dl -f bestaudio -x --audio-format mp3'
 alias vifm='~/.config/vifm/scripts/vifmrun'
 alias todo='nvim ~/Documents/todo.txt'
 alias jn='conda activate base;jupyter notebook'
+alias xclip='xclip -i -sel p -f | xclip -i -sel c'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -35,6 +37,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # ptSh
 alias ls="ptls"
-alias pwd="ptpwd"
+# alias pwd="ptpwd"
 alias mkdir="ptmkdir"
 alias touch="pttouch"
