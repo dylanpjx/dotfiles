@@ -16,7 +16,7 @@ menubar = require("menubar")
 hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
-require("awful.hotkeys_popup.keys")
+-- require("awful.hotkeys_popup.keys")
 
 -- Startup
 awful.spawn("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")

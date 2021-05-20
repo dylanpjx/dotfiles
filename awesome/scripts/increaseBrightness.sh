@@ -7,5 +7,6 @@ if (( $(echo "$BRIGHTNESS < 1" | bc -l) )); then
   xrandr --output HDMI-0 --brightness $BRIGHTNESS
 fi
 
-BRIGHTNESS=$(printf "%.1f" $BRIGHTNESS)
+BRIGHTNESS=$(echo "$BRIGHTNESS * 100" | bc -l)
+BRIGHTNESS=$(printf "%d" $BRIGHTNESS)
 DISPLAY=:0 notify-send "Brightness" $BRIGHTNESS

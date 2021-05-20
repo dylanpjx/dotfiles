@@ -120,5 +120,7 @@ let g:coc_global_extensions = [
       \ 'coc-prettier',
       \ 'coc-vimtex',
       \ 'coc-pyright',
+      \ 'coc-java',
+      \ 'coc-lua',
       \ ]
 

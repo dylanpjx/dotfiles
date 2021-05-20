@@ -6,9 +6,13 @@
 	tut2.xoj
 1612616791
 'H
-	/mnt/HDD/
+	/home/dylan/
 	..
-1604163987
+1621417746
+'a
+	/home/dylan/.config/awesome/themes/default
+	Ocean.jpg
+1621267992
 'b
 	/home/dylan/bin/
 	..
@@ -26,9 +30,9 @@
 	nvim
 1617546274
 'h
-	/home/dylan/
+	/mnt/HDD/
 	..
-1604163573
+1621417746
 'm
 	/mnt/HDD/Music
 	..
@@ -49,7 +53,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -58,150 +62,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/mnt/HDD/Programming/Java
-	code
-4
-d/mnt/HDD/Programming/Java/code
-	..
-0
-d/mnt/HDD/Programming/Java
-	6-092-january-iap-2010
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	contents
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	lecture-notes
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/lecture-notes
-	MIT6_092IAP10_lec01.pdf
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	6-092iap10-th.jpg
-3
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	contents
-1
-d/mnt/HDD/Programming/Java
-	6-851-spring-2012
-2
-d/mnt/HDD/Programming/Java/6-851-spring-2012
-	common
-1
-d/mnt/HDD/Programming/Java/6-851-spring-2012/common
-	..
-0
-d/mnt/HDD/Programming/Java/6-851-spring-2012
-	START.htm
-4
-d/mnt/HDD/Programming/Java
-	6-851-spring-2012
-2
-d/mnt/HDD/Programming
-	Java
-4
-d/mnt/HDD
-	Movies & TV
-6
-d/mnt/HDD/Movies & TV
-	300 (2006) [1080p]
-1
-d/mnt/HDD/Movies & TV/300 (2006) [1080p]
-	..
-0
-d/mnt/HDD/Movies & TV
-	Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
-18
-d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
-	Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
-1
-d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN/Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
-	Slicon.Valley.S01E01.1080p.BluRay.x265.HEVC.6CH-MRN.mkv
-1
-d/mnt/HDD/Movies & TV/Silicon.Valley.1080p.BluRay.x265.HEVC.6CH-MRN
-	Silicon.Valley.S01.1080p.BluRay.x265.HEVC.6CH-MRN
-1
-d/mnt/HDD/Movies & TV
-	Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
-12
-d/mnt/HDD/Movies & TV/Justice.League.Snyders.Cut.2021.1080p.WEBRip.x265-RARBG
-	RARBG_DO_NOT_MIRROR.exe
-4
-d/mnt/HDD/Movies & TV
-	Fury (2014) [1080p]
-9
-d/mnt/HDD/Movies & TV/Fury (2014) [1080p]
-	Fury.2014.1080p.BluRay.x264.YIFY.mp4
-1
-d/mnt/HDD/Movies & TV
-	Christmas With The Kranks DVDRip Xvid-Inferno
-6
-d/mnt/HDD
-	Programming
-10
-d/mnt/HDD/Programming
-	Java
-4
-d/mnt/HDD/Programming/Java
-	6-092-january-iap-2010
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	contents
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	lecture-notes
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/lecture-notes
-	MIT6_092IAP10_lec03.pdf
-3
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	assignments
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
-	MIT6_092IAP10_assn05.pdf
-10
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	lecture-notes
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	contents
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	lecture-notes
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	asn
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
-	as02
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as02
-	as02.java
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
-	as03
-3
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as03
-	as03.java
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
-	as03
-3
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	contents
-2
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	assignments
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents/assignments
-	Mercury.txt
-14
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010/contents
-	assignments
-1
-d/mnt/HDD/Programming/Java/6-092-january-iap-2010
-	asn
-1
 d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
 	as03
 3
@@ -356,134 +216,155 @@ d/home/dylan/.config
 	vifm
 44
 d/home/dylan/.config/vifm
+	..
+0
+d/home/dylan/.config
+	alacritty
+4
+d/home/dylan/.config/alacritty
+	alacritty.yml
+1
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as04
+	Library.java
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn
+	as04
+4
+d/mnt/HDD/Programming/Java/6-092-january-iap-2010
+	asn
+1
+d/mnt/HDD
+	Pictures
+9
+d/mnt/HDD/Pictures
+	..
+0
+d/mnt/HDD
+	Wallpapers
+12
+d/mnt/HDD/Wallpapers
+	austin-schmid-zQ-y4Gj8194-unsplash.jpg
+36
+d/mnt/HDD
+	Wallpapers
+12
+d/mnt/HDD/Wallpapers
+	ITAP of daybreak over Charlevoix, Québec..jpg
+5
+d/mnt/HDD/Music
+	Bleachers - Gone Now
+16
+d/mnt/HDD/Music/Bleachers - Gone Now
+	..
+0
+d/mnt/HDD/Music
+	Chinese
+22
+d/mnt/HDD/Music/Chinese
+	Jay Chou
+9
+d/mnt/HDD/Music/Chinese/Jay Chou
+	11月的蕭邦
+1
+d/mnt/HDD/Music/Chinese/Jay Chou/11月的蕭邦
+	06 - Feng.mp3
+3
+d/home/dylan/.config
+	awesome
+7
+d/home/dylan/.config/awesome
+	scripts
+2
+d/mnt/HDD/Wallpapers
+	dino-reichmuth-A5rCN8626Ck-unsplash.jpg
+13
+d/home/dylan/.config
+	awesome
+7
+d/home/dylan/.config/awesome
+	themes
+3
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome/themes/default
+	ocean.jpg
+10
+d/home/dylan/.config
+	ptSh
+41
+d/home/dylan/.config/ptSh
+	config
+1
+d/home/dylan/.config
+	gthumb
+26
+d/home/dylan
+	.rustup
+25
+d/home/dylan/.config
+	Unknown Organization
+4
+d/home/dylan/.config/Unknown Organization
+	zoom.conf
+1
+d/home/dylan/.config
+	nautilus
+21
+d/home/dylan/.config/nautilus
+	search-metadata
+1
+d/home/dylan/.config
+	quodlibet
+30
+d/home/dylan
+	anaconda3
+22
+d/home/dylan/.config
+	awesome
+7
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config/awesome/scripts
+	tablet.sh
+6
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config
+	vifm
+43
+d/home/dylan/.config/vifm
+	vifminfo
+6
+d/home/dylan/.config
+	awesome
+4
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config/awesome/scripts
+	xdg.sh
+7
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config/awesome/scripts
+	tablet.sh
+6
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config
+	vifm
+33
+d/home/dylan/.config/vifm
 	vifmrc
 8
 d
 
 # Right window history (oldest to newest):
-D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions
-	Tut10
-10
-D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut10
-	tut10_q7.py
-3
-D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions
-	Tut11
-11
-D/mnt/HDD/NUS_EE/EE2211/Tutorials/Solutions/Tut11
-	tut11_Q6.py
-2
-D/home/dylan/Downloads
-	Pang Jun Xian, Dylan_A0199256M.pdf
-7
-D/home/dylan
-	Desktop
-30
-D/home/dylan/Desktop
-	pc2020
-3
-D/home/dylan/Desktop/pc2020
-	1920s1.xoj
-3
-D/home/dylan/Desktop
-	pc2020
-3
-D/home/dylan
-	Desktop
-30
-D/home/dylan/Downloads
-	A0199256M_Design.pdf
-12
-D/home/dylan
-	Downloads
-32
-D/home/dylan/Downloads
-	..
-0
-D/home/dylan/Desktop
-	ee2029
-2
-D/home/dylan/Desktop/ee2029
-	2029-tut2.xoj
-4
-D/home/dylan/Desktop
-	ee2029
-2
-D/mnt/HDD/NUS_EE
-	EE2029
-4
-D/mnt/HDD/NUS_EE/EE2029
-	F2F
-2
-D/mnt/HDD/NUS_EE/EE2029/F2F
-	10.2 - Line Conductors - In-Class Notes - EE2029.pdf
-24
-D/mnt/HDD/NUS_EE/EE2029
-	F2F
-2
-D/mnt/HDD/NUS_EE/EE2029/F2F
-	10.1 - Line Conductors -v2- EE2029.pdf
-23
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	TUTORIALS
-2
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	GES1021- Natural Heritage
-1
-D/home/dylan/Downloads/zip/GES1021- Natural Heritage
-	2. Exam Questions Bank
-2
-D/home/dylan/Downloads/zip/GES1021- Natural Heritage/2. Exam Questions Bank
-	Questions.pdf
-3
-D/home/dylan/Downloads/zip/GES1021- Natural Heritage
-	4. Finals
-4
-D/home/dylan/Downloads/zip/GES1021- Natural Heritage/4. Finals
-	Finals - all lecture notes combined.pdf
-1
-D/home/dylan/Downloads/zip/GES1021- Natural Heritage
-	4. Finals
-4
-D/home/dylan/Downloads/zip
-	..
-0
-D/home/dylan/Downloads
-	Forms
-1
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads/Forms/AMD
-	worldwide-standards-of-business-conduct.pdf
-3
-D/home/dylan/Downloads/Forms
-	S7146129G_LPA.pdf
-4
-D/home/dylan/Downloads
-	Purgatorio.pdf
-6
-D/home/dylan
-	Downloads
-32
-D/mnt/HDD
-	Programming
-10
-D/mnt/HDD/Programming
-	Cpp
-3
-D/mnt/HDD/Programming/Cpp
-	..
-0
-D/mnt/HDD/Programming
-	Java
-4
 D/mnt/HDD/Programming/Java
 	6-851-spring-2012
 2
@@ -661,16 +542,132 @@ D/mnt/HDD
 D/mnt/HDD/Music
 	Jp Cooper - September Song.mp3
 9
+D/mnt/HDD
+	Programming
+10
+D/home/dylan/github/dotfiles
+	qpdfview
+6
+D/home/dylan/github
+	dotfiles
+1
+D/home/dylan/github/dotfiles
+	qpdfview
+6
+D/home/dylan/.config
+	coc
+9
+D/home/dylan/.config/coc
+	extensions
+1
+D/home/dylan/.config
+	nvim
+15
+D/home/dylan/.config/nvim
+	init.vim
+4
+D/home/dylan/.config
+	nvim
+21
+D/mnt/HDD/Music
+	Jp Cooper - September Song.mp3
+9
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Selena Gomez - Back To You.mp3
+22
+D/mnt/HDD/Deezloader Music
+	RuoFan Chang - Personal Angel.mp3
+7
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Halsey
+4
+D/mnt/HDD/Music/Halsey
+	Halsey - Graveyard.mp3
+7
+D/mnt/HDD/Music
+	Halsey
+4
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Halsey - Graveyard.mp3
+4
+D/mnt/HDD/Deezloader Music
+	Pakho Chau - Free My Love (Ending Theme from TV Drama _Wonder Women_).mp3
+5
+D/home/dylan/Downloads
+	Purgatorio.pdf
+6
+D/home/dylan/.config
+	awesome
+4
+D/home/dylan/.config/awesome
+	themes
+3
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome/themes/default
+	tele.jpg
+13
+D/home/dylan/Downloads
+	zip
+5
+D/mnt/HDD/Music
+	Harry Styles
+5
+D/mnt/HDD
+	Deezloader Music
+4
+D/mnt/HDD/Deezloader Music
+	Miley Cyrus - Midnight Sky.mp3
+4
+D/home/dylan/Downloads
+	zip
+5
+D/mnt/HDD/Wallpapers
+	Fjaðrárgljúfur, Iceland [OC] [1920x1080].jpg
+29
+D/home/dylan/Downloads
+	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
+7
+D/home/dylan/github/dotfiles
+	bash
+4
+D/home/dylan/github/dotfiles/bash
+	.bash_aliases
+1
+D/home/dylan/github/dotfiles
+	README.md
+13
+D/home/dylan/Downloads
+	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
+7
+D/home/dylan/github/dotfiles
+	windows
+9
+D/home/dylan/github/dotfiles/windows
+	..
+0
+D/home/dylan/github/dotfiles
+	init.sh
+14
 D
 
 # Command line history (oldest to newest):
-:!mv -t /mnt/HDD/NUS_EE/ bash/ nvim/
-:git add .
-:mkdir As01
-:ex
-:extract 
-:ext
-:mkdir "Tutorial 5:
 :mkdir "Tutorial 5"
 :mkdir Personal Notes
 :touch skeleton.tex
@@ -764,8 +761,17 @@ D
 :touch Dracula.vifm
 :mkdir Marshmello
 :mkdir 
+:vim xdg.sh
+:!vim xdg.sh
+:!nvim xdg.sh
+:vim test
+:chmod +x %c
+:chmod +x
+:chmod +x %f
 
 # Search history (oldest to newest):
+/neo
+/benny
 /windows
 /ed shee
 /githu
@@ -781,7 +787,6 @@ D
 /scree
 /con
 /rofi
-/bash
 /screen
 /imwheel
 /pro
@@ -804,9 +809,7 @@ D
 /mpd
 /.mpd
 /ma
-/qpdf
 /tmux
-/ala
 /test
 /doc
 /mutt
@@ -831,12 +834,9 @@ D
 /huga
 /pc
 /git
-/nvim
 /aronson
 /arons
-/awe
 /.pdf
-/vifm
 /zara
 /harry
 /marsh
@@ -846,17 +846,23 @@ D
 /selena
 /back to y
 /past
+/ala
+/nvi
+/grave
+/halse
+/gra
+/storm
+/ch
+/jay
+/ptsh
+/un
+/qpdf
+/bash
+/awe
+/nvim
+/vifm
 
 # Prompt history (oldest to newest):
-pTutorials.ziop
-pTutorials.zip
-pGES1021-Info.pdf
-pGES1021 Lecture 3 Primary Vegetation.pdf
-pGES1021 Lecture 5 Secondary Vegetation.pdf
-pGES1021 Lecture 2 Intertidal.pdf
-pGES1021 Lecture 4 Subtidal.pdf
-pN_SR_TSRPT.pdf
-pUnofficial_transcript
 pEE2211-tut2.zip
 pLecture Slides
 pTutorial 3 Question
@@ -948,13 +954,20 @@ ppics.pdf
 pGEQ1000
 pGES1021
 pas03
+pITAP of a lone surfer on a foggy road in San Francisco.jpg
+psurfer
+phills.jpg
+pOcean.jpg
+pOceanocean
+pocean
+pITAP of a winter storm in Upstate New York.jpg
+pwinterstorm
+ptele
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/mnt/HDD/Deezloader Music/Selena Gomez - Back To You.mp3
-""/mnt/HDD/Deezloader Music/Selena Gomez - Wolves.mp3
-""/mnt/HDD/Deezloader Music/Trevor Daniel - Past Life.mp3
+""/home/dylan/.local/share/vifm/Trash/000_windows
 
 # Directory stack (oldest to newest):
 
@@ -1911,6 +1924,78 @@ t/mnt/HDD/.vifm-Trash-1000/000_AlbumArtSmall.jpg
 	/mnt/HDD/Music/AlbumArtSmall.jpg
 t/mnt/HDD/.vifm-Trash-1000/000_Mellow.mbp
 	/mnt/HDD/Deezloader Music/Mellow.mbp
+t/mnt/HDD/.vifm-Trash-1000/000_Selena Gomez - Back To You.mp3
+	/mnt/HDD/Deezloader Music/Selena Gomez - Back To You.mp3
+t/mnt/HDD/.vifm-Trash-1000/000_Selena Gomez - Wolves.mp3
+	/mnt/HDD/Deezloader Music/Selena Gomez - Wolves.mp3
+t/mnt/HDD/.vifm-Trash-1000/000_Shawn Mendes - Monster.mp3
+	/mnt/HDD/Deezloader Music/Shawn Mendes - Monster.mp3
+t/mnt/HDD/.vifm-Trash-1000/000_Trevor Daniel - Past Life.mp3
+	/mnt/HDD/Deezloader Music/Trevor Daniel - Past Life.mp3
+t/home/dylan/.local/share/vifm/Trash/000_kb.jpg
+	/home/dylan/.config/awesome/themes/default/kb.jpg
+t/home/dylan/.local/share/vifm/Trash/000_surfer.jpg
+	/home/dylan/.config/awesome/themes/default/surfer.jpg
+t/home/dylan/.local/share/vifm/Trash/000_winterstorm.jpg
+	/home/dylan/.config/awesome/themes/default/winterstorm.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_Jay Chou - Feng.mp3
+	/mnt/HDD/Deezloader Music/Jay Chou - Feng.mp3
+t/home/dylan/.local/share/vifm/Trash/000_shore.jpg
+	/home/dylan/.config/awesome/themes/default/shore.jpg
+t/home/dylan/.local/share/vifm/Trash/000_neon2.jpg
+	/home/dylan/.config/awesome/themes/default/neon2.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_jase-bloor-oCZHIa1D4EU-unsplash.jpg
+	/mnt/HDD/Wallpapers/jase-bloor-oCZHIa1D4EU-unsplash.jpg
+t/home/dylan/.local/share/vifm/Trash/000_install.sh
+	/home/dylan/Downloads/install.sh
+t/home/dylan/.local/share/vifm/Trash/000_Quiz_MidTerm2021Q14.pdf
+	/home/dylan/Downloads/Quiz_MidTerm2021Q14.pdf
+t/home/dylan/.local/share/vifm/Trash/000_list_mf26_y21_sy.pdf
+	/home/dylan/Downloads/list_mf26_y21_sy.pdf
+t/home/dylan/.local/share/vifm/Trash/001_.dircolors
+	/home/dylan/.dircolors
+t/mnt/HDD/.vifm-Trash-1000/000_SimpleDraw$1.class
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as05/SimpleDraw$1.class
+t/mnt/HDD/.vifm-Trash-1000/000_as05
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as05
+t/mnt/HDD/.vifm-Trash-1000/000_as06
+	/mnt/HDD/Programming/Java/6-092-january-iap-2010/asn/as06
+t/mnt/HDD/.vifm-Trash-1000/000_images
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common/images
+t/mnt/HDD/.vifm-Trash-1000/000_jsp
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common/jsp
+t/mnt/HDD/.vifm-Trash-1000/000_scripts
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common/scripts
+t/mnt/HDD/.vifm-Trash-1000/000_search
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common/search
+t/mnt/HDD/.vifm-Trash-1000/000_styles
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common/styles
+t/mnt/HDD/.vifm-Trash-1000/001_common
+	/mnt/HDD/Programming/Java/6-851-spring-2012/common
+t/mnt/HDD/.vifm-Trash-1000/000_ReadMe.txt
+	/mnt/HDD/Programming/Java/6-851-spring-2012/ReadMe.txt
+t/mnt/HDD/.vifm-Trash-1000/000_START.htm
+	/mnt/HDD/Programming/Java/6-851-spring-2012/START.htm
+t/mnt/HDD/.vifm-Trash-1000/000_6-851s12-th.jpg
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/6-851s12-th.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_6-851s12-th.jpg.xml
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/6-851s12-th.jpg.xml
+t/mnt/HDD/.vifm-Trash-1000/000_6-851s12.jpg
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/6-851s12.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_6-851s12.jpg.xml
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/6-851s12.jpg.xml
+t/mnt/HDD/.vifm-Trash-1000/000_index.htm
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/index.htm
+t/mnt/HDD/.vifm-Trash-1000/000_index.htm.xml
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/index.htm.xml
+t/mnt/HDD/.vifm-Trash-1000/000_syllabus
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/syllabus
+t/mnt/HDD/.vifm-Trash-1000/000_instructor-insights
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/instructor-insights
+t/mnt/HDD/.vifm-Trash-1000/000_lecture-videos
+	/mnt/HDD/Programming/Java/6-851-spring-2012/contents/lecture-videos
+t/home/dylan/.local/share/vifm/Trash/000_xdg.sh
+	/home/dylan/.config/awesome/scripts/xdg.sh
 
 # State:
 f

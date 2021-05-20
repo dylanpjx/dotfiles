@@ -1,6 +1,12 @@
 " Mapping jk to normal mode
 inoremap jk <esc>
 
+" Move the cursor based on physical lines, not the actual lines.
+nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap <silent> ^ g^
+nnoremap <silent> 0 g0
+
 " Split navigation
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -10,6 +16,9 @@ noremap <C-l> <C-w>l
 " Switch tabs
 nnoremap H gT
 nnoremap L gt
+
+" Indenting without moving
+nnoremap gg=G gg=G``zz
 
 " Move lines
 nnoremap <A-j> :m .+1<CR>==

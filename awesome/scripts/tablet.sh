@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # xsetwacom set "HUION Huion Tablet Pad pad" Button 1 
 # xsetwacom set "HUION Huion Tablet Pad pad" Button 3

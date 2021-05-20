@@ -14,7 +14,8 @@ xset s noblank
 xsetwacom set "HUION Huion Tablet stylus" MapToOutput HEAD-0
 imwheel -b '4 5'
 picom -b
+ibus-daemon -drx
 
 # run alacritty --working-directory ~/Documents/ -e nvim todo.txt
 run discord
-run quodlibet
+run quodlibet 

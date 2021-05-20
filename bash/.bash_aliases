@@ -1,7 +1,7 @@
 alias ba='nvim ~/.bash_aliases'
 alias ev='nvim ~/.config/nvim/init.vim'
 alias eb='nvim ~/.bashrc'
-alias cpwd='pwd | xclip -selection clipboard'
+alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias hlog='heroku logs -t --app ee2028-backend'

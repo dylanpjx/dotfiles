@@ -33,11 +33,11 @@ endif
 " :mark mark /full/directory/path [filename]
 
 mark b ~/bin/
-mark h ~/
+mark H ~/
 mark c ~/.config/
 mark d ~/Downloads/
 mark n /mnt/HDD/NUS_EE/
-mark H /mnt/HDD/
+mark h /mnt/HDD/
 
 " ------------------------------------------------------------------------------
 
@@ -65,6 +65,7 @@ command! reload :write | restart
 command! extract extract -f zip %f %n 
 command! annotate xournal %f &
 command! dragon dragon -a -x %f &
+command! vim nvim -f
 
 " ------------------------------------------------------------------------------
 
@@ -356,13 +357,13 @@ nnoremap O :!gvim %f<cr>
 nnoremap gb :file &<cr>l
 
 " yank current directory path into the clipboard
-nnoremap yd :!echo -n %d | xclip -selection clipboard %i<cr>:echo expand('%"d') "is yanked to clipboard"<cr>
+nnoremap yp :!echo -n %d | xclip %i<cr>:echo expand('%"d') "is yanked to clipboard"<cr>
 
 " yank current file path into the clipboard
-nnoremap yf :!echo -n %c:p | xclip -selection clipboard %i<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
+nnoremap yf :!echo -n %c:p | xclip %i<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
 
 " yank current filename without path into the clipboard
-nnoremap yn :!echo -n %c | xclip -selection clipboard %i<cr>:echo expand('%"c') "is yanked to clipboard"<cr>
+nnoremap yn :!echo -n %c | xclip %i<cr>:echo expand('%"c') "is yanked to clipboard"<cr>
 
 " Mappings for faster renaming
 nnoremap I cw<c-a>

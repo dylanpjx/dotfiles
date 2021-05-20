@@ -31,7 +31,7 @@ globalkeys = gears.table.join(
               {description = "open a browser", group = "launcher"}),
     awful.key({ modkey }, "e", function () awful.spawn("alacritty -e ./.config/vifm/scripts/vifmrun") end,
               {description = "open a file manager", group = "launcher"}),
-    
+
     -- Focus
     awful.key({ modkey }, "j",
         function ()
@@ -45,35 +45,6 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
-    
-
-    -- awful.key({ modkey }, "j",
-    --     function ()
-    --         awful.client.focus.bydirection("down")
-    --     end,
-    --     {description = "focus down", group = "client"}
-    -- ),
-    -- awful.key({ modkey }, "k",
-    --     function ()
-    --         awful.client.focus.bydirection("up")
-    --     end,
-    --     {description = "focus up", group = "client"}
-    -- ),
-    -- awful.key({ modkey }, "h",
-    --     function ()
-    --         awful.client.focus.bydirection("left")
-    --     end,
-    --     {description = "focus left", group = "client"}
-    -- ),
-    -- awful.key({ modkey }, "l",
-    --     function ()
-    --         awful.client.focus.bydirection("right")
-    --     end,
-    --     {description = "focus right", group = "client"}
-    -- ),
-
-    -- awful.key({ modkey }, "w", function () mymainmenu:show() end,
-    --           {description = "show main menu", group = "awesome"}),
 
     -- Moving windows
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
@@ -94,7 +65,7 @@ globalkeys = gears.table.join(
             end
         end,
         {description = "go back", group = "client"}),
-    
+
     -- Adjusting layout
     awful.key({ modkey }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
@@ -129,16 +100,22 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "d", function () awful.spawn("rofi -combi-modi window,drun -show combi -modi combi -show-icons", false) end,
               {description = "run prompt", group = "launcher"}),
 
+    -- xdg-open
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
-                    prompt       = "Run Lua code: ",
+                    prompt       = "Open: ",
                     textbox      = awful.screen.focused().mypromptbox.widget,
-                    exe_callback = awful.util.eval,
+                    exe_callback = function(input)
+                      if not input or #input == 0 then return end
+                      awful.spawn({"xdg-open", input})
+                      naughty.notify { text = 'Opened: '..input }
+                    end,
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"})
+              {description = "open files/links", group = "launcher"})
+
     -- Menubar
     -- awful.key({ modkey }, "p", function() menubar.show() end,
     --           {description = "show the menubar", group = "launcher"})
@@ -155,7 +132,7 @@ clientkeys = gears.table.join(
               {description = "close", group = "client"}),
     awful.key({ modkey }, "g",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),
-    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
+    awful.key({ modkey }, ";", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
@@ -197,14 +174,18 @@ clientkeys = gears.table.join(
         {description = "increase brightness", group = "brightness"}),
     awful.key({ "Mod1" }, "Page_Down", function () awful.spawn.with_shell("~/.config/awesome/scripts/decreaseBrightness.sh") end,
         {description = "decrease brightness", group = "brightness"}),
-    
+
 
     awful.key({ modkey }, "p", function () awful.spawn.with_shell("pavucontrol") end,
-        {description = "audio mixer", group = "client"}),
+        {description = "open audio mixer", group = "launcher"}),
 
     -- Tablet
     awful.key({ },  "Scroll_Lock", function () awful.spawn.with_shell("~/.config/awesome/scripts/tablet.sh") end,
-        {description = "restrict tablet area", group = "tablet"})
+        {description = "restrict tablet area", group = "tablet"}),
+
+    -- iBus
+    awful.key({ modkey },  "/", function () awful.spawn.with_shell("~/.config/awesome/scripts/ibusSwitch.sh") end,
+        {description = "change input language", group = "ibus"})
 )
 
 -- Bind all key numbers to tags.
