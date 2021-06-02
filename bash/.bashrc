@@ -38,8 +38,9 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# PS1='${debian_chroot:+($debian_chroot)}\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[1;37m\]\w\[\033[00m\]\$ '
-PS1='\[\e[0;1;38;5;47m\]\w \[\e[0;1;38;5;209m\]→\[\e[0m\] '
+# Dracula
+#PS1='\[\e[0;1;38;5;47m\]\w \[\e[0;1;38;5;209m\]→\[\e[0m\] '
+PS1='\[\e[0;38;5;255m\]\w \[\e[0;1;38;5;255m\]→\[\e[0m\] '
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then

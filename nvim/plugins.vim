@@ -18,8 +18,8 @@ call plug#begin(g:PLUGIN_HOME)
 " Plugins go here
 
 " Colorschemes
-" Plug 'morhetz/gruvbox'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'morhetz/gruvbox'
+" Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Dir
 Plug 'vifm/vifm.vim'
@@ -29,6 +29,8 @@ Plug 'junegunn/fzf.vim'
 " Snippets
 Plug 'honza/vim-snippets'
 
+
+Plug 'jiangmiao/auto-pairs'
 Plug 'freitass/todo.txt-vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'

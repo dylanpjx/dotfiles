@@ -29,6 +29,8 @@ else
     })
 end
 
+mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
+                                     menu = mymainmenu })
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
@@ -38,12 +40,10 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 
 -- {{{ Shutdown Menu
-shutdownmenu = {
-  { poweroff_text_icon .. " Shutdown", function() awful.spawn.with_shell("poweroff") end },
-  { reboot_text_icon .. " Restart", function() awful.spawn.with_shell("reboot") end },
-  { suspend_text_icon .. " Sleep", function() awful.spawn.with_shell("systemctl suspend") end }
-}
+-- shutdownmenu = {
+--   { poweroff_text_icon .. " Shutdown", function() awful.spawn.with_shell("poweroff") end },
+--   { reboot_text_icon .. " Restart", function() awful.spawn.with_shell("reboot") end },
+--   { suspend_text_icon .. " Sleep", function() awful.spawn.with_shell("systemctl suspend") end }
+-- }
 -- }}}
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
-                                     menu = shutdownmenu })

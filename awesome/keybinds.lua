@@ -165,9 +165,9 @@ clientkeys = gears.table.join(
         {description = "(un)maximize horizontally", group = "client"}),
 
     -- Screenshots
-    awful.key({ }, "Print", function () awful.spawn.with_shell("scrot '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
+    awful.key({ }, "Print", nil, function () awful.spawn.with_shell("scrot '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
         {description = "take screenshot of entire screen", group = "screenshots"}),
-    awful.key({ "Mod1" }, "Print", function () awful.spawn.with_shell("scrot -a $(slop -f '%x,%y,%w,%h') '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
+    awful.key({ "Mod1" }, "Print", nil, function () awful.spawn.with_shell("scrot -a $(slop -f '%x,%y,%w,%h') '%Y-%m-%d_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && mv $f /tmp/screenshots'", false) end,
         {description = "take screenshot of area", group = "screenshots"}),
     -- Brightness
     awful.key({ "Mod1" }, "Page_Up", function () awful.spawn.with_shell("~/.config/awesome/scripts/increaseBrightness.sh") end,
