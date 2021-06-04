@@ -8,7 +8,6 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 2. Install the latest release
 3. Unzip and then run `./install`
 4. `sudo apt install adb`
-5. In terminal, type `Droidcam` and it will run
 
 ## Audio
 
