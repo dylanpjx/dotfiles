@@ -24,7 +24,7 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 - `xev -event button`: Button 1,2,3,8
 
 ## Other utils:
-[Dragon D&D](https://github.com/mwh/dragon)
-[Picom](https://github.com/yshui/picom)
-[FZF](https://github.com/junegunn/fzf)
-[PtSh](https://github.com/jszczerbinsky/ptSh)
+- [Dragon D&D](https://github.com/mwh/dragon)
+- [Picom](https://github.com/yshui/picom)
+- [FZF](https://github.com/junegunn/fzf)
+- [PtSh](https://github.com/jszczerbinsky/ptSh)
