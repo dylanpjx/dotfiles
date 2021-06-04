@@ -39,8 +39,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # Dracula
-#PS1='\[\e[0;1;38;5;47m\]\w \[\e[0;1;38;5;209m\]→\[\e[0m\] '
-PS1='\[\e[0;38;5;255m\]\w \[\e[0;1;38;5;255m\]→\[\e[0m\] '
+PS1='\[\e[0;1;38;5;108m\]\w \[\e[0;1;38;5;142m\]→\[\e[0m\] '
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then

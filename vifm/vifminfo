@@ -66,117 +66,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config/awesome/scripts
-	xdg.sh
-7
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config/awesome/scripts
-	tablet.sh
-6
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config
-	vifm
-33
-d/home/dylan/.config/vifm
-	vifmrc
-8
-d/home/dylan/.config
-	awesome
-4
-d/home/dylan/.config/awesome
-	scripts
-2
-d/home/dylan/.config/awesome/scripts
-	tablet.sh
-6
-d/home/dylan/Downloads
-	6-006-fall-2011.zip
-6
-d/home/dylan
-	Downloads
-14
-d/home/dylan/Downloads
-	squarepoint-feb25.mkv
-9
-d/home/dylan/.config
-	awesome
-4
-d/home/dylan/github/dotfiles
-	bash
-4
-d/home/dylan/github/dotfiles/bash
-	.bashrc
-2
-d/home/dylan/github/dotfiles
-	.gitattributes
-11
-d/home/dylan/github
-	gtk-master
-4
-d/home/dylan/github/gtk-master
-	gtk-3.20
-8
-d/home/dylan/github/gtk-master/gtk-3.20
-	..
-0
-d/home/dylan/github/gtk-master
-	gtk-3.0
-7
-d/home/dylan/github/gtk-master/gtk-3.0
-	..
-0
-d/home/dylan/github/gtk-master
-	unity
-12
-d/home/dylan/github/gtk-master/unity
-	..
-0
-d/home/dylan/github/gtk-master
-	.github
-1
-d/home/dylan/github/gtk-master/.github
-	issue_template.md
-1
-d/home/dylan/github/gtk-master
-	kde
-9
-d/home/dylan/github
-	picom
-4
-d/home/dylan/Downloads
-	zip
-5
-d/home/dylan/Downloads/zip
-	..
-0
-d/home/dylan/Downloads
-	zip
-5
-d/home/dylan/Downloads/zip
-	Dracula
-1
-d/home/dylan/Downloads/zip/Dracula
-	..
-0
-d/home/dylan/Downloads/zip
-	..
-0
-d/home/dylan/Downloads
-	test folder.zip
-10
-d/home/dylan
-	Downloads
-28
-d/home/dylan/Downloads
-	Dracula
-1
 d/home/dylan/Downloads/Dracula
 	16
 1
@@ -361,65 +250,125 @@ d/home/dylan/.config/awesome/themes
 	default
 1
 d/home/dylan/.config/awesome/themes/default
-	theme.lua
-11
+	icons
+1
+d/home/dylan/.config/awesome/themes/default/icons
+	..
+0
+d/home/dylan/.config/awesome/themes/default
+	icons
+1
+d/home/dylan/.config/awesome/themes
+	default
+1
 d/home/dylan/.config/awesome
-	volume.lua
+	themes
+3
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome/themes/default
+	taglist
+2
+d/home/dylan/.config/awesome/themes
+	default
+1
+d/home/dylan/.config/awesome
+	keybinds.lua
+5
+d/home/dylan/.config
+	awesome
+6
+d/mnt/HDD
+	Ebooks
+5
+d/mnt/HDD/Ebooks
+	Programming
+4
+d/mnt/HDD/Ebooks/Programming
+	Andrew Hunt, David Thomas - The Pragmatic Programmer_ From Journeyman to Master-Addison-Wesley Professional (1999).pdf
+5
+d/mnt/HDD/Ebooks
+	Economics
+1
+d/mnt/HDD/Ebooks/Economics
+	The Little Book of Common Sense Investing.pdf
+8
+d/mnt/HDD/Ebooks
+	Programming
+4
+d/mnt/HDD/Ebooks/Programming
+	Brett Slatkin - Effective Python_ 59 SPECIFIC WAYS TO WRITE BETTER PYTHON-Addison-Wesley (2015).pdf
+6
+d/mnt/HDD/Ebooks
+	Programming
+4
+d/home/dylan/.config
+	awesome
+6
+d/home/dylan
+	.themes
+27
+d/home/dylan/.themes
+	dracula
+2
+d/home/dylan
+	.icons
 10
+d/home/dylan/.icons
+	gruvbox-dark-icons-gtk
+4
+d/mnt/HDD/NUS_EE
+	EG3611A
+3
+d/mnt/HDD/NUS_EE/EG3611A
+	NUS Engineering Report Cover Page.docx
+2
+d/mnt/HDD/NUS_EE
+	EG3611A
+3
+d/mnt/HDD
+	Wallpapers
+12
+d/home/dylan/Downloads/gruvbox-material-gtk/themes
+	..
+0
+d/home/dylan/Downloads/gruvbox-material-gtk
+	themes
+3
+d/home/dylan/Downloads/gruvbox-material-gtk/themes
+	Gruvbox-Material-Dark-HIDPI
+1
+d/home/dylan/Downloads/gruvbox-material-gtk
+	icons
+2
+d/home/dylan/Downloads/gruvbox-material-gtk/icons
+	..
+0
+d/home/dylan/Downloads/gruvbox-material-gtk
+	icons
+2
+d/home/dylan/Downloads
+	Purgatorio.pdf
+5
+d/home/dylan
+	.npm
+17
+d/home/dylan/.config
+	awesome
+6
+d/home/dylan/.config/awesome/themes/default
+	wallpapers
+4
+d/home/dylan/.config/awesome/themes/default/wallpapers
+	alex-perez-marco-island.jpg
+1
+d/home/dylan/.config/awesome/themes/default
+	theme.lua
+6
 d
 
 # Right window history (oldest to newest):
-D/home/dylan
-	.bash_aliases
-24
-D/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-8
-D/mnt/HDD/NUS_EE
-	LEW notes
-3
-D/mnt/HDD
-	Movies & TV
-6
-D/mnt/HDD/Movies & TV
-	Captain Marvel (2019) [BluRay] [1080p] [YTS.AM]
-4
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	gtk-master
-1
-D/home/dylan/Downloads/zip/gtk-master
-	..
-0
-D/home/dylan/Downloads/zip
-	gtk-master
-1
-D/home/dylan/Downloads
-	zip
-5
-D/home/dylan/Downloads/zip
-	..
-0
-D/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-8
-D/home/dylan
-	Pictures
-13
-D/home/dylan/github/dotfiles
-	nvim
-5
-D/home/dylan/github
-	gtk-master
-4
-D/home/dylan/github/gtk-master
-	Art
-2
-D/home/dylan/github
-	gtk-master
-4
 D/home/dylan
 	Documents
 8
@@ -667,15 +616,62 @@ D/mnt/HDD/Wallpapers
 	white-truck.jpg
 47
 D/home/dylan/Downloads
-	..
-0
+	EG3611A
+1
+D/home/dylan/Downloads/EG3611A
+	NUS Engineering Report Cover Page.docx
+1
+D/home/dylan/Downloads
+	Purgatorio.pdf
+6
+D/home/dylan
+	.themes
+30
+D/home/dylan/.themes
+	dracula
+2
+D/home/dylan
+	.themes
+30
+D/home
+	dylan
+1
+D/home/dylan
+	.icons
+13
+D/home/dylan/.icons
+	default
+3
+D/home/dylan
+	.icons
+13
+D/home
+	dylan
+1
+D/home/dylan
+	.icons
+13
+D/home/dylan/.config
+	alacritty
+4
+D/home/dylan/.config/awesome/themes/default
+	titlebar
+3
+D/home/dylan/.config/awesome/themes
+	default
+1
+D/home/dylan/.config/awesome
+	themes
+3
+D/home/dylan/.config
+	alacritty
+4
+D/home/dylan/.config/alacritty
+	alacritty.yml
+1
 D
 
 # Command line history (oldest to newest):
-:select .*$xoj$
-:select *.xoj
-:mkdir PC2020
-:mkdir EE2023
 :unzip
 :mkdir Papers
 :mkdir Solutions
@@ -772,10 +768,12 @@ D
 :extract dir
 :!rm *.ttf
 :extract! dir
+:mkdir EG3611A
+:select {*.jpg}
+:mkdir wallpapers
+:select *.jpg
 
 # Search history (oldest to newest):
-/scree
-/con
 /rofi
 /screen
 /imwheel
@@ -869,10 +867,12 @@ D
 /daniel
 /rose
 /them
-/themes
 /lightt
 /light
 /dark
+/theme
+/yaru
+/themes
 /icons
 
 # Prompt history (oldest to newest):
@@ -980,7 +980,6 @@ pITAP-lonely-surfer-foggy-road
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.local/share/vifm/Trash/000_Yaru-Amber
 
 # Directory stack (oldest to newest):
 
@@ -2243,6 +2242,92 @@ t/home/dylan/.local/share/vifm/Trash/000_Yaru-Amber
 	/home/dylan/.themes/Yaru-Amber
 t/home/dylan/.local/share/vifm/Trash/000_SourceCodePro.zip
 	/home/dylan/Downloads/SourceCodePro.zip
+t/home/dylan/.local/share/vifm/Trash/000_icons
+	/home/dylan/.config/awesome/themes/default/icons
+t/home/dylan/.local/share/vifm/Trash/000_volume.lua
+	/home/dylan/.config/awesome/volume.lua
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Colors-master.zip
+	/home/dylan/Downloads/Yaru-Colors-master.zip
+t/home/dylan/.local/share/vifm/Trash/000_yaru
+	/home/dylan/Downloads/yaru
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Amber-dark
+	/home/dylan/.themes/Yaru-Amber-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Aqua-dark
+	/home/dylan/.themes/Yaru-Aqua-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Aubergine-dark
+	/home/dylan/.themes/Yaru-Aubergine-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Blue-dark
+	/home/dylan/.themes/Yaru-Blue-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Brown-dark
+	/home/dylan/.themes/Yaru-Brown-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Cinnamon-dark
+	/home/dylan/.themes/Yaru-Cinnamon-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Deepblue-dark
+	/home/dylan/.themes/Yaru-Deepblue-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Green-dark
+	/home/dylan/.themes/Yaru-Green-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Grey-dark
+	/home/dylan/.themes/Yaru-Grey-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Lavender-dark
+	/home/dylan/.themes/Yaru-Lavender-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-MATE-dark
+	/home/dylan/.themes/Yaru-MATE-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Orange-dark
+	/home/dylan/.themes/Yaru-Orange-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Pink-dark
+	/home/dylan/.themes/Yaru-Pink-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Purple-dark
+	/home/dylan/.themes/Yaru-Purple-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Red-dark
+	/home/dylan/.themes/Yaru-Red-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Teal-dark
+	/home/dylan/.themes/Yaru-Teal-dark
+t/home/dylan/.local/share/vifm/Trash/000_Yaru-Yellow-dark
+	/home/dylan/.themes/Yaru-Yellow-dark
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Amber
+	/home/dylan/.icons/Yaru-Amber
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Aqua
+	/home/dylan/.icons/Yaru-Aqua
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Aubergine
+	/home/dylan/.icons/Yaru-Aubergine
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Blue
+	/home/dylan/.icons/Yaru-Blue
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Brown
+	/home/dylan/.icons/Yaru-Brown
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Cinnamon
+	/home/dylan/.icons/Yaru-Cinnamon
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Deepblue
+	/home/dylan/.icons/Yaru-Deepblue
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Green
+	/home/dylan/.icons/Yaru-Green
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Grey
+	/home/dylan/.icons/Yaru-Grey
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Lavender
+	/home/dylan/.icons/Yaru-Lavender
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-MATE
+	/home/dylan/.icons/Yaru-MATE
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Orange
+	/home/dylan/.icons/Yaru-Orange
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Pink
+	/home/dylan/.icons/Yaru-Pink
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Purple
+	/home/dylan/.icons/Yaru-Purple
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Red
+	/home/dylan/.icons/Yaru-Red
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Teal
+	/home/dylan/.icons/Yaru-Teal
+t/home/dylan/.local/share/vifm/Trash/001_Yaru-Yellow
+	/home/dylan/.icons/Yaru-Yellow
+t/home/dylan/.local/share/vifm/Trash/000_Gruvbox-Material-Dark
+	/home/dylan/.themes/Gruvbox-Material-Dark
+t/home/dylan/.local/share/vifm/Trash/000_gruvbox-dark-gtk
+	/home/dylan/.themes/gruvbox-dark-gtk
+t/home/dylan/.local/share/vifm/Trash/000_gruvbox-dark-icons-gtk
+	/home/dylan/.icons/gruvbox-dark-icons-gtk
+t/home/dylan/.local/share/vifm/Trash/001_Gruvbox-Material-Dark
+	/home/dylan/.icons/Gruvbox-Material-Dark
+t/home/dylan/.local/share/vifm/Trash/001_gruvbox-material-gtk
+	/home/dylan/Downloads/gruvbox-material-gtk
 
 # State:
 f

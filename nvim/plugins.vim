@@ -18,8 +18,7 @@ call plug#begin(g:PLUGIN_HOME)
 " Plugins go here
 
 " Colorschemes
-Plug 'morhetz/gruvbox'
-" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sainnhe/gruvbox-material'
 
 " Dir
 Plug 'vifm/vifm.vim'
@@ -28,7 +27,6 @@ Plug 'junegunn/fzf.vim'
 
 " Snippets
 Plug 'honza/vim-snippets'
-
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'freitass/todo.txt-vim'
@@ -98,7 +96,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.

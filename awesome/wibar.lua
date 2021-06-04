@@ -1,5 +1,7 @@
 -- {{{ Wibar
 
+local quake = require("quake")
+
 -- Custom widgets
 -- local volume_widget = require("volume")
 local calendar = require("calendar")
@@ -64,6 +66,9 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
+    -- QuakeDD
+    s.quake = quake({ app = "alacritty", argname = "--title %s", extra = "--class QuakeDD", visible = true, height = 0.4, followtag = true })
+
     -- Wallpaper
     set_wallpaper(s)
     lo = awful.layout.layouts

@@ -75,9 +75,9 @@ globalkeys = gears.table.join(
               {description = "increase the number of master clients", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster(-1, nil, true) end,
               {description = "decrease the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
+    awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol( 1, nil, true)    end,
               {description = "increase the number of columns", group = "layout"}),
-    awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
+    awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
     awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
               {description = "select next", group = "layout"}),
@@ -101,20 +101,24 @@ globalkeys = gears.table.join(
               {description = "run prompt", group = "launcher"}),
 
     -- xdg-open
-    awful.key({ modkey }, "x",
-              function ()
-                  awful.prompt.run {
-                    prompt       = "Open: ",
-                    textbox      = awful.screen.focused().mypromptbox.widget,
-                    exe_callback = function(input)
-                      if not input or #input == 0 then return end
-                      awful.spawn({"xdg-open", input})
-                      naughty.notify { text = 'Opened: '..input }
-                    end,
-                    history_path = awful.util.get_cache_dir() .. "/history_eval"
-                  }
-              end,
-              {description = "open files/links", group = "launcher"})
+    -- awful.key({ modkey }, "x",
+    --           function ()
+    --               awful.prompt.run {
+    --                 prompt       = "Open: ",
+    --                 textbox      = awful.screen.focused().mypromptbox.widget,
+    --                 exe_callback = function(input)
+    --                   if not input or #input == 0 then return end
+    --                   awful.spawn({"xdg-open", input})
+    --                   naughty.notify { text = 'Opened: '..input }
+    --                 end,
+    --                 history_path = awful.util.get_cache_dir() .. "/history_eval"
+    --               }
+    --           end,
+    --           {description = "open files/links", group = "launcher"})
+
+    -- quake
+    awful.key({ modkey }, "x", function () awful.screen.focused().quake:toggle() end,
+              {description = "dropdown terminal", group = "launcher"})
 
     -- Menubar
     -- awful.key({ modkey }, "p", function() menubar.show() end,

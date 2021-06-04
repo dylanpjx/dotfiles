@@ -17,9 +17,6 @@ noremap <C-l> <C-w>l
 nnoremap H gT
 nnoremap L gt
 
-" Indenting without moving
-nnoremap gg=G gg=G``zz
-
 " Move lines
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==

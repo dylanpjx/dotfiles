@@ -3,12 +3,11 @@ syntax on
 set background=dark
 set t_Co=256
 
-" let g:gruvbox_hls_cursor='fg2'
-" let g:gruvbox_italic='1'
-" colorscheme gruvbox
 set termguicolors
-colorscheme gruvbox
 
+let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
 hi Normal ctermbg=NONE guibg=NONE
 
 " Bracket colours
