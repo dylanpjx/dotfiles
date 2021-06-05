@@ -92,12 +92,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 68 - ((32 * winheight(0) + 23) / 47)
+let s:l = 75 - ((39 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-68
-normal! 05|
+75
+normal! 0
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/signals.lua
 set splitbelow splitright

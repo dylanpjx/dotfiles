@@ -25,17 +25,18 @@ Plug 'vifm/vifm.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Snippets
+" Code
 Plug 'honza/vim-snippets'
-
-Plug 'jiangmiao/auto-pairs'
-Plug 'freitass/todo.txt-vim'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'lervag/vimtex'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"QoL 
+Plug 'jiangmiao/auto-pairs'
+Plug 'freitass/todo.txt-vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 " Initialise plugin system
 call plug#end()
 
@@ -53,8 +54,8 @@ function! s:find_files()
 endfunction
 command! ProjectFiles execute s:find_files()
 
-nnoremap <leader>e :Files<CR>
-nnoremap <leader>f :Rg<Cr>
+nnoremap <C-e> :Files<CR>
+nnoremap <C-f> :Rg<Cr>
 nnoremap <leader>o :History<CR>
 
 " Jsx-Pretty
