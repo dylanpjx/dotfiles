@@ -18,8 +18,8 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 
 ## Tablet
 
-- [https://github.com/Huion-Linux/DIGImend-kernel-drivers-for-Huion](Digimend drivers)
-- [https://wiki.archlinux.org/index.php/Wacom_tablet#Mapping_pad_buttons_to_function_keys](Xsetwacom wiki)
+- [Digimend drivers](https://github.com/Huion-Linux/DIGImend-kernel-drivers-for-Huion)
+- [Xsetwacom wiki](https://wiki.archlinux.org/index.php/Wacom_tablet#Mapping_pad_buttons_to_function_keys)
 - `xsetwacom --list`
 - `xev -event button`: Button 1,2,3,8
 
