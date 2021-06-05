@@ -8,10 +8,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 ws.vim
-badd +74 wibar.lua
+badd +72 wibar.lua
 badd +93 rc.lua
 badd +32 menu.lua
-badd +1 keybinds.lua
+badd +179 keybinds.lua
 badd +62 signals.lua
 badd +3 rules.lua
 badd +123 themes/default/theme.lua
@@ -68,12 +68,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 47)
+let s:l = 179 - ((18 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+179
+normal! 016|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/wibar.lua
 set splitbelow splitright
@@ -92,12 +92,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 70 - ((36 * winheight(0) + 23) / 47)
+let s:l = 68 - ((32 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-70
-normal! 0138|
+68
+normal! 05|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/signals.lua
 set splitbelow splitright
@@ -116,12 +116,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 47)
+let s:l = 38 - ((25 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+38
+normal! 019|
 lcd ~/.config/awesome
 tabedit ~/.config/awesome/rules.lua
 set splitbelow splitright

@@ -6,6 +6,8 @@
 -- ))
 -- }}}
 
+DEF = true
+
 -- {{{ Key bindings
 globalkeys = gears.table.join(
     -- System/Awesome
@@ -100,24 +102,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "d", function () awful.spawn("rofi -combi-modi window,drun -show combi -modi combi -show-icons", false) end,
               {description = "run prompt", group = "launcher"}),
 
-    -- xdg-open
-    -- awful.key({ modkey }, "x",
-    --           function ()
-    --               awful.prompt.run {
-    --                 prompt       = "Open: ",
-    --                 textbox      = awful.screen.focused().mypromptbox.widget,
-    --                 exe_callback = function(input)
-    --                   if not input or #input == 0 then return end
-    --                   awful.spawn({"xdg-open", input})
-    --                   naughty.notify { text = 'Opened: '..input }
-    --                 end,
-    --                 history_path = awful.util.get_cache_dir() .. "/history_eval"
-    --               }
-    --           end,
-    --           {description = "open files/links", group = "launcher"})
-
     -- quake
-    awful.key({ modkey }, "x", function () awful.screen.focused().quake:toggle() end,
+    awful.key({ modkey }, "`", function () awful.screen.focused().quake:toggle() end,
               {description = "dropdown terminal", group = "launcher"})
 
     -- Menubar
@@ -188,7 +174,10 @@ clientkeys = gears.table.join(
         {description = "restrict tablet area", group = "tablet"}),
 
     -- iBus
-    awful.key({ modkey },  "/", function () awful.spawn.with_shell("~/.config/awesome/scripts/ibusSwitch.sh") end,
+    awful.key({ modkey },  "/", function () 
+      awful.spawn.with_shell("~/.config/awesome/scripts/ibusSwitch.sh") 
+      DEF = not DEF
+    end,
         {description = "change input language", group = "ibus"})
 )
 

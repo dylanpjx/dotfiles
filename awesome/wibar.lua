@@ -1,10 +1,8 @@
 -- {{{ Wibar
 
-local quake = require("quake")
-
 -- Custom widgets
--- local volume_widget = require("volume")
 local calendar = require("calendar")
+local quake = require("quake")
 
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
@@ -67,7 +65,7 @@ screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
     -- QuakeDD
-    s.quake = quake({ app = "alacritty", argname = "--title %s", extra = "--class QuakeDD", visible = true, height = 0.4, followtag = true })
+    s.quake = quake({ app = "alacritty", argname = "--title %s", extra = "--class QuakeDD", height = 0.4, vert = "bottom", followtag = true })
 
     -- Wallpaper
     set_wallpaper(s)
@@ -131,7 +129,6 @@ awful.screen.connect_for_each_screen(function(s)
       },
     }
 
-
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s})
 
@@ -142,21 +139,19 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             -- mylauncher,
-            s.mytaglist, 
+            s.mytaglist,
             s.mypromptbox,
         },
         {s.mytasklist, margins = 2, widget = wibox.container.margin}, -- Middle widget
-        -- mytextclock,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             -- mykeyboardlayout,
             wibox.widget.systray(),
             wibox.widget.textbox('  | '),
             mytextclock,
-            -- volume_widget({display_notification = true}),
             wibox.widget.textbox(' | '),
             wibox.widget.imagebox('/home/dylan/.config/awesome/battery.png'),
-            awful.widget.watch('bash -c "python3 /home/dylan/.config/awesome/scripts/bat.py"', 200),
+            awful.widget.watch('bash -c "python3 /home/dylan/.config/awesome/scripts/mouseBatt.py"', 15),
             wibox.widget.textbox(' '),
             s.mylayoutbox,
         },
