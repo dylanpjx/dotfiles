@@ -11,10 +11,9 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 
 ## Audio
 
-1. Speakers are on `line-out`, headphones are on `headphone`
-2. Play some audio
-3. Go to `alsamixer` and configure accordingly
-4. Save using `sudo alsactl store`
+1. Speakers are on `line-out`, headphones are on `headphone` in `pavucontrol`
+2. If having no audio, use `alsamixer` to check sound card and check if `Auto-mute` is enabled
+3. If having audio issues, edit the relevant config file in `/usr/share/pulseaudio/alsa-mixer/paths/` to enable/disable the correct sources/sinks. The sources/sinks currently enabled/disabled can be checked through `alsamixer`. [Steps in site](https://unix.stackexchange.com/questions/602613/how-to-switch-between-headphones-and-speakers-without-disconnecting)
 
 ## Tablet
 

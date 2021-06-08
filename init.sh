@@ -1,7 +1,7 @@
 #! bin/bash
 add-apt-repository ppa:openrazer/stable
 apt update
-apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome 
+apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome pavucontrol
 \ python3 python3-pip default-jre npm nodejs
 \ fzf ripgrep imwheel 
 \ texlive-latex-extra texlive-science latexmk ttf-mscorefonts-installer pandoc
