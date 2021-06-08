@@ -22,6 +22,12 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 - `xsetwacom --list`
 - `xev -event button`: Button 1,2,3,8
 
+## AwesomeWM
+
+- Default themes are in `/usr//share/awesome/themes/`
+- [Docs](https://awesomewm.org/doc/api/index.html)
+- [ArchWiki](https://wiki.archlinux.org/title/Awesome)
+
 ## Other utils:
 - [Dragon D&D](https://github.com/mwh/dragon)
 - [Picom](https://github.com/yshui/picom)

@@ -104,11 +104,11 @@ globalkeys = gears.table.join(
 
     -- quake
     awful.key({ modkey }, "`", function () awful.screen.focused().quake:toggle() end,
-              {description = "dropdown terminal", group = "launcher"})
+              {description = "dropdown terminal", group = "launcher"}),
 
     -- Menubar
-    -- awful.key({ modkey }, "p", function() menubar.show() end,
-    --           {description = "show the menubar", group = "launcher"})
+    awful.key({ modkey }, "a", function() menubar.show() end,
+              {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
