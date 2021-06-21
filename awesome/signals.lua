@@ -1,5 +1,15 @@
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
+
+client.disconnect_signal("request::activate", awful.ewmh.activate)
+function awful.ewmh.activate(c)
+    if c:isvisible() then
+        client.focus = c
+        c:raise()
+    end
+end
+client.connect_signal("request::activate", awful.ewmh.activate)
+
 client.connect_signal("manage", function (c)
     -- Set the windows at the slave,
     -- i.e. put it at the end of others instead of setting it master.
@@ -62,4 +72,5 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
 -- }}}

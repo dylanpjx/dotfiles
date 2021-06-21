@@ -19,6 +19,6 @@ ibus-daemon -drx
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd
 
-# run alacritty --working-directory ~/Documents/ -e nvim todo.txt
 run discord
 run quodlibet 
+run joplin

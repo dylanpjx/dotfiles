@@ -45,6 +45,10 @@
 	/mnt/HDD/NUS_EE/
 	..
 1615948711
+'p
+	/home/dylan/Projects
+	chess-sdl
+1623168840
 'r
 	/mnt/HDD/Documents/Work/Resume/V2
 	embedded.tex
@@ -66,504 +70,336 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Downloads/Dracula
-	16
-1
-d/home/dylan/Downloads
-	squarepoint-feb25.mkv
-8
 d/home/dylan
-	Downloads
-28
-d/home/dylan/github/dotfiles
-	nvim
+	Projects
+35
+d/home
+	dylan
+1
+d/home/dylan
+	Projects
+35
+d/home/dylan/Projects
+	chess-sdl
+1
+d/home/dylan/Projects/chess-sdl
+	bin
+2
+d/home/dylan/Projects/chess-sdl/bin
+	debug
+1
+d/home/dylan/Projects/chess-sdl
+	img
+4
+d/home/dylan/Projects/chess-sdl/img
+	bg.png
+1
+d/home/dylan/Projects/chess-sdl
+	res
 5
-d/home/dylan/github
-	qt5
+d/home/dylan/Projects/chess-sdl/res
+	img
+1
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects/chess-sdl/src
+	main.cpp
+1
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	..
+0
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	Board.hpp
+1
+d/home/dylan/Projects/chess-sdl
+	res
 5
-d/home/dylan/github/qt5
-	Dracula.conf
+d/home/dylan/Projects/chess-sdl/res
+	gfx
+1
+d/home/dylan/Projects/chess-sdl/res/gfx
+	bg.png
+1
+d/home/dylan/Projects/chess-sdl/res
+	gfx
+1
+d/home/dylan/Projects/chess-sdl
+	build
 3
-d/home/dylan/github
-	picom
-4
-d/home/dylan/Downloads
-	squarepoint-feb25.mkv
-8
-d/home/dylan
-	Downloads
-28
-d/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-7
-d/home/dylan/.config
-	teams
-17
-d/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-7
-d/mnt/HDD
-	Wallpapers
-12
-d/mnt/HDD/Wallpapers
-	czlt11shvv501.jpg
-17
-d/home/dylan/.config
-	alacritty
-4
-d/home/dylan/.config/alacritty
-	alacritty.yml
+d/home/dylan/Projects/chess-sdl/build
+	..
+0
+d/home/dylan/Projects/chess-sdl
+	bin
+2
+d/home/dylan/Projects/chess-sdl/bin
+	debug
 1
-d/home/dylan/.config/awesome/themes/default
-	nord-lines.png
+d/home/dylan/Projects/chess-sdl/bin/debug
+	libSDL2.so
+2
+d/home/dylan/Projects/chess-sdl/bin
+	release
+2
+d/home/dylan/Projects/chess-sdl/bin/release
+	libSDL2.so
+2
+d/home/dylan/Projects/chess-sdl/bin
+	release
+2
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	RenderWindow.hpp
+5
+d/home/dylan/Projects/chess-sdl
+	src
+5
+d/home/dylan/Projects/chess-sdl/src
+	Game.cpp
+3
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects/chess-sdl/src
+	RenderWindow.cpp
+4
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects/chess-sdl/src
+	RenderWindow.cpp
+4
+d/home/dylan/Projects/chess-sdl
+	.gitattributes
+7
+d/home/dylan/Projects
+	chess-sdl
+1
+d/home/dylan/Projects/chess-sdl
+	build
+3
+d/home/dylan/Projects/chess-sdl/build
+	CMakeFiles
+1
+d/home/dylan/Projects/chess-sdl/build/CMakeFiles
+	cmake.check_cache
+4
+d/home/dylan/Projects/chess-sdl/build
+	CMakeFiles
+1
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	Board.hpp
+1
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	Board.hpp
+1
+d/home/dylan/Projects/chess-sdl
+	include
+4
+d/home/dylan/Projects/chess-sdl/include
+	Board.hpp
+1
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects/chess-sdl/src
+	Game.cpp
+3
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects/chess-sdl/src
+	RenderWindow.cpp
+4
+d/home/dylan/Projects/chess-sdl
+	src
+6
+d/home/dylan/Projects
+	chess-test
+2
+d/home/dylan/Projects/chess-test
+	Piece.hpp
+8
+d/home/dylan/Projects
+	chess-test.zip
+5
+d/home/dylan/Projects/chess-sdl
+	res
+5
+d/home/dylan/Projects
+	chess-test
+2
+d/home/dylan/Projects/chess-test
+	Piece.hpp
 9
-d/home/dylan/.config/awesome/themes
-	default
+d/home/dylan/Projects
+	chess-dev
 1
-d/home/dylan/.config/awesome
-	themes
+d/home/dylan/Projects/chess-dev
+	bin
+1
+d/home/dylan/Projects
+	chess-test
+2
+d/home/dylan/Projects/chess-test
+	cmake
+2
+d/home/dylan/Projects/chess-test/cmake
+	FindSDL2_image.cmake
+1
+d/home/dylan/Projects/chess-test
+	cmake
+2
+d/home/dylan/Projects/chess-test/cmake
+	FindSDL2_image.cmake
+2
+d/home/dylan/Projects/chess-test
+	build
+1
+d/home/dylan/Projects/chess-test/build
+	..
+0
+d/home/dylan/Projects/chess-test
+	res
 3
-d/home/dylan/.config
-	alacritty
-4
-d/home/dylan/.config/alacritty
-	alacritty.yml
+d/home/dylan/Projects/chess-test/res
+	gfx
 1
-d/home/dylan/.config
-	awesome
-6
-d/home/dylan/.config/awesome
-	themes
-3
-d/home/dylan/.config/awesome/themes
-	default
+d/home/dylan/Projects/chess-test/res/gfx
+	pieces
 1
-d/home/dylan/.config/awesome/themes/default
-	theme.lua
+d/home/dylan/Projects/chess-test/res/gfx/pieces
+	wp.png
 10
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/github/dotfiles
-	bash
-4
-d/home/dylan/github/dotfiles/bash
-	.bashrc
-2
-d/home/dylan/github/dotfiles
-	alacritty
-2
-d/home/dylan/github/dotfiles/alacritty
-	alacritty.yml
-1
-d/home/dylan/.themes/gruvbox-material-gtk
-	themes
-3
-d/home/dylan
-	.themes
-23
-d/home/dylan/.themes
-	gruvbox-material-gtk
-3
-d/home/dylan/.themes/gruvbox-material-gtk
-	LICENSE
-3
-d/home/dylan/.themes
-	gruvbox-material-gtk
-3
-d/home/dylan/.themes/gruvbox-material-gtk
-	README.md
-4
-d/home/dylan/.themes
-	themes
-4
-d/home/dylan/.themes/themes
-	..
-0
-d/home/dylan/.themes
-	gruvbox-material-gtk
+d/mnt/HDD/Music
+	Amy Shark - Love Monster (2018)
 5
-d/home/dylan/.themes/gruvbox-material-gtk
-	icons
-2
-d/home/dylan/.themes/gruvbox-material-gtk/icons
-	Gruvbox-Material-Dark
-1
-d/home/dylan/.themes/gruvbox-material-gtk/icons/Gruvbox-Material-Dark
-	..
-0
-d/home/dylan/.themes/gruvbox-material-gtk/icons
-	..
-0
-d/home/dylan/.themes/gruvbox-material-gtk
-	icons
-2
-d/home/dylan/.themes
-	gruvbox-material-gtk
-5
-d/home/dylan
-	.icons
-6
-d/home/dylan/.icons
-	default
-3
-d/home/dylan
-	.themes
-23
-d/home/dylan/.themes
-	gruvbox-material-gtk
-5
-d/home/dylan/.themes/gruvbox-material-gtk
-	icons
-2
-d/home/dylan/.themes/gruvbox-material-gtk/icons
-	..
-0
-d/home/dylan/.themes/gruvbox-material-gtk
-	README.md
-4
-d/home/dylan/.themes
-	gruvbox-dark-gtk
-3
-d/home/dylan
-	.themes
-21
-d/home/dylan/.themes
-	Yaru-Amber-dark
-2
-d/home/dylan
-	.icons
-4
-d/home/dylan/.icons
-	Yaru-Purple
-16
-d/home/dylan
-	.icons
-4
-d/home/dylan/.config
-	awesome
-6
-d/home/dylan/.config/awesome
-	themes
-3
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome/themes/default
-	icons
-1
-d/home/dylan/.config/awesome/themes/default/icons
-	..
-0
-d/home/dylan/.config/awesome/themes/default
-	icons
-1
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome
-	themes
-3
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome/themes/default
-	taglist
-2
-d/home/dylan/.config/awesome/themes
-	default
-1
-d/home/dylan/.config/awesome
-	keybinds.lua
-5
-d/home/dylan/.config
-	awesome
-6
 d/mnt/HDD
-	Ebooks
-5
-d/mnt/HDD/Ebooks
-	Programming
-4
-d/mnt/HDD/Ebooks/Programming
-	Andrew Hunt, David Thomas - The Pragmatic Programmer_ From Journeyman to Master-Addison-Wesley Professional (1999).pdf
-5
-d/mnt/HDD/Ebooks
-	Economics
+	Music
+7
+d/mnt
+	HDD
 1
-d/mnt/HDD/Ebooks/Economics
-	The Little Book of Common Sense Investing.pdf
-8
-d/mnt/HDD/Ebooks
-	Programming
+d/mnt/HDD
+	Deezloader Music
 4
-d/mnt/HDD/Ebooks/Programming
-	Brett Slatkin - Effective Python_ 59 SPECIFIC WAYS TO WRITE BETTER PYTHON-Addison-Wesley (2015).pdf
-6
-d/mnt/HDD/Ebooks
-	Programming
-4
-d/home/dylan/.config
-	awesome
-6
-d/home/dylan
-	.themes
-27
-d/home/dylan/.themes
-	dracula
-2
-d/home/dylan
-	.icons
-10
-d/home/dylan/.icons
-	gruvbox-dark-icons-gtk
-4
-d/mnt/HDD/NUS_EE
-	EG3611A
+d/mnt/HDD/Deezloader Music
+	Walkman
 3
-d/mnt/HDD/NUS_EE/EG3611A
-	NUS Engineering Report Cover Page.docx
+d/mnt/HDD/Deezloader Music/Walkman
+	P!nk - What About Us.mp3
+44
+d/mnt/HDD/Deezloader Music
+	Pakho Chau - Free My Love (Ending Theme from TV Drama _Wonder Women_).mp3
+9
+d/home/dylan
+	Templates
+15
+d/home/dylan/github/dotfiles
+	alacritty
+2
+d/home/dylan/.config/awesome
+	quake.lua
+7
+d/mnt/HDD/NUS_EE
+	Archived
+1
+d/mnt/HDD/NUS_EE/Archived
+	zip
+1
+d/mnt/HDD/NUS_EE/Archived/zip
+	..
+0
+d/mnt/HDD/NUS_EE/Archived
+	EE2023
+1
+d/mnt/HDD/NUS_EE/Archived/EE2023
+	Quizzes
+5
+d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes
+	Finals
+1
+d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes/Finals
+	EE2023_2021s2 - final.pdf
+4
+d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes
+	Finals
+1
+d/mnt/HDD/NUS_EE/Archived/EE2023
+	Quizzes
+5
+d/mnt/HDD/NUS_EE/Archived
+	EE1111A.zip
 2
 d/mnt/HDD/NUS_EE
-	EG3611A
-3
-d/mnt/HDD
-	Wallpapers
-12
-d/home/dylan/Downloads/gruvbox-material-gtk/themes
-	..
-0
-d/home/dylan/Downloads/gruvbox-material-gtk
-	themes
-3
-d/home/dylan/Downloads/gruvbox-material-gtk/themes
-	Gruvbox-Material-Dark-HIDPI
-1
-d/home/dylan/Downloads/gruvbox-material-gtk
-	icons
-2
-d/home/dylan/Downloads/gruvbox-material-gtk/icons
-	..
-0
-d/home/dylan/Downloads/gruvbox-material-gtk
-	icons
-2
-d/home/dylan/Downloads
-	Purgatorio.pdf
+	basic_math.pdf
 5
-d/home/dylan
-	.npm
-17
 d/home/dylan/.config
-	awesome
-6
-d/home/dylan/.config/awesome/themes/default
-	wallpapers
-4
-d/home/dylan/.config/awesome/themes/default/wallpapers
-	alex-perez-marco-island.jpg
+	ptSh
+40
+d/home/dylan/.local/share/applications
+	mimeinfo.cache
 1
-d/home/dylan/.config/awesome/themes/default
-	theme.lua
-6
+d/home/dylan/.local/share
+	firenvim
+10
+d/home/dylan/.local
+	share
+4
+d/home/dylan
+	.local
+4
+d/usr/bin
+	joplin
+43
+d/home/dylan
+	.wget-hsts
+48
 d
 
 # Right window history (oldest to newest):
-D/home/dylan
-	Documents
-8
-D/home/dylan/Documents
-	..
-0
-D/home/dylan
-	.themes
-5
-D/home/dylan/.themes
-	gtk-master
-1
-D/home/dylan
-	.icons
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Anne-Marie - 2002.mp3
+7
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Still Woozy - Goodie Bag.mp3
+43
+D/mnt/HDD/Deezloader Music
+	Walkman
+3
+D/mnt/HDD/Deezloader Music/Walkman
+	Bazzi - Paradise.mp3
 4
-D/home/dylan/.icons
-	default
-2
-D/home/dylan
-	.themes
-22
-D/home/dylan/.themes
-	dracula
-1
-D/home/dylan/.config
-	deemix
-10
-D/home/dylan
-	.icons
-10
-D/home/dylan/.config
-	gtk-3.0
-25
-D/home/dylan/.config/gtk-3.0
-	settings.ini
-2
-D/home/dylan/.config
-	libreoffice
-29
-D/home/dylan
-	.nv
-21
-D/home/dylan/.config
-	vifm
-43
-D/home/dylan/.config/vifm
-	vifmrc
-8
-D/home/dylan/.config
-	vifm
-43
-D/home/dylan
-	Documents
-29
-D/home/dylan/Documents
-	Done.txt
-3
-D/home/dylan
-	Desktop
-28
-D/home/dylan/Desktop
-	math.xoj
-2
-D/home/dylan
-	github
-43
-D/home/dylan/github
-	qt5
+D/mnt/HDD/Deezloader Music
+	Miley Cyrus - Midnight Sky.mp3
 5
-D/home/dylan/github/qt5
-	Dracula.conf
-3
-D/home/dylan/github
-	qt5
-5
-D/home/dylan
-	github
-43
-D/home/dylan/.config
-	qt5ct
-39
-D/home/dylan/.config/qt5ct
-	colors
-1
-D/home/dylan/.config/qt5ct/colors
-	Dracula.conf
-1
-D/home/dylan/.config/qt5ct
-	colors
-1
-D/home/dylan/.config/qt5ct/colors
-	Dracula.conf
-1
-D/home/dylan/.config/qt5ct
-	colors
-1
-D/home/dylan/.config
-	awesome
-7
-D/home/dylan/.config/awesome
-	themes
-3
-D/home/dylan/.config/awesome/themes
-	default
-1
-D/home/dylan/.config/awesome/themes/default
-	theme.lua
-14
 D/mnt/HDD
-	Movies & TV
-6
-D/mnt/HDD/Movies & TV
-	Generation.Kill.2008.Complete.1080p.Bluray.10bit.x265-HazMatt
-9
-D/mnt/HDD
-	Work
-13
-D/home/dylan/.config
-	ncmpcpp
-37
-D/home/dylan/.config/ncmpcpp
-	..
-0
-D/home/dylan/.config
-	ncmpcpp
-37
-D/home/dylan
-	.ncmpcpp
-18
-D/home/dylan/.ncmpcpp
-	ncmpcpp
-1
-D/home/dylan/.ncmpcpp/ncmpcpp
-	..
-0
-D/home/dylan/.ncmpcpp
-	config.gz
-1
-D/home/dylan
-	.ncmpcpp
-18
-D/home/dylan/.ncmpcpp
-	error.log
-2
-D/home/dylan
-	..
-0
-D/mnt/HDD
-	Ebooks
-5
-D/mnt/HDD/Ebooks
-	Gym
-2
-D/mnt/HDD/Ebooks/Gym
-	..
-0
-D/mnt/HDD/Ebooks
-	Gym
-2
-D/mnt/HDD/Ebooks/Gym
-	Steven Low - Overcoming gravity_ a systematic approach to gymnastics and bodyweight strength (2011) - libgen.lc.pdf
-2
-D/home/dylan/.config
-	awesome
-7
-D/home/dylan/.config/awesome
-	themes
-3
-D/home/dylan/.config/awesome/themes
-	default
-1
-D/home/dylan/.config/awesome/themes/default
-	theme.lua
-16
-D/home/dylan/.config
-	vifm
-44
-D/home/dylan/.config/vifm
-	vifminfo_4071
-7
+	Deezloader Music
+4
 D/mnt/HDD/Music
-	Lauv
+	Shaun - Way Back Home (feat. Conor Maynard) (Sam Feldt Edit).flac
 43
-D/mnt/HDD/Music/Lauv
-	Lauv - ~how i'm feeling~
-2
-D/mnt/HDD/Music/Lauv/Lauv - ~how i'm feeling~
-	07 - Feelings.mp3
-7
-D/mnt/HDD/Music/Lauv
-	Lauv - ~how i'm feeling~
-2
-D/mnt/HDD/Music
-	LANY
-40
 D/mnt/HDD
 	Deezloader Music
 4
@@ -571,127 +407,275 @@ D/mnt/HDD/Deezloader Music
 	Walkman
 3
 D/mnt/HDD/Deezloader Music/Walkman
-	AlbumArtSmall.jpg
-6
+	Shaun - Way Back Home (feat. Conor Maynard) (Sam Feldt Edit).flac
+43
 D/mnt/HDD/Deezloader Music
 	Walkman
 3
 D/mnt/HDD/Deezloader Music/Walkman
-	AlbumArtSmall.jpg
-6
+	Bazzi - Paradise.mp3
+4
 D/mnt/HDD/Deezloader Music
-	Mum
-2
-D/mnt/HDD
-	Music
+	Pakho Chau - Free My Love (Ending Theme from TV Drama _Wonder Women_).mp3
 7
-D/mnt/HDD/Music
-	Folder.jpg
-41
 D/home/dylan/Downloads
-	dir
-5
-D/home/dylan/Downloads/dir
-	Sauce Code Pro Black Nerd Font Complete.ttf
-8
-D/home/dylan/Downloads
-	Purgatorio.pdf
-6
-D/home/dylan/.config
-	alacritty
+	april-17_sdl2-codergopher-tutorial
 4
-D/home/dylan/.config/alacritty
-	alacritty.yml
-1
-D/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-8
-D/mnt/HDD/Wallpapers
-	cristina-gottardi-CSpjU6hYo_0-unsplash.jpg
-41
-D/home/dylan/Downloads
-	receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
-8
-D/mnt/HDD/Wallpapers
-	white-truck.jpg
-47
-D/home/dylan/Downloads
-	EG3611A
-1
-D/home/dylan/Downloads/EG3611A
-	NUS Engineering Report Cover Page.docx
-1
-D/home/dylan/Downloads
-	Purgatorio.pdf
-6
-D/home/dylan
-	.themes
-30
-D/home/dylan/.themes
-	dracula
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
+	res
 2
-D/home/dylan
-	.themes
-30
-D/home
-	dylan
-1
-D/home/dylan
-	.icons
-13
-D/home/dylan/.icons
-	default
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/res
+	..
+0
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
+	src
 3
-D/home/dylan
-	.icons
-13
-D/home
-	dylan
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/src
+	main.cpp
+5
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
+	src
+3
+D/home/dylan/Downloads
+	Forms
 1
-D/home/dylan
-	.icons
-13
-D/home/dylan/.config
-	alacritty
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads/Forms/AMD
+	AMD-AMD Agreement APAC-637522587211309890.pdf
+1
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads/Forms/AMD
+	worldwide-standards-of-business-conduct.pdf
+3
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads
+	Forms
+1
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads/Forms/AMD
+	offerletter.pdf
+3
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads
+	april-17_sdl2-codergopher-tutorial
 4
-D/home/dylan/.config/awesome/themes/default
-	titlebar
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
+	src
 3
-D/home/dylan/.config/awesome/themes
-	default
+D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/src
+	main.cpp
+5
+D/usr/share/awesome/themes
+	..
+0
+D/usr/share/awesome
+	themes
+3
+D/usr/share/awesome/themes
+	gtk
+2
+D/usr/share/awesome/themes/gtk
+	theme.lua
 1
+D/usr/share/awesome/themes
+	zenburn
+5
+D/home/dylan/.config
+	awesome
+6
 D/home/dylan/.config/awesome
 	themes
 3
 D/home/dylan/.config
-	alacritty
+	awesome
+6
+D/home/dylan/github/dotfiles
+	README.md
+13
+D/home/dylan/Downloads
+	april-17_sdl2-codergopher-tutorial
 4
-D/home/dylan/.config/alacritty
-	alacritty.yml
+D/mnt/HDD
+	Movies & TV
+6
+D/home/dylan
+	.jupyter
+16
+D/home
+	dylan
 1
+D/
+	lib
+5
+D/lib
+	x86_64-linux-gnu
+44
+D/lib/x86_64-linux-gnu
+	libSDL2-2.0.so.0
+17
+D/home/dylan/Downloads
+	april-17_sdl2-codergopher-tutorial
+4
+D/home/dylan/.config
+	awesome
+6
+D/home/dylan/.config/awesome
+	themes
+3
+D/home/dylan/.config/awesome/themes
+	custom
+1
+D/home/dylan/.config/awesome/themes/custom
+	wallpapers
+4
+D/home/dylan/.config/awesome/themes/custom/wallpapers
+	rose.jpg
+5
+D/home/dylan/Projects
+	chess-test
+2
+D/home/dylan/Projects/chess-test
+	CMakeLists.txt
+6
+D/home/dylan/.config
+	vifm
+44
+D/home/dylan/.config/vifm
+	vifmrc
+8
+D/mnt/HDD/Music
+	Selena Gomez - Wolves.mp3
+42
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	5SOS
+1
+D/mnt/HDD/Music/5SOS
+	5 Seconds Of Summer - Easier.mp3
+2
+D/mnt/HDD/Music
+	P!nk - The Truth A. Love (2016) [24bit-JE]
+44
+D/mnt/HDD/Music/P!nk - The Truth A. Love (2016) [24bit-JE]
+	P!nk – The Truth About Love (2012).jpg
+7
+D/mnt/HDD/Music
+	P!nk
+4
+D/mnt/HDD/Music/P!nk
+	P!nk - Hurts 2B Human.mp3
+6
+D/mnt/HDD/Music
+	Miley Cyrus
+4
+D/mnt/HDD/Music/Miley Cyrus
+	Miley Cyrus - Party In The U.S.A..flac
+4
+D/mnt/HDD/Music
+	Selena Gomez
+4
+D/mnt/HDD/Music/Selena Gomez
+	Revival
+1
+D/mnt/HDD/Music/Selena Gomez/Revival
+	00 - Selena Gomez - Revival (Deluxe Edition)-BLUWORLD.nfo
+1
+D/mnt/HDD/Music/Selena Gomez
+	Revival
+1
+D/mnt/HDD/Music
+	Selena Gomez
+4
+D/mnt/HDD/Music/Selena Gomez
+	Selena Gomez - Back To You.mp3
+2
+D/mnt/HDD/Music
+	Khalid
+4
+D/mnt/HDD/Music/Khalid
+	Khalid - Young Dumb & Broke.flac
+6
+D/mnt/HDD/Music
+	Lewis Capaldi - Before You Go.mp3
+16
+D/home/dylan/github/dotfiles
+	.Xresources
+10
+D/home/dylan/.config
+	awesome
+4
+D/home/dylan/.config/awesome
+	themes
+3
+D/home/dylan/.config/awesome/themes
+	custom
+1
+D/home/dylan/.config/awesome/themes/custom
+	submenu.png
+5
+D/home/dylan/Downloads
+	..
+0
+D/home/dylan/.config
+	awesome
+4
+D/home/dylan
+	.Xresources
+43
+D/home/dylan/.config
+	awesome
+8
+D/home/dylan/.config/awesome
+	rc.lua
+9
+D/home/dylan/github/dotfiles
+	awesome
+3
+D/home/dylan/github/dotfiles/awesome
+	quake.lua
+7
+D/home/dylan/Downloads
+	Streaming
+4
+D/home/dylan/Downloads/Streaming
+	L_EE Industry Tracks_AY2021_22.pdf
+4
+D/home/dylan/Downloads
+	Streaming
+4
+D/home/dylan/Downloads/Streaming
+	L_Masterlist_2021_22_EE_17June2021.pdf
+4
+D/home/dylan/Downloads
+	Streaming
+4
+D/home/dylan/Downloads/Streaming
+	EE2 Streaming_talk_curriculum_2021_final.pdf
+3
+D/home/dylan/Downloads
+	S7146129G_LPA.pdf
+7
+D/home/dylan
+	Downloads
+31
+D/home/dylan/Downloads
+	S7146129G_LPA.pdf
+6
 D
 
 # Command line history (oldest to newest):
-:unzip
-:mkdir Papers
-:mkdir Solutions
-:mkdir "Test 1"
-:mkdir "Quiz 1"
-:mkdir As02
-:mkdir W5
-:mkdir @6
-:mkdir W6
-:mkdir "W6 - Renewable Energy Sources"
-:mkdir W7
-:k
-:mkdir W7 - Transformers
-:mkdir W8
-:mkdir W9
-:As03
-:mkdir Tut9
-:mkdir Tutorial 7
-:mkdir Tut7
-:mkdir Tut8
 :touch ee2111.py
 :touch 1.in
 :mkdir ee2029
@@ -746,7 +730,6 @@ D
 :chmod +x %c
 :chmod +x
 :chmod +x %f
-:zip
 :!rm *.xml
 :mkdir asn
 :extract %c
@@ -763,7 +746,6 @@ D
 :mkdir
 :!vim config
 :undolist
-:extract
 :rm *.ttf
 :extract dir
 :!rm *.ttf
@@ -772,26 +754,30 @@ D
 :select {*.jpg}
 :mkdir wallpapers
 :select *.jpg
+:mkdir rc
+:touch ibusGet.sh
+:mkdir  '
+:mkdir Self-help
+:in
+:extra
+:cd /usr/share/awesome/themes/
+:cd
+:!mkdir bin res src bin bin/debug bin/release include
+:mkdir gfx
+:mkdir build
+:zip
+:zip chess-sdl
+:zip chess-test
+:!wget https://raw.githubusercontent.com/Deraen/ohj2710/master/cmake_modules/FindSDL2TTF.cmake
+:mkdir Revival
+:extract
+:zip EE2023
+:cd/.local/share/applications
+:cd ~/.local/share/applications/
+:cd/usr/bin
+:sudo
 
 # Search history (oldest to newest):
-/rofi
-/screen
-/imwheel
-/pro
-/confi
-/kienyy
-/kien
-/gith
-/uti
-/python
-/dee
-/?
-/2023
-/taylor
-/justin
-/deemi
-/config
-/.config
 /.ncmp
 /mpd
 /.mpd
@@ -829,7 +815,6 @@ D
 /maroon
 /friends
 /maro
-/selena
 /back to y
 /past
 /nvi
@@ -841,11 +826,9 @@ D
 /jay
 /ptsh
 /un
-/qpdf
 /nvim
 /2211
 /ges
-/bash
 /.icons
 /icon
 /gtk
@@ -855,13 +838,10 @@ D
 /ncmp
 /.nc
 /04qk
-/vifm
 //
 /lauv
 /feel
 /v
-/ala
-/awe
 /benh
 /benj
 /daniel
@@ -874,18 +854,32 @@ D
 /yaru
 /themes
 /icons
+/qpdf
+/bash
+/vim
+/way ba
+/way
+/para
+/ala
+/pro
+/lib
+/x86
+/sdl
+/libsdl2
+/vifm
+/5sos
+/hurts
+/p!nk
+/mile
+/selena
+/khalid
+/loote
+/.X
+/awe
+/jopli
+/jop
 
 # Prompt history (oldest to newest):
-p6.1 Video Lecture pdf - Introduction to Solar Energy - EE2029.pdf
-p6.2 Video Lecture pdf - Introduction to Wind Energy - EE2029.pdf
-pA2_A0201984A.py
-ppoo.py
-pW9 - Per Unit Analysis
-p8. Tutorial - Transmission Lines.pdf
-pEE2211_Lecture9.pdf
-pEE2211 Lecture 9.pdf
-pTutorial8-Q2021.pdf
-pTutorial9-Q2021.pdf
 pTut2
 pTut3
 pTut4
@@ -976,10 +970,21 @@ pforest-hills
 pmatterhorn-tip
 pmatterhorn-tip.jpg
 pITAP-lonely-surfer-foggy-road
+pmouseBatt.py
+pspot.hpp
+pbox
+pmyTheme
+pcustom
+pchess-dev
+pP!nk
+pSelena Gomez
+p.Xresources(window)
+p.Xresources(dmenu)
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/dylan/.local/share/vifm/Trash/000_2021-06-21-155451_3840x1080_scrot.png
 
 # Directory stack (oldest to newest):
 
@@ -2328,6 +2333,98 @@ t/home/dylan/.local/share/vifm/Trash/001_Gruvbox-Material-Dark
 	/home/dylan/.icons/Gruvbox-Material-Dark
 t/home/dylan/.local/share/vifm/Trash/001_gruvbox-material-gtk
 	/home/dylan/Downloads/gruvbox-material-gtk
+t/home/dylan/.local/share/vifm/Trash/000_rc
+	/home/dylan/.config/awesome/rc
+t/home/dylan/.local/share/vifm/Trash/000_ibusGet.sh
+	/home/dylan/.config/awesome/scripts/ibusGet.sh
+t/home/dylan/.local/share/vifm/Trash/000_receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
+	/home/dylan/Downloads/receipt_Pang Jun Xian, Dylan_A0199256M.pdf.pdf
+t/home/dylan/.local/share/vifm/Trash/000_EE2028-Backend
+	/home/dylan/Projects/EE2028-Backend
+t/home/dylan/.local/share/vifm/Trash/000_personal-site
+	/home/dylan/Projects/personal-site
+t/mnt/HDD/.vifm-Trash-1000/000_Shaun - Way Back Home.mp3
+	/mnt/HDD/Deezloader Music/Walkman/Shaun - Way Back Home.mp3
+t/mnt/HDD/.vifm-Trash-1000/000_Bazzi - Paradise.mp3
+	/mnt/HDD/Deezloader Music/Bazzi - Paradise.mp3
+t/home/dylan/.local/share/vifm/Trash/000_defs.hpp
+	/home/dylan/Projects/chess-sdl/defs.hpp
+t/home/dylan/.local/share/vifm/Trash/000_02_getting_an_image_on_the_screen
+	/home/dylan/Downloads/02_getting_an_image_on_the_screen
+t/home/dylan/.local/share/vifm/Trash/000_april-17_sdl2-codergopher-tutorial
+	/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
+t/home/dylan/.local/share/vifm/Trash/000_Pieces.png
+	/home/dylan/Projects/chess-sdl/img/Pieces.png
+t/home/dylan/.local/share/vifm/Trash/000_02_getting_an_image_on_the_screen.zip
+	/home/dylan/Downloads/02_getting_an_image_on_the_screen.zip
+t/home/dylan/.local/share/vifm/Trash/000_gtk
+	/home/dylan/.config/awesome/themes/gtk
+t/home/dylan/.local/share/vifm/Trash/000_sky
+	/home/dylan/.config/awesome/themes/sky
+t/home/dylan/.local/share/vifm/Trash/000_xresources
+	/home/dylan/.config/awesome/themes/xresources
+t/home/dylan/.local/share/vifm/Trash/000_zenburn
+	/home/dylan/.config/awesome/themes/zenburn
+t/home/dylan/.local/share/vifm/Trash/000_build
+	/home/dylan/Projects/chess-sdl/build
+t/home/dylan/.local/share/vifm/Trash/000_ws.vim
+	/home/dylan/Projects/chess-sdl/ws.vim
+t/mnt/HDD/.vifm-Trash-1000/000_C
+	/mnt/HDD/Ebooks/Programming/C
+t/mnt/HDD/.vifm-Trash-1000/000_C++
+	/mnt/HDD/Ebooks/Programming/C++
+t/mnt/HDD/.vifm-Trash-1000/000_Algos
+	/mnt/HDD/Ebooks/Programming/Algos
+t/mnt/HDD/.vifm-Trash-1000/000_TLAP
+	/mnt/HDD/Ebooks/Programming/TLAP
+t/mnt/HDD/.vifm-Trash-1000/000_Steven Halim, Felix Halim-Competitive Programming 3_ The New Lower Bound of Programming Contests-Lulu.com (2013).pdf
+	/mnt/HDD/Ebooks/Programming/Steven Halim, Felix Halim-Competitive Programming 3_ The New Lower Bound of Programming Contests-Lulu.com (2013).pdf
+t/mnt/HDD/.vifm-Trash-1000/000_Tour of C#.pdf
+	/mnt/HDD/Ebooks/Programming/Tour of C#.pdf
+t/mnt/HDD/.vifm-Trash-1000/000_TLAP Updates.pdf
+	/mnt/HDD/Ebooks/Programming/TLAP Updates.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Entity.hpp
+	/home/dylan/Projects/chess-sdl/Entity.hpp
+t/home/dylan/.local/share/vifm/Trash/000_.zip
+	/home/dylan/Projects/.zip
+t/home/dylan/.local/share/vifm/Trash/000_Game.cpp
+	/home/dylan/Projects/chess-test/Game.cpp
+t/home/dylan/.local/share/vifm/Trash/000_Game.hpp
+	/home/dylan/Projects/chess-test/Game.hpp
+t/home/dylan/.local/share/vifm/Trash/000_chess-test.zip
+	/home/dylan/Projects/chess-test.zip
+t/home/dylan/.local/share/vifm/Trash/000_.git
+	/home/dylan/Projects/chess-dev/.git
+t/home/dylan/.local/share/vifm/Trash/000_chess-sdl.zip
+	/home/dylan/Projects/chess-sdl.zip
+t/home/dylan/.local/share/vifm/Trash/000_chess
+	/home/dylan/Downloads/chess
+t/home/dylan/.local/share/vifm/Trash/000_pulsesecure_9.1.R10_amd64_Ubuntu_Debian.zip
+	/home/dylan/Downloads/pulsesecure_9.1.R10_amd64_Ubuntu_Debian.zip
+t/home/dylan/.local/share/vifm/Trash/000_07_SAMI_2021_streaming.pdf
+	/home/dylan/Downloads/07_SAMI_2021_streaming.pdf
+t/home/dylan/.local/share/vifm/Trash/000_IoT-Specialization-talk 2021.pdf
+	/home/dylan/Downloads/Streaming/IoT-Specialization-talk 2021.pdf
+t/home/dylan/.local/share/vifm/Trash/000_Purgatorio.pdf
+	/home/dylan/Downloads/Purgatorio.pdf
+t/home/dylan/.local/share/vifm/Trash/000_pulsesecure_9.1.R10_amd64_Ubuntu_Debian.deb
+	/home/dylan/Downloads/pulsesecure_9.1.R10_amd64_Ubuntu_Debian.deb
+t/home/dylan/.local/share/vifm/Trash/000_sdl2-sample.zip
+	/home/dylan/Downloads/sdl2-sample.zip
+t/home/dylan/.local/share/vifm/Trash/000_10_2021-RoboticsSpecialization.pdf
+	/home/dylan/Downloads/Streaming/10_2021-RoboticsSpecialization.pdf
+t/home/dylan/.local/share/vifm/Trash/000_squarepoint-feb25.mkv
+	/home/dylan/Downloads/squarepoint-feb25.mkv
+t/mnt/HDD/.vifm-Trash-1000/000_EE2023.zip
+	/mnt/HDD/NUS_EE/Archived/EE2023.zip
+t/mnt/HDD/.vifm-Trash-1000/001_EE2023
+	/mnt/HDD/NUS_EE/Archived/EE2023
+t/home/dylan/.local/share/vifm/Trash/000_joplin-desktop
+	/home/dylan/.config/joplin-desktop
+t/home/dylan/.local/share/vifm/Trash/000_appimagekit-joplin.desktop
+	/home/dylan/.local/share/applications/appimagekit-joplin.desktop
+t/home/dylan/.local/share/vifm/Trash/000_2021-06-21-155451_3840x1080_scrot.png
+	/home/dylan/2021-06-21-155451_3840x1080_scrot.png
 
 # State:
 f

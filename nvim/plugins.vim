@@ -31,10 +31,11 @@ Plug 'lervag/vimtex'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rhysd/vim-clang-format'
+Plug 'machakann/vim-swap'
 
 "QoL 
 Plug 'jiangmiao/auto-pairs'
-Plug 'freitass/todo.txt-vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Initialise plugin system
@@ -52,11 +53,20 @@ function! s:find_files()
         execute 'Files'
     endif
 endfunction
-command! ProjectFiles execute s:find_files()
+command! ProjectFiles 'Files' execute s:find_files()
 
 nnoremap <C-e> :Files<CR>
-nnoremap <C-f> :Rg<Cr>
+nnoremap <C-f> :Rg<CR>
+nnoremap <C-b> :Windows<CR>
 nnoremap <leader>o :History<CR>
+
+" clang-format
+let g:clang_format#style_options = {
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11" }
+
+let g:clang_format#auto_format= 1
 
 " Jsx-Pretty
 let g:vim_jsx_pretty_colorful_config = 1
@@ -100,8 +110,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" Use H to show documentation in preview window.
+nnoremap <silent> H :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

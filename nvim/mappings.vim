@@ -14,8 +14,8 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 " Switch tabs
-nnoremap H gT
-nnoremap L gt
+nnoremap J gT
+nnoremap K gt
 
 " Move lines
 nnoremap <A-j> :m .+1<CR>==
@@ -48,7 +48,7 @@ nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>
 nnoremap \r :source $MYVIMRC <CR>
 
 " Save all files
-nnoremap <leader>s :wa <CR>
+nnoremap <leader>s :w <CR>
 
 " Save workspace, save all files, exit
 nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>

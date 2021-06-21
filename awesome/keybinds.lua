@@ -6,8 +6,6 @@
 -- ))
 -- }}}
 
-DEF = true
-
 -- {{{ Key bindings
 globalkeys = gears.table.join(
     -- System/Awesome
@@ -17,13 +15,13 @@ globalkeys = gears.table.join(
               {description = "go back", group = "tag"}),
     awful.key({ modkey }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
-    awful.key({ modkey, "Shift" }, "e", awesome.quit,
+    awful.key({ modkey, "Control" }, "e", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
-    awful.key({ modkey, "Shift" }, "r", function () awful.spawn.with_shell("reboot") end,
+    awful.key({ modkey, "Control" }, "r", function () awful.spawn.with_shell("reboot") end,
               {description = "restart", group = "system"}),
-    awful.key({ modkey, "Shift" }, "q", function() awful.spawn.with_shell("poweroff") end,
+    awful.key({ modkey, "Control" }, "q", function() awful.spawn.with_shell("poweroff") end,
               {description = "shutdown", group = "system"}),
-    awful.key({ modkey, "Shift" }, "s", function() awful.spawn.with_shell("systemctl suspend") end,
+    awful.key({ modkey, "Control" }, "s", function() awful.spawn.with_shell("systemctl suspend") end,
               {description = "sleep", group = "system"}),
 
     -- Default applications
@@ -98,14 +96,14 @@ globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
-    -- Prompt
-    awful.key({ modkey }, "d", function () awful.spawn("rofi -combi-modi window,drun -show combi -modi combi -show-icons", false) end,
-              {description = "run prompt", group = "launcher"}),
-
+    -- rofi
+    awful.key({ modkey }, "d", function () awful.spawn("rofi -modi combi -show combi -combi-modi drun,window", false) end,
+              {description = "rofi combi", group = "launcher"}),
+    awful.key({ modkey, "Shift" }, "d", function () awful.spawn("rofi -show window -show-icons", false) end,
+              {description = "rofi window", group = "launcher"}),
     -- quake
     awful.key({ modkey }, "`", function () awful.screen.focused().quake:toggle() end,
               {description = "dropdown terminal", group = "launcher"}),
-
     -- Menubar
     awful.key({ modkey }, "a", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})
@@ -176,7 +174,6 @@ clientkeys = gears.table.join(
     -- iBus
     awful.key({ modkey },  "/", function () 
       awful.spawn.with_shell("~/.config/awesome/scripts/ibusSwitch.sh") 
-      DEF = not DEF
     end,
         {description = "change input language", group = "ibus"})
 )
@@ -197,7 +194,7 @@ for i = 1, 9 do
                   end,
                   {description = "view tag #"..i, group = "tag"}),
         -- Toggle tag display.
-        awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
+        awful.key({ "Mod1"}, "#" .. i + 9,
                   function ()
                       local screen = awful.screen.focused()
                       local tag = screen.tags[i]

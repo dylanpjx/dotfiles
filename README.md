@@ -29,7 +29,9 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 - [ArchWiki](https://wiki.archlinux.org/title/Awesome)
 
 ## Other utils:
+
 - [Dragon D&D](https://github.com/mwh/dragon)
 - [Picom](https://github.com/yshui/picom)
 - [FZF](https://github.com/junegunn/fzf)
 - [PtSh](https://github.com/jszczerbinsky/ptSh)
+- [Joplin](https://joplinapp.org/terminal/)

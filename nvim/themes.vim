@@ -38,7 +38,7 @@ set statusline=
 set statusline+=\ %{toupper(g:currentmode[mode()])}
 set statusline+=\ %M
 set statusline+=\ %y
-set statusline+=\ %t
+set statusline+=\ %F
 set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
 
 set statusline+=%= " Right side settings

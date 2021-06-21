@@ -1,5 +1,36 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "css", "python","lua"],
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+      "filetypes": [
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "client": {
+          "snippetSupport": true
+        },
+        "clang": {
+          "extraArgs": ["-std=c++17"]
+        }
+      }
+    }
+  },
+  "diagnostic.checkCurrentLine": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "css", "python","lua", "markdown"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.disableLanguages": [],
