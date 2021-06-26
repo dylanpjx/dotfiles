@@ -38,7 +38,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Dracula
 PS1='\[\e[0;1;38;5;108m\]\w \[\e[0;1;38;5;142m\]→\[\e[0m\] '
 
 # Alias definitions.
@@ -56,6 +55,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+set -o vi
 
 # Perform file completion in a case insensitive fashion
 bind "set completion-ignore-case on"

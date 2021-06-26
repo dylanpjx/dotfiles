@@ -23,6 +23,7 @@ set mouse=a
 set backspace=indent,eol,start
 set noswapfile
 set autoread
+set title
 
 " Coc 
 set hidden
@@ -42,4 +43,7 @@ set signcolumn=yes
 " Clipboard settings, always use clipboard for all delete, yank, change, put
 set clipboard+=unnamedplus
 
-autocmd! FocusGained,BufEnter * checktime
+" Disable netrw
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+

@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -70,42 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan
-	Projects
-35
-d/home
-	dylan
-1
-d/home/dylan
-	Projects
-35
-d/home/dylan/Projects
-	chess-sdl
-1
-d/home/dylan/Projects/chess-sdl
-	bin
-2
-d/home/dylan/Projects/chess-sdl/bin
-	debug
-1
-d/home/dylan/Projects/chess-sdl
-	img
-4
-d/home/dylan/Projects/chess-sdl/img
-	bg.png
-1
-d/home/dylan/Projects/chess-sdl
-	res
-5
-d/home/dylan/Projects/chess-sdl/res
-	img
-1
-d/home/dylan/Projects/chess-sdl
-	src
-6
-d/home/dylan/Projects/chess-sdl/src
-	main.cpp
-1
 d/home/dylan/Projects/chess-sdl
 	include
 4
@@ -365,107 +329,50 @@ d/home/dylan
 	.local
 4
 d/usr/bin
-	joplin
-43
+	jmod
+40
+d/home/dylan/.config
+	nautilus
+34
 d/home/dylan
-	.wget-hsts
-48
+	.bash_aliases
+44
+d/home/dylan/.config
+	alacritty
+4
+d/home/dylan/.config/alacritty
+	alacritty.yml
+1
+d/home/dylan/.config
+	awesome
+4
+d/home/dylan/.config/awesome
+	scripts
+2
+d/home/dylan/.config/awesome/scripts
+	increaseBrightness.sh
+4
+d/home/dylan/.config/awesome
+	ws.vim
+12
+d/home/dylan/.config
+	vifm
+44
+d/home/dylan/.config/vifm
+	vifmrc
+8
+d/home/dylan
+	Music
+14
+d/home/dylan/Music
+	Amy Shark - Love Monster (2018)
+5
+d/home/dylan
+	.profile
+42
 d
 
 # Right window history (oldest to newest):
-D/mnt/HDD/Deezloader Music
-	Walkman
-3
-D/mnt/HDD/Deezloader Music/Walkman
-	Anne-Marie - 2002.mp3
-7
-D/mnt/HDD/Deezloader Music
-	Walkman
-3
-D/mnt/HDD/Deezloader Music/Walkman
-	Still Woozy - Goodie Bag.mp3
-43
-D/mnt/HDD/Deezloader Music
-	Walkman
-3
-D/mnt/HDD/Deezloader Music/Walkman
-	Bazzi - Paradise.mp3
-4
-D/mnt/HDD/Deezloader Music
-	Miley Cyrus - Midnight Sky.mp3
-5
-D/mnt/HDD
-	Deezloader Music
-4
-D/mnt/HDD/Music
-	Shaun - Way Back Home (feat. Conor Maynard) (Sam Feldt Edit).flac
-43
-D/mnt/HDD
-	Deezloader Music
-4
-D/mnt/HDD/Deezloader Music
-	Walkman
-3
-D/mnt/HDD/Deezloader Music/Walkman
-	Shaun - Way Back Home (feat. Conor Maynard) (Sam Feldt Edit).flac
-43
-D/mnt/HDD/Deezloader Music
-	Walkman
-3
-D/mnt/HDD/Deezloader Music/Walkman
-	Bazzi - Paradise.mp3
-4
-D/mnt/HDD/Deezloader Music
-	Pakho Chau - Free My Love (Ending Theme from TV Drama _Wonder Women_).mp3
-7
-D/home/dylan/Downloads
-	april-17_sdl2-codergopher-tutorial
-4
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
-	res
-2
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/res
-	..
-0
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
-	src
-3
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/src
-	main.cpp
-5
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
-	src
-3
-D/home/dylan/Downloads
-	Forms
-1
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads/Forms/AMD
-	AMD-AMD Agreement APAC-637522587211309890.pdf
-1
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads/Forms/AMD
-	worldwide-standards-of-business-conduct.pdf
-3
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads
-	Forms
-1
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads/Forms/AMD
-	offerletter.pdf
-3
-D/home/dylan/Downloads/Forms
-	AMD
-1
 D/home/dylan/Downloads
 	april-17_sdl2-codergopher-tutorial
 4
@@ -673,13 +580,102 @@ D/home/dylan
 D/home/dylan/Downloads
 	S7146129G_LPA.pdf
 6
+D/home/dylan/github/dotfiles
+	awesome
+3
+D/home/dylan/github/dotfiles/awesome
+	ws.vim
+12
+D/home/dylan/github/dotfiles
+	init.sh
+15
+D/home/dylan/Downloads
+	S7146129G_LPA.pdf
+6
+D/home/dylan/github/dotfiles
+	vifm
+8
+D/home/dylan/Downloads
+	Forms
+1
+D/home/dylan/Downloads/Forms
+	AMD
+1
+D/home/dylan/Downloads/Forms/AMD
+	offerletter.pdf
+3
+D/mnt/HDD
+	Music
+7
+D/mnt/HDD/Music
+	Playlists
+4
+D/mnt/HDD/Music/Playlists
+	..
+0
+D/mnt/HDD/Music
+	Secondhand_Serenade-A_Naked_Twist_in_My_Story
+11
+D/home/dylan/.config
+	mpd
+37
+D/home/dylan/.config/mpd
+	mpd.conf
+4
+D/home/dylan/.config
+	ncmpcpp
+39
+D/home/dylan/.config/ncmpcpp
+	error.log
+2
+D/home/dylan/.config
+	mpd
+37
+D/home/dylan/.config/mpd
+	state
+3
+D/home/dylan/.config
+	ncmpcpp
+39
+D/home/dylan/.config/ncmpcpp
+	..
+0
+D/home/dylan/.config
+	ncmpcpp
+39
+D/home/dylan/.config/ncmpcpp
+	error.log
+2
+D/home/dylan/.config
+	mpd
+37
+D/home/dylan/.config/mpd
+	sticker.sql
+5
+D/home/dylan/.config
+	mpd
+37
+D/home/dylan/.config/mpd
+	sticker.sql
+6
+D/home/dylan/.config
+	ncmpcpp
+39
+D/home/dylan/.config/ncmpcpp
+	config
+1
+D/home/dylan/.config
+	mpd
+37
+D/home/dylan/.config/mpd
+	mpd.conf
+4
+D/home/dylan/.config
+	..
+0
 D
 
 # Command line history (oldest to newest):
-:touch ee2111.py
-:touch 1.in
-:mkdir ee2029
-:mkdir Tut10
 :mk
 :mkdir AMD
 :mkdir DSO
@@ -776,13 +772,12 @@ D
 :cd ~/.local/share/applications/
 :cd/usr/bin
 :sudo
+:chmod u+x %c
+:chmod u+x %f
+:chmod u+x nvim.appimage
+:help
 
 # Search history (oldest to newest):
-/.ncmp
-/mpd
-/.mpd
-/ma
-/tmux
 /test
 /doc
 /mutt
@@ -826,7 +821,6 @@ D
 /jay
 /ptsh
 /un
-/nvim
 /2211
 /ges
 /.icons
@@ -835,7 +829,6 @@ D
 /minejkkkk
 /git
 /qt5ct
-/ncmp
 /.nc
 /04qk
 //
@@ -854,19 +847,15 @@ D
 /yaru
 /themes
 /icons
-/qpdf
-/bash
 /vim
 /way ba
 /way
 /para
-/ala
 /pro
 /lib
 /x86
 /sdl
 /libsdl2
-/vifm
 /5sos
 /hurts
 /p!nk
@@ -874,10 +863,21 @@ D
 /selena
 /khalid
 /loote
-/.X
-/awe
 /jopli
 /jop
+/.X
+/ala
+/bash
+/qpdf
+/alac
+/awe
+/nvim
+/vifm
+/playlists
+/music
+/ncmp
+/mpd
+/profile
 
 # Prompt history (oldest to newest):
 pTut2
@@ -984,7 +984,7 @@ p.Xresources(dmenu)
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.local/share/vifm/Trash/000_2021-06-21-155451_3840x1080_scrot.png
+""/mnt/HDD/Music/Playlists
 
 # Directory stack (oldest to newest):
 
@@ -2423,8 +2423,16 @@ t/home/dylan/.local/share/vifm/Trash/000_joplin-desktop
 	/home/dylan/.config/joplin-desktop
 t/home/dylan/.local/share/vifm/Trash/000_appimagekit-joplin.desktop
 	/home/dylan/.local/share/applications/appimagekit-joplin.desktop
+t/home/dylan/.local/share/vifm/Trash/000_.Xresources(dmenu)
+	/home/dylan/github/dotfiles/.Xresources(dmenu)
 t/home/dylan/.local/share/vifm/Trash/000_2021-06-21-155451_3840x1080_scrot.png
 	/home/dylan/2021-06-21-155451_3840x1080_scrot.png
+t/home/dylan/.local/share/vifm/Trash/000_nvim.appimage
+	/home/dylan/Downloads/nvim.appimage
+t/home/dylan/.local/share/vifm/Trash/000_mpd2.conf
+	/home/dylan/.config/mpd/mpd2.conf
+t/home/dylan/.local/share/vifm/Trash/000_keymap
+	/home/dylan/.moc/keymap
 
 # State:
 f

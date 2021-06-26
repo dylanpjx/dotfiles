@@ -1,3 +1,4 @@
+alias ..='cd ..'
 alias ba='nvim ~/.bash_aliases'
 alias ev='nvim ~/.config/nvim/init.vim'
 alias eb='nvim ~/.bashrc'
@@ -6,11 +7,13 @@ alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias hlog='heroku logs -t --app ee2028-backend'
-alias ytmusic='youtube-dl -f bestaudio -x --audio-format mp3'
+alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 alias vifm='~/.config/vifm/scripts/vifmrun .'
-alias todo='nvim ~/Documents/todo.txt'
+alias todo='alacritty --title "joplin" -e joplin'
 alias jn='conda activate base;jupyter notebook'
 alias xclip='xclip -i -sel p -f | xclip -i -sel c'
+alias cm='cmake .. && make'
+alias joplin='echo -ne "\033]0;joplin\007" && joplin'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

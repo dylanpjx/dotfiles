@@ -52,13 +52,16 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
 
-       { rule = { class = "discord" },
-         properties = { screen = 2, tag = "1" } },
-       { rule = { class = "Joplin" },
+       { rule = { name = "joplin" },
          properties = { screen = 1, tag = "3" } },
-       { rule = { class = "Quodlibet" },
-         properties = { screen = 2, tag = "2" } },
        { rule = { class = "zoom" },
-         properties = { screen = 1, tag = "3" } },
+         properties = { screen = 1, tag = "4" } },
+       { rule = { class = "Microsoft Teams - Preview" },
+         properties = { screen = 1, tag = "4" } },
+
+       { rule = { class = "Quodlibet" },
+         properties = { screen = 2, tag = "1" } },
+       { rule = { class = "discord" },
+         properties = { screen = 2, tag = "2" } },
 }
 -- }}}

@@ -16,20 +16,19 @@ endif
 let g:PLUGIN_HOME=expand(stdpath('data') . '/plugged')
 call plug#begin(g:PLUGIN_HOME)
 " Plugins go here
-
+"
 " Colorschemes
 Plug 'sainnhe/gruvbox-material'
 
 " Dir
 Plug 'vifm/vifm.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Code
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-clang-format'
 Plug 'machakann/vim-swap'
@@ -43,22 +42,13 @@ call plug#end()
 
 " vifm.vim
 let g:vifm_embed_split = 1
+let g:vifm_replace_netrw = 1
+let g:vifm_replace_netrw_cmd = 1
 
-" fzf.vim
-function! s:find_files()
-    let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
-    if git_dir != ''
-        execute 'GFiles' git_dir
-    else
-        execute 'Files'
-    endif
-endfunction
-command! ProjectFiles 'Files' execute s:find_files()
-
-nnoremap <C-e> :Files<CR>
-nnoremap <C-f> :Rg<CR>
-nnoremap <C-b> :Windows<CR>
-nnoremap <leader>o :History<CR>
+" Telescope
+nnoremap <C-e> :Telescope file_browser theme=get_ivy<cr>
+nnoremap <C-f> :Telescope current_buffer_fuzzy_find theme=get_ivy<cr>
+nnoremap <C-p> :Telescope buffers theme=get_ivy<cr>
 
 " clang-format
 let g:clang_format#style_options = {
@@ -67,9 +57,6 @@ let g:clang_format#style_options = {
             \ "Standard" : "C++11" }
 
 let g:clang_format#auto_format= 1
-
-" Jsx-Pretty
-let g:vim_jsx_pretty_colorful_config = 1
 
 " VimTex
 let g:tex_flavor = 'latex'
@@ -132,6 +119,6 @@ let g:coc_global_extensions = [
       \ 'coc-vimtex',
       \ 'coc-pyright',
       \ 'coc-java',
-      \ 'coc-lua',
+      \ 'coc-lua'
       \ ]
 

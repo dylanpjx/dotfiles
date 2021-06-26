@@ -16,9 +16,6 @@ imwheel -b '4 5'
 picom -b
 ibus-daemon -drx
 
-# MPD daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/pid ] && mpd
-
+run quodlibet
 run discord
-run quodlibet 
-run joplin
+alacritty -t joplin -e joplin

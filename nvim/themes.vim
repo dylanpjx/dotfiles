@@ -1,4 +1,5 @@
 " Dark theme in Vim
+filetype plugin on
 syntax on
 set background=dark
 set t_Co=256
@@ -39,8 +40,8 @@ set statusline+=\ %{toupper(g:currentmode[mode()])}
 set statusline+=\ %M
 set statusline+=\ %y
 set statusline+=\ %F
-set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
 
 set statusline+=%= " Right side settings
-set statusline+=\ %c:%l/%L
+set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline+=\ %c:%l/%L
 set statusline+=\ %p%%
