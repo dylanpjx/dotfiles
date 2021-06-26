@@ -31,6 +31,7 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 ## Other utils:
 
 - [Dragon D&D](https://github.com/mwh/dragon)
+- [Ueberzug](https://github.com/seebye/ueberzug)
 - [Picom](https://github.com/yshui/picom)
 - [FZF](https://github.com/junegunn/fzf)
 - [PtSh](https://github.com/jszczerbinsky/ptSh)
