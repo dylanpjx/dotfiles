@@ -12,10 +12,11 @@ set softtabstop=2
 set autoindent
 
 set wildmenu
-set wildmode=longest,list,full
+set wildmode=longest:list,full
 set ttimeoutlen=0
 set virtualedit=block
 
+set showmatch
 set hlsearch incsearch
 set ignorecase smartcase
 
@@ -27,14 +28,12 @@ set title
 
 " Coc 
 set hidden
-
 set nobackup
 set nowritebackup
-
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-set signcolumn=yes
+set signcolumn=number
 
 " Highlight 80th character
 " highlight ColorColumn ctermbg=yellow
@@ -46,4 +45,3 @@ set clipboard+=unnamedplus
 " Disable netrw
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
-

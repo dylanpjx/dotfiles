@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -70,54 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl
-	include
-4
-d/home/dylan/Projects/chess-sdl/include
-	..
-0
-d/home/dylan/Projects/chess-sdl
-	include
-4
-d/home/dylan/Projects/chess-sdl/include
-	Board.hpp
-1
-d/home/dylan/Projects/chess-sdl
-	res
-5
-d/home/dylan/Projects/chess-sdl/res
-	gfx
-1
-d/home/dylan/Projects/chess-sdl/res/gfx
-	bg.png
-1
-d/home/dylan/Projects/chess-sdl/res
-	gfx
-1
-d/home/dylan/Projects/chess-sdl
-	build
-3
-d/home/dylan/Projects/chess-sdl/build
-	..
-0
-d/home/dylan/Projects/chess-sdl
-	bin
-2
-d/home/dylan/Projects/chess-sdl/bin
-	debug
-1
-d/home/dylan/Projects/chess-sdl/bin/debug
-	libSDL2.so
-2
-d/home/dylan/Projects/chess-sdl/bin
-	release
-2
-d/home/dylan/Projects/chess-sdl/bin/release
-	libSDL2.so
-2
-d/home/dylan/Projects/chess-sdl/bin
-	release
-2
 d/home/dylan/Projects/chess-sdl
 	include
 4
@@ -370,51 +322,57 @@ d/home/dylan/Music
 d/home/dylan
 	.profile
 42
+d/home/dylan/.config
+	obs-studio
+32
+d/home/dylan
+	.imwheelrc
+43
+d/home/dylan/.config
+	user-dirs.locale
+47
+d/home/dylan
+	..
+0
+d/home/dylan/github
+	dotfiles
+1
+d/home/dylan/.config
+	user-dirs.dirs
+46
+d/home/dylan
+	.emacs.d
+4
+d/home/dylan/.emacs.d
+	config.org~
+5
+d/home/dylan/.config/nvim
+	coc-settings.json
+3
+d/home/dylan/Downloads
+	S7146129G_LPA.pdf
+6
+d/home/dylan/.config
+	vifm
+6
+d/home/dylan/.config/vifm
+	scripts
+2
+d/home/dylan/.config/vifm/scripts
+	vifmimg
+4
+d/home/dylan/.config/nvim
+	plugins.vim
+6
+d/home/dylan/github/dotfiles
+	bash
+4
+d/home/dylan/github/dotfiles/bash
+	.inputrc
+3
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/Downloads
-	april-17_sdl2-codergopher-tutorial
-4
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial
-	src
-3
-D/home/dylan/Downloads/april-17_sdl2-codergopher-tutorial/src
-	main.cpp
-5
-D/usr/share/awesome/themes
-	..
-0
-D/usr/share/awesome
-	themes
-3
-D/usr/share/awesome/themes
-	gtk
-2
-D/usr/share/awesome/themes/gtk
-	theme.lua
-1
-D/usr/share/awesome/themes
-	zenburn
-5
-D/home/dylan/.config
-	awesome
-6
-D/home/dylan/.config/awesome
-	themes
-3
-D/home/dylan/.config
-	awesome
-6
-D/home/dylan/github/dotfiles
-	README.md
-13
-D/home/dylan/Downloads
-	april-17_sdl2-codergopher-tutorial
-4
-D/mnt/HDD
-	Movies & TV
-6
 D/home/dylan
 	.jupyter
 16
@@ -673,6 +631,48 @@ D/home/dylan/.config/mpd
 D/home/dylan/.config
 	..
 0
+D/home/dylan/github/dotfiles
+	bash
+4
+D/home/dylan/github/dotfiles/bash
+	.inputrc
+3
+D/home/dylan/github/dotfiles
+	bash
+4
+D/home/dylan/github/dotfiles/bash
+	.bashrc
+2
+D/home/dylan/github/dotfiles
+	nvim
+5
+D/home/dylan/github/dotfiles/nvim
+	init.vim
+4
+D/home/dylan/github/dotfiles
+	nvim
+5
+D/home/dylan/github/dotfiles/nvim
+	init.vim
+4
+D/home/dylan/github/dotfiles
+	bash
+4
+D/home/dylan/github/dotfiles/bash
+	.inputrc
+3
+D/home/dylan/Downloads
+	S7146129G_LPA.pdf
+6
+D/home/dylan/.config
+	Unknown Organization
+6
+D/mnt/HDD
+	Pictures
+9
+D/home/dylan
+	.gtkrc-2.0
+43
 D
 
 # Command line history (oldest to newest):
@@ -778,8 +778,6 @@ D
 :help
 
 # Search history (oldest to newest):
-/test
-/doc
 /mutt
 /mutt-wiza
 /mail
@@ -866,18 +864,20 @@ D
 /jopli
 /jop
 /.X
-/ala
-/bash
-/qpdf
 /alac
-/awe
-/nvim
-/vifm
 /playlists
 /music
 /ncmp
 /mpd
 /profile
+/nvim
+/input
+/awe
+/ala
+/qpdf
+/bash
+/emacs
+/vifm
 
 # Prompt history (oldest to newest):
 pTut2
@@ -984,7 +984,7 @@ p.Xresources(dmenu)
 # Local filter history (oldest to newest):
 
 # Registers:
-""/mnt/HDD/Music/Playlists
+""/home/dylan/.bashrc
 
 # Directory stack (oldest to newest):
 
@@ -2433,6 +2433,12 @@ t/home/dylan/.local/share/vifm/Trash/000_mpd2.conf
 	/home/dylan/.config/mpd/mpd2.conf
 t/home/dylan/.local/share/vifm/Trash/000_keymap
 	/home/dylan/.moc/keymap
+t/home/dylan/.local/share/vifm/Trash/000_.xerverrc
+	/home/dylan/github/dotfiles/.xerverrc
+t/home/dylan/.local/share/vifm/Trash/001_.xerverrc
+	/home/dylan/.xerverrc
+t/home/dylan/.local/share/vifm/Trash/000_.xserverrc
+	/home/dylan/github/dotfiles/.xserverrc
 
 # State:
 f

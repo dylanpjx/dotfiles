@@ -10,24 +10,25 @@ endif
 set shortmess=aoO
 badd +1 ws.vim
 badd +1 ~/github/dotfiles/awesome/ws.vim
-badd +72 wibar.lua
+badd +10 wibar.lua
 badd +85 rc.lua
 badd +1 menu.lua
 badd +114 keybinds.lua
 badd +17 signals.lua
-badd +59 rules.lua
+badd +56 rules.lua
 badd +1 themes/default/theme.lua
 badd +140 ~/Downloads/archlabs-awesome/.config/awesome/themes/archlabs/theme.lua
 badd +5 scripts/bat.py
 badd +20 volume.lua
 badd +90 /etc/xdg/awesome/rc.lua
-badd +4 ~/.config/nvim/init.vim
-badd +38 ~/.config/nvim/mappings.vim
+badd +7 ~/.config/nvim/init.vim
+badd +18 ~/.config/nvim/mappings.vim
 badd +120 quake.lua
 badd +102 ~/.config/nvim/plugins.vim
 badd +11 themes/zenburn/theme.lua
 badd +19 themes/custom/theme.lua
 badd +15 scripts/autorun.sh
+badd +1 ~/.config/nvim/settings.vim
 argglobal
 %argdel
 $argadd scripts/autorun.sh
@@ -90,12 +91,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 7 - ((6 * winheight(0) + 24) / 48)
+let s:l = 5 - ((4 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
-normal! 0
+keepjumps 5
+normal! 030|
 lcd ~/.config/awesome
 tabnext
 edit ~/.config/awesome/signals.lua
@@ -132,12 +133,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 59 - ((27 * winheight(0) + 24) / 48)
+let s:l = 49 - ((17 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 59
-normal! 046|
+keepjumps 49
+normal! 0
 lcd ~/.config/awesome
 tabnext
 edit ~/.config/awesome/themes/custom/theme.lua
@@ -160,7 +161,7 @@ normal! zt
 keepjumps 19
 normal! 024|
 lcd ~/.config/awesome
-tabnext 5
+tabnext 3
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

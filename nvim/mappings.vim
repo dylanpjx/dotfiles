@@ -7,15 +7,20 @@ nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <silent> ^ g^
 nnoremap <silent> 0 g0
 
+" Center the cursor vertically when moving to the next word during a search.
+nnoremap n nzz
+nnoremap N Nzz
+
 " Split navigation
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
+noremap <C-c> <C-w>c
 
 " Switch tabs
-nnoremap J gT
-nnoremap K gt
+nnoremap H gT
+nnoremap L gt
 
 " Move lines
 nnoremap <A-j> :m .+1<CR>==
@@ -24,10 +29,10 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Resizing
-nnoremap <C-Up> :resize +2 <CR>
-nnoremap <C-Down> :resize -2 <CR>
-nnoremap <C-Left> :vertical resize -2 <CR>
-nnoremap <C-Right> :vertical resize +2 <CR>
+nnoremap <A-Up> :resize +2 <CR>
+nnoremap <A-Down> :resize -2 <CR>
+nnoremap <A-Left> :vertical resize -2 <CR>
+nnoremap <A-Right> :vertical resize +2 <CR>
 
 " Override default behaviour for Y
 nnoremap Y y$
