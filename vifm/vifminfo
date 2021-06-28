@@ -70,9 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl
-	include
-4
 d/home/dylan/Projects/chess-sdl/include
 	RenderWindow.hpp
 5
@@ -370,6 +367,9 @@ d/home/dylan/github/dotfiles
 d/home/dylan/github/dotfiles/bash
 	.inputrc
 3
+d/home/dylan/github/dotfiles
+	bash
+4
 d
 
 # Right window history (oldest to newest):

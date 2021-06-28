@@ -1,6 +1,9 @@
 " Mapping jk to normal mode
 inoremap jk <esc>
 
+" Unmap Q
+nnoremap Q <esc>
+
 " Move the cursor based on physical lines, not the actual lines.
 nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
