@@ -40,11 +40,15 @@ let g:currentmode={
 set laststatus=2
 set statusline=
 set statusline+=\ %{toupper(g:currentmode[mode()])}
-set statusline+=\ %M
-set statusline+=\ %y
-set statusline+=\ %F
+set statusline+=\ %{FugitiveStatusline()}
+set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline+=\ %y " Filetype
 
 set statusline+=%= " Right side settings
-set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
 " set statusline+=\ %c:%l/%L
-set statusline+=\ %p%%
+set statusline+=\ %M " Show if file has been changed
+set statusline+=\ %{expand('%:p:h:t')}/%t " Filename
+set statusline+=\ %p%% " % in file
+
+" Tabline
+set tabline=

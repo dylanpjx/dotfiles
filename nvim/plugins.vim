@@ -36,13 +36,12 @@ Plug 'rhysd/vim-clang-format'
 
 " Git
 Plug 'sindrets/diffview.nvim', {'branch': 'main'}
-Plug 'TimUntersberger/neogit'
+Plug 'tpope/vim-fugitive'
 
 " QoL 
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-surround'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
-Plug 'folke/which-key.nvim', {'branch': 'main'}
 " Initialise plugin system
 call plug#end()
 
@@ -60,18 +59,11 @@ nnoremap <C-e> :Telescope file_browser theme=get_ivy<cr>
 nnoremap <C-f> :Telescope current_buffer_fuzzy_find theme=get_ivy<cr>
 nnoremap <C-p> :Telescope buffers theme=get_ivy<cr>
 
-" Whichkey
-lua require("which-key").setup()
-hi WhichKeyFloat ctermbg=BLACK ctermfg=BLACK 
-
 " Autopairs
 lua require('nvim-autopairs').setup()
 
 " Comment
 lua require('nvim_comment').setup()
-
-" Neogit
-lua require('neogit').setup()
 
 " VimTex
 let g:tex_flavor = 'latex'
