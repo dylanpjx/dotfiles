@@ -5,6 +5,7 @@
       "args": ["--log-file=/tmp/ccls.log", "-v=1"],
       "filetypes": [
         "c",
+        "cc",
         "cpp",
         "objc",
         "objcpp"
@@ -35,5 +36,6 @@
   "prettier.trailingComma": "all",
   "prettier.disableLanguages": [],
   "signature.hideOnTextChange": true,
-  "javascript.showUnused": false
+  "javascript.showUnused": false,
+  "clangd.path": "/home/dylan/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
 }

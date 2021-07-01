@@ -23,10 +23,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Dir
 Plug 'vifm/vifm.vim'
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Code
 Plug 'honza/vim-snippets'
@@ -35,11 +34,10 @@ Plug 'lervag/vimtex'
 Plug 'rhysd/vim-clang-format'
 
 " Git
-Plug 'sindrets/diffview.nvim', {'branch': 'main'}
 Plug 'tpope/vim-fugitive'
 
 " QoL 
-Plug 'windwp/nvim-autopairs'
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 " Initialise plugin system
@@ -54,16 +52,20 @@ let g:vifm_exec = expand('$HOME/.config/vifm/scripts/vifmrun')
 " nvim-tree
 nnoremap <C-n> :NvimTreeToggle<CR>
 
-" Telescope
-nnoremap <C-e> :Telescope file_browser theme=get_ivy<cr>
-nnoremap <C-f> :Telescope current_buffer_fuzzy_find theme=get_ivy<cr>
-nnoremap <C-p> :Telescope buffers theme=get_ivy<cr>
-
-" Autopairs
-lua require('nvim-autopairs').setup()
+" FZF
+nnoremap <C-f> :Rg<CR>
+nnoremap <C-e> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
 
 " Comment
 lua require('nvim_comment').setup()
+
+" Git
+nnoremap <leader>gs :G<CR>
+nnoremap <leader>gd :diffget<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gp :Git pull<CR>
+nnoremap <leader>gP :Git push<CR>
 
 " VimTex
 let g:tex_flavor = 'latex'
@@ -189,21 +191,21 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <leader>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <leader>e  :<C-u>CocList extensions<cr>
 " Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent><nowait> <leader>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent><nowait> <leader>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> <leader>q  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent><nowait> <leader>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <leader>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent><nowait> <leader>p  :<C-u>CocListResume<CR>
 
 " Autoinstall coc extensions
 let g:coc_global_extensions = [

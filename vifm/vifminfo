@@ -70,51 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl/include
-	RenderWindow.hpp
-5
-d/home/dylan/Projects/chess-sdl
-	src
-5
-d/home/dylan/Projects/chess-sdl/src
-	Game.cpp
-3
-d/home/dylan/Projects/chess-sdl
-	src
-6
-d/home/dylan/Projects/chess-sdl/src
-	RenderWindow.cpp
-4
-d/home/dylan/Projects/chess-sdl
-	src
-6
-d/home/dylan/Projects/chess-sdl/src
-	RenderWindow.cpp
-4
-d/home/dylan/Projects/chess-sdl
-	.gitattributes
-7
-d/home/dylan/Projects
-	chess-sdl
-1
-d/home/dylan/Projects/chess-sdl
-	build
-3
-d/home/dylan/Projects/chess-sdl/build
-	CMakeFiles
-1
-d/home/dylan/Projects/chess-sdl/build/CMakeFiles
-	cmake.check_cache
-4
-d/home/dylan/Projects/chess-sdl/build
-	CMakeFiles
-1
-d/home/dylan/Projects/chess-sdl
-	include
-4
-d/home/dylan/Projects/chess-sdl/include
-	Board.hpp
-1
 d/home/dylan/Projects/chess-sdl
 	include
 4
@@ -368,20 +323,56 @@ d/home/dylan/github/dotfiles/bash
 	.inputrc
 3
 d/home/dylan/github/dotfiles
-	bash
-4
+	vifm
+8
+d/home/dylan/github/dotfiles/vifm
+	colors
+1
+d/home/dylan/github/dotfiles/vifm/colors
+	Gruvbox.vifm
+2
+d/home/dylan/github/dotfiles/vifm
+	colors
+1
+d/home/dylan/github/dotfiles
+	vifm
+8
+d/home/dylan/.config
+	nvim
+21
+d/home/dylan/.config/nvim
+	autoload
+1
+d/home/dylan/.config/nvim/autoload
+	plug.vim
+1
+d/home/dylan/.config/nvim
+	mappings.vim
+5
+d/home/dylan/.config
+	nvim
+37
+d/home/dylan/.config/nvim
+	mappings.vim
+5
+d/home/dylan/.config
+	nvim
+39
+d/home/dylan/.config/nvim
+	autoload
+1
+d/home/dylan/.config/nvim/autoload
+	plug.vim
+1
+d/home/dylan/.config/nvim
+	mappings.vim
+5
+d/home/dylan/.config
+	openrazer
+41
 d
 
 # Right window history (oldest to newest):
-D/home/dylan
-	.jupyter
-16
-D/home
-	dylan
-1
-D/
-	lib
-5
 D/lib
 	x86_64-linux-gnu
 44
@@ -673,6 +664,15 @@ D/mnt/HDD
 D/home/dylan
 	.gtkrc-2.0
 43
+D/home/dylan/.config
+	vifm
+44
+D/home/dylan/.config/vifm
+	colors
+1
+D/home/dylan/.config/vifm/colors
+	Gruvbox.vifm
+2
 D
 
 # Command line history (oldest to newest):
@@ -778,8 +778,6 @@ D
 :help
 
 # Search history (oldest to newest):
-/mutt
-/mutt-wiza
 /mail
 /tut
 /ee22
@@ -870,7 +868,6 @@ D
 /ncmp
 /mpd
 /profile
-/nvim
 /input
 /awe
 /ala
@@ -878,6 +875,9 @@ D
 /bash
 /emacs
 /vifm
+/plugins
+/autoload
+/nvim
 
 # Prompt history (oldest to newest):
 pTut2
@@ -984,7 +984,7 @@ p.Xresources(dmenu)
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.bashrc
+""/home/dylan/.local/share/vifm/Trash/001_Dracula.vifm
 
 # Directory stack (oldest to newest):
 
@@ -2439,6 +2439,12 @@ t/home/dylan/.local/share/vifm/Trash/001_.xerverrc
 	/home/dylan/.xerverrc
 t/home/dylan/.local/share/vifm/Trash/000_.xserverrc
 	/home/dylan/github/dotfiles/.xserverrc
+t/home/dylan/.local/share/vifm/Trash/000_Dracula.vifm
+	/home/dylan/github/dotfiles/vifm/colors/Dracula.vifm
+t/home/dylan/.local/share/vifm/Trash/001_Dracula.vifm
+	/home/dylan/.config/vifm/colors/Dracula.vifm
+t/home/dylan/.local/share/vifm/Trash/000_test.c
+	/home/dylan/.config/nvim/test.c
 
 # State:
 f

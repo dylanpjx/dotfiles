@@ -2,13 +2,6 @@
 
 Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 
-## Droidcam
-
-1. Go to [releases](https://github.com/aramg/droidcam/releases)
-2. Install the latest release
-3. Unzip and then run `./install`
-4. `sudo apt install adb`
-
 ## Audio
 
 1. Speakers are on `line-out`, headphones are on `headphone` in `pavucontrol`
@@ -28,6 +21,12 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 - Default themes are in `/usr//share/awesome/themes/`
 - [Docs](https://awesomewm.org/doc/api/index.html)
 - [ArchWiki](https://wiki.archlinux.org/title/Awesome)
+
+## Break on every kernel release
+
+- Digimend drivers
+- [Openrazer](https://openrazer.github.io/#download)
+- [Droidcam](https://www.dev47apps.com/droidcam/linux/)
 
 ## Other utils:
 
