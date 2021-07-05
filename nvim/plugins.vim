@@ -64,8 +64,8 @@ lua require('nvim_comment').setup()
 nnoremap <leader>ts :G<CR>
 nnoremap <leader>td :diffget<CR>
 nnoremap <leader>tc :Git commit<CR>
-nnoremap <leader>tp :Git pull<CR>
-nnoremap <leader>tP :Git push<CR>
+nnoremap <leader>tP :Git pull<CR>
+nnoremap <leader>tp :Git push<CR>
 
 " VimTex
 let g:tex_flavor = 'latex'
