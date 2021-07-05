@@ -21,9 +21,9 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 
-" Switch tabs
-nnoremap H gT
-nnoremap L gt
+" Switch buffers
+nnoremap H :bnext<CR>
+nnoremap L :bprev<CR>
 
 " Move lines
 " nnoremap <A-j> :m .+1<CR>==

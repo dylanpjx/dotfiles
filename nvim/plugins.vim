@@ -22,6 +22,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'kyazdani42/nvim-web-devicons' 
 
 " Dir
+Plug 'ap/vim-buftabline'
 Plug 'vifm/vifm.vim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
