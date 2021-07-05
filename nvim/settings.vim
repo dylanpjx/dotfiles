@@ -12,6 +12,7 @@ set autoindent
 
 set wildmenu
 set wildmode=longest:list,full
+set wildignorecase
 set ttimeoutlen=0
 set virtualedit=block
 
