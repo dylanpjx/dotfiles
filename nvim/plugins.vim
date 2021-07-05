@@ -61,11 +61,11 @@ nnoremap <C-b> :Buffers<CR>
 lua require('nvim_comment').setup()
 
 " Git
-nnoremap <leader>gs :G<CR>
-nnoremap <leader>gd :diffget<CR>
-nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gp :Git pull<CR>
-nnoremap <leader>gP :Git push<CR>
+nnoremap <leader>ts :G<CR>
+nnoremap <leader>td :diffget<CR>
+nnoremap <leader>tc :Git commit<CR>
+nnoremap <leader>tp :Git pull<CR>
+nnoremap <leader>tP :Git push<CR>
 
 " VimTex
 let g:tex_flavor = 'latex'
@@ -109,8 +109,8 @@ imap <C-l> <Plug>(coc-snippets-expand)
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> g[ <Plug>(coc-diagnostic-prev)
+nmap <silent> g] <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -135,11 +135,11 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>gn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>gf  <Plug>(coc-format-selected)
+nmap <leader>gf  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -151,13 +151,13 @@ augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>ga  <Plug>(coc-codeaction-selected)
+nmap <leader>ga  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ga  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>gq  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.

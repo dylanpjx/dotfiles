@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -70,15 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl
-	include
-4
-d/home/dylan/Projects/chess-sdl/include
-	Board.hpp
-1
-d/home/dylan/Projects/chess-sdl
-	include
-4
 d/home/dylan/Projects/chess-sdl/include
 	Board.hpp
 1
@@ -370,18 +361,18 @@ d/home/dylan/.config/nvim
 d/home/dylan/.config
 	openrazer
 41
+d/mnt/HDD/Music
+	Amy Shark - Love Monster (2018)
+5
+d/mnt/HDD
+	Deezloader Music
+4
+d/mnt/HDD/Deezloader Music
+	David Tao - Who Do You Love_.mp3
+10
 d
 
 # Right window history (oldest to newest):
-D/lib
-	x86_64-linux-gnu
-44
-D/lib/x86_64-linux-gnu
-	libSDL2-2.0.so.0
-17
-D/home/dylan/Downloads
-	april-17_sdl2-codergopher-tutorial
-4
 D/home/dylan/.config
 	awesome
 6
@@ -673,6 +664,15 @@ D/home/dylan/.config/vifm
 D/home/dylan/.config/vifm/colors
 	Gruvbox.vifm
 2
+D/mnt/HDD/Music
+	Chinese
+4
+D/mnt/HDD/Music/Chinese
+	David Tao
+4
+D/mnt/HDD/Music/Chinese/David Tao
+	AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Large.jpg
+8
 D
 
 # Command line history (oldest to newest):
@@ -778,8 +778,6 @@ D
 :help
 
 # Search history (oldest to newest):
-/mail
-/tut
 /ee22
 /*.pdf
 /2020
@@ -878,6 +876,8 @@ D
 /plugins
 /autoload
 /nvim
+/davi
+/chines
 
 # Prompt history (oldest to newest):
 pTut2
@@ -984,7 +984,7 @@ p.Xresources(dmenu)
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.local/share/vifm/Trash/001_Dracula.vifm
+""/mnt/HDD/.vifm-Trash-1000/000_Dracula.vifm
 
 # Directory stack (oldest to newest):
 
@@ -2441,10 +2441,10 @@ t/home/dylan/.local/share/vifm/Trash/000_.xserverrc
 	/home/dylan/github/dotfiles/.xserverrc
 t/home/dylan/.local/share/vifm/Trash/000_Dracula.vifm
 	/home/dylan/github/dotfiles/vifm/colors/Dracula.vifm
-t/home/dylan/.local/share/vifm/Trash/001_Dracula.vifm
-	/home/dylan/.config/vifm/colors/Dracula.vifm
 t/home/dylan/.local/share/vifm/Trash/000_test.c
 	/home/dylan/.config/nvim/test.c
+t/mnt/HDD/.vifm-Trash-1000/000_Dracula.vifm
+	/mnt/HDD/Music/Chinese/David Tao/Dracula.vifm
 
 # State:
 f

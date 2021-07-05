@@ -13,7 +13,7 @@ badd +1 ~/github/dotfiles/awesome/ws.vim
 badd +10 wibar.lua
 badd +85 rc.lua
 badd +1 menu.lua
-badd +114 keybinds.lua
+badd +175 keybinds.lua
 badd +17 signals.lua
 badd +56 rules.lua
 badd +1 themes/default/theme.lua
@@ -60,6 +60,17 @@ normal! 0
 lcd ~/.config/awesome
 tabnext
 edit ~/.config/awesome/keybinds.lua
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe '2resize ' . ((&lines * 1 + 26) / 52)
+exe 'vert 2resize ' . ((&columns * 1 + 95) / 190)
+exe '3resize ' . ((&lines * 1 + 26) / 52)
+exe 'vert 3resize ' . ((&columns * 59 + 95) / 190)
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -71,13 +82,44 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 108 - ((16 * winheight(0) + 24) / 48)
+let s:l = 175 - ((19 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 108
-normal! 014|
+keepjumps 175
+normal! 033|
 lcd ~/.config/awesome
+wincmd w
+argglobal
+enew
+balt ~/.config/awesome/keybinds.lua
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+lcd ~/.config/awesome
+wincmd w
+argglobal
+enew
+balt ~/.config/awesome/keybinds.lua
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+lcd ~/.config/awesome
+wincmd w
+exe '2resize ' . ((&lines * 1 + 26) / 52)
+exe 'vert 2resize ' . ((&columns * 1 + 95) / 190)
+exe '3resize ' . ((&lines * 1 + 26) / 52)
+exe 'vert 3resize ' . ((&columns * 59 + 95) / 190)
 tabnext
 edit ~/.config/awesome/wibar.lua
 argglobal
@@ -91,11 +133,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 5 - ((4 * winheight(0) + 24) / 48)
+let s:l = 8 - ((7 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 5
+keepjumps 8
 normal! 030|
 lcd ~/.config/awesome
 tabnext
@@ -161,7 +203,7 @@ normal! zt
 keepjumps 19
 normal! 024|
 lcd ~/.config/awesome
-tabnext 3
+tabnext 2
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
@@ -174,7 +216,6 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
