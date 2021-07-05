@@ -70,12 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl/include
-	Board.hpp
-1
-d/home/dylan/Projects/chess-sdl
-	src
-6
 d/home/dylan/Projects/chess-sdl/src
 	Game.cpp
 3
@@ -368,50 +362,17 @@ d/mnt/HDD
 	Deezloader Music
 4
 d/mnt/HDD/Deezloader Music
-	David Tao - Who Do You Love_.mp3
+	芝麻 - 下雨天.mp3
+19
+d/mnt/HDD
+	Deezloader Music
+4
+d/mnt/HDD/Deezloader Music
+	Miley Cyrus - Midnight Sky.mp3
 10
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/.config
-	awesome
-6
-D/home/dylan/.config/awesome
-	themes
-3
-D/home/dylan/.config/awesome/themes
-	custom
-1
-D/home/dylan/.config/awesome/themes/custom
-	wallpapers
-4
-D/home/dylan/.config/awesome/themes/custom/wallpapers
-	rose.jpg
-5
-D/home/dylan/Projects
-	chess-test
-2
-D/home/dylan/Projects/chess-test
-	CMakeLists.txt
-6
-D/home/dylan/.config
-	vifm
-44
-D/home/dylan/.config/vifm
-	vifmrc
-8
-D/mnt/HDD/Music
-	Selena Gomez - Wolves.mp3
-42
-D/mnt/HDD
-	Music
-7
-D/mnt/HDD/Music
-	5SOS
-1
-D/mnt/HDD/Music/5SOS
-	5 Seconds Of Summer - Easier.mp3
-2
 D/mnt/HDD/Music
 	P!nk - The Truth A. Love (2016) [24bit-JE]
 44
@@ -671,8 +632,47 @@ D/mnt/HDD/Music/Chinese
 	David Tao
 4
 D/mnt/HDD/Music/Chinese/David Tao
-	AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Large.jpg
+	David Tao - Love Can.mp3
+11
+D/mnt/HDD/Music/Chinese
+	David Tao
+4
+D/mnt/HDD/Music
+	Anne-Marie
+4
+D/mnt/HDD/Music/Anne-Marie
+	Anne-Marie - Our Song (Acoustic).mp3
+2
+D/mnt/HDD/Music
+	Kygo
+44
+D/mnt/HDD/Music/Kygo
+	Kygo - Lose Somebody.mp3
+3
+D/mnt/HDD/Music
+	Chinese
+12
+D/mnt/HDD/Music/Chinese
+	Tanya Chua
+11
+D/mnt/HDD/Music/Chinese/Tanya Chua
+	Tanya Chua - Projectile.mp3
+3
+D/mnt/HDD/Music/Chinese
+	Tanya Chua
+11
+D/mnt/HDD/Music
+	Shawn Mendes
+44
+D/mnt/HDD/Music/Shawn Mendes
+	Shawn Mendes - Wonder (Acoustic).mp3
 8
+D/mnt/HDD/Music
+	Marshmello
+21
+D/mnt/HDD/Music/Marshmello
+	Marshmello - Leave Before You Love Me.mp3
+4
 D
 
 # Command line history (oldest to newest):
@@ -776,6 +776,7 @@ D
 :chmod u+x %f
 :chmod u+x nvim.appimage
 :help
+:mkdir "Tanya Chua"
 
 # Search history (oldest to newest):
 /ee22
@@ -877,7 +878,12 @@ D
 /autoload
 /nvim
 /davi
+/ann
+/anne
+/kygo
 /chines
+/shawn men
+/marshmello
 
 # Prompt history (oldest to newest):
 pTut2
@@ -984,7 +990,6 @@ p.Xresources(dmenu)
 # Local filter history (oldest to newest):
 
 # Registers:
-""/mnt/HDD/.vifm-Trash-1000/000_Dracula.vifm
 
 # Directory stack (oldest to newest):
 
@@ -2445,6 +2450,18 @@ t/home/dylan/.local/share/vifm/Trash/000_test.c
 	/home/dylan/.config/nvim/test.c
 t/mnt/HDD/.vifm-Trash-1000/000_Dracula.vifm
 	/mnt/HDD/Music/Chinese/David Tao/Dracula.vifm
+t/mnt/HDD/.vifm-Trash-1000/000_Folder.jpg
+	/mnt/HDD/Music/Chinese/David Tao/Folder.jpg
+t/mnt/HDD/.vifm-Trash-1000/001_AlbumArtSmall.jpg
+	/mnt/HDD/Music/Chinese/David Tao/AlbumArtSmall.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Large.jpg
+	/mnt/HDD/Music/Chinese/David Tao/AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Large.jpg
+t/mnt/HDD/.vifm-Trash-1000/000_AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Small.jpg
+	/mnt/HDD/Music/Chinese/David Tao/AlbumArt_{B5020207-474E-4720-ADFB-141F6B213B00}_Small.jpg
+t/home/dylan/.local/share/vifm/Trash/000_chess-dev
+	/home/dylan/Projects/chess-dev
+t/home/dylan/.local/share/vifm/Trash/002_ws.vim
+	/home/dylan/Projects/chess-dev/ws.vim
 
 # State:
 f

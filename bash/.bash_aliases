@@ -12,7 +12,7 @@ alias todo='alacritty --title "joplin" -e joplin'
 alias jn='conda activate base;jupyter notebook'
 alias cm='cmake .. && make'
 alias joplin='echo -ne "\033]0;joplin\007" && joplin'
-alias ide='tmux splitw -v -p 20'
+alias ide='tmux splitw -h -p 40'
 alias cpcfg='
 cp -r $HOME/.config/nvim $HOME/github/dotfiles
 cp -r $HOME/.config/vifm $HOME/github/dotfiles
@@ -20,6 +20,7 @@ cp -r $HOME/.config/awesome $HOME/github/dotfiles
 cp -r $HOME/.config/alacritty $HOME/github/dotfiles
 cp ~/.bashrc $HOME/github/dotfiles/bash
 cp ~/.bash_aliases $HOME/github/dotfiles/bash
+cp ~/.tmux.conf $HOME/github/dotfiles/tmux
 '
 
 # enable color support of ls and also add handy aliases
