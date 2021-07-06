@@ -44,31 +44,43 @@ Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 " Initialise plugin system
 call plug#end()
 
-" vifm.vim
+" vifm
 let g:vifm_embed_split = 0
 let g:vifm_replace_netrw = 1
 let g:vifm_replace_netrw_cmd = 1
 let g:vifm_exec = expand('$HOME/.config/vifm/scripts/vifmrun')
 
+nnoremap <leader>v :Vifm<CR>
+nnoremap <leader>vv :VsplitVifm<CR>
+nnoremap <leader>vs :SplitVifm<CR>
+nnoremap <leader>vt :TabVifm<CR>
+
 " nvim-tree
 nnoremap <C-n> :NvimTreeToggle<CR>
 
-" FZF
+" buftabline
+let g:buftabline_numbers = 1
+
+" fzf
 nnoremap <C-f> :Rg<CR>
 nnoremap <C-e> :Files<CR>
 nnoremap <C-b> :Buffers<CR>
 
-" Comment
+" autopair
+let g:AutoPairsMultilineClose = 0
+let g:AutoPairsMapBS = 0
+
+" comment
 lua require('nvim_comment').setup()
 
-" Git
+" git
 nnoremap <leader>ts :G<CR>
 nnoremap <leader>td :diffget<CR>
 nnoremap <leader>tc :Git commit<CR>
 nnoremap <leader>tP :Git pull<CR>
 nnoremap <leader>tp :Git push<CR>
 
-" VimTex
+" vimtex
 let g:tex_flavor = 'latex'
 let g:vimtex_view_general_viewer = 'qpdfview'
 let g:vimtex_view_general_options = '--unique'
@@ -87,9 +99,9 @@ let g:clang_format#style_options = {
             \ "AlwaysBreakTemplateDeclarations" : "true",
             \ "Standard" : "C++11" }
 
-let g:clang_format#auto_format= 1
+let g:clang_format#auto_format = 1
 
-" Coc
+" coc
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.

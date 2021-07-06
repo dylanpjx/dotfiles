@@ -18,7 +18,7 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 
 ## AwesomeWM
 
-- Default themes are in `/usr//share/awesome/themes/`
+- Default themes are in `/usr/share/awesome/themes/`
 - [Docs](https://awesomewm.org/doc/api/index.html)
 - [ArchWiki](https://wiki.archlinux.org/title/Awesome)
 

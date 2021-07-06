@@ -2,7 +2,7 @@
 inoremap jk <esc>
 
 " Unmap Q
-nnoremap Q <esc>
+nnoremap Q <nop>
 
 " Move the cursor based on physical lines, not the actual lines.
 nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
