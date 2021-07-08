@@ -60,3 +60,6 @@ nnoremap <leader>s :w <CR>
 
 " Save workspace, save all files, exit
 nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
+
+" Search for next under visual
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
