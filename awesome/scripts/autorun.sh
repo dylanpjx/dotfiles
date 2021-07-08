@@ -14,6 +14,9 @@ xset s off
 xset -dpms
 xset s noblank
 
+# Swap caps lock and ctrl
+xmodmap ~/.xmodmap
+
 xsetwacom set "HUION Huion Tablet stylus" MapToOutput HEAD-0
 
 imwheel -b '4 5'

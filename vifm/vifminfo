@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -70,21 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-sdl/src
-	Game.cpp
-3
-d/home/dylan/Projects/chess-sdl
-	src
-6
-d/home/dylan/Projects/chess-sdl/src
-	RenderWindow.cpp
-4
-d/home/dylan/Projects/chess-sdl
-	src
-6
-d/home/dylan/Projects
-	chess-test
-2
 d/home/dylan/Projects/chess-test
 	Piece.hpp
 8
@@ -370,81 +355,24 @@ d/mnt/HDD
 d/mnt/HDD/Deezloader Music
 	Miley Cyrus - Midnight Sky.mp3
 10
+d/home/dylan/Downloads
+	Forms
+1
+d/home/dylan/Downloads/Forms
+	S7146129G_LPA.pdf
+4
+d/home/dylan/Downloads
+	Streaming
+4
+d/home/dylan/Downloads/Streaming
+	IoT-Specialization-talk 2021.pdf
+4
+d/home/dylan/Downloads
+	PC Manuals
+3
 d
 
 # Right window history (oldest to newest):
-D/mnt/HDD/Music
-	P!nk - The Truth A. Love (2016) [24bit-JE]
-44
-D/mnt/HDD/Music/P!nk - The Truth A. Love (2016) [24bit-JE]
-	P!nk – The Truth About Love (2012).jpg
-7
-D/mnt/HDD/Music
-	P!nk
-4
-D/mnt/HDD/Music/P!nk
-	P!nk - Hurts 2B Human.mp3
-6
-D/mnt/HDD/Music
-	Miley Cyrus
-4
-D/mnt/HDD/Music/Miley Cyrus
-	Miley Cyrus - Party In The U.S.A..flac
-4
-D/mnt/HDD/Music
-	Selena Gomez
-4
-D/mnt/HDD/Music/Selena Gomez
-	Revival
-1
-D/mnt/HDD/Music/Selena Gomez/Revival
-	00 - Selena Gomez - Revival (Deluxe Edition)-BLUWORLD.nfo
-1
-D/mnt/HDD/Music/Selena Gomez
-	Revival
-1
-D/mnt/HDD/Music
-	Selena Gomez
-4
-D/mnt/HDD/Music/Selena Gomez
-	Selena Gomez - Back To You.mp3
-2
-D/mnt/HDD/Music
-	Khalid
-4
-D/mnt/HDD/Music/Khalid
-	Khalid - Young Dumb & Broke.flac
-6
-D/mnt/HDD/Music
-	Lewis Capaldi - Before You Go.mp3
-16
-D/home/dylan/github/dotfiles
-	.Xresources
-10
-D/home/dylan/.config
-	awesome
-4
-D/home/dylan/.config/awesome
-	themes
-3
-D/home/dylan/.config/awesome/themes
-	custom
-1
-D/home/dylan/.config/awesome/themes/custom
-	submenu.png
-5
-D/home/dylan/Downloads
-	..
-0
-D/home/dylan/.config
-	awesome
-4
-D/home/dylan
-	.Xresources
-43
-D/home/dylan/.config
-	awesome
-8
 D/home/dylan/.config/awesome
 	rc.lua
 9
@@ -673,14 +601,81 @@ D/mnt/HDD/Music
 D/mnt/HDD/Music/Marshmello
 	Marshmello - Leave Before You Love Me.mp3
 4
+D/mnt/HDD/NUS_EE
+	EG3611A
+3
+D/mnt/HDD/NUS_EE/EG3611A
+	Forms
+1
+D/mnt/HDD/NUS_EE/EG3611A/Forms
+	NUS Engineering Application to Read Modules Form.pdf
+1
+D/mnt/HDD/NUS_EE/EG3611A
+	Workshop
+2
+D/mnt/HDD/NUS_EE/EG3611A/Workshop
+	EG3611A(B) Pre-internship Workshop v4.pdf
+1
+D/mnt/HDD/NUS_EE/EG3611A
+	Deliverables
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables
+	EG3611A(B) IA_Deliverables overview and consultation schedule with CELC tutors_AY21-22 Sem 1_for students.pdf
+1
+D/mnt/HDD/NUS_EE/EG3611A
+	Deliverables
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables
+	Documents
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables/Documents
+	NUS Engineering Report Cover Page.docx
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables
+	EG3611A(B) IA_Deliverables overview and consultation schedule with CELC tutors_AY21-22 Sem 1_for students.pdf
+2
+D/mnt/HDD/NUS_EE/EG3611A
+	Deliverables
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables
+	Templates
+1
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables/Templates
+	NUS Engineering Weekly Journal.docx
+3
+D/mnt/HDD/NUS_EE/EG3611A/Deliverables
+	Templates
+1
+D/mnt/HDD/NUS_EE/EG3611A
+	Deliverables
+1
+D/mnt/HDD/NUS_EE
+	Streaming
+5
+D/mnt/HDD
+	Programming
+10
+D/mnt/HDD/Programming
+	Webdev
+5
+D/mnt/HDD
+	Programming
+10
+D/mnt/HDD/Programming
+	github-recovery-codes.txt
+6
+D/mnt/HDD
+	Programming
+10
+D/mnt/HDD/Programming
+	Webdev
+5
+D/mnt/HDD
+	Wallpapers
+12
 D
 
 # Command line history (oldest to newest):
-:mk
-:mkdir AMD
-:mkdir DSO
-:mkdir Keysight
-:mkdir W10
 :mkd
 :mkdir "Test 2"
 :mkdir Je
@@ -766,7 +761,6 @@ D
 :zip chess-test
 :!wget https://raw.githubusercontent.com/Deraen/ohj2710/master/cmake_modules/FindSDL2TTF.cmake
 :mkdir Revival
-:extract
 :zip EE2023
 :cd/.local/share/applications
 :cd ~/.local/share/applications/
@@ -777,13 +771,13 @@ D
 :chmod u+x nvim.appimage
 :help
 :mkdir "Tanya Chua"
+:mkdir Forms
+:mkdir Workshop
+:mkdir Deliverables
+:extract
+:mkdir Documents
 
 # Search history (oldest to newest):
-/ee22
-/*.pdf
-/2020
-/.xoj
-/receipts
 /d
 /zip
 /desk
@@ -886,8 +880,6 @@ D
 /marshmello
 
 # Prompt history (oldest to newest):
-pTut2
-pTut3
 pTut4
 pTut5
 pTut6
@@ -986,6 +978,8 @@ pP!nk
 pSelena Gomez
 p.Xresources(window)
 p.Xresources(dmenu)
+pTemplates
+pY
 
 # Local filter history (oldest to newest):
 
@@ -2462,6 +2456,44 @@ t/home/dylan/.local/share/vifm/Trash/000_chess-dev
 	/home/dylan/Projects/chess-dev
 t/home/dylan/.local/share/vifm/Trash/002_ws.vim
 	/home/dylan/Projects/chess-dev/ws.vim
+t/mnt/HDD/.vifm-Trash-1000/000_NUS Engineering Internship Report Clearance Form.docx
+	/mnt/HDD/NUS_EE/EG3611A/NUS Engineering Internship Report Clearance Form.docx
+t/mnt/HDD/.vifm-Trash-1000/000_NUS Engineering Report Cover Page.docx
+	/mnt/HDD/NUS_EE/EG3611A/NUS Engineering Report Cover Page.docx
+t/mnt/HDD/.vifm-Trash-1000/000_NUS Engineering Weekly Journal.docx
+	/mnt/HDD/NUS_EE/EG3611A/NUS Engineering Weekly Journal.docx
+t/mnt/HDD/.vifm-Trash-1000/000_NUS Engineering Internship Self Initiated Form.pdf
+	/mnt/HDD/NUS_EE/EG3611A/Forms/NUS Engineering Internship Self Initiated Form.pdf
+t/home/dylan/.local/share/vifm/Trash/000_archlabs-awesome
+	/home/dylan/Downloads/archlabs-awesome
+t/mnt/HDD/.vifm-Trash-1000/000_SIA Hackathon
+	/mnt/HDD/Programming/SIA Hackathon
+t/mnt/HDD/.vifm-Trash-1000/000_github-recovery-codes.txt
+	/mnt/HDD/Programming/github-recovery-codes.txt
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_UI_deb-5.2.1.0-7.deb
+	/home/dylan/Downloads/GlobalProtect_UI_deb-5.2.1.0-7.deb
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_UI_rpm-5.2.1.0-7.rpm
+	/home/dylan/Downloads/GlobalProtect_UI_rpm-5.2.1.0-7.rpm
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_UI_tar-5.2.1.0-7.tgz
+	/home/dylan/Downloads/GlobalProtect_UI_tar-5.2.1.0-7.tgz
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_deb-5.2.1.0-7.deb
+	/home/dylan/Downloads/GlobalProtect_deb-5.2.1.0-7.deb
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_deb_arm-5.2.1.0-7.deb
+	/home/dylan/Downloads/GlobalProtect_deb_arm-5.2.1.0-7.deb
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_rpm-5.2.1.0-7.rpm
+	/home/dylan/Downloads/GlobalProtect_rpm-5.2.1.0-7.rpm
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_rpm_arm-5.2.1.0-7.rpm
+	/home/dylan/Downloads/GlobalProtect_rpm_arm-5.2.1.0-7.rpm
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_tar-5.2.1.0-7.tgz
+	/home/dylan/Downloads/GlobalProtect_tar-5.2.1.0-7.tgz
+t/home/dylan/.local/share/vifm/Trash/000_GlobalProtect_tar_arm-5.2.1.0-7.tgz
+	/home/dylan/Downloads/GlobalProtect_tar_arm-5.2.1.0-7.tgz
+t/home/dylan/.local/share/vifm/Trash/000_PanGPLinux-5.2.1-c7.tgz
+	/home/dylan/Downloads/PanGPLinux-5.2.1-c7.tgz
+t/home/dylan/.local/share/vifm/Trash/000_manifest
+	/home/dylan/Downloads/manifest
+t/home/dylan/.local/share/vifm/Trash/000_relinfo
+	/home/dylan/Downloads/relinfo
 
 # State:
 f
