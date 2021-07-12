@@ -3,6 +3,7 @@ set rnu nu
 set showcmd
 set splitbelow
 set splitright
+set formatoptions-=cro
 
 set smarttab
 set expandtab
