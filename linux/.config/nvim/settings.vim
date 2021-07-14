@@ -3,7 +3,7 @@ set rnu nu
 set showcmd
 set splitbelow
 set splitright
-set formatoptions-=cro
+au BufNewFile,BufRead * set formatoptions-=cro
 
 set smarttab
 set expandtab
@@ -44,3 +44,6 @@ set clipboard+=unnamedplus
 " Disable netrw
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
+
+" TextWidth
+au BufNewFile,BufRead *.md setlocal textwidth=80

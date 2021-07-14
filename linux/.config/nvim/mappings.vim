@@ -22,8 +22,8 @@ noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 
 " Switch buffers
-nnoremap H :bnext<CR>
-nnoremap L :bprev<CR>
+nnoremap H :tabprev<CR>
+nnoremap L :tabnext<CR>
 
 " Move lines
 " nnoremap <A-j> :m .+1<CR>==
@@ -39,6 +39,8 @@ nnoremap <A-Right> :vertical resize +2 <CR>
 
 " Override default behaviour for Y
 nnoremap Y y$
+
+nnoremap E ge
 
 " No highlight
 nnoremap <leader><leader> :noh <CR>

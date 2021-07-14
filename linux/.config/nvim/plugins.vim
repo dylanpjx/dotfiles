@@ -22,7 +22,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'kyazdani42/nvim-web-devicons' 
 
 " Dir
-Plug 'ap/vim-buftabline'
 Plug 'vifm/vifm.vim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -57,9 +56,6 @@ nnoremap <leader>vt :TabVifm<CR>
 
 " nvim-tree
 nnoremap <C-n> :NvimTreeToggle<CR>
-
-" buftabline
-let g:buftabline_numbers = 1
 
 " fzf
 nnoremap <C-f> :Rg<CR>
@@ -148,11 +144,11 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>gn <Plug>(coc-rename)
+nmap <leader>cn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>gf  <Plug>(coc-format-selected)
-nmap <leader>gf  <Plug>(coc-format-selected)
+xmap <leader>cf  <Plug>(coc-format-selected)
+nmap <leader>cf  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -164,13 +160,13 @@ augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-xmap <leader>ga  <Plug>(coc-codeaction-selected)
-nmap <leader>ga  <Plug>(coc-codeaction-selected)
+xmap <leader>ca  <Plug>(coc-codeaction-selected)
+nmap <leader>ca  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ga  <Plug>(coc-codeaction)
+nmap <leader>ca  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>gq  <Plug>(coc-fix-current)
+nmap <leader>cq  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -205,10 +201,6 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " Mappings for CoCList
 " Show all diagnostics.
 nnoremap <silent><nowait> <leader>a  :<C-u>CocList diagnostics<cr>
-" Manage extensions.
-nnoremap <silent><nowait> <leader>e  :<C-u>CocList extensions<cr>
-" Show commands.
-nnoremap <silent><nowait> <leader>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
 nnoremap <silent><nowait> <leader>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
@@ -222,6 +214,7 @@ nnoremap <silent><nowait> <leader>p  :<C-u>CocListResume<CR>
 
 " Autoinstall coc extensions
 let g:coc_global_extensions = [
+      \ 'coc-markdownlint',
       \ 'coc-prettier',
       \ 'coc-snippets',
       \ 'coc-tsserver',

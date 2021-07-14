@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -70,9 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects/chess-test
-	Piece.hpp
-8
 d/home/dylan/Projects
 	chess-test.zip
 5
@@ -370,21 +367,12 @@ d/home/dylan/Downloads/Streaming
 d/home/dylan/Downloads
 	PC Manuals
 3
+d/home/dylan/github/dotfiles
+	windows
+3
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/.config/awesome
-	rc.lua
-9
-D/home/dylan/github/dotfiles
-	awesome
-3
-D/home/dylan/github/dotfiles/awesome
-	quake.lua
-7
-D/home/dylan/Downloads
-	Streaming
-4
 D/home/dylan/Downloads/Streaming
 	L_EE Industry Tracks_AY2021_22.pdf
 4
@@ -671,8 +659,20 @@ D/mnt/HDD/Programming
 	Webdev
 5
 D/mnt/HDD
-	Wallpapers
-12
+	Work
+13
+D/mnt
+	HDD
+1
+D/mnt/HDD
+	Work
+13
+D/home/dylan/.config
+	asound.state
+44
+D/home/dylan
+	.tmux.conf
+45
 D
 
 # Command line history (oldest to newest):
