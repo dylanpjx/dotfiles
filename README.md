@@ -1,6 +1,8 @@
 # linux-configs
 
-Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
+Using Pop!\_OS and AwesomeWM. Clone this repo and run `$ ./init.sh`. The script
+uses `stow` to automatically symlink every dotfile in `./linux` to its
+corresponding config location
 
 ## Audio
 
@@ -36,7 +38,7 @@ Using Pop!\_OS and AwesomeWM. Clone this repo and run `sudo ./init.sh`
 - [Droidcam](https://www.dev47apps.com/droidcam/linux/)
 - [Ueberzug](https://github.com/seebye/ueberzug)
 
-## Other utils:
+## Other utils
 
 - [Dragon D&D](https://github.com/mwh/dragon)
 - [Picom](https://github.com/yshui/picom)

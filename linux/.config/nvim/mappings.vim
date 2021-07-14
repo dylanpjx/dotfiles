@@ -40,6 +40,7 @@ nnoremap <A-Right> :vertical resize +2 <CR>
 " Override default behaviour for Y
 nnoremap Y y$
 
+" Mapping for ge
 nnoremap E ge
 
 " No highlight
@@ -65,3 +66,4 @@ nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
 
 " Search for next under visual
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
