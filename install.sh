@@ -1,4 +1,4 @@
-#! bin/bash
+#!/bin/bash
 add-apt-repository ppa:openrazer/stable
 apt update
 apt install nvim vifm qpdfview firefox quodlibet ffmpeg awesome pavucontrol

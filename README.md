@@ -1,7 +1,7 @@
 # linux-configs
 
 Using Pop!\_OS and AwesomeWM. Clone this repo and run `$ ./init.sh`. The script
-uses `stow` to automatically symlink every dotfile in `./linux` to its
+uses `stow` to automatically symlink every dotfile in `dotfiles/linux` to its
 corresponding config location
 
 ## Audio

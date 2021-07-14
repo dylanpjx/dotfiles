@@ -42,19 +42,19 @@ scrolling:
 # Font configuration
 font:
   normal: 
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NF
     style: Regular
 
   bold:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NF
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NF
     style: Italic
 
   bold_italic:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NF
     style: Bold Italic
 
   size: 12.0

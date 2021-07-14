@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -70,132 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects
-	chess-dev
-1
-d/home/dylan/Projects/chess-dev
-	bin
-1
-d/home/dylan/Projects
-	chess-test
-2
-d/home/dylan/Projects/chess-test
-	cmake
-2
-d/home/dylan/Projects/chess-test/cmake
-	FindSDL2_image.cmake
-1
-d/home/dylan/Projects/chess-test
-	cmake
-2
-d/home/dylan/Projects/chess-test/cmake
-	FindSDL2_image.cmake
-2
-d/home/dylan/Projects/chess-test
-	build
-1
-d/home/dylan/Projects/chess-test/build
-	..
-0
-d/home/dylan/Projects/chess-test
-	res
-3
-d/home/dylan/Projects/chess-test/res
-	gfx
-1
-d/home/dylan/Projects/chess-test/res/gfx
-	pieces
-1
-d/home/dylan/Projects/chess-test/res/gfx/pieces
-	wp.png
-10
-d/mnt/HDD/Music
-	Amy Shark - Love Monster (2018)
-5
-d/mnt/HDD
-	Music
-7
-d/mnt
-	HDD
-1
-d/mnt/HDD
-	Deezloader Music
-4
-d/mnt/HDD/Deezloader Music
-	Walkman
-3
-d/mnt/HDD/Deezloader Music/Walkman
-	P!nk - What About Us.mp3
-44
-d/mnt/HDD/Deezloader Music
-	Pakho Chau - Free My Love (Ending Theme from TV Drama _Wonder Women_).mp3
-9
-d/home/dylan
-	Templates
-15
-d/home/dylan/github/dotfiles
-	alacritty
-2
-d/home/dylan/.config/awesome
-	quake.lua
-7
-d/mnt/HDD/NUS_EE
-	Archived
-1
-d/mnt/HDD/NUS_EE/Archived
-	zip
-1
-d/mnt/HDD/NUS_EE/Archived/zip
-	..
-0
-d/mnt/HDD/NUS_EE/Archived
-	EE2023
-1
-d/mnt/HDD/NUS_EE/Archived/EE2023
-	Quizzes
-5
-d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes
-	Finals
-1
-d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes/Finals
-	EE2023_2021s2 - final.pdf
-4
-d/mnt/HDD/NUS_EE/Archived/EE2023/Quizzes
-	Finals
-1
-d/mnt/HDD/NUS_EE/Archived/EE2023
-	Quizzes
-5
-d/mnt/HDD/NUS_EE/Archived
-	EE1111A.zip
-2
-d/mnt/HDD/NUS_EE
-	basic_math.pdf
-5
-d/home/dylan/.config
-	ptSh
-40
-d/home/dylan/.local/share/applications
-	mimeinfo.cache
-1
-d/home/dylan/.local/share
-	firenvim
-10
-d/home/dylan/.local
-	share
-4
-d/home/dylan
-	.local
-4
-d/usr/bin
-	jmod
-40
-d/home/dylan/.config
-	nautilus
-34
-d/home/dylan
-	.bash_aliases
-44
 d/home/dylan/.config
 	alacritty
 4
@@ -368,41 +242,137 @@ d/home/dylan/github/dotfiles/.config
 	nvim
 1
 d/home/dylan/github/dotfiles
+	.config
+1
+d/home/dylan/github/dotfiles/.config
+	alacritty
+1
+d/home/dylan/github/dotfiles
+	.config
+1
+d/home/dylan/github/dotfiles/.config
+	awesome
+2
+d/home/dylan/github/dotfiles
+	.config
+1
+d/home/dylan/github/dotfiles/.config
+	qpdfview
+4
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.config
+1
+d/home/dylan/github/dotfiles
 	bash
+2
+d/home/dylan/github/dotfiles/bash
+	..
+0
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.tmux.conf
 5
+d/home/dylan/github/dotfiles
+	tmux
+4
+d/home/dylan/github/dotfiles/tmux
+	..
+0
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.tmux.conf
+6
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.Xresources
+2
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.imwheelrc
+5
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	..
+0
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.config
+1
+d/home/dylan/github/dotfiles/linux/.config
+	nvim
+3
+d/home/dylan/github/dotfiles/linux
+	.config
+1
+d/home/dylan/github/dotfiles
+	windows
+4
+d/home/dylan/github/dotfiles/windows
+	bug.n
+1
+d/home/dylan/github/dotfiles
+	linux
+3
+d/home/dylan/github/dotfiles/linux
+	.config
+1
+d/home/dylan/github/dotfiles
+	bash
+2
+d/home/dylan/github/dotfiles/bash
+	..
+0
+d/home/dylan/github/dotfiles
+	linux
+2
+d/home/dylan/github/dotfiles/linux
+	.config
+1
+d/home/dylan/github/dotfiles
+	init.sh
+8
+d/home/dylan/github
+	dotfiles
+1
+d/home/dylan/github/dotfiles
+	install.sh
+9
+d/home/dylan/.config
+	alacritty
+6
+d/home/dylan/.config/alacritty
+	alacritty.yml
+1
+d/home/dylan/.config
+	alacritty
+6
+d/home/dylan/.config/alacritty
+	alacritty.yml
+1
+d/home/dylan/.config
+	vifm
+39
+d/home/dylan/.config/vifm
+	vifmrc
+8
 d
 
 # Right window history (oldest to newest):
-D/mnt/HDD/Music/Playlists
-	..
-0
-D/mnt/HDD/Music
-	Secondhand_Serenade-A_Naked_Twist_in_My_Story
-11
-D/home/dylan/.config
-	mpd
-37
-D/home/dylan/.config/mpd
-	mpd.conf
-4
-D/home/dylan/.config
-	ncmpcpp
-39
-D/home/dylan/.config/ncmpcpp
-	error.log
-2
-D/home/dylan/.config
-	mpd
-37
-D/home/dylan/.config/mpd
-	state
-3
-D/home/dylan/.config
-	ncmpcpp
-39
-D/home/dylan/.config/ncmpcpp
-	..
-0
 D/home/dylan/.config
 	ncmpcpp
 39
@@ -671,17 +641,41 @@ D/home/dylan
 	.config
 5
 D/home/dylan/.config
-	Unknown Organization
-6
+	Microsoft
+4
+D/mnt/HDD
+	Work
+13
+D/home/dylan
+	.gitconfig
+30
+D/home/dylan/.config
+	nvim
+21
+D/home/dylan/Downloads
+	fonts
+4
+D/home/dylan/Downloads/fonts
+	ttf
+1
+D/home/dylan/Downloads/fonts/ttf
+	JetBrainsMonoNL-Regular.ttf
+26
+D/home/dylan/Downloads/fonts
+	variable
+2
+D/home/dylan/Downloads
+	buf
+4
+D/home/dylan/Downloads/buf
+	JetBrains Mono Bold Italic Nerd Font Complete Mono Windows Compatible.ttf
+1
+D/home/dylan/Downloads
+	PC Manuals
+3
 D
 
 # Command line history (oldest to newest):
-:mkd
-:mkdir "Test 2"
-:mkdir Je
-:touch coc.vim
-:touch coc-settings.json
-:mkdir Ebooks
 :mkdir FItness
 :mkdir Programming
 :mkdir Lab
@@ -774,12 +768,16 @@ D
 :mkdir Forms
 :mkdir Workshop
 :mkdir Deliverables
-:extract
 :mkdir Documents
 :cd/usr/local
+:mkdir linux
+:!chmod+x init.sh install.sh
+:!chmod +x init.sh install.sh
+:extract
+:extract target
+:extractd buf
 
 # Search history (oldest to newest):
-/d
 /zip
 /desk
 /kdeconn
@@ -864,11 +862,9 @@ D
 /profile
 /input
 /awe
-/ala
 /qpdf
 /bash
 /emacs
-/vifm
 /plugins
 /autoload
 /davi
@@ -878,10 +874,12 @@ D
 /chines
 /shawn men
 /marshmello
+/.config
 /nvim
+/ala
+/vifm
 
 # Prompt history (oldest to newest):
-pTut4
 pTut5
 pTut6
 pEE2111.py
@@ -981,11 +979,14 @@ p.Xresources(window)
 p.Xresources(dmenu)
 pTemplates
 pY
+p.Xresources
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.local/share/vifm/Trash/000_nvim
+""/home/dylan/.local/share/vifm/Trash/000_buf
+""/home/dylan/.local/share/vifm/Trash/000_fonts
+""/home/dylan/.local/share/vifm/Trash/000_JetBrainsMono.zip
 
 # Directory stack (oldest to newest):
 
@@ -1034,8 +1035,6 @@ t/home/dylan/.local/share/vifm/Trash/000_archlabs-extras
 	/home/dylan/.config/awesome/archlabs-extras
 t/home/dylan/.local/share/vifm/Trash/000_icons
 	/home/dylan/.config/awesome/icons
-t/home/dylan/.local/share/vifm/Trash/000_alacritty
-	/home/dylan/Downloads/alacritty
 t/home/dylan/.local/share/vifm/Trash/000_nemo
 	/home/dylan/.config/nemo
 t/home/dylan/.local/share/vifm/Trash/000_gruvbox.vifm
@@ -2498,6 +2497,126 @@ t/home/dylan/.local/share/vifm/Trash/000_relinfo
 	/home/dylan/Downloads/relinfo
 t/home/dylan/.local/share/vifm/Trash/000_nvim
 	/home/dylan/.config/nvim
+t/home/dylan/.local/share/vifm/Trash/000_alacritty
+	/home/dylan/github/dotfiles/alacritty
+t/home/dylan/.local/share/vifm/Trash/000_tmux
+	/home/dylan/github/dotfiles/tmux
+t/home/dylan/.local/share/vifm/Trash/000_bash
+	/home/dylan/github/dotfiles/bash
+t/home/dylan/.local/share/vifm/Trash/002_nvim
+	/home/dylan/github/nvim
+t/home/dylan/.local/share/vifm/Trash/000_alacritty
+	/home/dylan/Downloads/alacritty
+t/home/dylan/.local/share/vifm/Trash/001_nvim
+	/home/dylan/nvim
+t/home/dylan/.local/share/vifm/Trash/000_AUTHORS.txt
+	/home/dylan/Downloads/AUTHORS.txt
+t/home/dylan/.local/share/vifm/Trash/000_JetBrainsMono-2.225.zip
+	/home/dylan/Downloads/JetBrainsMono-2.225.zip
+t/home/dylan/.local/share/vifm/Trash/000_OFL.txt
+	/home/dylan/Downloads/OFL.txt
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Italic Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Italic Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Italic Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Italic Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Italic Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Italic Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Italic Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Italic Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Bold Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Bold Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtBd Ita Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtBd Ita Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtBd Ita Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtBd Ita Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtBd Ita Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtBd Ita Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtBd Ita Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtBd Ita Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Extra Bold Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Extra Bold Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Extra Bold Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Extra Bold Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Extra Bold Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Extra Bold Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Extra Bold Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Extra Bold Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExBd I Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExBd I Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExBd I Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExBd I Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExBd I Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExBd I Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExBd I Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExBd I Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExtBd Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExtBd Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExtBd Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExtBd Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExtBd Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExtBd Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono ExtraBold ExtBd Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono ExtraBold ExtBd Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Italic Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Italic Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Italic Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Italic Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Italic Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Italic Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Italic Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Italic Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Italic Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Italic Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Italic Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Italic Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Italic Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Italic Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Italic Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Italic Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Med Ita Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Med Ita Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Med Ita Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Med Ita Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Med Ita Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Med Ita Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Med Ita Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Med Ita Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Medium Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Medium Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Medium Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Medium Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Medium Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Medium Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Medium Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Medium Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Medium Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Medium Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Regular Nerd Font Complete Mono Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Regular Nerd Font Complete Mono Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Regular Nerd Font Complete Mono.ttf
+	/home/dylan/Downloads/JetBrains Mono Regular Nerd Font Complete Mono.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Regular Nerd Font Complete Windows Compatible.ttf
+	/home/dylan/Downloads/JetBrains Mono Regular Nerd Font Complete Windows Compatible.ttf
+t/home/dylan/.local/share/vifm/Trash/000_JetBrains Mono Regular Nerd Font Complete.ttf
+	/home/dylan/Downloads/JetBrains Mono Regular Nerd Font Complete.ttf
+t/home/dylan/.local/share/vifm/Trash/000_buf
+	/home/dylan/Downloads/buf
+t/home/dylan/.local/share/vifm/Trash/000_fonts
+	/home/dylan/Downloads/fonts
+t/home/dylan/.local/share/vifm/Trash/000_JetBrainsMono.zip
+	/home/dylan/Downloads/JetBrainsMono.zip
 
 # State:
 f
