@@ -61,7 +61,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -70,18 +70,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/dylan/Projects
-	chess-test.zip
-5
-d/home/dylan/Projects/chess-sdl
-	res
-5
-d/home/dylan/Projects
-	chess-test
-2
-d/home/dylan/Projects/chess-test
-	Piece.hpp
-9
 d/home/dylan/Projects
 	chess-dev
 1
@@ -368,65 +356,23 @@ d/home/dylan/Downloads
 	PC Manuals
 3
 d/home/dylan/github/dotfiles
-	windows
-3
+	nvim
+5
+d/home/dylan/github/dotfiles/nvim
+	..
+0
+d/home/dylan/github/dotfiles
+	.config
+1
+d/home/dylan/github/dotfiles/.config
+	nvim
+1
+d/home/dylan/github/dotfiles
+	bash
+5
 d
 
 # Right window history (oldest to newest):
-D/home/dylan/Downloads/Streaming
-	L_EE Industry Tracks_AY2021_22.pdf
-4
-D/home/dylan/Downloads
-	Streaming
-4
-D/home/dylan/Downloads/Streaming
-	L_Masterlist_2021_22_EE_17June2021.pdf
-4
-D/home/dylan/Downloads
-	Streaming
-4
-D/home/dylan/Downloads/Streaming
-	EE2 Streaming_talk_curriculum_2021_final.pdf
-3
-D/home/dylan/Downloads
-	S7146129G_LPA.pdf
-7
-D/home/dylan
-	Downloads
-31
-D/home/dylan/Downloads
-	S7146129G_LPA.pdf
-6
-D/home/dylan/github/dotfiles
-	awesome
-3
-D/home/dylan/github/dotfiles/awesome
-	ws.vim
-12
-D/home/dylan/github/dotfiles
-	init.sh
-15
-D/home/dylan/Downloads
-	S7146129G_LPA.pdf
-6
-D/home/dylan/github/dotfiles
-	vifm
-8
-D/home/dylan/Downloads
-	Forms
-1
-D/home/dylan/Downloads/Forms
-	AMD
-1
-D/home/dylan/Downloads/Forms/AMD
-	offerletter.pdf
-3
-D/mnt/HDD
-	Music
-7
-D/mnt/HDD/Music
-	Playlists
-4
 D/mnt/HDD/Music/Playlists
 	..
 0
@@ -661,18 +607,72 @@ D/mnt/HDD/Programming
 D/mnt/HDD
 	Work
 13
-D/mnt
-	HDD
-1
-D/mnt/HDD
-	Work
-13
 D/home/dylan/.config
-	asound.state
-44
+	cef_user_data
+9
 D/home/dylan
-	.tmux.conf
-45
+	.config
+5
+D/home/dylan/.config
+	nvim
+39
+D/home/dylan/.config/nvim
+	plugins.vim
+6
+D/home/dylan/.config
+	kdenliverc
+41
+D/usr/local
+	man
+6
+D/usr/local/man
+	..
+0
+D/usr/local
+	bin
+1
+D/usr/local/bin
+	pip
+11
+D/usr/local
+	lib
+5
+D/usr/local/lib
+	..
+0
+D/usr/local
+	include
+4
+D/usr/local/include
+	..
+0
+D/usr/local
+	games
+3
+D/usr/local/games
+	..
+0
+D/usr/local
+	etc
+2
+D/usr/local/etc
+	..
+0
+D/usr/local
+	etc
+2
+D/usr
+	local
+9
+D/home/dylan/.config
+	nvim
+40
+D/home/dylan
+	.config
+5
+D/home/dylan/.config
+	Unknown Organization
+6
 D
 
 # Command line history (oldest to newest):
@@ -776,6 +776,7 @@ D
 :mkdir Deliverables
 :extract
 :mkdir Documents
+:cd/usr/local
 
 # Search history (oldest to newest):
 /d
@@ -870,7 +871,6 @@ D
 /vifm
 /plugins
 /autoload
-/nvim
 /davi
 /ann
 /anne
@@ -878,6 +878,7 @@ D
 /chines
 /shawn men
 /marshmello
+/nvim
 
 # Prompt history (oldest to newest):
 pTut4
@@ -984,6 +985,7 @@ pY
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/dylan/.local/share/vifm/Trash/000_nvim
 
 # Directory stack (oldest to newest):
 
@@ -2494,6 +2496,8 @@ t/home/dylan/.local/share/vifm/Trash/000_manifest
 	/home/dylan/Downloads/manifest
 t/home/dylan/.local/share/vifm/Trash/000_relinfo
 	/home/dylan/Downloads/relinfo
+t/home/dylan/.local/share/vifm/Trash/000_nvim
+	/home/dylan/.config/nvim
 
 # State:
 f
