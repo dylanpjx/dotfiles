@@ -41,9 +41,5 @@ set signcolumn=number
 " Clipboard settings, always use clipboard for all delete, yank, change, put
 set clipboard+=unnamedplus
 
-" Disable netrw
-let g:loaded_netrw = 1
-let g:loaded_netrwPlugin = 1
-
 " TextWidth
-au BufNewFile,BufRead *.md setlocal textwidth=80
+au BufNewFile,BufRead * setlocal textwidth=80

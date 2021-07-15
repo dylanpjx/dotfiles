@@ -70,6 +70,21 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/dylan/.local
+	share
+4
+d/home/dylan
+	.local
+4
+d/usr/bin
+	jmod
+40
+d/home/dylan/.config
+	nautilus
+34
+d/home/dylan
+	.bash_aliases
+44
 d/home/dylan/.config
 	alacritty
 4
@@ -352,27 +367,18 @@ d/home/dylan/github
 d/home/dylan/github/dotfiles
 	install.sh
 9
-d/home/dylan/.config
-	alacritty
-6
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/.config
-	alacritty
-6
-d/home/dylan/.config/alacritty
-	alacritty.yml
-1
-d/home/dylan/.config
-	vifm
-39
-d/home/dylan/.config/vifm
-	vifmrc
-8
+d/home/dylan
+	.Xresources
+43
 d
 
 # Right window history (oldest to newest):
+D/home/dylan/.config
+	ncmpcpp
+39
+D/home/dylan/.config/ncmpcpp
+	..
+0
 D/home/dylan/.config
 	ncmpcpp
 39
@@ -651,31 +657,28 @@ D/home/dylan
 30
 D/home/dylan/.config
 	nvim
-21
+39
 D/home/dylan/Downloads
-	fonts
-4
-D/home/dylan/Downloads/fonts
-	ttf
-1
-D/home/dylan/Downloads/fonts/ttf
-	JetBrainsMonoNL-Regular.ttf
-26
-D/home/dylan/Downloads/fonts
-	variable
+	NUS
 2
-D/home/dylan/Downloads
-	buf
-4
-D/home/dylan/Downloads/buf
-	JetBrains Mono Bold Italic Nerd Font Complete Mono Windows Compatible.ttf
-1
-D/home/dylan/Downloads
-	PC Manuals
-3
+D/home/dylan/.config
+	nvim
+39
+D/home/dylan/github/dotfiles
+	linux
+2
+D/home/dylan/github/dotfiles/linux
+	.imwheelrc
+6
+D/home/dylan/github/dotfiles
+	init.sh
+8
 D
 
 # Command line history (oldest to newest):
+:extract target
+:touch coc-settings.json
+:mkdir Ebooks
 :mkdir FItness
 :mkdir Programming
 :mkdir Lab
@@ -768,14 +771,12 @@ D
 :mkdir Forms
 :mkdir Workshop
 :mkdir Deliverables
+:extract
 :mkdir Documents
 :cd/usr/local
 :mkdir linux
 :!chmod+x init.sh install.sh
 :!chmod +x init.sh install.sh
-:extract
-:extract target
-:extractd buf
 
 # Search history (oldest to newest):
 /zip
@@ -862,9 +863,11 @@ D
 /profile
 /input
 /awe
+/ala
 /qpdf
 /bash
 /emacs
+/vifm
 /plugins
 /autoload
 /davi
@@ -876,8 +879,7 @@ D
 /marshmello
 /.config
 /nvim
-/ala
-/vifm
+/.xmod
 
 # Prompt history (oldest to newest):
 pTut5
@@ -984,9 +986,7 @@ p.Xresources
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/dylan/.local/share/vifm/Trash/000_buf
-""/home/dylan/.local/share/vifm/Trash/000_fonts
-""/home/dylan/.local/share/vifm/Trash/000_JetBrainsMono.zip
+""/home/dylan/.local/share/vifm/Trash/000_.Xmodmap
 
 # Directory stack (oldest to newest):
 
@@ -2509,6 +2509,8 @@ t/home/dylan/.local/share/vifm/Trash/000_alacritty
 	/home/dylan/Downloads/alacritty
 t/home/dylan/.local/share/vifm/Trash/001_nvim
 	/home/dylan/nvim
+t/home/dylan/.local/share/vifm/Trash/000_.Xmodmap
+	/home/dylan/.Xmodmap
 t/home/dylan/.local/share/vifm/Trash/000_AUTHORS.txt
 	/home/dylan/Downloads/AUTHORS.txt
 t/home/dylan/.local/share/vifm/Trash/000_JetBrainsMono-2.225.zip

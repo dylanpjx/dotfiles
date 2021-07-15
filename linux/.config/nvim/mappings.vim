@@ -21,7 +21,7 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 
-" Switch buffers
+" Switch tabs
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>
 
@@ -52,12 +52,6 @@ set pastetoggle=<F2>
 " Spellcheck toggle
 map <F3> :setlocal spell! <CR>
 
-" Edit .vimrc
-nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>
-
-" Source .vimrc
-nnoremap \r :source $MYVIMRC <CR>
-
 " Save all files
 nnoremap <leader>s :w <CR>
 
@@ -66,4 +60,13 @@ nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
 
 " Search for next under visual
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+" Remap gx
+nmap gx :silent execute "!xdg-open " . shellescape("<cWORD>")<CR>
+
+" Edit .vimrc
+nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>
+
+" Source .vimrc
+nnoremap \r :source $MYVIMRC <CR>
 

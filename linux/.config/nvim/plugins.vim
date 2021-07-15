@@ -44,9 +44,6 @@ Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 call plug#end()
 
 " vifm
-let g:vifm_embed_split = 0
-let g:vifm_replace_netrw = 1
-let g:vifm_replace_netrw_cmd = 1
 let g:vifm_exec = expand('$HOME/.config/vifm/scripts/vifmrun')
 
 nnoremap <leader>v :Vifm<CR>
