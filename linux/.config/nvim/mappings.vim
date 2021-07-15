@@ -62,7 +62,7 @@ nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " Remap gx
-nmap gx :silent execute "!xdg-open " . shellescape("<cWORD>")<CR>
+nnoremap gx :silent execute "!xdg-open " . shellescape("<cWORD>")<CR>
 
 " Edit .vimrc
 nnoremap \ev :tabnew $MYVIMRC <bar> tcd %:h <CR>
