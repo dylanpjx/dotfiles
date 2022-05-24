@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/dylan/Projects/chess-test/cmake'
+let g:netrw_dirhist_5='/home/dylan/.ssh'
+let g:netrw_dirhist_4='/etc'
+let g:netrw_dirhist_3='/home/dylan'
+let g:netrw_dirhist_2='/home/dylan/Projects/EE2028-Backend/.git'
+let g:netrw_dirhist_1='/mnt/HDD/NUS_EE/EE2028/Labs/Lab1/Lab1_code/blink_pure_asm'

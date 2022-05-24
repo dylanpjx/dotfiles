@@ -1,0 +1,19 @@
+rofi.font: monospace 12
+rofi.bw: 0
+rofi.padding: 20
+rofi.line-padding: 2
+rofi.color-enabled: true
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.color-window: #2c2d33, #ffffff, #2c2d33
+rofi.color-normal: #2c2d33, #ffffff, #2c2d33, #57C7FF, #2c2d33
+rofi.color-urgent: argb:00000000, #F0719B, argb:00000000, argb:00000000, #FFA56B
+rofi.color-active: argb:00000000, #57C7FF, argb:00000000, argb:00000000, #FFA56B
+rofi.kb-cancel: Escape,Ctrl+c
+rofi.kb-row-up: Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab
+rofi.kb-row-down: Down,Control+j
+rofi.kb-accept-entry: Control+m,Return,KP_Enter
+rofi.kb-remove-to-eol: Control+Shift+e
+rofi.kb-mode-next: Shift+Right,Control+Tab,Control+l
+rofi.kb-mode-previous: Shift+Left,Control+Shift+Tab,Control+h
+rofi.kb-remove-char-back: BackSpace
