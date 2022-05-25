@@ -178,7 +178,7 @@ awful.screen.connect_for_each_screen(function(s)
     --   }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s})
+    s.mywibox = awful.wibar({ position = "top", screen = s })
 
     local get_batt = '"python3 ' .. script_path .. 'mouse_batt.py"'
     -- Add widgets to the wibox

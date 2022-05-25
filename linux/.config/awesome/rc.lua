@@ -77,6 +77,26 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 
+-- Highlight screen
+-- screen_highlight_timer = timer({timeout = 0.2})
+-- screen_highlight_idx = 1
+-- screen_highlight_timer:connect_signal(
+--    "timeout",
+--    function ()
+--       if awful.screen.focused() ~= screen_highlight_idx then
+--          screen_highlight_idx = awful.screen.focused()
+--          for s in screen do
+--             if s == awful.screen.focused() then
+--               s.mywibox.border_color = '#bdae93'
+--             else
+--               s.mywibox.border_color = '#282c34'
+--             end
+--          end
+--       end
+-- end)
+-- screen_highlight_timer:start()
+
+
 require("wibar")
 require("keybinds")
 require("rules")

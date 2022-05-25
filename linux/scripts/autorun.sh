@@ -21,5 +21,6 @@ run picom -b
 run quodlibet
 run discord
 run ibus-daemon -drxR
+run alacritty
 
 xset r rate 250 30
