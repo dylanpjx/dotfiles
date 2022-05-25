@@ -35,7 +35,9 @@ nnoremap <Left> <C-w><
 nnoremap <Right> <C-w>>
 
 nnoremap E ge
-nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<cr><cr>
+nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<CR><CR>
+nnoremap <silent>yn :let @" = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>
+nnoremap <silent>yp :let @" = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>
 
 set pastetoggle=<F2>
 map <F3> :setlocal spell! <CR>
@@ -71,6 +73,7 @@ nnoremap )c :clast<CR>
 " tnoremap <leader>tl <C-\><C-n><C-w>l
 nnoremap <leader>ot :split <bar> resize 15 <bar> setlocal buftype=nofile bufhidden=hide <bar> term <CR>
 tnoremap <Esc> <C-\><C-N>
+tnoremap <Esc><Esc> <C-c>
 
 " Notetaking
 nnoremap <silent><leader>c :!comp.sh <C-r>%<CR><CR>

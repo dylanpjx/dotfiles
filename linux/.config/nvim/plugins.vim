@@ -52,9 +52,10 @@ let g:fzf_layout = {
           \ }}
 
 nnoremap <leader>/ :Rg <CR>
-nnoremap <leader>ls :call fzf#vim#buffers('?', {'options': '--no-preview'}) <CR>
+nnoremap <leader>ls :call fzf#vim#buffers({'options': '--no-preview'}) <CR>
 nnoremap <leader>ff :call fzf#vim#files('.', {'options': '--no-preview'}) <CR>
 nnoremap <leader>fg :call fzf#vim#gitfiles('?', {'options': '--no-preview'}) <CR> 
+nnoremap <leader>fh :call fzf#vim#history({'options': '--no-preview'}) <CR> 
 
 " comment
 lua require('nvim_comment').setup()

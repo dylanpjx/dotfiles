@@ -1,14 +1,10 @@
 set rnu nu
-set splitbelow
-set splitright
+set splitbelow splitright
 au BufNewFile,BufRead * set formatoptions-=cro
 
-set smarttab
-set expandtab
+set smarttab expandtab
 set tabstop=2 softtabstop=2
 set shiftwidth=2
-set autoindent
-
 set foldmethod=syntax
 
 set wildmenu
@@ -24,8 +20,7 @@ set ignorecase smartcase
 set mouse=a
 set backspace=indent,eol,start
 set undofile
-set noswapfile
-set nobackup
+set noswapfile nobackup
 set autoread
 set title
 set autochdir
