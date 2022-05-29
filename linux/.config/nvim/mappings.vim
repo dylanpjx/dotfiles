@@ -5,6 +5,8 @@ nnoremap <silent> j gj
 nnoremap <silent> k gk
 nnoremap <silent> ^ g^
 nnoremap <silent> 0 g0
+nnoremap <silent> $ g$
+nnoremap <silent> E ge
 " Center the cursor vertically when moving
 nnoremap n nzz
 nnoremap N Nzz
@@ -27,6 +29,8 @@ noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 nnoremap <silent>H :tabprev<CR>
 nnoremap <silent>L :tabnext<CR>
+nnoremap <leader><BS> <C-6>
+nnoremap <leader>gd <C-]>
 
 " Resizing
 nnoremap <Up> <C-w>+
@@ -34,7 +38,6 @@ nnoremap <Down> <C-w>-
 nnoremap <Left> <C-w><
 nnoremap <Right> <C-w>>
 
-nnoremap E ge
 nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<CR><CR>
 nnoremap <silent>yn :let @" = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>
 nnoremap <silent>yp :let @" = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>
@@ -43,14 +46,14 @@ set pastetoggle=<F2>
 map <F3> :setlocal spell! <CR>
 
 " Search
-nnoremap <leader><leader> :noh <CR>
+nnoremap <silent><leader><leader> :noh <CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " rc
 nnoremap <silent><leader>ev :e $MYVIMRC <CR>
 nnoremap <silent><leader>eb :e $HOME/.bashrc <CR>
 nnoremap <silent><leader>ea :e $HOME/.config/awesome/rc.lua <CR>
-nnoremap <silent><leader>r :source $MYVIMRC <CR>
+nnoremap <leader>r :source $MYVIMRC <CR>
 
 " ws
 nnoremap <leader>s :w <CR>
@@ -78,3 +81,5 @@ tnoremap <Esc><Esc> <C-c>
 " Notetaking
 nnoremap <silent><leader>c :!comp.sh <C-r>%<CR><CR>
 nnoremap <silent><leader>o :!opout.sh <C-r>%<CR>
+nnoremap <silent><leader>{ i<!--{{{--> <Esc>
+nnoremap <silent><leader>} i<!--}}}--> <Esc>

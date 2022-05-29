@@ -5,7 +5,7 @@ au BufNewFile,BufRead * set formatoptions-=cro
 set smarttab expandtab
 set tabstop=2 softtabstop=2
 set shiftwidth=2
-set foldmethod=syntax
+set foldmethod=marker
 
 set wildmenu
 set wildmode=longest:list,full
