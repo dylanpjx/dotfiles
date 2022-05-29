@@ -13,6 +13,7 @@ alias f='~/.config/vifm/scripts/vifmrun .'
 alias jn='conda activate base;jupyter notebook'
 alias cm='cmake .. && make'
 alias ide='tmux splitw -h -p 40'
+alias xs='xset r rate 250 30'
 alias weather='curl wttr.in/Singapore'
 
 # enable color support of ls and also add handy aliases
