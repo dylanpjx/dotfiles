@@ -74,12 +74,12 @@ nnoremap )c :clast<CR>
 " tnoremap <leader>tj <C-\><C-n><C-w>j
 " tnoremap <leader>tk <C-\><C-n><C-w>k
 " tnoremap <leader>tl <C-\><C-n><C-w>l
-nnoremap <leader>ot :split <bar> resize 15 <bar> setlocal buftype=nofile bufhidden=hide <bar> term <CR>
+nnoremap <leader>ot :split <bar> resize 15 <bar> term <CR>
 tnoremap <Esc> <C-\><C-N>
 tnoremap <Esc><Esc> <C-c>
 
 " Notetaking
-nnoremap <silent><leader>c :!comp.sh <C-r>%<CR><CR>
-nnoremap <silent><leader>o :!opout.sh <C-r>%<CR>
+nnoremap <leader>c :!comp.sh <C-r>% <CR>
+nnoremap <leader>o :!opout.sh <C-r>% <CR>
 nnoremap <silent><leader>{ i<!--{{{--> <Esc>
 nnoremap <silent><leader>} i<!--}}}--> <Esc>

@@ -11,6 +11,7 @@ sudo add-apt-repository ppa:polychromatic/stable
 sudo add-apt-repository ppa:openrazer/stable
 sudo add-apt-repository ppa:lazka/ppa
 ```
+
 ## Audio
 
 1. Speakers are on `line-out`, headphones are on `headphone` in `pavucontrol`
@@ -23,6 +24,7 @@ sudo add-apt-repository ppa:lazka/ppa
 4. [Steps in
    site](https://unix.stackexchange.com/questions/602613/how-to-switch-between-headphones-and-speakers-without-disconnecting)
 5. [Disable HDMI](https://askubuntu.com/questions/228619/disable-sound-through-hdmi-permanently)
+6. Required plugin could not be found -> `sudo apt install ubuntu-restricted-extras`
 
 ## Tablet
 

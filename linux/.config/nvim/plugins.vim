@@ -27,9 +27,8 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lervag/vimtex'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'dhruvasagar/vim-table-mode'
-
-Plug 'tpope/vim-fugitive'
 
 " QoL 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -38,6 +37,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-vinegar'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
+Plug 'tpope/vim-fugitive'
 " Initialise plugin system
 call plug#end()
 
@@ -64,7 +64,6 @@ lua require('nvim_comment').setup()
 let g:tex_flavor = 'latex'
 let g:vimtex_view_general_viewer = 'qpdfview'
 let g:vimtex_view_general_options = '--unique'
-let g:vimtex_view_general_options_latexmk = '--unique'
 
 " Disable overfull/underfull \hbox and all package warnings
 let g:vimtex_quickfix_ignore_filters = [

@@ -23,7 +23,6 @@ set undofile
 set noswapfile nobackup
 set autoread
 set title
-set autochdir
 
 set clipboard+=unnamedplus
 
@@ -35,8 +34,13 @@ endif
 
 set signcolumn=yes
 set completeopt=menuone,longest
+
+" md
 set cc=80
 au FileType md set cc=117
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
 
 " Hacky way to prevent bug in https://github.com/neovim/neovim/issues/11330
 au VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
