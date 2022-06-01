@@ -23,7 +23,7 @@ let &t_te.="\e[0 q"
 " hi StatusLine guifg=black guibg=#fe8019
 " hi StatusLineNC guifg=black guibg=#d65d0e
 "
-set laststatus=3
+set laststatus=2
 " set statusline=
 " set statusline+=%*
 " " set statusline+=\ %y " Filetype

@@ -27,16 +27,17 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
-nnoremap <silent>H :tabprev<CR>
-nnoremap <silent>L :tabnext<CR>
+nnoremap <silent>H :tabprev <CR>
+nnoremap <silent>L :tabnext <CR>
 nnoremap <leader><BS> <C-6>
-nnoremap <leader>gd <C-]>
+nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 
 " Resizing
 nnoremap <Up> <C-w>+
 nnoremap <Down> <C-w>-
 nnoremap <Left> <C-w><
 nnoremap <Right> <C-w>>
+nnoremap <C-w>O  <C-w>_ \| <C-w>\|
 
 nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<CR><CR>
 nnoremap <silent>yn :let @" = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>

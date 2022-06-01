@@ -27,8 +27,8 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lervag/vimtex'
-Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'vhda/verilog_systemverilog.vim'
 
 " QoL 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
