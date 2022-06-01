@@ -102,9 +102,14 @@ globalkeys = gears.table.join(
     awful.key({ "Mod1" }, "Page_Down", function () awful.spawn.with_shell(script_path .. "decrease_brightness.sh") end,
         {description = "decrease brightness", group = "brightness"}),
 
-    -- Volume
+    -- Media
     awful.key({ modkey }, "p", function () awful.spawn("pavucontrol") end,
         {description = "open audio mixer", group = "audio"}),
+
+    awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn.with_shell("amixer set Master 5%+") end),
+    awful.key({}, "XF86AudioLowerVolume", function() awful.spawn.with_shell("amixer set Master 5%-") end),
+    awful.key({}, "XF86AudioMute", function() awful.spawn.with_shell("amixer -D pulse set Master toggle") end),
+
     -- Tablet
     awful.key({ },  "F10", function () awful.spawn.with_shell(script_path .. "tablet.sh") end,
         {description = "restrict tablet area", group = "tablet"}),
