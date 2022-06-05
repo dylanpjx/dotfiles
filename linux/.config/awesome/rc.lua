@@ -11,6 +11,7 @@ naughty = require("naughty")
 hotkeys_popup = require("awful.hotkeys_popup")
 
 local centerwork = require("layout.centerwork")
+require('awesomewm-micky')
 
 -- Startup
 script_path = "~/scripts/"
@@ -95,7 +96,6 @@ awful.layout.layouts = {
 --       end
 -- end)
 -- screen_highlight_timer:start()
-
 
 require("wibar")
 require("keybinds")
