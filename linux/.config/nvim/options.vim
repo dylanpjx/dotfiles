@@ -27,10 +27,9 @@ set title
 set clipboard+=unnamedplus
 
 " Autosave cursor position
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal! g'\"" | endif
-endif
+set viewoptions-=options
+autocmd BufWinLeave *.* mkview!
+autocmd BufWinEnter *.* silent loadview
 
 set signcolumn=yes
 set completeopt=menuone,longest

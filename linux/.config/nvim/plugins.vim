@@ -16,7 +16,7 @@ Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
-" Code
+" LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -25,17 +25,19 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'jiangmiao/auto-pairs'
+
+" Code
+Plug 'vhda/verilog_systemverilog.vim'
 Plug 'lervag/vimtex'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'vhda/verilog_systemverilog.vim'
 
 " QoL 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'tpope/vim-fugitive'
 " Initialise plugin system
@@ -57,15 +59,18 @@ nnoremap <leader>ff :call fzf#vim#files('.', {'options': '--no-preview'}) <CR>
 nnoremap <leader>fg :call fzf#vim#gitfiles('?', {'options': '--no-preview'}) <CR> 
 nnoremap <leader>fh :call fzf#vim#history({'options': '--no-preview'}) <CR> 
 
-" comment
-lua require('nvim_comment').setup()
+" dirvish
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
-" vimtex
+" vimtex 
 let g:tex_flavor = 'latex'
 let g:vimtex_view_general_viewer = 'qpdfview'
 let g:vimtex_view_general_options = '--unique'
 
-" Disable overfull/underfull \hbox and all package warnings
+"" disable overfull/underfull \hbox and all package warnings
 let g:vimtex_quickfix_ignore_filters = [
             \ 'Overfull',
             \ 'Underfull',
@@ -78,3 +83,6 @@ let g:table_mode_motion_left_map='<A-h>'
 let g:table_mode_motion_right_map='<A-l>'
 let g:table_mode_motion_up_map='<A-k>'
 let g:table_mode_motion_down_map='<A-j>'
+
+" comment
+lua require('nvim_comment').setup()
