@@ -28,8 +28,8 @@ set clipboard+=unnamedplus
 
 " Autosave cursor position
 set viewoptions-=options
-autocmd BufWinLeave *.* mkview!
-autocmd BufWinEnter *.* silent loadview
+au BufWinLeave *.* mkview!
+au BufWinEnter *.* silent! loadview
 
 set signcolumn=yes
 set completeopt=menuone,longest

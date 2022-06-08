@@ -27,8 +27,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
-nnoremap <silent>H :tabprev <CR>
-nnoremap <silent>L :tabnext <CR>
+" nnoremap <silent>H :tabprev <CR>
+" nnoremap <silent>L :tabnext <CR>
 nnoremap <leader><BS> <C-6>
 nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 
@@ -54,7 +54,7 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 nnoremap <silent><leader>ev :e $MYVIMRC <CR>
 nnoremap <silent><leader>eb :e $HOME/.bashrc <CR>
 nnoremap <silent><leader>ea :e $HOME/.config/awesome/rc.lua <CR>
-nnoremap <leader>r :source $MYVIMRC <CR>
+nnoremap <leader>r :source $MYVIMRC <bar> e <CR>
 
 " ws
 nnoremap <leader>s :w <CR>
@@ -77,7 +77,6 @@ nnoremap )c :clast<CR>
 " tnoremap <leader>tl <C-\><C-n><C-w>l
 nnoremap <leader>ot :split <bar> resize 15 <bar> term <CR>
 tnoremap <Esc> <C-\><C-N>
-tnoremap <Esc><Esc> <C-c>
 
 " Notetaking
 nnoremap <leader>c :!comp.sh <C-r>% <CR>
