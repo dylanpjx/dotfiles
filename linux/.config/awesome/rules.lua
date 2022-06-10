@@ -56,6 +56,6 @@ awful.rules.rules = {
        { rule = { class = "Quodlibet" },
          properties = { screen = 2, tag = "3" } },
        { rule = { class = "discord" },
-         properties = { screen = 2, tag = "1" } },
+         properties = { screen = 2, tag = "3" } },
 }
 -- }}}

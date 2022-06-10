@@ -13,11 +13,6 @@ hotkeys_popup = require("awful.hotkeys_popup")
 local centerwork = require("layout.centerwork")
 require('awesomewm-micky')
 
--- Startup
-script_path = "~/scripts/"
-awful.spawn("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
-awful.spawn.with_shell(script_path .. "autorun.sh")
-
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -96,6 +91,11 @@ awful.layout.layouts = {
 --       end
 -- end)
 -- screen_highlight_timer:start()
+
+-- Startup
+script_path = "~/scripts/"
+awful.spawn("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
+awful.spawn.with_shell(script_path .. "autorun.sh")
 
 require("wibar")
 require("keybinds")
