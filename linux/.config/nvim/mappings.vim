@@ -27,8 +27,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
-" nnoremap <silent>H :tabprev <CR>
-" nnoremap <silent>L :tabnext <CR>
+nnoremap <silent>H :tabprev <CR>
+nnoremap <silent>L :tabnext <CR>
 nnoremap <leader><BS> <C-6>
 nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 

@@ -27,9 +27,13 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
 " Code
-Plug 'vhda/verilog_systemverilog.vim'
-Plug 'lervag/vimtex'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'terrortylor/nvim-comment', {'branch': 'main'}
+
+" File 
+Plug 'tpope/vim-fugitive'
+Plug 'justinmk/vim-dirvish'
+Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 
 " QoL 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -37,9 +41,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'justinmk/vim-dirvish'
-Plug 'terrortylor/nvim-comment', {'branch': 'main'}
-Plug 'tpope/vim-fugitive'
 " Initialise plugin system
 call plug#end()
 
@@ -47,11 +48,11 @@ call plug#end()
 let $FZF_DEFAULT_COMMAND = 'fd --type f --exclude .git --ignore-file ~/.gitignore'
 let g:fzf_layout = {
       \ 'window': {
-          \ 'width': 1,
-          \ 'height': 0.3,
-          \ 'yoffset': 0.99,
-          \ 'border': 'top'
-          \ }}
+        \ 'width': 1,
+        \ 'height': 0.3,
+        \ 'yoffset': 0.99,
+        \ 'border': 'top'
+        \ }}
 
 nnoremap <leader>/ :Rg <CR>
 nnoremap <leader>ls :call fzf#vim#buffers({'options': '--no-preview'}) <CR>
@@ -65,18 +66,6 @@ command! -nargs=? -complete=dir Explore Dirvish <args>
 command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
-" vimtex 
-let g:tex_flavor = 'latex'
-let g:vimtex_view_general_viewer = 'qpdfview'
-let g:vimtex_view_general_options = '--unique'
-
-"" disable overfull/underfull \hbox and all package warnings
-let g:vimtex_quickfix_ignore_filters = [
-            \ 'Overfull',
-            \ 'Underfull',
-            \ 'Packages',
-            \]
-
 " table
 let g:table_mode_corner='|'
 let g:table_mode_motion_left_map='<A-h>'
@@ -84,5 +73,15 @@ let g:table_mode_motion_right_map='<A-l>'
 let g:table_mode_motion_up_map='<A-k>'
 let g:table_mode_motion_down_map='<A-j>'
 
-" comment
-lua require('nvim_comment').setup()
+
+lua << EOF
+-- comment
+require('nvim_comment').setup()
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "cpp", "lua", "latex", "vim", "verilog" },
+  highlight = {
+    enable =true,
+    },
+  }
+EOF
