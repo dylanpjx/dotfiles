@@ -43,12 +43,22 @@ for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
-  }
+    } flags = {
+      debounce_text_changes = 150,
+    }
 end
 
 -- NVIM_CMP
 local cmp = require 'cmp'
 cmp.setup ({
+  window = {
+    completion = {
+      border = 'rounded',
+    },
+    documentation = {
+      border = nil,
+    },
+  },
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(),
     ['<C-n>'] = cmp.mapping.select_next_item(),

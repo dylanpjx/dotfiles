@@ -38,13 +38,13 @@ local config = {
       }
     },
   lualine_y = {'filetype'},
-  lualine_z = {'location'}
+  lualine_z = {'progress'}
   },
 inactive_sections = {
   lualine_a = {},
   lualine_b = {},
   lualine_c = {'filename'},
-  lualine_x = {'location'},
+  lualine_x = {'progress'},
   lualine_y = {},
   lualine_z = {}
   },

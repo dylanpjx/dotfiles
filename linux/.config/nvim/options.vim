@@ -27,7 +27,7 @@ set title
 set clipboard+=unnamedplus
 
 " Autosave cursor position
-set viewoptions-=options
+set viewoptions=cursor,folds,slash,unix
 au BufWinLeave *.* mkview!
 au BufWinEnter *.* silent! loadview
 
@@ -46,3 +46,5 @@ command! MakeTags !ctags -R .
 
 " :read
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣

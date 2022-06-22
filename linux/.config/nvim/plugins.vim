@@ -29,6 +29,7 @@ Plug 'hrsh7th/nvim-cmp'
 " Code
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
+Plug 'akinsho/toggleterm.nvim'
 
 " File 
 Plug 'tpope/vim-fugitive'
@@ -78,10 +79,15 @@ lua << EOF
 -- comment
 require('nvim_comment').setup()
 
-require'nvim-treesitter.configs'.setup {
+-- treesitter
+require('nvim-treesitter.configs').setup {
   ensure_installed = { "c", "cpp", "lua", "latex", "vim", "verilog" },
   highlight = {
     enable =true,
     },
   }
+
+-- toggleterm
+require("toggleterm").setup()
+
 EOF

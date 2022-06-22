@@ -75,8 +75,9 @@ nnoremap )c :clast<CR>
 " tnoremap <leader>tj <C-\><C-n><C-w>j
 " tnoremap <leader>tk <C-\><C-n><C-w>k
 " tnoremap <leader>tl <C-\><C-n><C-w>l
-nnoremap <leader>ot :split <bar> resize 15 <bar> term <CR>
+nnoremap <leader>ot :ToggleTerm size=80 direction=vertical<CR>
 tnoremap <Esc> <C-\><C-N>
+tnoremap jk <C-\><C-N>
 
 " Notetaking
 nnoremap <leader>c :!comp.sh <C-r>% <CR>
