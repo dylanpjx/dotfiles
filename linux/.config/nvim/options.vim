@@ -22,7 +22,10 @@ set backspace=indent,eol,start
 set undofile
 set noswapfile nobackup
 set autoread
+
 set title
+set titlestring=Vim:\ %-25.55f titlelen=70
+set noshowmode
 
 set clipboard+=unnamedplus
 
@@ -47,4 +50,4 @@ command! MakeTags !ctags -R .
 " :read
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=eol:↵,trail:⎯,extends:>,precedes:<

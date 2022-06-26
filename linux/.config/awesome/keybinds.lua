@@ -16,14 +16,14 @@ globalkeys = gears.table.join(
               {description = "go back", group = "tag"}),
     awful.key({ modkey }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
-    awful.key({ modkey, "Control" }, "e", awesome.quit,
-              {description = "quit awesome", group = "awesome"}),
-    awful.key({ modkey, "Control" }, "r", function () awful.spawn.with_shell("reboot") end,
-              {description = "restart", group = "system"}),
-    awful.key({ modkey, "Control" }, "q", function() awful.spawn.with_shell("poweroff") end,
-              {description = "shutdown", group = "system"}),
-    awful.key({ modkey, "Control" }, "s", function() awful.spawn.with_shell("systemctl suspend") end,
-              {description = "sleep", group = "system"}),
+    awful.key({ modkey, "Control" }, "s", function() awful.spawn.with_shell('rofi -show menu -modi "menu:rofi-power-menu --no-symbols"') end,
+              {description = "Power menu", group = "system"}),
+    -- awful.key({ modkey, "Control" }, "e", awesome.quit,
+    --           {description = "quit awesome", group = "awesome"}),
+    -- awful.key({ modkey, "Control" }, "r", function () awful.spawn.with_shell("reboot") end,
+    --           {description = "restart", group = "system"}),
+    -- awful.key({ modkey, "Control" }, "s", function() awful.spawn.with_shell("systemctl suspend") end,
+    --           {description = "sleep", group = "system"}),
 
     -- Default applications
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
@@ -60,14 +60,14 @@ globalkeys = gears.table.join(
               {description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
-    awful.key({ modkey }, "Tab",
-        function ()
-            awful.client.focus.history.previous()
-            if client.focus then
-                client.focus:raise()
-            end
-        end,
-        {description = "go back", group = "client"}),
+    -- awful.key({ modkey }, "Tab",
+    --     function ()
+    --         awful.client.focus.history.previous()
+    --         if client.focus then
+    --             client.focus:raise()
+    --         end
+    --     end,
+    --     {description = "go back", group = "client"}),
 
     -- Adjusting layout
     awful.key({ modkey }, "l",     function () awful.tag.incmwfact( 0.05)          end,
@@ -97,9 +97,9 @@ globalkeys = gears.table.join(
         {description = "take screenshot of area", group = "screenshots"}),
 
     -- Brightness
-    awful.key({ "Mod1" }, "Page_Up", function () awful.spawn.with_shell(script_path .. "increase_brightness.sh") end,
+    awful.key({ modkey }, "Page_Up", function () awful.spawn.with_shell(script_path .. "increase_brightness.sh") end,
         {description = "increase brightness", group = "brightness"}),
-    awful.key({ "Mod1" }, "Page_Down", function () awful.spawn.with_shell(script_path .. "decrease_brightness.sh") end,
+    awful.key({ modkey }, "Page_Down", function () awful.spawn.with_shell(script_path .. "decrease_brightness.sh") end,
         {description = "decrease brightness", group = "brightness"}),
 
     -- Media

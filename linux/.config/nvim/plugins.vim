@@ -30,36 +30,21 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'akinsho/toggleterm.nvim'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'vhda/verilog_systemverilog.vim'
 
 " File 
 Plug 'tpope/vim-fugitive'
 Plug 'justinmk/vim-dirvish'
 Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 
-" QoL 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" QoL
+Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " Initialise plugin system
 call plug#end()
-
-" fzf
-let $FZF_DEFAULT_COMMAND = 'fd --type f --exclude .git --ignore-file ~/.gitignore'
-let g:fzf_layout = {
-      \ 'window': {
-        \ 'width': 1,
-        \ 'height': 0.3,
-        \ 'yoffset': 0.99,
-        \ 'border': 'top'
-        \ }}
-
-nnoremap <leader>/ :Rg <CR>
-nnoremap <leader>ls :call fzf#vim#buffers({'options': '--no-preview'}) <CR>
-nnoremap <leader>ff :call fzf#vim#files('.', {'options': '--no-preview'}) <CR>
-nnoremap <leader>fg :call fzf#vim#gitfiles('?', {'options': '--no-preview'}) <CR> 
-nnoremap <leader>fh :call fzf#vim#history({'options': '--no-preview'}) <CR> 
 
 " dirvish
 let g:loaded_netrwPlugin = 1
@@ -74,6 +59,8 @@ let g:table_mode_motion_right_map='<A-l>'
 let g:table_mode_motion_up_map='<A-k>'
 let g:table_mode_motion_down_map='<A-j>'
 
+" asyncrun
+let g:asyncrun_open = 8
 
 lua << EOF
 -- comment
@@ -81,13 +68,25 @@ require('nvim_comment').setup()
 
 -- treesitter
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "latex", "vim", "verilog" },
+  ensure_installed = { "c", "cpp", "lua", "latex", "vim" },
   highlight = {
-    enable =true,
+    enable = true,
     },
   }
 
 -- toggleterm
-require("toggleterm").setup()
+require('toggleterm').setup{
+  hide_numbers = false,
+  direction = 'horizontal',
+  size = 20
+}
 
+-- fzf
+require('fzf-lua').setup{
+winopts = {
+  row = 1,
+  width = 1,
+  height = 0.4
+  },
+}
 EOF

@@ -29,14 +29,13 @@ noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 nnoremap <silent>H :tabprev <CR>
 nnoremap <silent>L :tabnext <CR>
-nnoremap <leader><BS> <C-6>
 nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 
 " Resizing
-nnoremap <Up> <C-w>+
-nnoremap <Down> <C-w>-
-nnoremap <Left> <C-w><
-nnoremap <Right> <C-w>>
+" nnoremap <Up> <C-w>+
+" nnoremap <Down> <C-w>-
+" nnoremap <Left> <C-w><
+" nnoremap <Right> <C-w>>
 nnoremap <C-w>O  <C-w>_ \| <C-w>\|
 
 nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<CR><CR>
@@ -50,11 +49,16 @@ map <F3> :setlocal spell! <CR>
 nnoremap <silent><leader><leader> :noh <CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
+" fzf
+nnoremap <leader>/ :lua require('fzf-lua').live_grep()<CR>
+nnoremap <leader>ls :lua require('fzf-lua').buffers()<CR>
+nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
+nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
+nnoremap <leader>fh :lua require('fzf-lua').oldfiles()<CR>
+
 " rc
-nnoremap <silent><leader>ev :e $MYVIMRC <CR>
-nnoremap <silent><leader>eb :e $HOME/.bashrc <CR>
-nnoremap <silent><leader>ea :e $HOME/.config/awesome/rc.lua <CR>
-nnoremap <leader>r :source $MYVIMRC <bar> e <CR>
+nnoremap <silent><leader>ec :lua require('fzf-lua').files({cwd = '~/.dotfiles'})<CR>
+nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
 
 " ws
 nnoremap <leader>s :w <CR>
@@ -69,18 +73,17 @@ nnoremap )c :clast<CR>
 " Location list
 " command! -nargs=1 Ngrep lvimgrep "<args>" $NOTES_DIR/**/*.txt
 
-
 " Terminal mappings
 " tnoremap <leader>th <C-\><C-n><C-w>h
 " tnoremap <leader>tj <C-\><C-n><C-w>j
 " tnoremap <leader>tk <C-\><C-n><C-w>k
 " tnoremap <leader>tl <C-\><C-n><C-w>l
-nnoremap <leader>ot :ToggleTerm size=80 direction=vertical<CR>
+nnoremap <leader><CR> :ToggleTerm<CR>
 tnoremap <Esc> <C-\><C-N>
 tnoremap jk <C-\><C-N>
 
 " Notetaking
-nnoremap <leader>c :!comp.sh <C-r>% <CR>
-nnoremap <leader>o :!opout.sh <C-r>% <CR>
+nnoremap <leader>c :AsyncRun comp.sh <C-r>% <CR>
+nnoremap <leader>o :AsyncRun opout.sh <C-r>% <CR>
 nnoremap <silent><leader>{ i<!--{{{--> <Esc>
 nnoremap <silent><leader>} i<!--}}}--> <Esc>
