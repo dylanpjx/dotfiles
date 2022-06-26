@@ -9,8 +9,8 @@ configuration {
   kb-cancel:                      "Escape,Ctrl+c";
 
   font:                           "sans 11";
-  separator-style:                "none";
-  hide-scrollbar:                 "true";
+  /* separator-style:                "none"; */
+  /* hide-scrollbar:                 "true"; */
   location:                       1;
 }
 
