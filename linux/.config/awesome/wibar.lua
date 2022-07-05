@@ -8,6 +8,9 @@ local calendar = require("calendar")
 local mytextclock = wibox.widget.textclock()
 calendar({}):attach(mytextclock)
 
+-- Keyboard map indicator and switcher
+-- mykeyboardlayout = awful.widget.keyboardlayout()
+
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
@@ -146,36 +149,6 @@ awful.screen.connect_for_each_screen(function(s)
             widget = wibox.container.background,
         },
     }
-      -- s.mytasklist = awful.widget.tasklist { -- tasklist with all icons
-    --   screen   = s,
-    --   filter   = awful.widget.tasklist.filter.currenttags,
-    --   buttons  = tasklist_buttons,
-    --   style    = {
-    --     shape = gears.shape.rounded_rect,
-    --   },
-    --   layout   = {
-    --     spacing = 5,
-    --     layout  = wibox.layout.fixed.horizontal
-    --   },
-    --   -- Notice that there is *NO* wibox.wibox prefix, it is a template,
-    --   -- not a widget instance.
-    --   widget_template = {
-    --       {
-    --         {
-    --           id     = 'clienticon',
-    --           widget = awful.widget.clienticon,
-    --         },
-    --         forced_width = 48,
-    --         halign = 'center',
-    --         widget  = wibox.container.place,
-    --       },
-    --       id = 'background_role',
-    --       widget = wibox.container.background,
-    --       create_callback = function(self, c, index, objects) --luacheck: no unused args
-    --         self:get_children_by_id('clienticon')[1].client = c
-    --       end,
-    --     },
-    --   }
 
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
@@ -194,6 +167,7 @@ awful.screen.connect_for_each_screen(function(s)
         {s.mytasklist, layout = wibox.layout.fixed.horizontal}, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            -- mykeyboardlayout,
             mytextclock,
             wibox.widget.textbox(' | '),
             wibox.widget.imagebox('/home/dylan/.config/awesome/battery.png'),

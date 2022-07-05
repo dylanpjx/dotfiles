@@ -8,6 +8,7 @@ wibox = require("wibox")
 beautiful = require("beautiful")
 -- Notification library
 naughty = require("naughty")
+menubar = require("menubar")
 hotkeys_popup = require("awful.hotkeys_popup")
 
 local centerwork = require("layout.centerwork")
@@ -78,6 +79,7 @@ script_path = "~/scripts/"
 awful.spawn("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell(script_path .. "autorun.sh")
 
+require("menu")
 require("wibar")
 require("keybinds")
 require("rules")
