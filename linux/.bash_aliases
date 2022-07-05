@@ -1,14 +1,14 @@
-alias ba='nvim $HOME/.bash_aliases'
-alias ev='nvim $HOME/.config/nvim/init.vim'
-alias eb='nvim $HOME/.bashrc'
+function ec() {
+  cd $HOME/.dotfiles;nvim -c "lua require('fzf-lua').files()"
+}
 alias sb='source $HOME/.bashrc'
-alias ez='nvim $HOME/.config/zsh/.zshrc'
 alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias vi='nvim'
 alias vifm='~/.config/vifm/scripts/vifmrun .'
 alias f='~/.config/vifm/scripts/vifmrun .'
+alias p='zathura'
 alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 alias jn='conda activate base;jupyter notebook'
 alias cm='cmake .. && make'
