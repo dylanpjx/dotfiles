@@ -56,6 +56,7 @@ if ! shopt -oq posix; then
 fi
 
 set -o vi
+bind '"jk":vi-movement-mode'
 
 # Perform file completion in a case insensitive fashion
 bind "set completion-ignore-case on"
