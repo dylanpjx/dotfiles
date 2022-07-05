@@ -20,7 +20,11 @@ local config = {
     },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'filename'},
+    lualine_b = {
+      {'filename', 
+        path = 1,
+      },
+    },
     lualine_c = { 
       {'diagnostics',
         sources = { 'nvim_diagnostic' },
@@ -38,13 +42,13 @@ local config = {
       }
     },
   lualine_y = {'filetype'},
-  lualine_z = {'progress'}
+  lualine_z = {'location'}
   },
 inactive_sections = {
   lualine_a = {},
   lualine_b = {},
   lualine_c = {'filename'},
-  lualine_x = {'progress'},
+  lualine_x = {'location'},
   lualine_y = {},
   lualine_z = {}
   },

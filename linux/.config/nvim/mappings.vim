@@ -27,20 +27,17 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
-nnoremap <silent>H :tabprev <CR>
-nnoremap <silent>L :tabnext <CR>
 nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 
 " Resizing
-" nnoremap <Up> <C-w>+
-" nnoremap <Down> <C-w>-
-" nnoremap <Left> <C-w><
-" nnoremap <Right> <C-w>>
+nnoremap <C-Up> <C-w>+
+nnoremap <C-Down> <C-w>-
+nnoremap <C-Left> <C-w><
+nnoremap <C-Right> <C-w>>
 nnoremap <C-w>O  <C-w>_ \| <C-w>\|
-
 nnoremap <silent>gx :!xdg-open <c-r>=shellescape(expand('<cfile>'))<CR><CR>
-nnoremap <silent>yn :let @" = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>
-nnoremap <silent>yp :let @" = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>
+nnoremap <silent>yn :let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>
+nnoremap <silent>yp :let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>
 
 set pastetoggle=<F2>
 map <F3> :setlocal spell! <CR>
@@ -57,6 +54,7 @@ nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
 nnoremap <leader>fh :lua require('fzf-lua').oldfiles()<CR>
 
 " rc
+nnoremap <silent><leader>en :lua require('fzf-lua').files({cwd = '~/Documents/Notes/'})<CR>
 nnoremap <silent><leader>ec :lua require('fzf-lua').files({cwd = '~/.dotfiles'})<CR>
 nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
 
@@ -67,8 +65,6 @@ nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
 " Quickfix list
 nnoremap <C-n> :cn<CR>
 nnoremap <C-p> :cp<CR>
-nnoremap (c :cfirst<CR>
-nnoremap )c :clast<CR>
 
 " Location list
 " command! -nargs=1 Ngrep lvimgrep "<args>" $NOTES_DIR/**/*.txt
@@ -84,6 +80,6 @@ tnoremap jk <C-\><C-N>
 
 " Notetaking
 nnoremap <leader>c :AsyncRun comp.sh <C-r>% <CR>
-nnoremap <leader>o :AsyncRun opout.sh <C-r>% <CR>
+nnoremap <leader>o :!opout.sh <C-r>% <CR>
 nnoremap <silent><leader>{ i<!--{{{--> <Esc>
 nnoremap <silent><leader>} i<!--}}}--> <Esc>

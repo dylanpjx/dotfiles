@@ -27,13 +27,15 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
 " Code
-Plug 'dhruvasagar/vim-table-mode'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'akinsho/toggleterm.nvim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'vhda/verilog_systemverilog.vim'
 
-" File 
+" Notes
+Plug 'dhruvasagar/vim-table-mode'
+
+" File
 Plug 'tpope/vim-fugitive'
 Plug 'justinmk/vim-dirvish'
 Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
@@ -43,6 +45,8 @@ Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+" Plug 'dstein64/vim-startuptime'
 " Initialise plugin system
 call plug#end()
 
@@ -62,6 +66,14 @@ let g:table_mode_motion_down_map='<A-j>'
 " asyncrun
 let g:asyncrun_open = 8
 
+" unimpared
+nmap ( [
+nmap ) ]
+omap ( [
+omap ) ]
+xmap ( [
+xmap ) ]
+
 lua << EOF
 -- comment
 require('nvim_comment').setup()
@@ -76,9 +88,8 @@ require('nvim-treesitter.configs').setup {
 
 -- toggleterm
 require('toggleterm').setup{
-  hide_numbers = false,
   direction = 'horizontal',
-  size = 20
+  size = 20,
 }
 
 -- fzf

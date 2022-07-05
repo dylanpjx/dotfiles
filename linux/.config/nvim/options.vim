@@ -30,7 +30,7 @@ set noshowmode
 set clipboard+=unnamedplus
 
 " Autosave cursor position
-set viewoptions=cursor,folds,slash,unix
+set viewoptions=cursor,folds
 au BufWinLeave *.* mkview!
 au BufWinEnter *.* silent! loadview
 
@@ -40,6 +40,10 @@ set completeopt=menuone,longest
 " md
 set cc=80
 au FileType md set cc=117
+
+" Use init.lua for file checking
+let g:do_filetype_lua = 1
+let g:did_load_filetypes = 0
 
 " Hacky way to prevent bug in https://github.com/neovim/neovim/issues/11330
 au VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
