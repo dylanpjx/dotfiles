@@ -14,6 +14,8 @@ sudo add-apt-repository ppa:lazka/ppa
 
 ## Audio
 
+** Pop uses pipewire now, instructions below are not useful **
+
 1. Speakers are on `line-out`, headphones are on `headphone` in `pavucontrol`
 2. If having no audio, use `alsamixer` to check sound card and check if
    `Auto-mute` is enabled
