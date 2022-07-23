@@ -11,7 +11,6 @@ call plug#begin(g:PLUGIN_HOME)
 " Plugins go here
 "
 " Themes
-Plug 'sainnhe/gruvbox-material'
 Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -30,31 +29,27 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'akinsho/toggleterm.nvim'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'vhda/verilog_systemverilog.vim'
 
 " Notes
 Plug 'dhruvasagar/vim-table-mode'
 
 " File
-Plug 'tpope/vim-fugitive'
 Plug 'justinmk/vim-dirvish'
 Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 
 " QoL
 Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
+Plug 'kylechui/nvim-surround'
+Plug 'wellle/targets.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
 " Plug 'dstein64/vim-startuptime'
 " Initialise plugin system
 call plug#end()
-
-" dirvish
-let g:loaded_netrwPlugin = 1
-command! -nargs=? -complete=dir Explore Dirvish <args>
-command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
-command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 " table
 let g:table_mode_corner='|'
@@ -64,7 +59,7 @@ let g:table_mode_motion_up_map='<A-k>'
 let g:table_mode_motion_down_map='<A-j>'
 
 " asyncrun
-let g:asyncrun_open = 8
+let g:asyncrun_open=8
 
 " unimpared
 nmap ( [
@@ -73,6 +68,12 @@ omap ( [
 omap ) ]
 xmap ( [
 xmap ) ]
+
+" dirvish    
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 lua << EOF
 -- comment
@@ -83,21 +84,24 @@ require('nvim-treesitter.configs').setup {
   ensure_installed = { "c", "cpp", "lua", "latex", "vim" },
   highlight = {
     enable = true,
-    },
-  }
+  },
+}
 
 -- toggleterm
-require('toggleterm').setup{
+require('toggleterm').setup {
   direction = 'horizontal',
   size = 20,
 }
 
 -- fzf
-require('fzf-lua').setup{
+require('fzf-lua').setup {
 winopts = {
   row = 1,
   width = 1,
   height = 0.4
   },
 }
+
+-- nvim-surround
+require('nvim-surround').setup()
 EOF

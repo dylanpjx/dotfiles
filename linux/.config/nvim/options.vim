@@ -2,26 +2,22 @@ set rnu nu
 set splitbelow splitright
 au BufNewFile,BufRead * set formatoptions-=cro
 
-set smarttab expandtab
+set expandtab
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set foldmethod=marker
 
-set wildmenu
 set wildmode=longest:list,full
 set wildignorecase
 set ttimeoutlen=0
 set virtualedit=block
 
 set showmatch
-set hlsearch incsearch
 set ignorecase smartcase
 
 set mouse=a
-set backspace=indent,eol,start
 set undofile
 set noswapfile nobackup
-set autoread
 
 set title
 set titlestring=Vim:\ %-25.55f titlelen=70
@@ -36,22 +32,20 @@ au BufWinEnter *.* silent! loadview
 
 set signcolumn=yes
 set completeopt=menuone,longest
+set listchars=eol:↵,trail:⎯,extends:>,precedes:<
 
 " md
 set cc=80
 au FileType md set cc=117
 
-" Use init.lua for file checking
-let g:do_filetype_lua = 1
-let g:did_load_filetypes = 0
+" terminal
+autocmd TermOpen * startinsert
 
-" Hacky way to prevent bug in https://github.com/neovim/neovim/issues/11330
-au VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
+" ripgrep, https://phelipetls.github.io/posts/extending-vim-with-ripgrep/
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+endif
 
-" File navigation
 command! MakeTags !ctags -R .
-
-" :read
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
-
-set listchars=eol:↵,trail:⎯,extends:>,precedes:<

@@ -76,7 +76,6 @@ nnoremap <C-p> :cp<CR>
 " tnoremap <leader>tl <C-\><C-n><C-w>l
 nnoremap <leader><CR> :ToggleTerm<CR>
 tnoremap <Esc> <C-\><C-N>
-tnoremap jk <C-\><C-N>
 
 " Notetaking
 nnoremap <leader>c :AsyncRun comp.sh <C-r>% <CR>

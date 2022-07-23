@@ -42,13 +42,13 @@ local config = {
       }
     },
   lualine_y = {'filetype'},
-  lualine_z = {'location'}
+  lualine_z = {'%3l/%-3L'}
   },
 inactive_sections = {
   lualine_a = {},
   lualine_b = {},
   lualine_c = {'filename'},
-  lualine_x = {'location'},
+  lualine_x = {'%3l/%-3L'},
   lualine_y = {},
   lualine_z = {}
   },
