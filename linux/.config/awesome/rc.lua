@@ -46,7 +46,7 @@ terminal = "alacritty"
 browser = "firefox"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
-explorer = "/home/dylan/.config/vifm/scripts/vifmrun"
+explorer = "vifmrun"
 explorer_cmd = terminal .. " -e " .. explorer
 
 -- Default modkey
