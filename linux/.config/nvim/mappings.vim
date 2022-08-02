@@ -27,6 +27,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
+nnoremap H gT
+nnoremap L gt
 nnoremap <leader>cd :tcd %:p:h <bar> pwd <CR>
 
 " Resizing
@@ -54,8 +56,8 @@ nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
 nnoremap <leader>fh :lua require('fzf-lua').oldfiles()<CR>
 
 " rc
-nnoremap <silent><leader>en :lua require('fzf-lua').files({cwd = '~/Documents/Notes/'})<CR>
-nnoremap <silent><leader>ec :lua require('fzf-lua').files({cwd = '~/.dotfiles'})<CR>
+nnoremap <silent><leader>fn :lua require('fzf-lua').files({cwd = '~/Documents/Notes/'})<CR>
+nnoremap <silent><leader>fc :lua require('fzf-lua').files({cwd = '~/.dotfiles'})<CR>
 nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
 
 " ws

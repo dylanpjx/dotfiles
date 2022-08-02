@@ -36,14 +36,14 @@ Plug 'vhda/verilog_systemverilog.vim'
 Plug 'dhruvasagar/vim-table-mode'
 
 " File
-Plug 'justinmk/vim-dirvish'
-Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
+Plug 'elihunter173/dirbuf.nvim'
 
 " QoL
 Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
-Plug 'kylechui/nvim-surround'
+Plug 'godlygeek/tabular'
 Plug 'wellle/targets.vim'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
@@ -68,12 +68,6 @@ omap ( [
 omap ) ]
 xmap ( [
 xmap ) ]
-
-" dirvish    
-let g:loaded_netrwPlugin = 1
-command! -nargs=? -complete=dir Explore Dirvish <args>
-command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
-command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 lua << EOF
 -- comment
@@ -102,6 +96,6 @@ winopts = {
   },
 }
 
--- nvim-surround
-require('nvim-surround').setup()
+-- dirbuf
+require('dirbuf').setup{}
 EOF

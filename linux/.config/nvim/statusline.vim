@@ -6,7 +6,7 @@ local colors = {
   cyan     = '#008080',
   red      = '#ec5f67',  
   violet   = '#a9a1e1',
-  }
+}
 
 local config = {
   options = {
@@ -17,7 +17,7 @@ local config = {
     disabled_filetypes = {},
     always_divide_middle = true,
     globalstatus = false,
-    },
+  },
   sections = {
     lualine_a = {'mode'},
     lualine_b = {
@@ -26,24 +26,26 @@ local config = {
       },
     },
     lualine_c = { 
-      {'diagnostics',
+      {
+        'diagnostics',
         sources = { 'nvim_diagnostic' },
         symbols = { error = ' ', warn = ' ', info = ' ' },
         diagnostics_color = {
           color_error = { fg = colors.red },
           color_warn = { fg = colors.yellow },
           color_info = { fg = colors.cyan },
-          },
+        },
       }
     },
   lualine_x = {
-    {'branch',
+      {
+      'branch',
       color = { fg = colors.violet, gui = 'bold' },
       }
     },
   lualine_y = {'filetype'},
   lualine_z = {'%3l/%-3L'}
-  },
+},
 inactive_sections = {
   lualine_a = {},
   lualine_b = {},
@@ -51,8 +53,34 @@ inactive_sections = {
   lualine_x = {'%3l/%-3L'},
   lualine_y = {},
   lualine_z = {}
-  },
-tabline = {},
+},
+tabline = {
+  lualine_a = {'tabs'},
+  lualine_b = {'filename'},
+  lualine_c = {},
+  lualine_x = {},
+  lualine_y = {},
+  lualine_z = {
+    {
+      function()
+        local msg = 'No Active Lsp'
+        local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
+        local clients = vim.lsp.get_active_clients()
+        if next(clients) == nil then
+          return msg
+        end
+        for _, client in ipairs(clients) do
+          local filetypes = client.config.filetypes
+          if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
+            return client.name
+          end
+        end
+        return msg
+      end,
+      icon = ' LSP:'
+    },
+  }
+},
 extensions = {}
 }
 

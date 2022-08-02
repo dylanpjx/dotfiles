@@ -41,6 +41,9 @@ au FileType md set cc=117
 " terminal
 autocmd TermOpen * startinsert
 
+" quickfix
+autocmd FileType qf wincmd J
+
 " ripgrep, https://phelipetls.github.io/posts/extending-vim-with-ripgrep/
 if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
