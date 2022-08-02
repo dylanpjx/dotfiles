@@ -82,9 +82,9 @@ globalkeys = gears.table.join(
     --     {description = "go back", group = "client"}),
 
     -- Adjusting layout
-    awful.key({ modkey }, "Left",     function () awful.tag.incmwfact( 0.05)          end,
+    awful.key({ modkey }, "Left",     function () awful.tag.incmwfact(-0.05)          end,
               {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey }, "Right",     function () awful.tag.incmwfact(-0.05)          end,
+    awful.key({ modkey }, "Right",     function () awful.tag.incmwfact(0.05)          end,
               {description = "decrease master width factor", group = "layout"}),
     awful.key({ modkey }, "Up",     function () awful.client.incwfact( 0.05)          end,
               {description = "increase master height factor", group = "layout"}),
