@@ -77,6 +77,7 @@ tabline = {
         end
         return msg
       end,
+      color = { bg = '#98c379', gui = 'bold' },
       icon = ' LSP:'
     },
   }
