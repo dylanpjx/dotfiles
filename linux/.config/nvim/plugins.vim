@@ -30,7 +30,6 @@ Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'akinsho/toggleterm.nvim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'stefandtw/quickfix-reflector.vim'
-Plug 'vhda/verilog_systemverilog.vim'
 
 " Notes
 Plug 'dhruvasagar/vim-table-mode'
@@ -46,7 +45,8 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-fugitive'
+Plug 'TimUntersberger/neogit'
+Plug 'nvim-lua/plenary.nvim'
 " Plug 'dstein64/vim-startuptime'
 " Initialise plugin system
 call plug#end()
@@ -98,4 +98,7 @@ winopts = {
 
 -- dirbuf
 require('dirbuf').setup{}
+
+-- neogit
+require('neogit').setup{}
 EOF
