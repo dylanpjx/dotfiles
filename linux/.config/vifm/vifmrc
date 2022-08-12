@@ -98,6 +98,7 @@ mark d ~/Downloads/
 mark D ~/qmk_firmware/keyboards/planck/keymaps/dylan/
 mark e /mnt/HDD/Ebooks/
 mark h /mnt/HDD/
+mark i ~/Documents/FPGA/iVerilog/
 mark n /mnt/HDD/NUS_EE/
 mark N ~/Documents/Notes/
 mark v /mnt/HDD/Videos/
@@ -472,7 +473,7 @@ nnoremap yn :!echo -n %c | xclip -i -sel p -f %i | xclip -i -sel c %i <cr>
 " Mappings for faster renaming
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
-nnoremap A cw
+nnoremap A cW
 nnoremap cv :rename<CR>
 
 " Open console in current directory
