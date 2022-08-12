@@ -50,7 +50,7 @@ explorer = "vifmrun"
 explorer_cmd = terminal .. " -e " .. explorer
 
 -- Default modkey
-modkey = "Mod4"
+modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {

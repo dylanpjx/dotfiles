@@ -14,7 +14,7 @@ globalkeys = gears.table.join(
               {description="show help", group="awesome"}),
     awful.key({ modkey }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
-    awful.key({ modkey }, "r", awesome.restart,
+    awful.key({ modkey, "Control"}, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Control" }, "s", function() awful.spawn.with_shell('rofi -show menu -modi "menu:rofi-power-menu --no-symbols"') end,
               {description = "Power menu", group = "system"}),
@@ -32,8 +32,6 @@ globalkeys = gears.table.join(
               {description = "open a browser", group = "launcher"}),
     awful.key({ modkey }, "e", function () awful.spawn(explorer_cmd) end,
               {description = "open a file manager", group = "launcher"}),
-    awful.key({ modkey }, "/", function () awful.spawn.with_shell(script_path .. "todo.sh") end,
-              {description = "open todo", group = "launcher"}),
 
     -- Focus
     awful.key({ modkey }, "j",
@@ -104,9 +102,9 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift" }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
     -- rofi
-    awful.key({ modkey }, "d", function () awful.spawn("rofi -modi drun,window -show window", false) end,
+    awful.key({ modkey }, "d", function () awful.spawn.with_shell("rofi -modi drun,window -show window", false) end,
               {description = "rofi window", group = "launcher"}),
-    awful.key({ modkey, "Shift" }, "d", function () awful.spawn("rofi -modi drun,window -show drun", false) end,
+    awful.key({ modkey, "Shift" }, "d", function () awful.spawn.with_shell("rofi -modi drun,window -show drun", false) end,
               {description = "rofi run", group = "launcher"}),
 
     -- Screenshots
@@ -128,13 +126,17 @@ globalkeys = gears.table.join(
     awful.key({}, "XF86AudioMute", function() awful.spawn.with_shell("amixer -D pulse set Master toggle") end),
 
     -- Tablet
-    awful.key({ },  "F10", function () awful.spawn.with_shell(script_path .. "tablet.sh") end,
+    awful.key({},  "F10", function () awful.spawn.with_shell(script_path .. "tablet.sh") end,
         {description = "restrict tablet area", group = "tablet"}),
     -- iBus
     awful.key({ modkey },  "c", function ()
       awful.spawn.with_shell(script_path .. "ibus_switch.sh")
     end,
-        {description = "change input language", group = "ibus"})
+        {description = "change input language", group = "ibus"}),
+    -- xset
+    awful.key({ modkey }, "x", function ()
+      awful.spawn.with_shell("xset r rate 250 30")
+    end)
 )
 
 clientkeys = gears.table.join(
@@ -208,7 +210,7 @@ for i = 1, 9 do
                   end,
                   {description = "view tag #"..i, group = "tag"}),
         -- Toggle tag display.
-        awful.key({ "Mod1"}, "#" .. i + 9,
+        awful.key({ modkey, "Control" }, "#" .. i + 9,
                   function ()
                       local screen = awful.screen.focused()
                       local tag = screen.tags[i]
@@ -229,7 +231,7 @@ for i = 1, 9 do
                   end,
                   {description = "move focused client to tag #"..i, group = "tag"}),
         -- Toggle tag on focused client.
-        awful.key({ modkey, "Control" }, "#" .. i + 9,
+        awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       if client.focus then
                           local tag = client.focus.screen.tags[i]
