@@ -45,7 +45,7 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
-Plug 'TimUntersberger/neogit'
+Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 " Plug 'dstein64/vim-startuptime'
 " Initialise plugin system
@@ -98,7 +98,4 @@ winopts = {
 
 -- dirbuf
 require('dirbuf').setup{}
-
--- neogit
-require('neogit').setup{}
 EOF
