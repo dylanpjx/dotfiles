@@ -132,6 +132,7 @@ command! x extract %d %f %n
 command! xd extract -f %a %f %n
 command! annotate xournalpp %f &
 command! dragon dragon -a -x %f &
+command! zathura zathura %c %i &
 
 " ------------------------------------------------------------------------------
 
@@ -168,8 +169,8 @@ filetype ws.vim nvim -S ws.vim
 filextype *.xopp xournalpp %c &
 
 " Pdf
-" filextype *.pdf qpdfview --unique %c %i &, apvlv %c, xpdf %c
-filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
+filextype {*.pdf},<application/pdf> qpdfview --unique %c %i &, apvlv %c, xpdf %c
+"filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> 
         " \ pdftotext -nopgbrk %c -*.pdf 
          \ vifmimg pdfpreview %px %py %pw %ph %c
