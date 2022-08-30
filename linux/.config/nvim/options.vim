@@ -32,7 +32,8 @@ au BufWinEnter *.* silent! loadview
 
 set signcolumn=yes
 set completeopt=menuone,longest
-set listchars=eol:↵,trail:⎯,extends:>,precedes:<
+set listchars=trail:⎯,extends:>,precedes:<,multispace:▏\ 
+set list
 
 " md
 set cc=80

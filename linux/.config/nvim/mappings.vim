@@ -49,7 +49,7 @@ nnoremap <silent><leader><leader> :noh <CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " fzf
-nnoremap <leader>/ :lua require('fzf-lua').live_grep()<CR>
+nnoremap <leader>/ :lua require('fzf-lua').lgrep_curbuf()<CR>
 nnoremap <leader>ls :lua require('fzf-lua').buffers()<CR>
 nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
 nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>

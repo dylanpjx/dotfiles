@@ -42,7 +42,7 @@ Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
 Plug 'wellle/targets.vim'
-Plug 'tpope/vim-surround'
+Plug 'kylechui/nvim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
@@ -60,14 +60,6 @@ let g:table_mode_motion_down_map='<A-j>'
 
 " asyncrun
 let g:asyncrun_open=8
-
-" unimpared
-nmap ( [
-nmap ) ]
-omap ( [
-omap ) ]
-xmap ( [
-xmap ) ]
 
 lua << EOF
 -- comment
@@ -98,4 +90,7 @@ winopts = {
 
 -- dirbuf
 require('dirbuf').setup{}
+
+-- surround
+require('nvim-surround').setup{}
 EOF
