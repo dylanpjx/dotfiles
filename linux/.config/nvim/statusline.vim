@@ -158,7 +158,7 @@ ins_left {
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.violet, gui = 'bold' },
+  color = { fg = colors.violet },
 }
 
 
@@ -182,16 +182,9 @@ ins_left {
 }
 
 ins_left {
-  'filetype',
-  padding = { right_padding = 0.5 },
-  icon_only = true,
-  color = { fg = colors.green },
-}
-
-ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
-  color = { fg = colors.magenta, gui = 'bold' },
+  color = { fg = colors.magenta },
 }
 
 
