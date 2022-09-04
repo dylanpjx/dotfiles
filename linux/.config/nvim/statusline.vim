@@ -158,9 +158,8 @@ ins_left {
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.violet },
+  color = { fg = colors.green },
 }
-
 
 ins_left {
   'diagnostics',
@@ -189,9 +188,16 @@ ins_left {
 
 
 -- Add components to right sections
-ins_right { 'location' }
+
+ins_right { 'location', color = { fg = colors.fg } }
 
 ins_right { 'progress', color = { fg = colors.fg } }
+
+ins_right {
+  'filetype',
+  icons_enabled = false,
+  color = { fg = colors.green }
+}
 
 ins_right {
   function()
