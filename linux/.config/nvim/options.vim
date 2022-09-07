@@ -35,6 +35,9 @@ set completeopt=menuone,longest
 set listchars=trail:⎯,extends:>,precedes:<,multispace:▏\ ,tab:→\ 
 set list
 
+" verilog
+set suffixesadd+=.v,.sv
+
 " md
 set cc=80
 au FileType md set cc=117
