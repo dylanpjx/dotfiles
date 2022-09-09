@@ -43,6 +43,8 @@ nnoremap <silent>yp :let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked 
 
 set pastetoggle=<F2>
 map <F3> :setlocal spell! <CR>
+" Remove trailing whitespace
+vnoremap \\ :s/\s\+$//e <CR>
 
 " Search
 nnoremap <silent><leader><leader> :noh <CR>
