@@ -19,6 +19,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -38,9 +39,9 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'elihunter173/dirbuf.nvim'
 
 " QoL
+Plug 'junegunn/vim-easy-align'
 Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'jiangmiao/auto-pairs'
-Plug 'godlygeek/tabular'
 Plug 'wellle/targets.vim'
 Plug 'kylechui/nvim-surround'
 Plug 'tpope/vim-repeat'
@@ -57,6 +58,10 @@ let g:table_mode_motion_left_map='<A-h>'
 let g:table_mode_motion_right_map='<A-l>'
 let g:table_mode_motion_up_map='<A-k>'
 let g:table_mode_motion_down_map='<A-j>'
+
+" easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " asyncrun
 let g:asyncrun_open=8
