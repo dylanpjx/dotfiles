@@ -72,7 +72,7 @@ require('nvim_comment').setup()
 
 -- treesitter
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "latex", "markdown", "vim", "verilog" },
+  ensure_installed = { "c", "cpp", "lua", "latex", "markdown", "python", "vim", "verilog" },
   highlight = {
     enable = true,
   },

@@ -86,3 +86,6 @@ nnoremap <leader>c :AsyncRun comp.sh <C-r>% <CR>
 nnoremap <leader>o :!opout.sh <C-r>% <CR>
 nnoremap <silent><leader>{ i<!--{{{--> <Esc>
 nnoremap <silent><leader>} i<!--}}}--> <Esc>
+
+" Verilog
+vnoremap <leader>p :s/\w\+/\0(\0)
