@@ -74,3 +74,9 @@ eval "$(lua $HOME/scripts/z.lua --init bash enhanced once)"
 
 # source /tools/Xilinx/Vitis/2021.2/settings64.sh
 alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
+
+# tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] \
+  && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
