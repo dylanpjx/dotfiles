@@ -1,4 +1,4 @@
-function ec() {
+function fc() {
   cd $HOME/.dotfiles;nvim -c "lua require('fzf-lua').files()"
 }
 alias xs='xset r rate 250 30'
