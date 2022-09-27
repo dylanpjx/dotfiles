@@ -103,6 +103,7 @@ mark n /mnt/HDD/NUS_EE/
 mark N ~/Documents/Notes/
 mark v /mnt/HDD/Videos/
 mark w /mnt/HDD/Work/
+mark w /media/dylan/USB/
 
 " ------------------------------------------------------------------------------
 
