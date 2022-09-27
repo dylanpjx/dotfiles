@@ -88,4 +88,5 @@ nnoremap <silent><leader>{ i<!--{{{--> <Esc>
 nnoremap <silent><leader>} i<!--}}}--> <Esc>
 
 " Verilog
-vnoremap <leader>p :s/\w\+/\0(\0)
+command! YankMod norm gg/^module<CR>v/;<CR>y
+command! CreateInst norm p<CR> vi(:s/.*\s\(\w\+\)/  .\1<CR>gv:s/\w\+/\0(\0)<CR>:noh<CR>

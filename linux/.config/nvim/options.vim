@@ -33,6 +33,7 @@ au BufWinEnter *.* silent! loadview
 set signcolumn=yes
 set completeopt=menuone,longest
 set listchars=trail:⎯,extends:>,precedes:<,multispace:▏\ ,tab:→\ 
+",eol:↵
 set list
 
 " verilog
