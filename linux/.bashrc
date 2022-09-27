@@ -55,6 +55,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Disable C-s
+if [[ -t 0 && $- = *i* ]]; then
+    stty -ixon
+fi
+
 set -o vi
 # Perform file completion in a case insensitive fashion
 bind "set completion-ignore-case on"
