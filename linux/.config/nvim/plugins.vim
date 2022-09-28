@@ -31,6 +31,7 @@ Plug 'terrortylor/nvim-comment', {'branch': 'main'}
 Plug 'akinsho/toggleterm.nvim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'numToStr/Navigator.nvim'
 
 " Notes
 Plug 'dhruvasagar/vim-table-mode'
@@ -41,7 +42,6 @@ Plug 'elihunter173/dirbuf.nvim'
 " QoL
 Plug 'junegunn/vim-easy-align'
 Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
-Plug 'windwp/nvim-autopairs'
 Plug 'wellle/targets.vim'
 Plug 'kylechui/nvim-surround'
 Plug 'tpope/vim-repeat'
@@ -70,9 +70,17 @@ lua << EOF
 -- comment
 require('nvim_comment').setup()
 
+-- tmux
+require('Navigator').setup()
+vim.keymap.set('n', "<C-h>", '<CMD>NavigatorLeft<CR>')
+vim.keymap.set('n', "<C-l>", '<CMD>NavigatorRight<CR>')
+vim.keymap.set('n', "<C-k>", '<CMD>NavigatorUp<CR>')
+vim.keymap.set('n', "<C-j>", '<CMD>NavigatorDown<CR>')
+
 -- treesitter
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "latex", "markdown", "python", "vim", "verilog" },
+  ensure_installed = { "c", "cpp", "lua", "latex", "markdown", "python", "vim",
+    "verilog" },
   highlight = {
     enable = true,
   },
@@ -92,9 +100,6 @@ winopts = {
   height = 0.4
   },
 }
-
--- autopairs
-require('nvim-autopairs').setup {}
 
 -- dirbuf
 require('dirbuf').setup{}

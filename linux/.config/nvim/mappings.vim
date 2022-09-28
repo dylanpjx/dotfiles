@@ -22,10 +22,10 @@ vnoremap < <gv
 " vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Navigation
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+" noremap <C-h> <C-w>h
+" noremap <C-j> <C-w>j
+" noremap <C-k> <C-w>k
+" noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 nnoremap H gT
 nnoremap L gt
@@ -52,7 +52,7 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " fzf
 nnoremap <leader>/ :lua require('fzf-lua').live_grep_native()<CR>
-nnoremap <leader>ls :lua require('fzf-lua').buffers()<CR>
+nnoremap <leader>fb :lua require('fzf-lua').buffers()<CR>
 nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
 nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
 nnoremap <leader>fh :lua require('fzf-lua').oldfiles()<CR>

@@ -112,13 +112,13 @@ local function ins_right(component)
   table.insert(config.sections.lualine_x, component)
 end
 
-ins_left {
-  function()
-    return '▊'
-  end,
-  color = { fg = colors.blue }, -- Sets highlighting of component
-  padding = { left = 0, right = 1 }, -- We don't need space before this
-}
+--ins_left {
+--  function()
+--    return '▊'
+--  end,
+--  color = { fg = colors.blue }, -- Sets highlighting of component
+--  padding = { left = 0, right = 1 }, -- We don't need space before this
+--}
 
 ins_left {
   -- mode component
@@ -151,7 +151,7 @@ ins_left {
     }
     return { fg = mode_color[vim.fn.mode()] }
   end,
-  padding = { right = 1 },
+  padding = { left = 1, right = 1 },
 }
 
 
@@ -199,13 +199,13 @@ ins_right {
   color = { fg = colors.green }
 }
 
-ins_right {
-  function()
-    return '▊'
-  end,
-  color = { fg = colors.blue },
-  padding = { left = 1 },
-}
+--ins_right {
+--  function()
+--    return '▊'
+--  end,
+--  color = { fg = colors.blue },
+--  padding = { left = 1 },
+--}
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)
