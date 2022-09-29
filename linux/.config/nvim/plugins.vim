@@ -43,6 +43,7 @@ Plug 'elihunter173/dirbuf.nvim'
 Plug 'junegunn/vim-easy-align'
 Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'wellle/targets.vim'
+Plug 'windwp/nvim-autopairs'
 Plug 'kylechui/nvim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
@@ -101,9 +102,7 @@ winopts = {
   },
 }
 
--- dirbuf
 require('dirbuf').setup{}
-
--- surround
 require('nvim-surround').setup{}
+require('nvim-autopairs').setup{}
 EOF
