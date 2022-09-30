@@ -7,7 +7,6 @@ function run {
 }
 
 run picom -b
-run ibus-daemon -drxR
 run imwheel -b '4 5'
 
 run quodlibet
@@ -15,6 +14,7 @@ run discord
 run alacritty
 
 sleep 3
+run ibus-daemon -drxR
 xset s off
 xset -dpms
 xset s noblank

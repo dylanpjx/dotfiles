@@ -1,6 +1,6 @@
 ///---User configurable stuff---///
 ///---Modifiers---///
-#define MOD             XCB_MOD_MASK_4       /* Super/Windows key  or check xmodmap(1) with -pm  defined in /usr/include/xcb/xproto.h */
+#define MOD             XCB_MOD_MASK_1       /* Alt key  or check xmodmap(1) with -pm  defined in /usr/include/xcb/xproto.h */
 ///--Speed---///
 /* Move this many pixels when moving or resizing with keyboard unless the window has hints saying otherwise.
  *0)move step slow   1)move step fast
@@ -40,7 +40,9 @@ static const uint8_t borders[] = {3,5,5,4};
 #define LOOK_INTO "WM_NAME"
 static const char *ignore_names[] = {"bar", "xclock"};
 ///--Menus and Programs---///
-static const char *menucmd[]   = { "", NULL };
+static const char *runcmd[]   = { "rofi", "-modi drun, window -show drun" };
+static const char *menucmd[]   = { "rofi", "-modi drun, window -show window" };
+static const char *terminal[]  = { "alacritty", NULL };
 ///--Custom foo---///
 static void halfandcentered(const Arg *arg)
 {
@@ -193,7 +195,9 @@ static key keys[] = {
     {  MOD |SHIFT,        XK_Right,      cursor_move,       {.i=TWOBWM_CURSOR_RIGHT}},
     {  MOD |SHIFT,        XK_Left,       cursor_move,       {.i=TWOBWM_CURSOR_LEFT}},
     // Start programs
-    {  MOD ,              XK_w,          start,             {.com = menucmd}},
+    {  MOD ,              XK_d,          start,             {.com = menucmd}},
+    {  MOD |SHIFT,        XK_d,          start,             {.com = runcmd}},
+    {  MOD ,              XK_Return,     start,             {.com = terminal}},
     // Exit or restart 2bwm
     {  MOD |CONTROL,      XK_q,          twobwm_exit,       {.i=0}},
     {  MOD |CONTROL,      XK_r,          twobwm_restart,    {.i=0}},
