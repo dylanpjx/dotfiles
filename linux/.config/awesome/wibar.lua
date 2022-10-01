@@ -74,7 +74,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
     lo = awful.layout.layouts
-    -- Each screen has its own tag table.
+    -- Each screen has its own tag table: Diff screen diff layout for now
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, s.index == 1 and lo[1] or lo[4])
 
     -- Create a promptbox for each screen

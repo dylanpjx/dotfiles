@@ -5,25 +5,24 @@ set border 3
 set barborder 3
 set barpadding 1 1
 set bargravity c
+set banish
 
-escape Alt_L
-exec alacritty
+# Use a dummy prefix key
+escape Super_L
 
-# bind M-! to store the current frame layout in slot #1
-bind M-exclam exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
-#bind M-1 to restore the frame layout in slot #1
-bind M-1 exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
-# Do the same for slot #2 and bind it to M-@ and M-2, respectively.
-bind M-at exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
-bind M-2 exec ratpoison -c "frestore `ratpoison -c 'getenv fs2'`"
-# Give ourselves another slot on M-# and M-3, respectively.
-bind M-numbersign exec ratpoison -c "setenv fs3 `ratpoison -c 'fdump'`"
-bind M-3 exec ratpoison -c "frestore `ratpoison -c 'getenv fs3'`"
+definekey top M-exclam exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
+definekey top M-1 exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
+definekey top M-at exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
+definekey top M-2 exec ratpoison -c "frestore `ratpoison -c 'getenv fs2'`"
+definekey top M-numbersign exec ratpoison -c "setenv fs3 `ratpoison -c 'fdump'`"
+definekey top M-3 exec ratpoison -c "frestore `ratpoison -c 'getenv fs3'`"
 
-bind a exec ratpoison -d :0.0 -c "echo `date +'%r - %A %n    %D - %B'`  `cal | tail -n +2 | sed -e 's/^Su/\n\n Su/' -e 's/.*/ & /' -e \"s/\ $(date +%e)\ /\/\"`"
-bind b exec firefox
-bind d exec rofi -modi drun,window -show window
-bind D rofi -modi drun,window -show drun
+definekey top M-return exec alacritty
+definekey top M-b exec firefox
+definekey top M-e exec vifmrun
+definekey top M-d select
+definekey top M-D exec
+definekey top M-semicolon colon
 
 definekey top M-k focusup
 definekey top M-j focusdown
@@ -34,9 +33,12 @@ definekey top M-J exchangedown
 definekey top M-H exchangeleft
 definekey top M-L exchangeright
 
-bind s vsplit
-bind v hsplit
-bind r resize
-bind c remove
-bind o only
-bind q delete
+definekey top M-s vsplit
+definekey top M-v hsplit
+definekey top M-r resize
+definekey top M-c remove
+definekey top M-o only
+definekey top M-q delete
+
+definekey top M-n next
+definekey top M-p prev
