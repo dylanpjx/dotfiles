@@ -9,7 +9,7 @@ local old_path = gfs.get_themes_dir()
 local theme = {}
 
 theme.font          = "Sans 11"
--- theme.wallpaper     = themes_path.."/Hamnøy, Norway (Photo credit to Kym Ellis) [6000 x 4000].jpg"
+theme.wallpaper     = themes_path.."/Hamnøy, Norway (Photo credit to Kym Ellis) [6000 x 4000].jpg"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#44475a"
