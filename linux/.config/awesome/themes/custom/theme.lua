@@ -3,13 +3,13 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
 local gfs = require("gears.filesystem")
-local themes_path = gfs.get_configuration_dir() .. "/themes/custom"
+local themes_path = "/mnt/HDD/Wallpapers"
 local old_path = gfs.get_themes_dir()
 
 local theme = {}
 
 theme.font          = "Sans 11"
--- theme.wallpaper     = themes_path.."/Hamnøy, Norway (Photo credit to Kym Ellis) [6000 x 4000].jpg"
+theme.wallpaper     = themes_path.."/Houses [1920x1080].jpg"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#44475a"
@@ -22,8 +22,8 @@ theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(2)
-theme.border_width  = dpi(1)
+theme.useless_gap   = dpi(3)
+theme.border_width  = dpi(2)
 theme.border_normal = "#181c24"
 theme.border_focus  = "#fffff7" --"#bdae93"
 theme.border_marked = "#91231c"

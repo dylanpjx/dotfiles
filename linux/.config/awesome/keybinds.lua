@@ -32,23 +32,36 @@ globalkeys = gears.table.join(
               {description = "open a file manager", group = "launcher"}),
 
     -- Focus
-    awful.key({ modkey }, "j",
+    awful.key({ modkey }, "n",
         function ()
             awful.client.focus.byidx(1)
         end,
         {description = "focus next by index", group = "client"}
     ),
-    awful.key({ modkey }, "k",
+    awful.key({ modkey }, "p",
         function ()
             awful.client.focus.byidx(-1)
         end,
         {description = "focus previous by index", group = "client"}
     ),
+
     awful.key ({ modkey }, "h", 
       function() 
         awful.client.focus.global_bydirection("left", nil, true)
       end,
       {description = "focus left", group = "client"}
+    ),
+    awful.key ({ modkey }, "j", 
+      function() 
+        awful.client.focus.global_bydirection("down", nil, true)
+      end,
+      {description = "focus down", group = "client"}
+    ),
+    awful.key ({ modkey }, "k", 
+      function() 
+        awful.client.focus.global_bydirection("up", nil, true)
+      end,
+      {description = "focus up", group = "client"}
     ),
     awful.key ({ modkey }, "l", 
       function() 
@@ -58,24 +71,24 @@ globalkeys = gears.table.join(
     ),
 
     -- Moving windows
-    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
+    awful.key({ modkey, "Shift"   }, "n", function () awful.client.swap.byidx(  1)    end,
               {description = "swap with next client by index", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
+    awful.key({ modkey, "Shift"   }, "p", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
+
+    awful.key({ modkey, "Shift"   }, "h",     function () awful.client.swap.bydirection("left") end,
+              {description = "swap with client on the left", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "j",     function () awful.client.swap.bydirection("down") end,
+              {description = "swap with client on the bottom", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "k",     function () awful.client.swap.bydirection("up") end,
+              {description = "swap with client on the top", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "l",     function () awful.client.swap.bydirection("right") end,
+              {description = "swap with client on the right", group = "layout"}),
+
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
               {description = "focus the next screen", group = "screen"}),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
               {description = "focus the previous screen", group = "screen"}),
-    awful.key({ modkey }, "u", awful.client.urgent.jumpto,
-              {description = "jump to urgent client", group = "client"}),
-    -- awful.key({ modkey }, "Tab",
-    --     function ()
-    --         awful.client.focus.history.previous()
-    --         if client.focus then
-    --             client.focus:raise()
-    --         end
-    --     end,
-    --     {description = "go back", group = "client"}),
 
     -- Adjusting layout
     awful.key({ modkey }, "Left",     function () awful.tag.incmwfact(-0.05)          end,
@@ -87,14 +100,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "Down",     function () awful.client.incwfact(-0.05)          end,
               {description = "decrease master height factor", group = "layout"}),
 
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster( 1, nil, true) end,
-              {description = "increase the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster(-1, nil, true) end,
-              {description = "decrease the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Ctrl" }, "l",     function () awful.tag.incncol( 1, nil, true)    end,
-              {description = "increase the number of columns", group = "layout"}),
-    awful.key({ modkey, "Ctrl"}, "h",     function () awful.tag.incncol(-1, nil, true)    end,
-              {description = "decrease the number of columns", group = "layout"}),
+
     awful.key({ modkey }, "space", function () awful.layout.inc(1)                end,
               {description = "select next", group = "layout"}),
     awful.key({ modkey, "Shift" }, "space", function () awful.layout.inc(-1)                end,
@@ -106,7 +112,7 @@ globalkeys = gears.table.join(
               {description = "rofi run", group = "launcher"}),
 
     -- Screenshots
-    awful.key({ modkey }, "s", nil, function () awful.spawn.with_shell(script_path .. "screenshot.sh") end,
+    awful.key({ modkey, "Shift" }, "s", nil, function () awful.spawn.with_shell(script_path .. "screenshot.sh") end,
         {description = "take screenshot of area", group = "screenshots"}),
 
     -- Brightness
@@ -116,9 +122,8 @@ globalkeys = gears.table.join(
         {description = "decrease brightness", group = "brightness"}),
 
     -- Media
-    awful.key({ modkey }, "p", function () awful.spawn("pavucontrol") end,
+    awful.key({ modkey }, "'", function () awful.spawn("pavucontrol") end,
         {description = "open audio mixer", group = "audio"}),
-
     awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn.with_shell("amixer set Master 5%+") end),
     awful.key({}, "XF86AudioLowerVolume", function() awful.spawn.with_shell("amixer set Master 5%-") end),
     awful.key({}, "XF86AudioMute", function() awful.spawn.with_shell("amixer -D pulse set Master toggle") end),
@@ -126,15 +131,12 @@ globalkeys = gears.table.join(
     -- Tablet
     awful.key({},  "F10", function () awful.spawn.with_shell(script_path .. "tablet.sh") end,
         {description = "restrict tablet area", group = "tablet"}),
+
     -- iBus
-    awful.key({ modkey },  "c", function ()
+    awful.key({ modkey },  ",", function ()
       awful.spawn.with_shell(script_path .. "ibus_switch.sh")
     end,
-        {description = "change input language", group = "ibus"}),
-    -- xset
-    awful.key({ modkey }, "x", function ()
-      awful.spawn.with_shell("xset r rate 250 30")
-    end)
+        {description = "change input language", group = "ibus"})
 )
 
 clientkeys = gears.table.join(
@@ -154,14 +156,14 @@ clientkeys = gears.table.join(
               {description = "move to screen", group = "client"}),
     awful.key({ modkey }, "t", function (c) c.ontop = not c.ontop end,
               {description = "toggle keep on top", group = "client"}),
-    awful.key({ modkey }, "n",
+    awful.key({ modkey }, "x",
         function (c)
             -- The client currently has the input focus, so it cannot be
             -- minimized, since minimized clients can't have the focus.
             c.minimized = true
         end ,
         {description = "minimize", group = "client"}),
-    awful.key({ modkey, "Control" }, "n",
+    awful.key({ modkey, "Control" }, "x",
               function ()
                   local c = awful.client.restore()
                   -- Focus restored client

@@ -12,6 +12,8 @@ menubar = require("menubar")
 hotkeys_popup = require("awful.hotkeys_popup")
 
 local centerwork = require("layout.centerwork")
+local termfair = require("layout.termfair")
+
 require('awesomewm-micky')
 
 -- {{{ Error handling
@@ -54,12 +56,13 @@ modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
+    -- termfair.center,
     centerwork,
     awful.layout.suit.tile,
+    awful.layout.suit.tile.left,
     awful.layout.suit.max,
     -- awful.layout.suit.magnifier,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.floating,
+    -- awful.layout.suit.floating,
     -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.top,
