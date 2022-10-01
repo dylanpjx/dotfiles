@@ -1,8 +1,9 @@
+picom -b
+ibus-daemon -drxR
+feh --bg-fill '/mnt/HDD/Wallpapers/Houses [1920x1080].jpg'
+
+sleep 3
 xset s off
 xset -dpms
 xset s noblank
 xset r rate 250 30
-
-picom -b
-imwheel -b '4 5'
-ibus-daemon -drxR
