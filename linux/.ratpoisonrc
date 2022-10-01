@@ -1,0 +1,51 @@
+# Prefix key
+escape Alt_L
+
+# Settings for new windows and bars
+set wingravity center
+set transgravity center
+set border 3
+set barpadding 1 1
+set barborder 3
+set bargravity center
+
+# Programs
+bind b exec firefox
+bind e exec vifmrun
+bind return exec alacritty
+
+# Rofi
+bind d rofi -modi drun,window -show window
+bind D rofi -modi drun,window -show drun
+
+bind h focusleft
+bind j focusdown
+bind k focusup
+bind l focusright
+bind R resize
+
+# Workspaces
+bind 1 exec rpws 1
+bind 2 exec rpws 2
+bind 3 exec rpws 3
+bind 4 exec rpws 4
+bind 5 exec rpws 5
+bind 6 exec rpws 6
+bind 7 exec rpws 7
+bind 8 exec rpws 8
+bind 9 exec rpws 9
+
+bind c exec ratpoison -d :0.0 -c "echo `date +'%r - %A %n    %D - %B'`  `cal | tail -n +2 | sed -e 's/^Su/\n\n Su/' -e 's/.*/ & /' -e \"s/\ $(date +%e)\ /\<$(date +%e)\>/\"`"
+
+# it produces output like the following in the message window, very handy:
+#         +-----------------------+
+#         |05:05:24 PM - Tuesday  |
+#         |   09/09/03 - September|
+#         |                       |
+#         |Su Mo Tu We Th Fr Sa   |
+#         |    1  2  3  4  5  6   |
+#         | 7  8< 9>10 11 12 13   |
+#         |14 15 16 17 18 19 20   |
+#         |21 22 23 24 25 26 27   |
+#         |28 29 30               |
+#         +-----------------------+
