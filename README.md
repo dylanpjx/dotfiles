@@ -1,6 +1,6 @@
 # linux-configs
 
-Using Pop!\_OS and AwesomeWM. Clone this repo and run `$ ./stow.sh`. The script
+Using Pop!\_OS and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The script
 uses `stow` to automatically symlink every dotfile in `dotfiles/linux` to its
 corresponding config location
 
