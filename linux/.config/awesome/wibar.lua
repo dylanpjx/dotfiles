@@ -1,8 +1,7 @@
 -- {{{ Wibar
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
--- Custom widgets
-local calendar = require("calendar")
+local calendar = require("util.calendar")
 
 -- Create a textclock widget
 local mytextclock = wibox.widget.textclock()

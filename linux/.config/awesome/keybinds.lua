@@ -16,6 +16,8 @@ globalkeys = gears.table.join(
               {description = "go back", group = "tag"}),
     awful.key({ modkey, "Control"}, "l", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
+    awful.key({ modkey, "Control" }, "q", function () awful.spawn.with_shell("systemctl poweroff") end,
+              {description = "shutdown", group = "awesome"}),
     awful.key({ modkey, "Control" }, "e", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
     awful.key({ modkey, "Control" }, "r", function () awful.spawn.with_shell("reboot") end,
@@ -26,6 +28,8 @@ globalkeys = gears.table.join(
     -- Default applications
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey, "Shift" }, "Return", function () awful.spawn(terminal.." -e tmux") end,
+              {description = "open a terminal with tmux", group = "launcher"}),
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "open a browser", group = "launcher"}),
     awful.key({ modkey }, "e", function () awful.spawn(explorer_cmd) end,
@@ -76,13 +80,13 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "p", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
 
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.client.swap.bydirection("left") end,
+    awful.key({ modkey, "Shift"   }, "h",     function () awful.client.swap.global_bydirection("left") end,
               {description = "swap with client on the left", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "j",     function () awful.client.swap.bydirection("down") end,
+    awful.key({ modkey, "Shift"   }, "j",     function () awful.client.swap.global_bydirection("down") end,
               {description = "swap with client on the bottom", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "k",     function () awful.client.swap.bydirection("up") end,
+    awful.key({ modkey, "Shift"   }, "k",     function () awful.client.swap.global_bydirection("up") end,
               {description = "swap with client on the top", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.client.swap.bydirection("right") end,
+    awful.key({ modkey, "Shift"   }, "l",     function () awful.client.swap.global_bydirection("right") end,
               {description = "swap with client on the right", group = "layout"}),
 
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
@@ -112,7 +116,7 @@ globalkeys = gears.table.join(
               {description = "rofi run", group = "launcher"}),
 
     -- Screenshots
-    awful.key({ modkey, "Shift" }, "s", nil, function () awful.spawn.with_shell(script_path .. "screenshot.sh") end,
+    awful.key({ modkey }, "s", nil, function () awful.spawn.with_shell(script_path .. "screenshot.sh") end,
         {description = "take screenshot of area", group = "screenshots"}),
 
     -- Brightness
@@ -133,7 +137,7 @@ globalkeys = gears.table.join(
         {description = "restrict tablet area", group = "tablet"}),
 
     -- iBus
-    awful.key({ modkey },  ",", function ()
+    awful.key({ modkey },  "c", function ()
       awful.spawn.with_shell(script_path .. "ibus_switch.sh")
     end,
         {description = "change input language", group = "ibus"})

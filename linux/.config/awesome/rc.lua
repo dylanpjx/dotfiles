@@ -11,10 +11,9 @@ naughty = require("naughty")
 menubar = require("menubar")
 hotkeys_popup = require("awful.hotkeys_popup")
 
+require('util.awesomewm-micky')
 local centerwork = require("layout.centerwork")
 local termfair = require("layout.termfair")
-
-require('awesomewm-micky')
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
