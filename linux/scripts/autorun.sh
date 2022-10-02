@@ -6,6 +6,7 @@ function run {
   fi
 }
 
+run firefox
 run quodlibet
 run discord
-run alacritty
+run alacritty -e tmux

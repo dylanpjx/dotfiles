@@ -18,10 +18,20 @@ hc keyunbind --all
 Mod=Mod1    # Use alt as the main modifier
 #Mod=Mod4   # Use the super key as the main modifier
 
-hc keybind $Mod-Control-q quit
+hc keybind $Mod-Control-e quit
 hc keybind $Mod-Control-r reload
-hc keybind $Mod-q close
-hc keybind $Mod-Return spawn "${TERMINAL:-xterm}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-Control-q spawn systemctl poweroff
+
+hc keybind $Mod-Return spawn alacritty
+hc keybind $Mod-Shift-Return spawn alacritty -e tmux
+hc keybind $Mod-d spawn rofi -modi drun,window -show window
+hc keybind $Mod-Shift-d spawn rofi -modi drun,window -show drun
+hc keybind $Mod-b spawn firefox
+hc keybind $Mod-e spawn alacritty -e vifmrun
+
+# hc keybind $Mod-next spawn increase_brightness.sh
+# hc keybind $Mod-prior spawn decrease_brightness.sh
+hc keybind $Mod-c spawn ibus_switch.sh
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -65,23 +75,25 @@ for i in "${!tag_names[@]}" ; do
 done
 
 # cycle through tags
+hc keybind $Mod-Escape use_previous
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
+hc keybind $Mod-q close
 
 # layouting
 hc keybind $Mod-r remove
-hc keybind $Mod-s floating toggle
+hc keybind $Mod-g floating toggle
 hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-Shift-f set_attr clients.focus.floating toggle
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
-hc keybind $Mod-p pseudotile toggle
+hc keybind $Mod-t pseudotile toggle
 # The following cycles through the available layouts within a frame, but skips
 # layouts, if the layout change wouldn't affect the actual window positions.
 # I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
             or , and . compare tags.focus.curframe_wcount = 2                   \
-                     . cycle_layout +1 vertical horizontal max vertical grid    \
+                     . cycle_layout +1 vertical max grid    \
                , cycle_layout +1
 
 # mouse
@@ -91,11 +103,10 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 # focus
-hc keybind $Mod-BackSpace cycle_monitor
-hc keybind $Mod-n cycle_all +1
-hc keybind $Mod-p cycle_all -1
-hc keybind $Mod-c cycle
-hc keybind $Mod-i jumpto urgent
+hc keybind $Mod-Tab cycle_monitor
+hc keybind $Mod-n cycle +1
+hc keybind $Mod-p cycle -1
+hc keybind $Mod-u jumpto urgent
 
 # theme
 hc attr theme.tiling.reset 1
@@ -103,18 +114,18 @@ hc attr theme.floating.reset 1
 hc set frame_border_active_color '#222222cc'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
-hc set frame_bg_active_color '#345F0Caa'
+hc set frame_bg_active_color '#bbc2cf'
 hc set frame_border_width 1
 hc set always_show_frame on
 hc set frame_bg_transparent on
-hc set frame_transparent_width 5
-hc set frame_gap 4
+hc set frame_transparent_width 2
+hc set frame_gap 0
 
-hc attr theme.title_height 15
+hc attr theme.title_height 0
 hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
-hc attr theme.padding_top 2  # space below the title's baseline (i.e. text depth)
-hc attr theme.active.color '#345F0Cef'
+hc attr theme.padding_top 0  # space below the title's baseline (i.e. text depth)
+hc attr theme.active.color '#bbc2cf'
 hc attr theme.title_color '#ffffff'
 hc attr theme.normal.color '#323232dd'
 hc attr theme.urgent.color '#7811A1dd'
@@ -153,11 +164,20 @@ hc rule floatplacement=smart
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
+hc rule class='discord' tag=9
+hc rule class='Quodlibet' tag=3
 
 hc set tree_style '╾│ ├└╼─┐'
 
 # unlock, just to be sure
 hc unlock
+
+# autostart programs
+configdir=~/.config/herbstluftwm
+discord &
+firefox &
+quodlibet &
+alacritty -e tmux &
 
 # do multi monitor setup here, e.g.:
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0
@@ -171,3 +191,7 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
     # start it on each monitor
     "$panel" "$monitor" &
 done
+
+if [ -f "$configdir/mystate" ]; then
+  $configdir/scripts/load_state.sh < $configdir/mystate &
+fi

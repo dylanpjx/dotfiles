@@ -13,6 +13,8 @@ alias f='vifmrun .'
 
 alias p='zathura'
 
+alias hc='herbstclient'
+
 alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 alias jn='conda activate base;jupyter notebook'
 
