@@ -2,6 +2,8 @@
 
 # this is a simple config for herbstluftwm
 
+configdir=~/.config/herbstluftwm
+
 hc() {
     herbstclient "$@"
 }
@@ -18,20 +20,28 @@ hc keyunbind --all
 Mod=Mod1    # Use alt as the main modifier
 #Mod=Mod4   # Use the super key as the main modifier
 
+# system
 hc keybind $Mod-Control-e quit
-hc keybind $Mod-Control-r reload
+hc keybind $Mod-Control-l reload
 hc keybind $Mod-Control-q spawn systemctl poweroff
+hc keybind $Mod-Control-s spawn systemctl suspend
+hc keybind $Mod-Control-r spawn reboot
 
+# apps
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-Shift-Return spawn alacritty -e tmux
 hc keybind $Mod-d spawn rofi -modi drun,window -show window
 hc keybind $Mod-Shift-d spawn rofi -modi drun,window -show drun
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifmrun
+hc keybind $Mod-apostrophe spawn pavucontrol
+hc keybind $Mod-semicolon spawn $configdir/scripts/load_layout.sh
 
-# hc keybind $Mod-next spawn increase_brightness.sh
-# hc keybind $Mod-prior spawn decrease_brightness.sh
+# scripts
+hc keybind $Mod-Prior spawn increase_brightness.sh
+hc keybind $Mod-Next spawn decrease_brightness.sh
 hc keybind $Mod-c spawn ibus_switch.sh
+hc keybind $Mod-Shift-s spawn screenshot.sh
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -55,10 +65,10 @@ hc keybind $Mod-Control-space split explode
 
 # resizing frames and floating clients
 resizestep=0.02
-hc keybind $Mod-Control-h       resize left +$resizestep
-hc keybind $Mod-Control-j       resize down +$resizestep
-hc keybind $Mod-Control-k       resize up +$resizestep
-hc keybind $Mod-Control-l       resize right +$resizestep
+hc keybind $Mod-Left     resize left +$resizestep
+hc keybind $Mod-Down     resize down +$resizestep
+hc keybind $Mod-Up       resize up +$resizestep
+hc keybind $Mod-Right    resize right +$resizestep
 
 # tags
 tag_names=( {1..9} )
@@ -78,9 +88,9 @@ done
 hc keybind $Mod-Escape use_previous
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
-hc keybind $Mod-q close
 
 # layouting
+hc keybind $Mod-q close
 hc keybind $Mod-r remove
 hc keybind $Mod-g floating toggle
 hc keybind $Mod-f fullscreen toggle
@@ -93,8 +103,8 @@ hc keybind $Mod-t pseudotile toggle
 # I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
             or , and . compare tags.focus.curframe_wcount = 2                   \
-                     . cycle_layout +1 vertical max grid    \
-               , cycle_layout +1
+                     . cycle_layout +1 horizontal max \
+               , cycle_layout +1 horizontal max grid
 
 # mouse
 hc mouseunbind --all
@@ -173,11 +183,7 @@ hc set tree_style '╾│ ├└╼─┐'
 hc unlock
 
 # autostart programs
-configdir=~/.config/herbstluftwm
-discord &
-firefox &
-quodlibet &
-alacritty -e tmux &
+autorun.sh &
 
 # do multi monitor setup here, e.g.:
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0

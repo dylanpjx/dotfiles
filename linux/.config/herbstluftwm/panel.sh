@@ -85,6 +85,7 @@ hc pad $monitor $panel_height
     visible=true
     date=""
     windowtitle=""
+    numwindows=""
     while true ; do
 
         ### Output ###
@@ -122,6 +123,7 @@ hc pad $monitor $panel_height
         done
         echo -n "$separator"
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
+        echo -n " [${numwindows}]"
         # small adjustments
         right="$separator^bg() $date $separator"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
@@ -175,6 +177,7 @@ hc pad $monitor $panel_height
                 ;;
             focus_changed|window_title_changed)
                 windowtitle="${cmd[@]:2}"
+                numwindows=$(hc attr tags.focus.curframe_wcount)
                 ;;
             #player)
             #    ;;
