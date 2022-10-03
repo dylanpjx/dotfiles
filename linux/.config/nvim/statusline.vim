@@ -95,7 +95,7 @@ local config = {
           end
           return msg
         end,
-        color = { fg = colors.fg, gui = 'bold' },
+        color = { fg = colors.fg },
       }
     },
   }
