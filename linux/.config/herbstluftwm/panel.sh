@@ -69,7 +69,7 @@ hc pad $monitor $panel_height
     #   <eventname>\t<data> [...]
     # e.g.
     #   date    ^fg(#efefef)18:33^fg(#909090), 2013-10-^fg(#efefef)29
-
+    
     #mpc idleloop player &
     while true ; do
         # "date" output is checked once a second, but an event is only
@@ -85,7 +85,8 @@ hc pad $monitor $panel_height
     visible=true
     date=""
     windowtitle=""
-    numwindows=""
+    mouse_batt=""
+    numwindows="1"
     while true ; do
 
         ### Output ###
@@ -125,7 +126,7 @@ hc pad $monitor $panel_height
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
         echo -n " [${numwindows}]"
         # small adjustments
-        right="$separator^bg() $date $separator"
+        right="$separator^bg() $date $separator $mouse_batt"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")
@@ -150,6 +151,7 @@ hc pad $monitor $panel_height
                 ;;
             date)
                 #echo "resetting date" >&2
+                mouse_batt="$(mouse_batt.py)"
                 date="${cmd[@]:1}"
                 ;;
             quit_panel)
