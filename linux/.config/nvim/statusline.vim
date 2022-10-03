@@ -95,7 +95,6 @@ local config = {
           end
           return msg
         end,
-        icon = '⚙ LSP:',
         color = { fg = colors.fg, gui = 'bold' },
       }
     },
