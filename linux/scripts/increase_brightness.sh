@@ -9,4 +9,4 @@ fi
 
 BRIGHTNESS=$(echo "$BRIGHTNESS * 100" | bc -l)
 BRIGHTNESS=$(printf "%d" $BRIGHTNESS)
-DISPLAY=:0 notify-send "Brightness" $BRIGHTNESS
+DISPLAY=:0 notify-send -t 1000 "Brightness" $BRIGHTNESS
