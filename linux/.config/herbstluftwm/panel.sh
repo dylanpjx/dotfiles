@@ -86,7 +86,7 @@ hc pad $monitor $panel_height
     date=""
     windowtitle=""
     mouse_batt=""
-    numwindows="1"
+    numwindows="0"
     while true ; do
 
         ### Output ###
@@ -149,7 +149,7 @@ hc pad $monitor $panel_height
                 #echo "resetting tags" >&2
                 IFS=$'\t' read -ra tags <<< "$(hc tag_status $monitor)"
                 ;;
-            date)
+            date) # event refreshes every minute
                 #echo "resetting date" >&2
                 mouse_batt="$(mouse_batt.py)"
                 date="${cmd[@]:1}"

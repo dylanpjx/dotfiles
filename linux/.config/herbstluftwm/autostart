@@ -36,6 +36,7 @@ hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifmrun
 hc keybind $Mod-apostrophe spawn pavucontrol
 hc keybind $Mod-semicolon spawn $configdir/scripts/load_layout.sh
+hc keybind $Mod-w spawn $configdir/scripts/wbring.sh
 
 # scripts
 hc keybind $Mod-Prior spawn increase_brightness.sh
@@ -74,6 +75,7 @@ hc keybind $Mod-Right    resize right +$resizestep
 tag_names=( {1..9} )
 tag_keys=( {1..9} 0 )
 
+hc set default_frame_layout horizontal
 hc rename default "${tag_names[0]}" || true
 for i in "${!tag_names[@]}" ; do
     hc add "${tag_names[$i]}"
@@ -92,9 +94,9 @@ hc keybind $Mod-comma  use_index -1 --skip-visible
 # layouting
 hc keybind $Mod-q close
 hc keybind $Mod-r remove
-hc keybind $Mod-g floating toggle
 hc keybind $Mod-f fullscreen toggle
-hc keybind $Mod-Shift-f set_attr clients.focus.floating toggle
+hc keybind $Mod-g set_attr clients.focus.floating toggle
+hc keybind $Mod-m spawn $configdir/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
 hc keybind $Mod-t pseudotile toggle
@@ -113,9 +115,12 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 # focus
-hc keybind $Mod-Tab cycle_monitor
+hc keybind $Mod-Control-j cycle_monitor -1
+hc keybind $Mod-Control-k cycle_monitor +1
 hc keybind $Mod-n cycle +1
 hc keybind $Mod-p cycle -1
+hc keybind $Mod-Control-n cycle_all --skip-invisible +1
+hc keybind $Mod-Control-p cycle_all --skip-invisible -1
 hc keybind $Mod-u jumpto urgent
 
 # theme
@@ -124,18 +129,18 @@ hc attr theme.floating.reset 1
 hc set frame_border_active_color '#222222cc'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
-hc set frame_bg_active_color '#bbc2cf'
-hc set frame_border_width 1
+hc set frame_bg_active_color '#f8f8f8'
+hc set frame_border_width 2
 hc set always_show_frame on
 hc set frame_bg_transparent on
 hc set frame_transparent_width 2
-hc set frame_gap 0
+hc set frame_gap 6
 
 hc attr theme.title_height 0
 hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.padding_top 0  # space below the title's baseline (i.e. text depth)
-hc attr theme.active.color '#bbc2cf'
+hc attr theme.active.color '#f8f8f8'
 hc attr theme.title_color '#ffffff'
 hc attr theme.normal.color '#323232dd'
 hc attr theme.urgent.color '#7811A1dd'
@@ -157,11 +162,13 @@ done
 hc attr theme.active.outer_width 1
 hc attr theme.background_color '#141414'
 
+# settings
 hc set window_gap 0
 hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings on
 hc set mouse_recenter_gap 0
+hc set swap_monitors_to_get_tag false
 
 # rules
 hc unrule -F
@@ -176,6 +183,7 @@ hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='discord' tag=9
 hc rule class='Quodlibet' tag=3
+hc rule class='zoom' floating=on
 
 hc set tree_style '╾│ ├└╼─┐'
 
@@ -199,5 +207,5 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
 done
 
 if [ -f "$configdir/mystate" ]; then
-  $configdir/scripts/load_state.sh < $configdir/mystate &
+  $configdir/scripts/loadstate.sh < $configdir/mystate &
 fi
