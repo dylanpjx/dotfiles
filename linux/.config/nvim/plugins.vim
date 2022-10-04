@@ -94,11 +94,21 @@ require('toggleterm').setup {
 }
 
 -- fzf
+local actions = require'fzf-lua.actions'
 require('fzf-lua').setup {
-winopts = {
-  row = 1,
-  width = 1,
-  height = 0.4
+  winopts = {
+    row = 1,
+    width = 1,
+    height = 0.4,
+
+    keymap = {
+      actions = {
+        files = {
+          ["ctrl-q"] = actions.file_sel_to_qf, -- qf
+          ["ctrl-l"] = actions.file_sel_to_ll, -- loclist
+        },
+      },
+    },
   },
 }
 
