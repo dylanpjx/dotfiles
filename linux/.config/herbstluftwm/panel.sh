@@ -24,6 +24,7 @@ bgcolor=$(hc get frame_border_normal_color|sed 's,^\(\#[0-9a-f]\{6\}\)[0-9a-f]\{
 selbg=$(hc get window_border_active_color|sed 's,^\(\#[0-9a-f]\{6\}\)[0-9a-f]\{2\}$,\1,')
 selfg='#101010'
 
+configpath=$HOME/.config/herbstluftwm
 ####
 # Try to find textwidth binary.
 # In e.g. Ubuntu, this is named dzen2-textwidth.
@@ -101,10 +102,13 @@ hc pad $monitor $panel_height
                     echo -n "^bg($selbg)^fg($selfg)"
                     ;;
                 '+')
-                    echo -n "^bg(#9CA668)^fg(#141414)"
+                    echo -n "^bg(#979797)^fg(#141414)"
                     ;;
                 ':')
                     echo -n "^bg()^fg(#ffffff)"
+                    ;;
+                '-')
+                    echo -n "^bg(#979797)^fg(#141414)"
                     ;;
                 '!')
                     echo -n "^bg(#FF0675)^fg(#141414)"
@@ -126,7 +130,14 @@ hc pad $monitor $panel_height
         echo -n "^bg()^fg() ${windowtitle//^/^^}"
         echo -n " [${numwindows}]"
         # small adjustments
-        right="$separator^bg() $date $separator $mouse_batt"
+        savestate="^ca(1,$configpath/scripts/savestate.sh >\
+            $configpath/mystate;\
+            notify-send -t 1000 'State saved')Save state^ca()"
+        if [ ! -z "$dzen2_svn" ] ; then
+          right="$savestate $separator^bg() $date $separator $mouse_batt"
+        else
+          right="$separator^bg() $date $separator $mouse_batt"
+        fi
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")

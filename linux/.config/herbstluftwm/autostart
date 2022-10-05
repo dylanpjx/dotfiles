@@ -2,7 +2,7 @@
 
 # this is a simple config for herbstluftwm
 
-configdir=~/.config/herbstluftwm
+configpath=~/.config/herbstluftwm
 
 hc() {
     herbstclient "$@"
@@ -35,12 +35,12 @@ hc keybind $Mod-Shift-d spawn rofi -modi drun,window -show drun
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifmrun
 hc keybind $Mod-apostrophe spawn pavucontrol
-hc keybind $Mod-semicolon spawn $configdir/scripts/load_layout.sh
-hc keybind $Mod-w spawn $configdir/scripts/wbring.sh
+hc keybind $Mod-semicolon spawn $configpath/scripts/loadlayout.sh
+hc keybind $Mod-w spawn $configpath/scripts/wbring.sh
 
 # scripts
-hc keybind $Mod-Prior spawn increase_brightness.sh
-hc keybind $Mod-Next spawn decrease_brightness.sh
+hc keybind $Mod-Prior spawn brightness.sh 1
+hc keybind $Mod-Next spawn brightness.sh -1
 hc keybind $Mod-c spawn ibus_switch.sh
 hc keybind $Mod-Shift-s spawn screenshot.sh
 
@@ -96,7 +96,7 @@ hc keybind $Mod-q close
 hc keybind $Mod-r remove
 hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-g set_attr clients.focus.floating toggle
-hc keybind $Mod-m spawn $configdir/scripts/maximize.sh
+hc keybind $Mod-m spawn $configpath/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
 hc keybind $Mod-t pseudotile toggle
@@ -206,6 +206,6 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
     "$panel" "$monitor" &
 done
 
-if [ -f "$configdir/mystate" ]; then
-  $configdir/scripts/loadstate.sh < $configdir/mystate &
+if [ -f "$configpath/mystate" ]; then
+  $configpath/scripts/loadstate.sh < $configpath/mystate &
 fi
