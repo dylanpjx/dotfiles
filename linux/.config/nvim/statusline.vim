@@ -64,41 +64,6 @@ local config = {
     lualine_y = {},
     lualine_z = {},
   },
-  tabline = {
-    lualine_a = {
-      {
-        'tabs',
-        tabs_color = {
-          active = { fg = '#ffffff', bg = colors.bg, gui = 'bold' },
-          inactive = { fg = colors.fg, bg = colors.bg },
-        }
-      }
-    },
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {
-      {
-        function()
-          local msg = 'No Active Lsp'
-          local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-          local clients = vim.lsp.get_active_clients()
-          if next(clients) == nil then
-            return msg
-          end
-          for _, client in ipairs(clients) do
-            local filetypes = client.config.filetypes
-            if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-              return client.name
-            end
-          end
-          return msg
-        end,
-        color = { fg = colors.fg },
-      }
-    },
-  }
 }
 
 -- Inserts a component in lualine_c at left section
@@ -110,14 +75,6 @@ end
 local function ins_right(component)
   table.insert(config.sections.lualine_x, component)
 end
-
---ins_left {
---  function()
---    return '▊'
---  end,
---  color = { fg = colors.blue }, -- Sets highlighting of component
---  padding = { left = 0, right = 1 }, -- We don't need space before this
---}
 
 ins_left {
   -- mode component
@@ -185,7 +142,6 @@ ins_left {
   color = { fg = colors.magenta },
 }
 
-
 -- Add components to right sections
 
 ins_right { 'location', color = { fg = colors.fg } }
@@ -197,14 +153,6 @@ ins_right {
   icons_enabled = false,
   color = { fg = colors.green }
 }
-
---ins_right {
---  function()
---    return '▊'
---  end,
---  color = { fg = colors.blue },
---  padding = { left = 1 },
---}
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)

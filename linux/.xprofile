@@ -1,6 +1,7 @@
-picom -b
-ibus-daemon -drxR
-feh --bg-fill '/mnt/HDD/Wallpapers/Houses [1920x1080].jpg'
+picom -b &
+ibus-daemon -drxR &
+feh --bg-fill '/mnt/HDD/Wallpapers/Houses [1920x1080].jpg' &
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
 
 sleep 3
 xset s off

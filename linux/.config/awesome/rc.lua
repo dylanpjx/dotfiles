@@ -78,7 +78,6 @@ awful.layout.layouts = {
 
 -- Startup
 script_path = "~/scripts/"
-awful.spawn("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell(script_path .. "autorun.sh")
 
 require("menu")

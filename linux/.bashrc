@@ -75,7 +75,7 @@ export FZF_DEFAULT_COMMAND='fd --hidden --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-eval "$(lua $HOME/scripts/z.lua --init bash enhanced once)"
+eval "$(lua $HOME/scripts/z.lua --init bash enhanced once fzf)"
 
 # source /tools/Xilinx/Vitis/2021.2/settings64.sh
 alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
