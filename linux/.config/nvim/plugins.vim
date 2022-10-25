@@ -11,7 +11,8 @@ call plug#begin(g:PLUGIN_HOME)
 " Plugins go here
 "
 " Themes
-Plug 'NTBBloodbath/doom-one.nvim'
+Plug 'shaunsingh/oxocarbon.nvim', {'branch': 'fennel'}
+" Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 

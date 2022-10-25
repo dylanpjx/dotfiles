@@ -2,7 +2,7 @@ set t_Co=256
 
 set termguicolors
 
-colorscheme doom-one
+colorscheme oxocarbon
 set cursorline
 hi cursorline gui=bold guibg=NONE
 hi cursorlinenr guibg=NONE
