@@ -14,11 +14,13 @@ let &t_SI.="\e[6 q" "Insert mode
 let &t_EI.="\e[0 q" "Normal mode (Else)
 
 " Statusline
+hi StatusLine guifg=#161616
+hi StatusLineNC guifg=#161616
 " hi User1 guifg=#ebdbb2 guibg=#3c3836
 " hi StatusLine guifg=black guibg=#fe8019
 " hi StatusLineNC guifg=black guibg=#d65d0e
 
-set laststatus=2
+set laststatus=3
 " set statusline=
 " set statusline+=%*
 " " set statusline+=\ %y " Filetype
