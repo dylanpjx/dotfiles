@@ -12,7 +12,7 @@ call plug#begin(g:PLUGIN_HOME)
 "
 " Themes
 Plug 'shaunsingh/oxocarbon.nvim', {'branch': 'fennel'}
-" Plug 'NTBBloodbath/doom-one.nvim'
+Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -81,8 +81,7 @@ vim.keymap.set('n', "<C-j>", '<CMD>NavigatorDown<CR>')
 
 -- treesitter
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "latex", "markdown", "python", "vim",
-    "verilog" },
+  ensure_installed = { "c", "cpp", "lua", "latex", "python", "vim", "verilog" },
   highlight = {
     enable = true,
   },
