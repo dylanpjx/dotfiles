@@ -8,3 +8,5 @@ xset s off
 xset -dpms
 xset s noblank
 xset r rate 250 30
+xset +fp /usr/local/share/fonts
+xset fp rehash
