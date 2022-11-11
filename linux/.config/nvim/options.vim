@@ -39,9 +39,15 @@ set list
 " verilog
 set suffixesadd+=.v,.sv
 
+" yank
+autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=300 }
+
 " md
 set cc=80
 au FileType md set cc=117
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
 
 " terminal
 autocmd TermOpen * startinsert

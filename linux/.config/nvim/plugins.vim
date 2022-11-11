@@ -19,8 +19,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -36,6 +34,7 @@ Plug 'numToStr/Navigator.nvim'
 
 " Notes
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " File
 Plug 'elihunter173/dirbuf.nvim'
@@ -68,6 +67,9 @@ nmap ga <Plug>(EasyAlign)
 " asyncrun
 let g:asyncrun_open=8
 
+" pandoc
+let g:pandoc#syntax#conceal#use=0
+
 lua << EOF
 -- comment
 require('nvim_comment').setup()
@@ -78,14 +80,6 @@ vim.keymap.set('n', "<C-h>", '<CMD>NavigatorLeft<CR>')
 vim.keymap.set('n', "<C-l>", '<CMD>NavigatorRight<CR>')
 vim.keymap.set('n', "<C-k>", '<CMD>NavigatorUp<CR>')
 vim.keymap.set('n', "<C-j>", '<CMD>NavigatorDown<CR>')
-
--- treesitter
-require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "latex", "python", "vim", "verilog" },
-  highlight = {
-    enable = true,
-  },
-}
 
 -- toggleterm
 require('toggleterm').setup {
