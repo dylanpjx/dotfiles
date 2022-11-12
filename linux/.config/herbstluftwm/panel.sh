@@ -101,12 +101,15 @@ hc pad $monitor $panel_height
                     echo -n "^bg(#f9f9f9)^fg($selfg)"
                     ;;
                 '+')
-                    echo -n "^bg(#979797)^fg(#141414)"
-                    ;;
-                ':')
-                    echo -n "^bg()^fg(#ffffff)"
+                    echo -n "^bg(#979797)^fg($selfg)"
                     ;;
                 '-')
+                    echo -n "^bg()^fg(#ffffff)"
+                    ;;
+                '%')
+                    echo -n "^bg()^fg(#ffffff)"
+                    ;;
+                ':')
                     echo -n "^bg()^fg(#ffffff)"
                     ;;
                 '!')
