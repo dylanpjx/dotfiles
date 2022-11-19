@@ -3,4 +3,7 @@ from openrazer.client import DeviceManager
 
 device_manager = DeviceManager()
 
-print("%3d%%" % (device_manager.devices[0].battery_level))
+if (device_manager.devices[0]):
+    print("%3d%%" % (device_manager.devices[0].battery_level))
+else:
+    print(" NA")
