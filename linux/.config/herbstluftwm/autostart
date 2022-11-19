@@ -39,7 +39,6 @@ hc keybind $Mod-apostrophe spawn pavucontrol
 # scripts
 hc keybind $Mod-Prior spawn brightness.sh 1
 hc keybind $Mod-Next spawn brightness.sh -1
-hc keybind $Mod-c spawn ibus_switch.sh
 hc keybind $Mod-Shift-s spawn screenshot.sh
 hc keybind $Mod-semicolon spawn $configpath/scripts/loadlayout.sh
 hc keybind $Mod-w spawn $configpath/scripts/wbring.sh
@@ -140,13 +139,13 @@ hc set frame_bg_active_color '#f0f0f0'
 hc set frame_transparent_width 1
 hc set frame_border_width 1
 hc set frame_bg_transparent on
-hc set frame_gap 6
-hc set show_frame_decorations focused
+hc set frame_gap 3
+hc set show_frame_decorations if_multiple
 
-hc attr theme.title_when multiple_tabs
+hc attr theme.title_when always
 hc attr theme.title_align center
 hc attr theme.title_height 15
-hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
+hc attr theme.title_font 'Roboto:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
@@ -174,7 +173,7 @@ hc set focus_follows_mouse 0
 hc set window_gap 0
 hc set frame_padding 0
 hc set smart_window_surroundings off
-hc set smart_frame_surroundings on
+hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
 hc set swap_monitors_to_get_tag true
 hc set tabbed_max true
@@ -217,6 +216,17 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
     "$panel" "$monitor" &
 done
 
+# run trayer after panel has started
+pkill trayer
+run=""
+while [ -z "$run" ]; do
+	sleep 1
+	run=$(ps -e | grep dzen)
+	echo "$run"
+done
+trayer --edge top --align right --widthtype request --transparent true --tint 0x090909 --height 15 --margin 184 --monitor 1 &
+
+# restore state
 if [ -f "$configpath/mystate" ]; then
   $configpath/scripts/loadstate.sh < $configpath/mystate &
 fi

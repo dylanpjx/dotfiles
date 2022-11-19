@@ -6,6 +6,7 @@ function run {
   fi
 }
 
+run nm-applet
 run firefox
 run quodlibet
 run discord

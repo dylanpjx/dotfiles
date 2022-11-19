@@ -128,17 +128,14 @@ hc pad $monitor $panel_height
                 echo -n " ${i:1} "
             fi
         done
-        echo -n "$separator"
-        echo -n "^bg()^fg() ${windowtitle//^/^^}"
+        # echo -n "$separator"
+        # echo -n "^bg()^fg() ${windowtitle//^/^^}"
+
         # small adjustments
         savestate="^ca(1,$configpath/scripts/savestate.sh >\
             $configpath/mystate;\
             notify-send -t 1000 'State saved')Save state^ca()"
-        if [ ! -z "$dzen2_svn" ] ; then
-          right="$savestate $separator^bg() $date $separator $mouse_batt"
-        else
-          right="$separator^bg() $date $separator $mouse_batt"
-        fi
+        right="^bg() $separator $date $separator $mouse_batt"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")
