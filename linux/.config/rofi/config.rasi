@@ -42,12 +42,13 @@ configuration {
     alternate-urgent-foreground: @urgent-foreground;
     alternate-active-foreground: @active-foreground;
 
-    bordercolor:                 #ffffff;
+    bordercolor:                 #090909;
     background-color:            @background;
 }
 window {
     background-color: @background;
-    border:           0;
+    border:           2;
+    border-color:     @bordercolor;
     padding:          5;
     width:            100%;
 }
