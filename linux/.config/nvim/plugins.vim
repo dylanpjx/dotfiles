@@ -27,7 +27,6 @@ Plug 'hrsh7th/nvim-cmp'
 
 " Code
 Plug 'terrortylor/nvim-comment', {'branch': 'main'}
-Plug 'akinsho/toggleterm.nvim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'numToStr/Navigator.nvim'
@@ -45,10 +44,7 @@ Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
 Plug 'wellle/targets.vim'
 Plug 'windwp/nvim-autopairs'
 Plug 'kylechui/nvim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
-Plug 'nvim-lua/plenary.nvim'
 " Plug 'dstein64/vim-startuptime'
 " Initialise plugin system
 call plug#end()
@@ -76,16 +72,10 @@ require('nvim_comment').setup()
 
 -- tmux
 require('Navigator').setup()
-vim.keymap.set('n', "<C-h>", '<CMD>NavigatorLeft<CR>')
-vim.keymap.set('n', "<C-l>", '<CMD>NavigatorRight<CR>')
-vim.keymap.set('n', "<C-k>", '<CMD>NavigatorUp<CR>')
-vim.keymap.set('n', "<C-j>", '<CMD>NavigatorDown<CR>')
-
--- toggleterm
-require('toggleterm').setup {
-  direction = 'horizontal',
-  size = 20,
-}
+vim.keymap.set('n', '<C-h>', '<CMD>NavigatorLeft<CR>')
+vim.keymap.set('n', '<C-l>', '<CMD>NavigatorRight<CR>')
+vim.keymap.set('n', '<C-k>', '<CMD>NavigatorUp<CR>')
+vim.keymap.set('n', '<C-j>', '<CMD>NavigatorDown<CR>')
 
 -- fzf
 local actions = require'fzf-lua.actions'
