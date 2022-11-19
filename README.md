@@ -1,8 +1,8 @@
 # linux-configs
 
-Using Pop!\_OS and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The script
-uses `stow` to automatically symlink every dotfile in `dotfiles/linux` to its
-corresponding config location
+Using Pop!\_OS and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The
+script uses `stow` to automatically symlink every dotfile in `dotfiles/home` to
+its corresponding config location
 
 ## PPAs
 ```
