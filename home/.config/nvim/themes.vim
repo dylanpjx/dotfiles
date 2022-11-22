@@ -2,7 +2,7 @@ set t_Co=256
 
 set termguicolors
 
-colorscheme oxocarbon
+colorscheme dracula
 
 set cursorline
 hi cursorline gui=bold guibg=NONE

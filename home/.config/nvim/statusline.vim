@@ -9,7 +9,7 @@ local colors = {
   yellow   = '#ECBE7B',
   cyan     = '#008080',
   darkblue = '#081633',
-  green    = '#98be65',
+  green    = '#50fa7b',
   orange   = '#FF8800',
   violet   = '#a9a1e1',
   magenta  = '#c678dd',
@@ -37,10 +37,7 @@ local config = {
     -- Disable sections and component separators
     component_separators = '',
     section_separators = '',
-    theme = {
-      normal = { c = { fg = colors.fg, bg = colors.bg } },
-      inactive = { c = { fg = colors.fg, bg = colors.bg } },
-    },
+    theme = 'dracula',
   },
   sections = {
     -- these are to remove the defaults
@@ -129,7 +126,7 @@ ins_left {
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.blue }
+  color = { fg = colors.green }
 }
 
 ins_left {
@@ -165,7 +162,7 @@ ins_right { 'progress', color = { fg = colors.fg } }
 ins_right {
   'filetype',
   icons_enabled = false,
-  color = { fg = colors.blue }
+  color = { fg = colors.green }
 }
 
 -- Now don't forget to initialize lualine
