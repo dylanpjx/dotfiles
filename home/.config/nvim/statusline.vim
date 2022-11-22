@@ -13,7 +13,7 @@ local colors = {
   orange   = '#FF8800',
   violet   = '#a9a1e1',
   magenta  = '#c678dd',
-  blue     = '#51afef',
+  blue     = '#78a9ff',
   red      = '#ec5f67',
 }
 
@@ -38,9 +38,6 @@ local config = {
     component_separators = '',
     section_separators = '',
     theme = {
-      -- We are going to use lualine_c an lualine_x as left and
-      -- right section. Both are highlighted by c theme .  So we
-      -- are just setting default looks o statusline
       normal = { c = { fg = colors.fg, bg = colors.bg } },
       inactive = { c = { fg = colors.fg, bg = colors.bg } },
     },
@@ -132,7 +129,7 @@ ins_left {
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.green },
+  color = { fg = colors.blue }
 }
 
 ins_left {
@@ -157,7 +154,6 @@ ins_left {
 ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
-  color = { fg = colors.magenta },
 }
 
 -- Add components to right sections
@@ -169,7 +165,7 @@ ins_right { 'progress', color = { fg = colors.fg } }
 ins_right {
   'filetype',
   icons_enabled = false,
-  color = { fg = colors.green }
+  color = { fg = colors.blue }
 }
 
 -- Now don't forget to initialize lualine

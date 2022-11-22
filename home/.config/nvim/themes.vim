@@ -3,6 +3,7 @@ set t_Co=256
 set termguicolors
 
 colorscheme oxocarbon
+
 set cursorline
 hi cursorline gui=bold guibg=NONE
 hi cursorlinenr guibg=NONE

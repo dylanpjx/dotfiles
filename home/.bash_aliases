@@ -4,6 +4,8 @@ function fc() {
 alias xs='xset r rate 250 30'
 alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 
+alias tmux='TERM=xterm-256color tmux'
+
 alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias v='nvim'
