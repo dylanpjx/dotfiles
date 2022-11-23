@@ -3,7 +3,6 @@ ibus-daemon -drxR &
 feh --bg-fill '/mnt/HDD/Wallpapers/Desktop/greg-crewdson-snowy.jpg' &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
 
-sleep 3
 xset s off
 xset -dpms
 xset s noblank
