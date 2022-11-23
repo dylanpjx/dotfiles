@@ -71,8 +71,14 @@ local config = {
   inactive_winbar = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {},
+    lualine_c = {{
+      'filename',
+      color = { fg = colors.fg }
+    }},
+    lualine_x = {{
+      '%3l/%-3L',
+      color = { fg = colors.fg }
+    }},
     lualine_y = {},
     lualine_z = {}
   }

@@ -13,7 +13,6 @@ call plug#begin(g:PLUGIN_HOME)
 " Themes
 Plug 'shaunsingh/oxocarbon.nvim', {'branch': 'fennel'}
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
