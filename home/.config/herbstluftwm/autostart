@@ -192,7 +192,7 @@ hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on floatplacement=center
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
-
+hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=9
 hc rule class='Quodlibet' tag=3
 
