@@ -55,7 +55,7 @@ nnoremap <leader>/ :lua require('fzf-lua').live_grep_native()<CR>
 nnoremap <leader>fb :lua require('fzf-lua').buffers()<CR>
 nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
 nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
-nnoremap <leader>fh :lua require('fzf-lua').oldfiles()<CR>
+nnoremap <leader>fr :lua require('fzf-lua').oldfiles()<CR>
 
 " rc
 nnoremap <silent><leader>fn :lua require('fzf-lua').files({cwd = '~/Documents/Notes/'})<CR>

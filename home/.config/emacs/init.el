@@ -1,4 +1,6 @@
 ;; Settings
+(defvar efs/default-font-size 100)
+(defvar efs/default-variable-font-size 100)
 (setq inhibit-startup-message t)
 (menu-bar-mode -1)          ; Disable the menu bar
 (scroll-bar-mode -1)        ; Disable visible scrollbar
@@ -10,6 +12,8 @@
 
 (global-display-line-numbers-mode)    ; Display numbers for all buffers
 (setq display-line-numbers-type 'relative) ; Set rnu
+
+(set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
 
 ;; Packages
 (setq package-archives 
@@ -76,8 +80,8 @@
 
   ; ivy
   (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
-  (evil-define-key 'normal 'global (kbd "<leader>f") 'counsel-recentf)
-  (evil-define-key 'normal 'global (kbd "<leader>b") 'counsel-switch-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
+  (evil-define-key 'normal 'global (kbd "<leader>fb") 'buffer-menu)
   (evil-define-key 'normal 'global (kbd "-") 'counsel-find-file)
 
   (evil-define-key 'normal 'global (kbd "<leader>g") 'magit)
