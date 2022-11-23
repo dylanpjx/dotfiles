@@ -135,7 +135,8 @@ hc pad $monitor $panel_height
         savestate="^ca(1,$configpath/scripts/savestate.sh >\
             $configpath/mystate;\
             notify-send -t 1000 'State saved')Save state^ca()"
-        right="^bg() $separator $date $separator $mouse_batt"
+        calendar="^ca(1,gsimplecal)$date^ca()"
+        right="^bg() $separator $calendar $separator $mouse_batt"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")
