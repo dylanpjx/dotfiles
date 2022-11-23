@@ -99,6 +99,7 @@ hc keybind $Mod-q close
 hc keybind $Mod-r remove
 hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-g set_attr clients.focus.floating toggle
+hc keybind $Mod-Control-g floating toggle
 hc keybind $Mod-m spawn $configpath/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
@@ -136,8 +137,8 @@ hc set frame_border_active_color '#222222cc'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
 hc set frame_bg_active_color '#f0f0f0'
-hc set frame_transparent_width 1
-hc set frame_border_width 1
+hc set frame_transparent_width 2
+hc set frame_border_width 2
 hc set frame_bg_transparent on
 hc set frame_gap 3
 hc set show_frame_decorations if_multiple
@@ -149,9 +150,9 @@ hc attr theme.title_font 'Roboto:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
-hc attr theme.border_width 3
+hc attr theme.border_width 2
 hc attr theme.inner_width 0
-hc attr theme.outer_width 3
+hc attr theme.outer_width 0
 hc attr theme.active.color '#0f0f0f'
 hc attr theme.normal.color '#0f0f0f'
 hc attr theme.urgent.color '#7811A1dd'
