@@ -85,7 +85,7 @@ element selected.urgent {
 }
 
 element selected.active {
-  text-color:       #c1c1c1;
-  background-color: #212121;
+  text-color:       #212121;
+  background-color: #6666cc;
 }
 // vim:ft=css
