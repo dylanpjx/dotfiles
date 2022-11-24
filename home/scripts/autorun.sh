@@ -11,3 +11,4 @@ run firefox
 run quodlibet
 run discord
 run alacritty -e tmux
+run emacs --daemon
