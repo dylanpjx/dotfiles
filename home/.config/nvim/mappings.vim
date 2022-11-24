@@ -57,13 +57,9 @@ nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
 nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
 nnoremap <leader>fr :lua require('fzf-lua').oldfiles()<CR>
 
-" rc
-nnoremap <silent><leader>fn :lua require('fzf-lua').files({cwd = '~/Documents/Notes/'})<CR>
-nnoremap <silent><leader>fc :lua require('fzf-lua').files({cwd = '~/.dotfiles'})<CR>
-nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
-
 " ws
 nnoremap <leader>s :w <CR>
+nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
 nnoremap <leader>ws :mksession! ws.vim <CR> <bar> :wqa <CR>
 
 " Quickfix list

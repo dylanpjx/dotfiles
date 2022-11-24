@@ -1,19 +1,23 @@
 ;; Settings
-(defvar efs/default-font-size 100)
-(defvar efs/default-variable-font-size 100)
-(setq inhibit-startup-message t)
-(menu-bar-mode -1)          ; Disable the menu bar
-(scroll-bar-mode -1)        ; Disable visible scrollbar
-(tool-bar-mode -1)          ; Disable the toolbar
-(tooltip-mode -1)           ; Disable tooltips
-(setq visible-bell nil)     ; Disable visible bell
+(setq-default
+  create-lockfiles nil
+  display-line-numbers-type 'relative
+  fill-column 80
+  indent-tabs-mode nil  
+  inhibit-startup-message t
+  tab-always-indent 'complete
+  tab-width 2
+  use-short-answers t   
+  visible-bell nil)
 
-(show-paren-mode 1) 
-
-(global-display-line-numbers-mode)    ; Display numbers for all buffers
-(setq display-line-numbers-type 'relative) ; Set rnu
-
-(set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
+(blink-cursor-mode 0)              ; Disable blinking cursor
+(electric-pair-mode 1)             ; Enable auto pairing
+(menu-bar-mode -1)                 ; Disable the menu bar
+(scroll-bar-mode -1)               ; Disable visible scrollbar
+(show-paren-mode 1)                ; Match braces
+(tool-bar-mode -1)                 ; Disable the toolbar
+(tooltip-mode -1)                  ; Disable tooltips
+(global-display-line-numbers-mode) ; Display numbers for all buffers
 
 ;; Packages
 (setq package-archives 
@@ -75,6 +79,20 @@
   (evil-define-key 'normal 'global (kbd "L") 'tab-bar-switch-to-prev-tab)
   (evil-define-key 'normal 'global (kbd "H") 'tab-bar-switch-to-next-tab)
 
+  (defun my/evil-shift-right ()
+    (interactive)
+    (evil-shift-right evil-visual-beginning evil-visual-end)
+    (evil-normal-state)
+    (evil-visual-restore))
+
+  (defun my/evil-shift-left ()
+    (interactive)
+    (evil-shift-left evil-visual-beginning evil-visual-end)
+    (evil-normal-state)
+    (evil-visual-restore))
+  (evil-define-key 'visual global-map (kbd ">") 'my/evil-shift-right)
+  (evil-define-key 'visual global-map (kbd "<") 'my/evil-shift-left)
+
   (evil-define-key 'motion 'global (kbd "j") 'evil-next-visual-line)
   (evil-define-key 'motion 'global (kbd "k") 'evil-previous-visual-line)
 
@@ -124,6 +142,13 @@
   :config
   (counsel-mode 1))
 
+(use-package which-key
+  :defer 0
+  :diminish which-key-mode
+  :config
+  (which-key-mode)
+  (setq which-key-idle-delay 0.5))
+
 (use-package magit
   :commands magit-status
   :custom
@@ -157,14 +182,12 @@
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
 
-(use-package which-key
-  :defer 0
-  :diminish which-key-mode
-  :config
-  (which-key-mode)
-  (setq which-key-idle-delay 0.5))
+(defvar efs/default-font-size 100)
+(defvar efs/default-variable-font-size 100)
+(set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
 
-
+(setq custom-file (concat user-emacs-directory "/custom.el"))
+(load-file custom-file)
 
 ;; Bloat
 (custom-set-variables

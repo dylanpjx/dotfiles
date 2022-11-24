@@ -48,19 +48,19 @@ scrolling:
 # Font configuration
 font:
   normal: 
-    family: SauceCodePro NF
+    family: Iosevka Term
     style: Medium
 
   bold:
-    family: SauceCodePro NF
+    family: Iosevka Term
     style: Bold
 
   italic:
-    family: SauceCodePro NF
+    family: Iosevka Term
     style: Medium Italic
 
   bold_italic:
-    family: SauceCodePro NF
+    family: Iosevka Term
     style: Bold Italic
 
   size: 10.0

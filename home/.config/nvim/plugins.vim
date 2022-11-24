@@ -37,6 +37,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " File
 Plug 'elihunter173/dirbuf.nvim'
+Plug 'ahmedkhalf/project.nvim'
 
 " QoL
 Plug 'junegunn/vim-easy-align'
@@ -99,4 +100,22 @@ require('fzf-lua').setup {
 require('dirbuf').setup{}
 require('nvim-surround').setup{}
 require('nvim-autopairs').setup{}
+require('project_nvim').setup{}
+
+local fzf_lua = require("fzf-lua")
+vim.keymap.set('n', '<leader>fp',
+  function()
+    local history = require("project_nvim.utils.history")
+    local results = history.get_recent_projects()
+    fzf_lua.fzf_exec(results, {
+      actions = {
+        ['default'] = {
+          function(selected)
+            fzf_lua.files({ cwd = selected[1] })
+          end,
+        }
+      }
+    })
+  end,
+  { noremap = true, silent = true })
 EOF
