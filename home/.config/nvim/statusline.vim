@@ -4,17 +4,19 @@ local lualine = require('lualine')
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#161616',
-  fg       = '#bbc2cf',
-  yellow   = '#ECBE7B',
-  cyan     = '#008080',
-  darkblue = '#081633',
-  green    = '#50fa7b',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#c678dd',
-  blue     = '#78a9ff',
-  red      = '#ec5f67',
+  bg          = '#202328',
+  fg          = '#ffffff',
+  fg_inactive = '#bbc2cf',
+  yellow      = '#ECBE7B',
+  cyan        = '#008080',
+  darkblue    = '#081633',
+  green       = '#50fa7b',
+  orange      = '#FF8800',
+  purple      = '#bd93f9',
+  violet      = '#a9a1e1',
+  magenta     = '#c678dd',
+  blue        = '#78a9ff',
+  red         = '#ec5f67',
 }
 
 local conditions = {
@@ -37,7 +39,10 @@ local config = {
     -- Disable sections and component separators
     component_separators = '',
     section_separators = '',
-    theme = 'dracula',
+    theme = {
+      normal = { c = { fg = colors.fg, bg = colors.bg } },
+      inactive = { c = { fg = colors.fg_inactive, bg = colors.bg } },
+    },
   },
   sections = {
     -- these are to remove the defaults
@@ -71,14 +76,8 @@ local config = {
   inactive_winbar = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {{
-      'filename',
-      color = { fg = colors.fg }
-    }},
-    lualine_x = {{
-      '%3l/%-3L',
-      color = { fg = colors.fg }
-    }},
+    lualine_c = {'filename'},
+    lualine_x = {'%3l/%-3L'},
     lualine_y = {},
     lualine_z = {}
   }
@@ -161,14 +160,14 @@ ins_left {
 
 -- Add components to right sections
 
-ins_right { 'location', color = { fg = colors.fg } }
+ins_right { 'location', color = { fg = colors.fg_inactive } }
 
-ins_right { 'progress', color = { fg = colors.fg } }
+ins_right { 'progress', color = { fg = colors.fg_inactive } }
 
 ins_right {
   'filetype',
   icons_enabled = false,
-  color = { fg = colors.green }
+  color = { fg = colors.purple }
 }
 
 -- Now don't forget to initialize lualine
