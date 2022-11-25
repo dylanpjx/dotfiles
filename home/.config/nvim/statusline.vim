@@ -140,9 +140,9 @@ ins_left {
 
 -- Add components to right sections
 
-ins_right { 'location', color = { fg = colors.fg_inactive } }
+ins_right { 'location' }
 
-ins_right { 'progress', color = { fg = colors.fg_inactive } }
+ins_right { 'progress' }
 
 ins_right {
   'filetype',
