@@ -5,18 +5,19 @@ local lualine = require('lualine')
 -- stylua: ignore
 local colors = {
   bg          = '#202328',
+  bg_inactive = '#22232f',
   fg          = '#ffffff',
   fg_inactive = '#bbc2cf',
-  yellow      = '#ECBE7B',
-  cyan        = '#008080',
-  darkblue    = '#081633',
+
+  yellow      = '#f1fa8c',
+  cyan        = '#8be9fd',
   green       = '#50fa7b',
-  orange      = '#FF8800',
+  orange      = '#ffb86c',
   purple      = '#bd93f9',
   violet      = '#a9a1e1',
   magenta     = '#c678dd',
   blue        = '#78a9ff',
-  red         = '#ec5f67',
+  red         = '#ff5555',
 }
 
 local conditions = {
@@ -25,11 +26,6 @@ local conditions = {
   end,
   hide_in_width = function()
     return vim.fn.winwidth(0) > 80
-  end,
-  check_git_workspace = function()
-    local filepath = vim.fn.expand('%:p:h')
-    local gitdir = vim.fn.finddir('.git', filepath .. ';')
-    return gitdir and #gitdir > 0 and #gitdir < #filepath
   end,
 }
 
@@ -41,7 +37,7 @@ local config = {
     section_separators = '',
     theme = {
       normal = { c = { fg = colors.fg, bg = colors.bg } },
-      inactive = { c = { fg = colors.fg_inactive, bg = colors.bg } },
+      inactive = { c = { fg = colors.fg_inactive, bg = colors.bg_inactive } },
     },
   },
   sections = {
@@ -63,54 +59,18 @@ local config = {
     lualine_y = {},
     lualine_z = {},
   },
-
-  winbar = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {
-      {
-      -- Lsp server name .
-      function()
-        local msg = 'No Active Lsp'
-        local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-        local clients = vim.lsp.get_active_clients()
-        if next(clients) == nil then
-          return msg
-        end
-        for _, client in ipairs(clients) do
-          local filetypes = client.config.filetypes
-          if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-            return client.name
-          end
-        end
-        return msg
-      end,
-      icon = ' LSP:',
-      }
-    },
-    lualine_y = {'%3l/%-3L'},
-    lualine_z = {}
-  },
-
-  inactive_winbar = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'%3l/%-3L'},
-    lualine_y = {},
-    lualine_z = {}
-  }
 }
 
 -- Inserts a component in lualine_c at left section
 local function ins_left(component)
   table.insert(config.sections.lualine_c, component)
+  table.insert(config.inactive_sections.lualine_c, component)
 end
 
 -- Inserts a component in lualine_x ot right section
 local function ins_right(component)
   table.insert(config.sections.lualine_x, component)
+  table.insert(config.inactive_sections.lualine_x, component)
 end
 
 ins_left {
@@ -147,11 +107,11 @@ ins_left {
   padding = { left = 1, right = 1 },
 }
 
-
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.green }
+  color = { fg = colors.green },
+  cond = conditions.hide_in_width,
 }
 
 ins_left {

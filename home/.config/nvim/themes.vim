@@ -15,5 +15,8 @@ let &t_te.="\e[0 q"
 let &t_SI.="\e[6 q" "Insert mode
 let &t_EI.="\e[0 q" "Normal mode (Else)
 
+hi StatusLine guibg=#202328
+hi StatusLineNC guibg=#202328
+
 " Statusline
-set laststatus=3
+set laststatus=2
