@@ -36,7 +36,8 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 local servers = {
   'clangd',
   'pyright',
-  'vimls'
+  'vimls',
+  'svlangserver'
   }
 
 for _, lsp in ipairs(servers) do
