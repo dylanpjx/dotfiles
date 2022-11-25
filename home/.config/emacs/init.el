@@ -5,7 +5,7 @@
   fill-column 80
   indent-tabs-mode nil  
   inhibit-startup-message t
-  tab-always-indent 'complete
+  tab-always-indent 'nil
   tab-width 2
   use-short-answers t   
   visible-bell nil)
@@ -18,6 +18,29 @@
 (tool-bar-mode -1)                 ; Disable the toolbar
 (tooltip-mode -1)                  ; Disable tooltips
 (global-display-line-numbers-mode) ; Display numbers for all buffers
+
+;; zoom in/out like we do everywhere else.
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
+(global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
+
+;; Using garbage magic hack.
+ (use-package gcmh
+   :config
+   (gcmh-mode 1))
+;; Setting garbage collection threshold
+(setq gc-cons-threshold 402653184
+      gc-cons-percentage 0.6)
+
+;; Profile emacs startup
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (message "*** Emacs loaded in %s with %d garbage collections."
+                     (format "%.2f seconds"
+                             (float-time
+                              (time-subtract after-init-time before-init-time)))
+                     gcs-done)))
 
 ;; Packages
 (setq package-archives 
@@ -40,10 +63,8 @@
   (auto-package-update-maybe)
   (auto-package-update-at-time "09:00"))
 
-;; Vim
+;; Evil
 (use-package undo-fu)
-
-; jk to esape
 (use-package key-chord
   :after evil
   :config
@@ -96,32 +117,28 @@
   (evil-define-key 'motion 'global (kbd "j") 'evil-next-visual-line)
   (evil-define-key 'motion 'global (kbd "k") 'evil-previous-visual-line)
 
-  ; ivy
-  (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
-  (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
-  (evil-define-key 'normal 'global (kbd "<leader>fb") 'buffer-menu)
-  (evil-define-key 'normal 'global (kbd "-") 'counsel-find-file)
-
-  (evil-define-key 'normal 'global (kbd "<leader>g") 'magit)
   (evil-define-key 'normal 'global (kbd "<leader>h") 'help-command)
  )
-
 (use-package evil-surround
   :ensure t
   :after evil
   :config
   (global-evil-surround-mode 1))
-
+(use-package evil-commentary
+  :ensure t
+  :after evil
+  :config
+  (evil-commentary-mode))
 (use-package evil-collection
   :after evil
   :config
   (setq evil-want-integration t)
   (evil-collection-init))
 
+;; Ivy
 (use-package ivy
   :diminish
-  :bind (("C-s" . swiper)
-         :map ivy-minibuffer-map
+  :bind (:map ivy-minibuffer-map
          ("TAB" . ivy-alt-done)
          ("C-l" . ivy-alt-done)
          ("C-j" . ivy-next-line)
@@ -141,6 +158,45 @@
   (counsel-linux-app-format-function #'counsel-linux-app-format-function-name-only)
   :config
   (counsel-mode 1))
+  (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
+  (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
+  (evil-define-key 'normal 'global (kbd "<leader>fb") 'buffer-menu)
+  (evil-define-key 'normal 'global (kbd "-") 'counsel-find-file)
+(use-package counsel-projectile
+  :after projectile
+  :config (counsel-projectile-mode))
+
+(use-package projectile
+  :diminish projectile-mode
+  :config
+  (projectile-mode)
+  (evil-define-key 'normal 'global (kbd "<leader>fp") 'counsel-projectile-switch-project)
+  :custom ((projectile-completion-system 'ivy)))
+
+
+;; Company
+(use-package company
+  :after lsp-mode
+  :bind (:map company-active-map
+        ("<tab>" . company-complete-selection))
+        (:map lsp-mode-map
+        ("<tab>" . company-indent-or-complete-common))
+  :custom
+  (company-minimum-prefix-length 1)
+  (company-idle-delay 0.0))
+  :config
+  (global-company-mode t)
+(use-package company-box
+  :hook (company-mode . company-box-mode))
+
+(use-package lsp-mode
+  :init
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  (setq lsp-keymap-prefix "C-c l")
+  :hook ((lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
+(use-package lsp-ui :commands lsp-ui-mode)
+(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 
 (use-package which-key
   :defer 0
@@ -153,31 +209,18 @@
   :commands magit-status
   :custom
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+  :config
+  (evil-define-key 'normal 'global (kbd "<leader>g") 'magit)
 
 (use-package vterm
   :commands vterm
   :config
   (setq vterm-max-scrollback 10000))
 
-(use-package lsp-mode
-  :commands (lsp lsp-deferred)
-  :hook (lsp-mode . efs/lsp-mode-setup)
-  :init
-  (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
-  :config
-  (lsp-enable-which-key-integration t))
-
-(use-package lsp-ui
-  :hook (lsp-mode . lsp-ui-mode)
-  :custom
-  (lsp-ui-doc-position 'bottom))
-
 ;; Themes
 (use-package doom-themes
   :init (load-theme 'doom-dracula t))
-
 (use-package all-the-icons)
-
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
@@ -185,22 +228,8 @@
 (defvar efs/default-font-size 100)
 (defvar efs/default-variable-font-size 100)
 (set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
-
-(setq custom-file (concat user-emacs-directory "/custom.el"))
-(load-file custom-file)
+(set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 120)
 
 ;; Bloat
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ispell-dictionary nil)
- '(package-selected-packages
-   '(evil-surround counsel lsp-ui lsp-mode magit key-chord which-key use-package undo-fu ivy general evil-escape evil-collection doom-themes doom-modeline auto-package-update all-the-icons)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(setq custom-file (concat user-emacs-directory "/custom.el"))
+(load-file custom-file)

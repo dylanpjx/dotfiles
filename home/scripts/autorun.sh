@@ -10,5 +10,5 @@ run nm-applet
 run firefox
 run quodlibet
 run discord
-run alacritty -e tmux
-run emacs --daemon
+# run alacritty -e tmux
+run emacs
