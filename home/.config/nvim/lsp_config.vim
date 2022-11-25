@@ -11,8 +11,8 @@ local on_attach = function(client, bufnr)
 
   -- Mappings
   keymap('n', '<leader>d' ,'<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-  keymap('n', '(d' ,'<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-  keymap('n', ')d' ,'<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+  keymap('n', '[d' ,'<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+  keymap('n', ']d' ,'<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
   keymap('n', '<leader>q' ,'<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
   buf_set_keymap('i', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
@@ -33,7 +33,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Add language servers here
-local servers = { 
+local servers = {
   'clangd',
   'pyright',
   'vimls'
