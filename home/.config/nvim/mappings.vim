@@ -22,10 +22,6 @@ vnoremap < <gv
 " vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Navigation
-" noremap <C-h> <C-w>h
-" noremap <C-j> <C-w>j
-" noremap <C-k> <C-w>k
-" noremap <C-l> <C-w>l
 noremap <C-c> <C-w>c
 nnoremap H gT
 nnoremap L gt
@@ -50,13 +46,6 @@ vnoremap \\ :s/\s\+$//e <CR>
 nnoremap <silent><leader><leader> :noh <CR>
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
-" fzf
-nnoremap <leader>/ :lua require('fzf-lua').live_grep_native()<CR>
-nnoremap <leader>fb :lua require('fzf-lua').buffers()<CR>
-nnoremap <leader>ff :lua require('fzf-lua').files()<CR>
-nnoremap <leader>fg :lua require('fzf-lua').git_files()<CR>
-nnoremap <leader>fr :lua require('fzf-lua').oldfiles()<CR>
-
 " ws
 nnoremap <leader>s :w <CR>
 nnoremap <leader>r :w <bar> source $MYVIMRC <bar> e <CR>
@@ -68,14 +57,6 @@ nnoremap <C-p> :cp<CR>
 
 " Location list
 " command! -nargs=1 Ngrep lvimgrep "<args>" $NOTES_DIR/**/*.txt
-
-" Terminal mappings
-" tnoremap <leader>th <C-\><C-n><C-w>h
-" tnoremap <leader>tj <C-\><C-n><C-w>j
-" tnoremap <leader>tk <C-\><C-n><C-w>k
-" tnoremap <leader>tl <C-\><C-n><C-w>l
-nnoremap <leader><CR> :ToggleTerm<CR>
-tnoremap <Esc> <C-\><C-N>
 
 " Notetaking
 nnoremap <leader>c :AsyncRun comp.sh <C-r>% <CR>
