@@ -10,8 +10,6 @@ alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias v='nvim'
 
-alias emacs='emacsclient -c -a "emacs"'
-
 alias vifm='vifmrun .'
 alias f='vifmrun .'
 

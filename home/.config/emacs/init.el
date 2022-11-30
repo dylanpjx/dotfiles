@@ -5,10 +5,20 @@
   fill-column 80
   indent-tabs-mode nil  
   inhibit-startup-message t
+  make-backup-files nil
   tab-always-indent 'nil
   tab-width 2
+  sh-basic-offset 2
   use-short-answers t   
   visible-bell nil)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(setq indent-line-function 'insert-tab)
+(defun my-display-numbers-hook ()
+  (display-line-numbers-mode 1)
+  )
+(add-hook 'prog-mode-hook 'my-display-numbers-hook)
 
 (blink-cursor-mode 0)              ; Disable blinking cursor
 (electric-pair-mode 1)             ; Enable auto pairing
@@ -17,7 +27,6 @@
 (show-paren-mode 1)                ; Match braces
 (tool-bar-mode -1)                 ; Disable the toolbar
 (tooltip-mode -1)                  ; Disable tooltips
-(global-display-line-numbers-mode) ; Display numbers for all buffers
 
 ;; zoom in/out like we do everywhere else.
 (global-set-key (kbd "C-+") 'text-scale-increase)
@@ -120,12 +129,10 @@
   (evil-define-key 'normal 'global (kbd "<leader>h") 'help-command)
  )
 (use-package evil-surround
-  :ensure t
   :after evil
   :config
   (global-evil-surround-mode 1))
 (use-package evil-commentary
-  :ensure t
   :after evil
   :config
   (evil-commentary-mode))
@@ -173,30 +180,51 @@
   (evil-define-key 'normal 'global (kbd "<leader>fp") 'counsel-projectile-switch-project)
   :custom ((projectile-completion-system 'ivy)))
 
-
-;; Company
-(use-package company
-  :after lsp-mode
-  :bind (:map company-active-map
-        ("<tab>" . company-complete-selection))
-        (:map lsp-mode-map
-        ("<tab>" . company-indent-or-complete-common))
+;; Completion
+(use-package corfu
   :custom
-  (company-minimum-prefix-length 1)
-  (company-idle-delay 0.0))
-  :config
-  (global-company-mode t)
-(use-package company-box
-  :hook (company-mode . company-box-mode))
+  (corfu-cycle t)                 ; Allows cycling through candidates
+  (corfu-auto t)                  ; Enable auto completion
+  (corfu-auto-prefix 2)
+  (corfu-auto-delay 0.0)
+  (corfu-echo-documentation 0.25) ; Enable documentation for completions
+  (corfu-preview-current 'insert) ; Do not preview current candidate
+  (corfu-preselect-first nil)
+  (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
 
-(use-package lsp-mode
+  ;; Optionally use TAB for cycling, default is `corfu-complete'.
+  :bind (:map corfu-map
+              ("M-SPC" . corfu-insert-separator)
+              ("TAB"     . corfu-next)
+              ([tab]     . corfu-next)
+              ("S-TAB"   . corfu-previous)
+              ([backtab] . corfu-previous)
+              ("S-<return>" . corfu-insert))
   :init
-  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  (setq lsp-keymap-prefix "C-c l")
-  :hook ((lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp)
-(use-package lsp-ui :commands lsp-ui-mode)
-(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+  (global-corfu-mode)
+  (corfu-history-mode)
+  :config
+  (setq tab-always-indent 'complete)
+  (add-hook 'eshell-mode-hook
+            (lambda () (setq-local corfu-quit-at-boundary t
+                              corfu-quit-no-match t
+                              corfu-auto nil)
+              (corfu-mode))))
+
+(use-package cape
+  :defer 10
+  :init
+  ;; Add `completion-at-point-functions', used by `completion-at-point'.
+  (defalias 'dabbrev-after-2 (cape-capf-prefix-length #'cape-dabbrev 2))
+  (add-to-list 'completion-at-point-functions 'dabbrev-after-2 t)
+  (cl-pushnew #'cape-file completion-at-point-functions)
+  :config
+  ;; Silence then pcomplete capf, no errors or messages!
+  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
+
+  ;; Ensure that pcomplete does not write to the buffer
+  ;; and behaves as a pure `completion-at-point-function'.
+  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-purify))
 
 (use-package which-key
   :defer 0
@@ -224,6 +252,8 @@
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
+  :config
+  (setq column-number-mode t)
 
 (defvar efs/default-font-size 100)
 (defvar efs/default-variable-font-size 100)
