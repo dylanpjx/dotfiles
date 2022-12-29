@@ -195,6 +195,7 @@ hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=9
 hc rule class='Quodlibet' tag=3
+hc rule class='firefox' tag=2
 
 hc set tree_style '╾│ ├└╼─┐'
 
