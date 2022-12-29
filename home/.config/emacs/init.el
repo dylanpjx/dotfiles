@@ -180,6 +180,19 @@
   (evil-define-key 'normal 'global (kbd "<leader>fp") 'counsel-projectile-switch-project)
   :custom ((projectile-completion-system 'ivy)))
 
+;; LSP
+(use-package lsp-mode
+  :commands (lsp lsp-deferred)
+  :init
+  (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
+  :config
+  (lsp-enable-which-key-integration t))
+
+(use-package lsp-ui
+  :hook (lsp-mode . lsp-ui-mode)
+  :custom
+  (lsp-ui-doc-position 'bottom))
+
 ;; Completion
 (use-package corfu
   :custom
