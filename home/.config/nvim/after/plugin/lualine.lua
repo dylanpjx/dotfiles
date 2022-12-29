@@ -133,8 +133,9 @@ ins_left {
 }
 
 ins_left {
-  'filename',
-  cond = conditions.buffer_not_empty,
+    function()
+        return vim.fn.getcwd()
+    end
 }
 
 -- Add components to right sections

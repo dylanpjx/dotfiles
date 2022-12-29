@@ -10,37 +10,64 @@ lsp.ensure_installed({
     'svlangserver',
 })
 
-local cmp = require 'cmp'
-cmp.setup ({
-    window = {
-        completion = {
-            border = 'rounded',
-        },
-        documentation = {
-            border = nil,
-        },
+local cmp = require('cmp')
+local luasnip = require('luasnip')
+
+local cmp_mappings = lsp.defaults.cmp_mappings({
+    -- go to next placeholder in the snippet
+    ['<C-n>'] = cmp.mapping(function(fallback)
+      if luasnip.jumpable(1) then
+        luasnip.jump(1)
+      else
+        fallback()
+      end
+    end, {'i', 's'}),
+    -- go to previous placeholder in the snippet
+    ['<C-p>'] = cmp.mapping(function(fallback)
+      if luasnip.jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
+      end
+    end, {'i', 's'}),
+    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+})
+
+lsp.setup_nvim_cmp({
+    select_behavior = 'insert',
+    preselect = 'none',
+    completion = {
+        completeopt = 'menu,menuone,noselect'
     },
+    sources = {
+        { name = 'path' },
+        { name = 'buffer', keyword_length = 2 },
+        { name = 'nvim_lsp', keyword_length = 2 },
+        { name = 'luasnip', keyword_length = 2 },
+    },
+    mapping = cmp_mappings,
 })
 
 lsp.on_attach(function(client, bufnr)
-
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
     local keymap = vim.keymap.set
-    local opts = { noremap=true }
+    local opts = { noremap = true }
 
     -- Mappings
-    keymap('n', '<leader>d' ,'<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-    keymap('n', '[d' ,'<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-    keymap('n', ']d' ,'<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+    keymap('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 
     buf_set_keymap('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     buf_set_keymap('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-    buf_set_keymap('n', '<leader>lf', '<cmd>lua vim.lsp.buf.format { async = true } <CR>', opts)
+    buf_set_keymap('n', '<leader>lf', '<cmd>LspZeroFormat<CR>', opts)
     buf_set_keymap('n', '<leader>ld', '<cmd>lua vim.diagnostic.disable() <CR>', opts)
     buf_set_keymap('n', '<leader>le', '<cmd>lua vim.diagnostic.enable() <CR>', opts)
+    buf_set_keymap('n', '<leader>lk', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
 
+    buf_set_keymap('n', '<C-k>', '<cmd>NavigatorUp<CR>', opts)
 end)
 
 lsp.setup()

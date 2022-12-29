@@ -10,6 +10,7 @@ local ensure_packer = function()
 end
 
 local packer_bootstrap = ensure_packer()
+local opts = { noremap=true, silent = true }
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -49,8 +50,14 @@ return require('packer').startup(function(use)
     use 'vim-pandoc/vim-pandoc-syntax'
     use 'junegunn/vim-easy-align'
     use 'wellle/targets.vim'
-    use 'mbbill/undotree'
-    use 'tpope/vim-fugitive'
+    use {
+        'mbbill/undotree',
+        vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
+    }
+    use {
+        'tpope/vim-fugitive',
+        vim.keymap.set('n', '<leader>g', vim.cmd.Git, opts)
+    }
     use {
         'ibhagwan/fzf-lua',
         requires = { 'nvim-tree/nvim-web-devicons' }
@@ -79,20 +86,22 @@ return require('packer').startup(function(use)
     use {
         'elihunter173/dirbuf.nvim',
         config = function()
-            require('dirbuf').setup{}
-        end
-    }
-    use {
-        'ahmedkhalf/project.nvim',
-        config = function ()
-            require('project_nvim').setup{}
+            require('dirbuf').setup{
+                vim.keymap.set('n', '<leader>e', '<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>', opts)
+            }
         end
     }
     use {
         'numToStr/Navigator.nvim',
         config = function()
-            require('Navigator').setup()
+            require('Navigator').setup{
+                vim.keymap.set('n', '<C-h>', '<CMD>NavigatorLeft<CR>', opts),
+                vim.keymap.set('n', '<C-l>', '<CMD>NavigatorRight<CR>', opts),
+                vim.keymap.set('n', '<C-k>', '<CMD>NavigatorUp<CR>', opts),
+                vim.keymap.set('n', '<C-j>', '<CMD>NavigatorDown<CR>', opts),
+            }
         end
     }
-
+    use 'nanotee/zoxide.vim'
+    vim.g.zoxide_use_select = true
 end)

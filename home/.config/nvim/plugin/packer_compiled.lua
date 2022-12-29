@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["Navigator.nvim"] = {
-    config = { "\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14Navigator\frequire\0" },
+    config = { "\27LJ\2\2×\2\0\0\a\1\15\1+6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\5\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\2>\2\1\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\t\0'\5\n\0-\6\0\0B\2\5\2>\2\2\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\v\0'\5\f\0-\6\0\0B\2\5\2>\2\3\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\r\0'\5\14\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0\27<CMD>NavigatorDown<CR>\n<C-j>\25<CMD>NavigatorUp<CR>\n<C-k>\28<CMD>NavigatorRight<CR>\n<C-l>\27<CMD>NavigatorLeft<CR>\n<C-h>\6n\bset\vkeymap\bvim\nsetup\14Navigator\frequire\t€€À™\4\0" },
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/Navigator.nvim",
     url = "https://github.com/numToStr/Navigator.nvim"
@@ -116,7 +116,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dirbuf.nvim"] = {
-    config = { "\27LJ\2\0028\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\vdirbuf\frequire\0" },
+    config = { "\27LJ\2\2¤\1\0\0\a\1\t\1\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\3\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0)<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>\14<leader>e\6n\bset\vkeymap\bvim\nsetup\vdirbuf\frequire\3€€À™\4\0" },
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/dirbuf.nvim",
     url = "https://github.com/elihunter173/dirbuf.nvim"
@@ -194,12 +194,6 @@ _G.packer_plugins = {
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["project.nvim"] = {
-    config = { "\27LJ\2\2>\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0" },
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
-  },
   ["quickfix-reflector.vim"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/quickfix-reflector.vim",
@@ -234,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
+  },
+  ["zoxide.vim"] = {
+    loaded = true,
+    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/zoxide.vim",
+    url = "https://github.com/nanotee/zoxide.vim"
   }
 }
 
@@ -244,12 +243,8 @@ try_loadstring("\27LJ\2\2>\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B
 time([[Config for nvim-comment]], false)
 -- Config for: dirbuf.nvim
 time([[Config for dirbuf.nvim]], true)
-try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\vdirbuf\frequire\0", "config", "dirbuf.nvim")
+try_loadstring("\27LJ\2\2¤\1\0\0\a\1\t\1\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\3\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0)<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>\14<leader>e\6n\bset\vkeymap\bvim\nsetup\vdirbuf\frequire\3€€À™\4\0", "config", "dirbuf.nvim")
 time([[Config for dirbuf.nvim]], false)
--- Config for: Navigator.nvim
-time([[Config for Navigator.nvim]], true)
-try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14Navigator\frequire\0", "config", "Navigator.nvim")
-time([[Config for Navigator.nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\2?\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
@@ -258,10 +253,10 @@ time([[Config for nvim-surround]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: project.nvim
-time([[Config for project.nvim]], true)
-try_loadstring("\27LJ\2\2>\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
-time([[Config for project.nvim]], false)
+-- Config for: Navigator.nvim
+time([[Config for Navigator.nvim]], true)
+try_loadstring("\27LJ\2\2×\2\0\0\a\1\15\1+6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\5\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\2>\2\1\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\t\0'\5\n\0-\6\0\0B\2\5\2>\2\2\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\v\0'\5\f\0-\6\0\0B\2\5\2>\2\3\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\r\0'\5\14\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0\27<CMD>NavigatorDown<CR>\n<C-j>\25<CMD>NavigatorUp<CR>\n<C-k>\28<CMD>NavigatorRight<CR>\n<C-l>\27<CMD>NavigatorLeft<CR>\n<C-h>\6n\bset\vkeymap\bvim\nsetup\14Navigator\frequire\t€€À™\4\0", "config", "Navigator.nvim")
+time([[Config for Navigator.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

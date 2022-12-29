@@ -45,6 +45,8 @@ vim.cmd('set suffixesadd+=.v,.sv,.lua')
 -- Autosave cursor position
 o.viewoptions = 'cursor,folds'
 vim.api.nvim_exec([[
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=300 }
+
     autocmd FileType qf wincmd J " qf always on bottom
     autocmd TermOpen * startinsert
 
