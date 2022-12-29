@@ -73,9 +73,10 @@ bind "set show-all-if-ambiguous on"
 # FZF
 export FZF_DEFAULT_COMMAND='fd --hidden --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source /usr/share/doc/fzf/examples/key-bindings.bash
 
-eval "$(lua $HOME/scripts/z.lua --init bash enhanced once fzf)"
+# zoxide
+eval "$(zoxide init bash)"
 
 # source /tools/Xilinx/Vitis/2021.2/settings64.sh
 alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
