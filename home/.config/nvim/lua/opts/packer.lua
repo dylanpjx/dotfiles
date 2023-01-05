@@ -42,13 +42,15 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+    use 'hrsh7th/cmp-cmdline'
+
+    -- Notes
+    use 'dhruvasagar/vim-table-mode'
+    use 'vim-pandoc/vim-pandoc-syntax'
 
     -- Code
     use 'skywind3000/asyncrun.vim'
     use 'stefandtw/quickfix-reflector.vim'
-    use 'dhruvasagar/vim-table-mode'
-    use 'vim-pandoc/vim-pandoc-syntax'
-    use 'junegunn/vim-easy-align'
     use 'wellle/targets.vim'
     use {
         'mbbill/undotree',
@@ -63,26 +65,19 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
     use {
-        'kylechui/nvim-surround',
-        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        'echasnovski/mini.nvim',
         config = function()
-            require('nvim-surround').setup{}
-        end
-    }
-    use {
-        'windwp/nvim-autopairs',
-        config = function()
-            require('nvim-autopairs').setup{}
-        end
-    }
-    use {
-        'terrortylor/nvim-comment',
-        config = function()
-            require('nvim_comment').setup{}
+            require('mini.ai').setup()
+            require('mini.align').setup()
+            require('mini.comment').setup()
+            require('mini.pairs').setup()
+            require('mini.surround').setup()
         end
     }
 
     -- File
+    use 'nanotee/zoxide.vim'
+    vim.g.zoxide_use_select = true
     use {
         'elihunter173/dirbuf.nvim',
         config = function()
@@ -102,6 +97,8 @@ return require('packer').startup(function(use)
             }
         end
     }
-    use 'nanotee/zoxide.vim'
-    vim.g.zoxide_use_select = true
+
+    if packer_bootstrap then
+        require('packer').sync()
+    end
 end)

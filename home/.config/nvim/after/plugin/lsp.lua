@@ -10,6 +10,8 @@ lsp.ensure_installed({
     'svlangserver',
 })
 
+-- CMP
+
 local cmp = require('cmp')
 local luasnip = require('luasnip')
 
@@ -48,6 +50,25 @@ lsp.setup_nvim_cmp({
     },
     mapping = cmp_mappings,
 })
+
+cmp.setup.cmdline({ '/', '?' }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'buffer' }
+    }
+})
+
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+        { name = 'path' }
+    }, {
+        { name = 'cmdline' }
+    })
+})
+
+
+-- LSP
 
 lsp.on_attach(function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end

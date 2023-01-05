@@ -34,6 +34,8 @@ vim.keymap.set('n', '<leader>fb', '<cmd>FzfLua buffers<CR>', opts)
 vim.keymap.set('n', '<leader>fr', '<cmd>FzfLua oldfiles<CR>', opts)
 vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files<CR>', opts)
 vim.keymap.set('n', '<leader>fp', '<cmd>Tzi<CR>', opts)
-vim.keymap.set('n', '<leader>f', ':FzfLua ', opts)
+
+vim.keymap.set('n', '<leader>fs', '<cmd>FzfLua lsp_document_symbols<CR>', opts)
+vim.keymap.set('n', '<leader>h', '<cmd>FzfLua help_tags<CR>', opts)
 
 vim.cmd("FzfLua register_ui_select")
