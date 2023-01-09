@@ -83,6 +83,8 @@ if !has('win')
     set slowfs=curlftpfs
 endif
 
+set title
+
 " Set custom status line look
 set statusline="  %f %= %A %15s %15d  "
 
