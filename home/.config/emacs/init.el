@@ -7,10 +7,13 @@
   inhibit-startup-message t
   make-backup-files nil
   tab-always-indent 'nil
-  tab-width 2
-  sh-basic-offset 2
+  tab-width 4
+  sh-basic-offset 4
   use-short-answers t   
   visible-bell nil)
+
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -35,9 +38,9 @@
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
 ;; Using garbage magic hack.
- (use-package gcmh
-   :config
-   (gcmh-mode 1))
+(use-package gcmh
+  :config
+  (gcmh-mode 1))
 ;; Setting garbage collection threshold
 (setq gc-cons-threshold 402653184
       gc-cons-percentage 0.6)
@@ -54,6 +57,7 @@
 ;; Packages
 (setq package-archives 
       '(("melpa" . "https://melpa.org/packages/")
+        ("org" . "https://orgmode.org/elpa/")
         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
@@ -98,6 +102,21 @@
   (setq evil-shift-width 2)
   :config
   (evil-mode 1)
+ )
+(use-package evil-surround
+  :after evil
+  :config
+  (global-evil-surround-mode 1))
+(use-package evil-commentary
+  :after evil
+  :config
+  (evil-commentary-mode))
+(use-package evil-collection
+  :after evil
+  :config
+  (setq evil-want-integration t)
+  (evil-collection-init)
+
   (evil-set-leader 'normal (kbd "SPC"))
   (evil-define-key 'normal 'global (kbd "<leader>s") 'save-buffer)
   (evil-define-key 'normal 'global (kbd "<leader>r") 'eval-buffer)
@@ -127,35 +146,25 @@
   (evil-define-key 'motion 'global (kbd "k") 'evil-previous-visual-line)
 
   (evil-define-key 'normal 'global (kbd "<leader>h") 'help-command)
- )
-(use-package evil-surround
-  :after evil
-  :config
-  (global-evil-surround-mode 1))
-(use-package evil-commentary
-  :after evil
-  :config
-  (evil-commentary-mode))
-(use-package evil-collection
-  :after evil
-  :config
-  (setq evil-want-integration t)
-  (evil-collection-init))
+  )
 
 ;; Ivy
 (use-package ivy
   :diminish
   :bind (:map ivy-minibuffer-map
-         ("TAB" . ivy-alt-done)
-         ("C-l" . ivy-alt-done)
-         ("C-j" . ivy-next-line)
+         ("<backtab>" . ivy-previous-line)
+         ("TAB" . ivy-next-line)
          ("C-k" . ivy-previous-line)
+         ("C-j" . ivy-next-line)
+         ("C-l" . ivy-done)
          :map ivy-switch-buffer-map
          ("C-k" . ivy-previous-line)
+         ("C-j" . ivy-next-line)
          ("C-l" . ivy-done)
          ("C-d" . ivy-switch-buffer-kill)
          :map ivy-reverse-i-search-map
          ("C-k" . ivy-previous-line)
+         ("C-j" . ivy-next-line)
          ("C-d" . ivy-reverse-i-search-kill))
   :config
   (ivy-mode 1))
@@ -167,7 +176,7 @@
   (counsel-mode 1))
   (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
   (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
-  (evil-define-key 'normal 'global (kbd "<leader>fb") 'buffer-menu)
+  (evil-define-key 'normal 'global (kbd "<leader>fb") 'counsel-ibuffer)
   (evil-define-key 'normal 'global (kbd "-") 'counsel-find-file)
 (use-package counsel-projectile
   :after projectile
@@ -192,6 +201,54 @@
   :hook (lsp-mode . lsp-ui-mode)
   :custom
   (lsp-ui-doc-position 'bottom))
+
+;; Org
+(defun my/org-mode-setup ()
+  (org-indent-mode)
+  (variable-pitch-mode 1)
+  (visual-line-mode 1))
+(defun my/org-font-setup ()
+  ;; Replace list hyphen with dot
+  (font-lock-add-keywords 'org-mode
+                          '(("^ *\\([-]\\) "
+                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+(use-package org
+    :hook
+    (org-mode . my/org-mode-setup)
+    :config
+    (my/org-font-setup))
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+(dolist (face '((org-level-1 . 1.2)
+                  (org-level-2 . 1.1)
+                  (org-level-3 . 1.05)
+                  (org-level-4 . 1.0)
+                  (org-level-5 . 1.1)
+                  (org-level-6 . 1.1)
+                  (org-level-7 . 1.1)
+                  (org-level-8 . 1.1)))
+    (set-face-attribute (car face) nil :font "Iosevka Term" :weight 'regular :height (cdr face)))
+
+(defun my/org-mode-visual-fill ()
+  (setq visual-fill-column-width 100
+        visual-fill-column-center-text t)
+  (visual-fill-column-mode 1))
+
+(use-package visual-fill-column
+  :hook (org-mode . my/org-mode-visual-fill))
+
+
+;; Ensure that anything that should be fixed-pitch in Org files appears that way
+(set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
+(set-face-attribute 'org-code nil   :inherit '(shadow fixed-pitch))
+(set-face-attribute 'org-table nil   :inherit '(shadow fixed-pitch))
+(set-face-attribute 'org-verbatim nil :inherit '(shadow fixed-pitch))
+(set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
+(set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
+(set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
 
 ;; Completion
 (use-package corfu
