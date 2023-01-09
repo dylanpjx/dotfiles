@@ -61,11 +61,12 @@
         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
-(setq use-package-always-ensure t)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-(eval-when-compile (require 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
 
 (use-package auto-package-update
   :custom
@@ -342,9 +343,7 @@
   :config
   (setq column-number-mode t)
 
-(defvar efs/default-font-size 100)
-(defvar efs/default-variable-font-size 100)
-(set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
+(set-face-attribute 'default nil :font "Iosevka Term" :height 100)
 (set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 110)
 
 ;; Bloat
