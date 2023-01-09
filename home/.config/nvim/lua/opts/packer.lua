@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
 
     -- Code
     use 'skywind3000/asyncrun.vim'
+    vim.g.asyncrun_open = 8
+
     use 'stefandtw/quickfix-reflector.vim'
     use 'wellle/targets.vim'
     use {
