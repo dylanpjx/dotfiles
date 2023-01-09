@@ -4,7 +4,7 @@ local opts = { noremap = true, silent = true }
 
 -- Editor
 vim.keymap.set('i', 'jk', '<Esc>', opts)
-vim.keymap.set('n', '<leader><leader>', '<cmd>noh<CR>', opts)
+vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
 vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', opts)
 vim.keymap.set('n', '<leader>r', '<cmd>so<CR>', { noremap = true })

@@ -6,7 +6,8 @@
  '(dirvish-override-dired-mode nil)
  '(ispell-dictionary nil)
  '(package-selected-packages
-   '(cape corfu vterm lsp-ivy company-box company counsel-projectile gcmh evil-commentary evil-surround counsel lsp-ui lsp-mode magit key-chord which-key use-package undo-fu ivy evil-escape evil-collection doom-themes doom-modeline auto-package-update all-the-icons)))
+   '(undo-tree org-autolist visual-fill-column magit org-bullets cape corfu vterm lsp-ivy company-box company counsel-projectile gcmh evil-commentary evil-surround counsel lsp-ui lsp-mode key-chord which-key use-package undo-fu ivy evil-escape evil-collection doom-themes doom-modeline auto-package-update all-the-icons))
+ '(recentf-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

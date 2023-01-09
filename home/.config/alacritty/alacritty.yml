@@ -47,7 +47,7 @@ scrolling:
 
 # Font configuration
 font:
-  normal: 
+  normal:
     family: Iosevka Term
     style: Medium
 
@@ -57,11 +57,11 @@ font:
 
   italic:
     family: Iosevka Term
-    style: Medium Italic
+    style: Medium Oblique
 
   bold_italic:
     family: Iosevka Term
-    style: Bold Italic
+    style: Bold Oblique
 
   size: 10.0
 
@@ -360,7 +360,7 @@ key_bindings:
 
   # Vi Mode
   #- { key: Space,  mods: Shift|Control, mode: Vi, action: ScrollToBottom          }
-   - { key: Space,  mods: Control,           action: ToggleViMode            }
+   - { key: Space,  mods: Shift|Control,           action: ToggleViMode            }
   # - { key: Escape,                      mode: Vi, action: ClearSelection          }
   #- { key: I,                           mode: Vi, action: ScrollToBottom          }
   #- { key: I,                           mode: Vi, action: ToggleViMode            }

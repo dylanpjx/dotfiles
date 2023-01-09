@@ -46,7 +46,6 @@ return require('packer').startup(function(use)
 
     -- Notes
     use 'dhruvasagar/vim-table-mode'
-    use 'vim-pandoc/vim-pandoc-syntax'
 
     -- Code
     use 'skywind3000/asyncrun.vim'
@@ -64,25 +63,20 @@ return require('packer').startup(function(use)
         'ibhagwan/fzf-lua',
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
-    use {
-        'echasnovski/mini.nvim',
-        config = function()
-            require('mini.ai').setup()
-            require('mini.align').setup()
-            require('mini.comment').setup()
-            require('mini.pairs').setup()
-            require('mini.surround').setup()
-        end
-    }
+    use 'echasnovski/mini.nvim'
 
     -- File
     use 'nanotee/zoxide.vim'
     vim.g.zoxide_use_select = true
     use {
-        'elihunter173/dirbuf.nvim',
+        'stevearc/oil.nvim',
         config = function()
-            require('dirbuf').setup{
-                vim.keymap.set('n', '<leader>e', '<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>', opts)
+            require('oil').setup{
+                keymaps = {
+                    ["<C-h>"] = false
+                },
+                vim.keymap.set('n', '<leader>e', '<cmd>vsp<bar>wincmd L<bar>Oil<CR>', opts),
+                vim.keymap.set("n", "-", require("oil").open, opts)
             }
         end
     }

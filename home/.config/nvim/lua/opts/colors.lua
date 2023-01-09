@@ -6,7 +6,7 @@ vim.opt.winbar = '%t'
 vim.api.nvim_exec([[
     set t_Co=256
 
-    set cursorline
+    set nocursorline
     hi cursorline gui=bold guibg=NONE
     hi cursorlinenr guibg=NONE
 
