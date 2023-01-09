@@ -13,7 +13,7 @@ elif (( $(echo "$brightness < 0" | bc -l) )); then
 fi
 echo $brightness
 
-xrandr --output DP-0 --brightness $brightness
+xrandr --output DP-2 --brightness $brightness
 xrandr --output HDMI-0 --brightness $brightness
 
 brightness=$(echo "$brightness * 100" | bc -l)
