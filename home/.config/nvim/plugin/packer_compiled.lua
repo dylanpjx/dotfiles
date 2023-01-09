@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -114,12 +119,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
-  ["dirbuf.nvim"] = {
-    config = { "\27LJ\2\2¤\1\0\0\a\1\t\1\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\3\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0)<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>\14<leader>e\6n\bset\vkeymap\bvim\nsetup\vdirbuf\frequire\3€€À™\4\0" },
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/dirbuf.nvim",
-    url = "https://github.com/elihunter173/dirbuf.nvim"
   },
   ["dracula.nvim"] = {
     loaded = true,
@@ -156,38 +155,32 @@ _G.packer_plugins = {
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nvim-autopairs"] = {
-    config = { "\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+  ["mini.nvim"] = {
+    config = { "\27LJ\2\2¶\1\0\0\2\0\a\0\0266\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\5\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\6\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\18mini.surround\15mini.pairs\17mini.comment\15mini.align\nsetup\fmini.ai\frequire\0" },
     loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
+    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-comment"] = {
-    config = { "\27LJ\2\2>\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\17nvim_comment\frequire\0" },
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-comment",
-    url = "https://github.com/terrortylor/nvim-comment"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-surround"] = {
-    config = { "\27LJ\2\2?\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-surround",
-    url = "https://github.com/kylechui/nvim-surround"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oil.nvim"] = {
+    config = { "\27LJ\2\2ò\1\0\0\a\1\14\1\0306\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0016\2\6\0009\2\a\0029\2\b\2'\3\t\0'\4\n\0'\5\v\0-\6\0\0B\2\5\2>\2\1\0016\2\6\0009\2\a\0029\2\b\2'\3\t\0'\4\f\0006\5\0\0'\6\1\0B\5\2\0029\5\r\5-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0\topen\6-&<cmd>vsp<bar>wincmd L<bar>Oil<CR>\14<leader>e\6n\bset\vkeymap\bvim\fkeymaps\1\0\0\1\0\1\n<C-h>\1\nsetup\boil\frequire\5€€À™\4\0" },
+    loaded = true,
+    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -209,20 +202,10 @@ _G.packer_plugins = {
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-easy-align"] = {
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/vim-easy-align",
-    url = "https://github.com/junegunn/vim-easy-align"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/dylan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-pandoc-syntax"] = {
-    loaded = true,
-    path = "/home/dylan/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
-    url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
   },
   ["vim-table-mode"] = {
     loaded = true,
@@ -237,26 +220,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\2>\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: dirbuf.nvim
-time([[Config for dirbuf.nvim]], true)
-try_loadstring("\27LJ\2\2¤\1\0\0\a\1\t\1\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\3\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0)<cmd>vsp<bar>wincmd L<bar>Dirbuf<CR>\14<leader>e\6n\bset\vkeymap\bvim\nsetup\vdirbuf\frequire\3€€À™\4\0", "config", "dirbuf.nvim")
-time([[Config for dirbuf.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\2?\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
+-- Config for: mini.nvim
+time([[Config for mini.nvim]], true)
+try_loadstring("\27LJ\2\2¶\1\0\0\2\0\a\0\0266\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\5\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\6\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\18mini.surround\15mini.pairs\17mini.comment\15mini.align\nsetup\fmini.ai\frequire\0", "config", "mini.nvim")
+time([[Config for mini.nvim]], false)
 -- Config for: Navigator.nvim
 time([[Config for Navigator.nvim]], true)
 try_loadstring("\27LJ\2\2×\2\0\0\a\1\15\1+6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\5\0006\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\a\0'\5\b\0-\6\0\0B\2\5\2>\2\1\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\t\0'\5\n\0-\6\0\0B\2\5\2>\2\2\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\v\0'\5\f\0-\6\0\0B\2\5\2>\2\3\0016\2\3\0009\2\4\0029\2\5\2'\3\6\0'\4\r\0'\5\14\0-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0\27<CMD>NavigatorDown<CR>\n<C-j>\25<CMD>NavigatorUp<CR>\n<C-k>\28<CMD>NavigatorRight<CR>\n<C-l>\27<CMD>NavigatorLeft<CR>\n<C-h>\6n\bset\vkeymap\bvim\nsetup\14Navigator\frequire\t€€À™\4\0", "config", "Navigator.nvim")
 time([[Config for Navigator.nvim]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\2ò\1\0\0\a\1\14\1\0306\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0016\2\6\0009\2\a\0029\2\b\2'\3\t\0'\4\n\0'\5\v\0-\6\0\0B\2\5\2>\2\1\0016\2\6\0009\2\a\0029\2\b\2'\3\t\0'\4\f\0006\5\0\0'\6\1\0B\5\2\0029\5\r\5-\6\0\0B\2\5\0?\2\0\0B\0\2\1K\0\1\0\0\0\topen\6-&<cmd>vsp<bar>wincmd L<bar>Oil<CR>\14<leader>e\6n\bset\vkeymap\bvim\fkeymaps\1\0\0\1\0\1\n<C-h>\1\nsetup\boil\frequire\5€€À™\4\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

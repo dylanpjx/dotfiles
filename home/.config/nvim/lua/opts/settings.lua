@@ -47,15 +47,22 @@ o.viewoptions = 'cursor,folds'
 vim.api.nvim_exec([[
     autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=300 }
 
-    autocmd FileType qf wincmd J " qf always on bottom
+    " qf always on bottom
+    autocmd FileType qf wincmd J
+
+    " start term in insert mode
     autocmd TermOpen * startinsert
 
+    " restore view
     au BufWinLeave *.* mkview!
     au BufWinEnter *.* silent! loadview
 
     au FileType md set cc=117
-    augroup pandoc_syntax
-        au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+    
+    " auto mkdir on new file
+    augroup Mkdir
+      autocmd!
+      autocmd BufWritePre * call mkdir(expand("<afile>:p:h"), "p")
     augroup END
 
     command! MakeTags !ctags -R .
@@ -65,5 +72,4 @@ vim.api.nvim_exec([[
       set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
       set grepformat=%f:%l:%c:%m
     endif
-
 ]], false)

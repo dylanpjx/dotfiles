@@ -11,7 +11,6 @@ lsp.ensure_installed({
 })
 
 -- CMP
-
 local cmp = require('cmp')
 local luasnip = require('luasnip')
 
@@ -44,7 +43,7 @@ lsp.setup_nvim_cmp({
     },
     sources = {
         { name = 'path' },
-        { name = 'buffer', keyword_length = 2 },
+        { name = 'buffer', keyword_length = 3 },
         { name = 'nvim_lsp', keyword_length = 2 },
         { name = 'luasnip', keyword_length = 2 },
     },
@@ -69,7 +68,6 @@ cmp.setup.cmdline(':', {
 
 
 -- LSP
-
 lsp.on_attach(function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 
@@ -92,3 +90,8 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = { severity = vim.diagnostic.severity.ERROR },
+    underline = { severity = vim.diagnostic.severity.ERROR }
+})
