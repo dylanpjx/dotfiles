@@ -7,8 +7,8 @@
   inhibit-startup-message t
   make-backup-files nil
   tab-always-indent 'nil
-  tab-width 4
-  sh-basic-offset 4
+  tab-width 2
+  sh-basic-offset 2
   use-short-answers t   
   visible-bell nil)
 
@@ -139,14 +139,21 @@
     (evil-shift-left evil-visual-beginning evil-visual-end)
     (evil-normal-state)
     (evil-visual-restore))
-  (evil-define-key 'visual global-map (kbd ">") 'my/evil-shift-right)
-  (evil-define-key 'visual global-map (kbd "<") 'my/evil-shift-left)
+  (evil-define-key 'visual 'global (kbd ">") 'my/evil-shift-right)
+  (evil-define-key 'visual 'global (kbd "<") 'my/evil-shift-left)
 
   (evil-define-key 'motion 'global (kbd "j") 'evil-next-visual-line)
   (evil-define-key 'motion 'global (kbd "k") 'evil-previous-visual-line)
 
   (evil-define-key 'normal 'global (kbd "<leader>h") 'help-command)
+
+  (evil-define-key 'normal 'global (kbd "<leader>x") 'ispell-word)
   )
+
+(use-package undo-tree)
+(global-undo-tree-mode)
+(setq undo-tree-auto-save-history t)
+(setq undo-tree-history-directory-alist '(("." . "~/config/emacs/undo")))
 
 ;; Ivy
 (use-package ivy
@@ -203,52 +210,62 @@
   (lsp-ui-doc-position 'bottom))
 
 ;; Org
-(defun my/org-mode-setup ()
+(defun efs/org-mode-setup ()
   (org-indent-mode)
+  (org-autolist-mode)
   (variable-pitch-mode 1)
   (visual-line-mode 1))
-(defun my/org-font-setup ()
+
+(defun efs/org-font-setup ()
   ;; Replace list hyphen with dot
   (font-lock-add-keywords 'org-mode
                           '(("^ *\\([-]\\) "
                              (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
-(use-package org
-    :hook
-    (org-mode . my/org-mode-setup)
-    :config
-    (my/org-font-setup))
-(use-package org-bullets
-  :after org
-  :hook (org-mode . org-bullets-mode)
-  :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-(dolist (face '((org-level-1 . 1.2)
+
+  ;; Set faces for heading levels
+  (dolist (face '((org-level-1 . 1.2)
                   (org-level-2 . 1.1)
                   (org-level-3 . 1.05)
                   (org-level-4 . 1.0)
-                  (org-level-5 . 1.1)
-                  (org-level-6 . 1.1)
-                  (org-level-7 . 1.1)
-                  (org-level-8 . 1.1)))
-    (set-face-attribute (car face) nil :font "Iosevka Term" :weight 'regular :height (cdr face)))
+                  (org-level-5 . 1.0)
+                  (org-level-6 . 1.0)
+                  (org-level-7 . 1.0)
+                  (org-level-8 . 1.0)))
+    (set-face-attribute (car face) nil :font "Roboto" :weight 'regular :height (cdr face)))
 
-(defun my/org-mode-visual-fill ()
+  ;; Ensure that anything that should be fixed-pitch in Org files appears that way
+  (set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
+  (set-face-attribute 'org-code nil   :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-table nil   :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-verbatim nil :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
+  (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
+  (set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
+
+(use-package org
+  :hook (org-mode . efs/org-mode-setup)
+  :config
+  (efs/org-font-setup)
+  (evil-define-key 'normal 'global (kbd "<leader>oj") 'org-next-visible-heading)
+  (evil-define-key 'normal 'global (kbd "<leader>ok") 'org-previous-visible-heading)
+  (evil-define-key 'normal 'global (kbd "<leader>o;") 'org-cycle-list-bullet)
+)
+
+(use-package org-bullets
+  :hook (org-mode . org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+(use-package org-autolist
+  :hook (org-mode . org-autolist-mode))
+
+(defun efs/org-mode-visual-fill ()
   (setq visual-fill-column-width 100
         visual-fill-column-center-text t)
   (visual-fill-column-mode 1))
 
 (use-package visual-fill-column
-  :hook (org-mode . my/org-mode-visual-fill))
-
-
-;; Ensure that anything that should be fixed-pitch in Org files appears that way
-(set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
-(set-face-attribute 'org-code nil   :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-table nil   :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-verbatim nil :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
-(set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
-(set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
+  :hook (org-mode . efs/org-mode-visual-fill))
 
 ;; Completion
 (use-package corfu
@@ -328,7 +345,7 @@
 (defvar efs/default-font-size 100)
 (defvar efs/default-variable-font-size 100)
 (set-face-attribute 'default nil :font "Iosevka Term" :height efs/default-font-size)
-(set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 120)
+(set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 110)
 
 ;; Bloat
 (setq custom-file (concat user-emacs-directory "/custom.el"))
