@@ -18,10 +18,10 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq indent-line-function 'insert-tab)
-(defun my-display-numbers-hook ()
+(defun my/display-numbers-hook ()
   (display-line-numbers-mode 1)
   )
-(add-hook 'prog-mode-hook 'my-display-numbers-hook)
+(add-hook 'prog-mode-hook 'my/display-numbers-hook)
 
 (blink-cursor-mode 0)              ; Disable blinking cursor
 (electric-pair-mode 1)             ; Enable auto pairing
@@ -99,7 +99,7 @@
   (setq evil-want-C-i-jump t)
   (setq evil-want-Y-yank-to-eol t)
   (setq evil-split-window-below t)
-  (setq evil-split-window-right t)
+  (setq evil-vsplit-window-right t)
   (setq evil-shift-width 2)
   :config
   (evil-mode 1)
@@ -112,6 +112,15 @@
   :after evil
   :config
   (evil-commentary-mode))
+
+(use-package evil-goggles
+  :after evil
+  :ensure t
+  :config
+  (evil-goggles-mode)
+  (evil-goggles-use-diff-faces))
+  (setq evil-goggles-duration 0.08)
+
 (use-package evil-collection
   :after evil
   :config
@@ -149,12 +158,11 @@
   (evil-define-key 'normal 'global (kbd "<leader>h") 'help-command)
 
   (evil-define-key 'normal 'global (kbd "<leader>x") 'ispell-word)
-  )
 
-(use-package undo-tree)
-(global-undo-tree-mode)
-(setq undo-tree-auto-save-history t)
-(setq undo-tree-history-directory-alist '(("." . "~/config/emacs/undo")))
+  (evil-define-key 'normal 'global (kbd "<leader>t") 'vterm-toggle-cd)
+
+  (evil-define-key 'normal lsp-mode (kbd "<leader>l") lsp-command-map)
+  )
 
 ;; Ivy
 (use-package ivy
@@ -164,7 +172,7 @@
          ("TAB" . ivy-next-line)
          ("C-k" . ivy-previous-line)
          ("C-j" . ivy-next-line)
-         ("C-l" . ivy-done)
+         ("C-l" . ivy-partial-or-done)
          :map ivy-switch-buffer-map
          ("C-k" . ivy-previous-line)
          ("C-j" . ivy-next-line)
@@ -185,7 +193,7 @@
   (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
   (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
   (evil-define-key 'normal 'global (kbd "<leader>fb") 'counsel-ibuffer)
-  (evil-define-key 'normal 'global (kbd "-") 'counsel-find-file)
+  (evil-define-key 'normal 'global (kbd "<leader>ff") 'counsel-find-file)
 (use-package counsel-projectile
   :after projectile
   :config (counsel-projectile-mode))
@@ -199,6 +207,9 @@
 
 ;; LSP
 (use-package lsp-mode
+  :hook
+  ((python-mode . lsp)
+  (cpp-mode . lsp))
   :commands (lsp lsp-deferred)
   :init
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
@@ -210,14 +221,22 @@
   :custom
   (lsp-ui-doc-position 'bottom))
 
+(use-package lsp-ivy)
+
 ;; Org
-(defun efs/org-mode-setup ()
+(require 'org-tempo)
+(add-hook 'org-mode-hook (lambda ()
+           (setq-local electric-pair-inhibit-predicate
+                   `(lambda (c)
+                  (if (char-equal c ?<) t (,electric-pair-inhibit-predicate c))))))
+
+(defun my/org-mode-setup ()
   (org-indent-mode)
   (org-autolist-mode)
   (variable-pitch-mode 1)
   (visual-line-mode 1))
 
-(defun efs/org-font-setup ()
+(defun my/org-font-setup ()
   ;; Replace list hyphen with dot
   (font-lock-add-keywords 'org-mode
                           '(("^ *\\([-]\\) "
@@ -244,12 +263,14 @@
   (set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
 
 (use-package org
-  :hook (org-mode . efs/org-mode-setup)
+  :hook (org-mode . my/org-mode-setup)
   :config
-  (efs/org-font-setup)
-  (evil-define-key 'normal 'global (kbd "<leader>oj") 'org-next-visible-heading)
-  (evil-define-key 'normal 'global (kbd "<leader>ok") 'org-previous-visible-heading)
-  (evil-define-key 'normal 'global (kbd "<leader>o;") 'org-cycle-list-bullet)
+  (my/org-font-setup)
+  (evil-define-key 'normal 'global (kbd "]h") 'org-next-visible-heading)
+  (evil-define-key 'normal 'global (kbd "[h") 'org-previous-visible-heading)
+  (evil-define-key 'normal 'global (kbd "]i") 'org-next-item)
+  (evil-define-key 'normal 'global (kbd "[i") 'org-previous-item)
+  (evil-define-key 'normal 'global (kbd "[-") 'org-cycle-list-bullet)
 )
 
 (use-package org-bullets
@@ -260,13 +281,13 @@
 (use-package org-autolist
   :hook (org-mode . org-autolist-mode))
 
-(defun efs/org-mode-visual-fill ()
+(defun my/org-mode-visual-fill ()
   (setq visual-fill-column-width 100
         visual-fill-column-center-text t)
   (visual-fill-column-mode 1))
 
 (use-package visual-fill-column
-  :hook (org-mode . efs/org-mode-visual-fill))
+  :hook (org-mode . my/org-mode-visual-fill))
 
 ;; Completion
 (use-package corfu
@@ -332,6 +353,24 @@
   :commands vterm
   :config
   (setq vterm-max-scrollback 10000))
+
+(use-package vterm-toggle
+  :after vterm
+  :config
+  (setq vterm-toggle-fullscreen-p nil)
+  (add-to-list 'display-buffer-alist
+              '((lambda (buffer-or-name _)
+                    (let ((buffer (get-buffer buffer-or-name)))
+                      (with-current-buffer buffer
+                        (or (equal major-mode 'vterm-mode)
+                            (string-prefix-p vterm-buffer-name (buffer-name buffer))))))
+                  (display-buffer-reuse-window display-buffer-at-bottom)
+                  ;;(display-buffer-reuse-window display-buffer-in-direction)
+                  ;;display-buffer-in-direction/direction/dedicated is added in emacs27
+                  ;;(direction . bottom)
+                  ;;(dedicated . t) ;dedicated is supported in emacs27
+                  (reusable-frames . visible)
+                  (window-height . 0.3))))
 
 ;; Themes
 (use-package doom-themes
