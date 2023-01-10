@@ -150,7 +150,7 @@ hc attr theme.title_font 'Roboto:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
-hc attr theme.border_width 3
+hc attr theme.border_width 4
 hc attr theme.inner_width 0
 hc attr theme.outer_width 0
 hc attr theme.active.color '#0f0f0f'
@@ -159,7 +159,7 @@ hc attr theme.urgent.color '#7811A1dd'
 
 hc attr theme.active.outer_color '#f0f0f0'
 hc attr theme.normal.outer_color '#0f0f0f'
-hc attr theme.active.inner_color '#f0f0f0'
+hc attr theme.active.inner_color '#bd93f9' # change this to change active border color
 hc attr theme.normal.inner_color '#0f0f0f'
 
 # copy inner color to outer_color
