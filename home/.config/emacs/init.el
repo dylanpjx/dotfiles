@@ -37,6 +37,16 @@
 (global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
+;; Flycheck
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Flycheck*" eos)
+              (display-buffer-reuse-window
+               display-buffer-in-side-window)
+              (side            . bottom)
+              (reusable-frames . visible)
+              (window-height   . 0.2)))
+(setq flycheck-check-syntax-automatically '(save mode-enable))
+
 ;; Using garbage magic hack.
 (use-package gcmh
   :config
@@ -130,6 +140,7 @@
   (evil-set-leader 'normal (kbd "SPC"))
   (evil-define-key 'normal 'global (kbd "<leader>s") 'save-buffer)
   (evil-define-key 'normal 'global (kbd "<leader>r") 'eval-buffer)
+  (evil-define-key 'normal 'global (kbd "-") 'dired)
 
   (evil-define-key 'normal 'global (kbd "C-h") 'evil-window-left)
   (evil-define-key 'normal 'global (kbd "C-l") 'evil-window-right)
@@ -183,7 +194,11 @@
          ("C-j" . ivy-next-line)
          ("C-d" . ivy-reverse-i-search-kill))
   :config
-  (ivy-mode 1))
+  (ivy-mode 1)
+  (setq ivy-re-builders-alist
+      '((swiper . ivy--regex-plus)
+        (t      . ivy--regex-fuzzy)))
+  )
 
 (use-package counsel
   :custom
@@ -222,6 +237,12 @@
   (lsp-ui-doc-position 'bottom))
 
 (use-package lsp-ivy)
+
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))
 
 ;; Org
 (require 'org-tempo)
@@ -266,11 +287,6 @@
   :hook (org-mode . my/org-mode-setup)
   :config
   (my/org-font-setup)
-  (evil-define-key 'normal 'global (kbd "]h") 'org-next-visible-heading)
-  (evil-define-key 'normal 'global (kbd "[h") 'org-previous-visible-heading)
-  (evil-define-key 'normal 'global (kbd "]i") 'org-next-item)
-  (evil-define-key 'normal 'global (kbd "[i") 'org-previous-item)
-  (evil-define-key 'normal 'global (kbd "[-") 'org-cycle-list-bullet)
 )
 
 (use-package org-bullets
@@ -288,6 +304,8 @@
 
 (use-package visual-fill-column
   :hook (org-mode . my/org-mode-visual-fill))
+
+(use-package pdf-tools)
 
 ;; Completion
 (use-package corfu
@@ -383,7 +401,7 @@
   (setq column-number-mode t)
 
 (set-face-attribute 'default nil :font "Iosevka Term" :height 100)
-(set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 110)
+(set-face-attribute 'variable-pitch nil :font "JetBrainsMono NF" :height 110)
 
 ;; Bloat
 (setq custom-file (concat user-emacs-directory "/custom.el"))
