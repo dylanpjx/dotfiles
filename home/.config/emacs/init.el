@@ -117,7 +117,24 @@
 (use-package evil-surround
   :after evil
   :config
-  (global-evil-surround-mode 1))
+  (global-evil-surround-mode 1)
+  ;; this macro was copied from here: https://stackoverflow.com/a/22418983/4921402
+  (defmacro define-and-bind-quoted-text-object (name key start-regex end-regex)
+    (let ((inner-name (make-symbol (concat "evil-inner-" name)))
+          (outer-name (make-symbol (concat "evil-a-" name))))
+      `(progn
+        (evil-define-text-object ,inner-name (count &optional beg end type)
+          (evil-select-paren ,start-regex ,end-regex beg end type count nil))
+        (evil-define-text-object ,outer-name (count &optional beg end type)
+          (evil-select-paren ,start-regex ,end-regex beg end type count t))
+        (define-key evil-inner-text-objects-map ,key #',inner-name)
+        (define-key evil-outer-text-objects-map ,key #',outer-name))))
+
+  (define-and-bind-quoted-text-object "pipe" "|" "|" "|")
+  (define-and-bind-quoted-text-object "slash" "/" "/" "/")
+  (define-and-bind-quoted-text-object "asterisk" "*" "*" "*")
+  (define-and-bind-quoted-text-object "dollar" "$" "\\$" "\\$") ;; sometimes your have to escape the regex
+  )
 (use-package evil-commentary
   :after evil
   :config
@@ -146,8 +163,8 @@
   (evil-define-key 'normal 'global (kbd "C-l") 'evil-window-right)
   (evil-define-key 'normal 'global (kbd "C-k") 'evil-window-up)
   (evil-define-key 'normal 'global (kbd "C-j") 'evil-window-down)
-  (evil-define-key 'normal 'global (kbd "L") 'tab-bar-switch-to-prev-tab)
-  (evil-define-key 'normal 'global (kbd "H") 'tab-bar-switch-to-next-tab)
+  (evil-define-key 'normal 'global (kbd "L") 'tab-bar-switch-to-next-tab)
+  (evil-define-key 'normal 'global (kbd "H") 'tab-bar-switch-to-prev-tab)
 
   (defun my/evil-shift-right ()
     (interactive)
@@ -173,6 +190,7 @@
   (evil-define-key 'normal 'global (kbd "<leader>t") 'vterm-toggle-cd)
 
   (evil-define-key 'normal lsp-mode (kbd "<leader>l") lsp-command-map)
+
   )
 
 ;; Ivy
@@ -229,6 +247,7 @@
   :init
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   :config
+  (setq lsp-completion-provider :none)
   (lsp-enable-which-key-integration t))
 
 (use-package lsp-ui
@@ -287,6 +306,10 @@
   :hook (org-mode . my/org-mode-setup)
   :config
   (my/org-font-setup)
+  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.2))
+  (setq org-startup-with-latex-preview 1)
+
+  (evil-define-key 'normal 'global (kbd "<leader>SPC") 'org-latex-preview)
 )
 
 (use-package org-bullets
@@ -401,7 +424,7 @@
   (setq column-number-mode t)
 
 (set-face-attribute 'default nil :font "Iosevka Term" :height 100)
-(set-face-attribute 'variable-pitch nil :font "JetBrainsMono NF" :height 110)
+(set-face-attribute 'variable-pitch nil :font "JetBrainsMono NL" :height 110)
 
 ;; Bloat
 (setq custom-file (concat user-emacs-directory "/custom.el"))
