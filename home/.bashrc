@@ -2,14 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export VISUAL=nvim
-export EDITOR="$VISUAL"
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
+
+export VISUAL=/usr/bin/nvim
+export EDITOR="$VISUAL"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -80,9 +80,3 @@ eval "$(zoxide init bash)"
 
 # source /tools/Xilinx/Vitis/2021.2/settings64.sh
 alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
-
-# tmux
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] \
-#   && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   exec tmux
-# fi
