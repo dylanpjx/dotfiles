@@ -97,15 +97,13 @@ set previewoptions+=graphicsdelay:0
 
 mark c ~/.config/
 mark d ~/Downloads/
-mark D ~/qmk_firmware/keyboards/planck/keymaps/dylan/
 mark e /mnt/HDD/Ebooks/
+mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
-mark i ~/Documents/FPGA/iVerilog/
 mark n /mnt/HDD/NUS_EE/
-mark N ~/Documents/Notes/
+mark q ~/qmk_firmware/keyboards/planck/keymaps/dylan/
 mark v /mnt/HDD/Videos/
-mark w /mnt/HDD/Work/
-mark w /media/dylan/USB/
+mark w /mnt/HDD/Wallpapers/
 
 " ------------------------------------------------------------------------------
 
@@ -170,7 +168,7 @@ command! qpdf qpdfview --unique %c %i &, apvlv %c, xpdf %c
 filetype ws.vim nvim -S ws.vim
 
 ".xoj
-filextype *.xopp xournalpp %c &
+filextype *.xopp xournalpp %c %i &
 
 " Pdf
 "filextype {*.pdf},<application/pdf> qpdfview --unique %c %i &, apvlv %c, xpdf %c
@@ -210,7 +208,7 @@ filextype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
           \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
           \*.as[fx]},
          \<video/*>
-        \ vlc %c &,
+        \ vlc %c %i &,
         \ {view using mpv}
         \ nohup mpv %c %i &,
         \ {View using ffplay}
