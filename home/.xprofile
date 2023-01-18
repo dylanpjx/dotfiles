@@ -1,6 +1,6 @@
 picom -b &
 ibus-daemon -drxR &
-feh --bg-fill '/mnt/HDD/Wallpapers/Desktop/reyniskirkja-iceland.jpg' &
+feh --bg-fill '/mnt/HDD/Wallpapers/Desktop/Sediment in the Gulf of Mexico.jpg' &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
 
 sleep 3
