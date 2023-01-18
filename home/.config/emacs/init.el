@@ -18,10 +18,11 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq indent-line-function 'insert-tab)
-(defun my/display-numbers-hook ()
+(defun my/prog-mode-hook ()
   (display-line-numbers-mode 1)
+  (highlight-indent-guides-mode)
   )
-(add-hook 'prog-mode-hook 'my/display-numbers-hook)
+(add-hook 'prog-mode-hook 'my/prog-mode-hook)
 
 (blink-cursor-mode 0)              ; Disable blinking cursor
 (electric-pair-mode 1)             ; Enable auto pairing
@@ -37,15 +38,6 @@
 (global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
-;; Flycheck
-(add-to-list 'display-buffer-alist
-             `(,(rx bos "*Flycheck*" eos)
-              (display-buffer-reuse-window
-               display-buffer-in-side-window)
-              (side            . bottom)
-              (reusable-frames . visible)
-              (window-height   . 0.2)))
-(setq flycheck-check-syntax-automatically '(save mode-enable))
 
 ;; Using garbage magic hack.
 (use-package gcmh
@@ -86,6 +78,12 @@
   :config
   (auto-package-update-maybe)
   (auto-package-update-at-time "09:00"))
+
+(use-package highlight-indent-guides
+  :config
+  (setq highlight-indent-guides-method 'character)
+  (setq highlight-indent-guides-auto-character-face-perc 20)
+  )
 
 ;; Evil
 (use-package undo-fu)
@@ -145,8 +143,8 @@
   :ensure t
   :config
   (evil-goggles-mode)
-  (evil-goggles-use-diff-faces))
-  (setq evil-goggles-duration 0.08)
+  (evil-goggles-use-diff-faces)
+  (setq evil-goggles-duration 0.08))
 
 (use-package evil-collection
   :after evil
@@ -191,6 +189,7 @@
 
   (evil-define-key 'normal lsp-mode (kbd "<leader>l") lsp-command-map)
 
+  (evil-define-key 'normal 'global (kbd "<leader>g") 'magit)
   )
 
 ;; Ivy
@@ -213,9 +212,6 @@
          ("C-d" . ivy-reverse-i-search-kill))
   :config
   (ivy-mode 1)
-  (setq ivy-re-builders-alist
-      '((swiper . ivy--regex-plus)
-        (t      . ivy--regex-fuzzy)))
   )
 
 (use-package counsel
@@ -241,19 +237,27 @@
 ;; LSP
 (use-package lsp-mode
   :hook
-  ((python-mode . lsp)
-  (cpp-mode . lsp))
+  ((cpp-mode . lsp)
+   (js-jsx-mode . lsp)
+   (js-mode . lsp)
+   )
+
   :commands (lsp lsp-deferred)
   :init
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   :config
   (setq lsp-completion-provider :none)
-  (lsp-enable-which-key-integration t))
+  (lsp-enable-which-key-integration t)
+  )
 
 (use-package lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
   :custom
-  (lsp-ui-doc-position 'bottom))
+  (lsp-ui-doc-position 'bottom)
+  (lsp-ui-doc-show-with-cursor t)
+  (lsp-ui-sideline-enable t)
+  (lsp-ui-sideline-show-diagnostics t)
+  )
 
 (use-package lsp-ivy)
 
@@ -262,6 +266,20 @@
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
                           (lsp))))
+
+;; Flycheck
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Flycheck*" eos)
+              (display-buffer-reuse-window
+               display-buffer-in-side-window)
+              (side            . bottom)
+              (reusable-frames . visible)
+              (window-height   . 0.2)))
+(setq flycheck-check-syntax-automatically '(save mode-enable))
+(use-package flymake-diagnostic-at-point
+  :after flymake
+  :config
+  (add-hook 'flymake-mode-hook #'flymake-diagnostic-at-point-mode))
 
 ;; Org
 (require 'org-tempo)
@@ -359,7 +377,8 @@
             (lambda () (setq-local corfu-quit-at-boundary t
                               corfu-quit-no-match t
                               corfu-auto nil)
-              (corfu-mode))))
+              (corfu-mode)))
+  )
 
 (use-package cape
   :defer 10
@@ -386,14 +405,18 @@
 (use-package magit
   :commands magit-status
   :custom
-  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1)
   :config
-  (evil-define-key 'normal 'global (kbd "<leader>g") 'magit)
+  (remove-hook 'server-switch-hook 'magit-commit-diff)
+  (remove-hook 'with-editor-filter-visit-hook 'magit-commit-diff)
+  )
+
 
 (use-package vterm
   :commands vterm
   :config
-  (setq vterm-max-scrollback 10000))
+  (setq vterm-max-scrollback 10000)
+  )
 
 (use-package vterm-toggle
   :after vterm
@@ -411,7 +434,8 @@
                   ;;(direction . bottom)
                   ;;(dedicated . t) ;dedicated is supported in emacs27
                   (reusable-frames . visible)
-                  (window-height . 0.3))))
+                  (window-height . 0.3)))
+  )
 
 ;; Themes
 (use-package doom-themes
@@ -419,9 +443,10 @@
 (use-package all-the-icons)
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
-  :custom ((doom-modeline-height 15)))
+  :custom ((doom-modeline-height 15))
   :config
   (setq column-number-mode t)
+  )
 
 (set-face-attribute 'default nil :font "Iosevka Term" :height 100)
 (set-face-attribute 'variable-pitch nil :font "JetBrainsMono NL" :height 110)
