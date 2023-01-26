@@ -91,8 +91,6 @@ done
 
 # cycle through tags
 hc keybind $Mod-Escape use_previous
-hc keybind $Mod-period use_index +1 --skip-visible
-hc keybind $Mod-comma  use_index -1 --skip-visible
 
 # layouting
 hc keybind $Mod-q close
@@ -195,7 +193,6 @@ hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=9
 hc rule class='Quodlibet' tag=3
-hc rule class='firefox' tag=2
 
 hc set tree_style '╾│ ├└╼─┐'
 
