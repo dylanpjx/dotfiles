@@ -49,4 +49,6 @@ vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh <C-r>% <CR>', { noremap=true })
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
 
--- Verilog
+-- Terminal
+vim.keymap.set('n', '<leader><CR>', '<cmd>ToggleTerm<CR>', opts)
+vim.keymap.set('t', 'jk', '<C-\\><C-n>', opts)

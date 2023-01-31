@@ -66,6 +66,9 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
     use 'echasnovski/mini.nvim'
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 
     -- File
     use 'nanotee/zoxide.vim'
@@ -76,6 +79,9 @@ return require('packer').startup(function(use)
             require('oil').setup{
                 keymaps = {
                     ["<C-h>"] = false
+                },
+                view_options = {
+                    show_hidden = true,
                 },
                 vim.keymap.set('n', '<leader>e', '<cmd>vsp<bar>wincmd L<bar>Oil<CR>', opts),
                 vim.keymap.set("n", "-", require("oil").open, opts)

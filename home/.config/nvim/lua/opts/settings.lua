@@ -1,6 +1,8 @@
 local o = vim.opt
+local api = vim.api
 
 o.title = true
+o.mouse = 'a'
 vim.cmd('set noshowmode')
 o.signcolumn = 'yes'
 o.cc = '80'
@@ -16,8 +18,6 @@ o.smartcase = true
 
 o.list = true
 o.listchars = 'trail:⎯,extends:>,precedes:<,multispace:▏ ,tab:→ '
-
-o.mouse = 'a'
 
 o.swapfile = false
 o.backup = false
@@ -42,10 +42,39 @@ o.foldmethod = 'marker'
 
 vim.cmd('set suffixesadd+=.v,.sv,.lua')
 
+function YankAndConvertVerilogModule()
+    local start_line = vim.fn.search('^module')
+    local end_line = vim.fn.search(');$')
+
+    if start_line == 0 or end_line == 0 then
+        return
+    end
+
+    local lines = end_line - start_line + 1
+    api.nvim_command("normal! "..start_line.."gg\"+y"..lines.."j")
+    vim.fn.setreg("+", reg_content)
+end
+
 -- Autosave cursor position
 o.viewoptions = 'cursor,folds'
-vim.api.nvim_exec([[
-    autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=300 }
+
+-- Auto mkdir 
+api.nvim_create_autocmd("BufWritePre", {
+    callback = function()
+        if vim.tbl_contains({ "oil" }, vim.bo.ft) then
+            return
+        end
+        local dir = vim.fn.expand("<afile>:p:h")
+        if vim.fn.isdirectory(dir) == 0 then
+            vim.fn.mkdir(dir, "p")
+        end
+    end,
+})
+
+api.nvim_exec([[
+    set formatoptions-=cro
+
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=100 }
 
     " qf always on bottom
     autocmd FileType qf wincmd J
@@ -58,12 +87,6 @@ vim.api.nvim_exec([[
     au BufWinEnter *.* silent! loadview
 
     au FileType md set cc=117
-    
-    " auto mkdir on new file
-    augroup Mkdir
-      autocmd!
-      autocmd BufWritePre * call mkdir(expand("<afile>:p:h"), "p")
-    augroup END
 
     command! MakeTags !ctags -R .
     command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
@@ -73,3 +96,4 @@ vim.api.nvim_exec([[
       set grepformat=%f:%l:%c:%m
     endif
 ]], false)
+

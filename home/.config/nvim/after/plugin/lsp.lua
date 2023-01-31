@@ -8,6 +8,7 @@ lsp.ensure_installed({
     'pyright',
     'clangd',
     'svlangserver',
+    'tsserver',
 })
 
 -- CMP
