@@ -7,9 +7,6 @@ alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias v='nvim'
 
-alias vifm='vifmrun .'
-alias f='vifmrun .'
-
 alias p='zathura'
 
 alias hc='herbstclient'
@@ -20,6 +17,9 @@ alias jn='conda activate base;jupyter notebook'
 alias note='cd $HOME/Documents/Notes/;nvim .'
 
 alias weather='curl wttr.in/Singapore'
+
+alias pc='qmk compile -kb planck/rev6_drop -km dylan'
+alias pf='qmk flash -kb planck/rev6_drop -km dylan'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
