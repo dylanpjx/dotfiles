@@ -26,6 +26,7 @@ hc keybind $Mod-Control-l reload
 hc keybind $Mod-Control-q spawn systemctl poweroff
 hc keybind $Mod-Control-s spawn systemctl suspend
 hc keybind $Mod-Control-r spawn reboot
+hc keybind $Mod-Control-t emit_hook togglehidepanel
 
 # apps
 hc keybind $Mod-Return spawn alacritty
@@ -33,7 +34,7 @@ hc keybind $Mod-Shift-Return spawn alacritty -e tmux
 hc keybind $Mod-d spawn rofi -modi drun,window -show window
 hc keybind $Mod-Shift-d spawn rofi -modi drun,window -show drun
 hc keybind $Mod-b spawn firefox
-hc keybind $Mod-e spawn alacritty -e vifmrun
+hc keybind $Mod-e spawn alacritty -e vifm
 hc keybind $Mod-apostrophe spawn pavucontrol
 
 # scripts
@@ -186,13 +187,13 @@ hc rule floatplacement=smart
 # give focus to most common terminals
 #hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on floatplacement=center
-hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on floatplacement=center
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=9
 hc rule class='Quodlibet' tag=3
+hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on
 
 hc set tree_style '╾│ ├└╼─┐'
 
