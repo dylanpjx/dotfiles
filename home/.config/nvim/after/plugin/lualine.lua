@@ -154,8 +154,9 @@ ins_left {
 
 ins_left {
     function()
-        return vim.fn.getcwd()
-    end
+        local filename = '%m ' .. vim.fn.expand('%:p:h:t') .. '/' .. vim.fn.expand('%t')
+        return filename
+   end
 }
 
 -- Add components to right sections

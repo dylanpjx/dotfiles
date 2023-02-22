@@ -58,7 +58,8 @@ end
 -- Autosave cursor position
 o.viewoptions = 'cursor,folds'
 
--- Auto mkdir 
+-- Auto mkdir
+o.autochdir = true
 api.nvim_create_autocmd("BufWritePre", {
     callback = function()
         if vim.tbl_contains({ "oil" }, vim.bo.ft) then
@@ -74,7 +75,7 @@ api.nvim_create_autocmd("BufWritePre", {
 api.nvim_exec([[
     set formatoptions-=cro
 
-    autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=100 }
+    " autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=80 }
 
     " qf always on bottom
     autocmd FileType qf wincmd J

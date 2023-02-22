@@ -43,8 +43,8 @@ vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
 vim.keymap.set('v', '//', 'y/\\V<C-R>=escape(@","/\")<CR><cr>', opts)
 
-vim.keymap.set('n', '<leader>c', '<cmd>AsyncRun comp.sh <C-r>% <CR>', { noremap=true })
-vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh <C-r>% <CR>', { noremap=true })
+vim.keymap.set('n', '<leader>c', '<cmd>AsyncRun comp.sh % <CR>', { noremap=true })
+vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', { noremap=true })
 
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
