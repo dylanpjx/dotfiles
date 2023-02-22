@@ -24,13 +24,16 @@
   )
 (add-hook 'prog-mode-hook 'my/prog-mode-hook)
 
-(blink-cursor-mode 0)              ; Disable blinking cursor
-(electric-pair-mode 1)             ; Enable auto pairing
-(menu-bar-mode -1)                 ; Disable the menu bar
-(scroll-bar-mode -1)               ; Disable visible scrollbar
-(show-paren-mode 1)                ; Match braces
-(tool-bar-mode -1)                 ; Disable the toolbar
-(tooltip-mode -1)                  ; Disable tooltips
+(blink-cursor-mode 0)       ; Disable blinking cursor
+(electric-pair-mode 1)      ; Enable auto pairing
+(menu-bar-mode -1)          ; Disable the menu bar
+(scroll-bar-mode -1)        ; Disable visible scrollbar
+(show-paren-mode 1)         ; Match braces
+(tool-bar-mode -1)          ; Disable the toolbar
+(tooltip-mode -1)           ; Disable tooltips
+(save-place-mode 1)         ; Save cursor location
+(global-auto-revert-mode 1) ; Auto refresh buffers and Dired
+(setq global-auto-revert-non-file-buffers t)
 
 ;; zoom in/out like we do everywhere else.
 (global-set-key (kbd "C-+") 'text-scale-increase)
@@ -219,7 +222,7 @@
   (counsel-linux-app-format-function #'counsel-linux-app-format-function-name-only)
   :config
   (counsel-mode 1))
-  (evil-define-key 'normal 'global (kbd "<leader>/") 'swiper)
+  (evil-define-key 'normal 'global (kbd "<leader>/") 'counsel-projectile-grep)
   (evil-define-key 'normal 'global (kbd "<leader>fr") 'counsel-recentf)
   (evil-define-key 'normal 'global (kbd "<leader>fb") 'counsel-ibuffer)
   (evil-define-key 'normal 'global (kbd "<leader>ff") 'counsel-find-file)
@@ -326,6 +329,7 @@
   (my/org-font-setup)
   (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.2))
   (setq org-startup-with-latex-preview 1)
+  (setq org-preview-latex-default-process 'imagemagick)
 
   (evil-define-key 'normal 'global (kbd "<leader>SPC") 'org-latex-preview)
 )
