@@ -174,10 +174,7 @@ filextype *.xopp xournalpp %c %i &
 "filextype {*.pdf},<application/pdf> qpdfview --unique %c %i &, apvlv %c, xpdf %c
 filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> 
-        " \ pdftotext -nopgbrk %c -*.pdf 
-         \ vifmimg pdfpreview %px %py %pw %ph %c
-         \ %pc
-         \ vifmimg clear
+        \ pdftotext -nopgbrk %c -
 
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
@@ -250,9 +247,7 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ shotwell,
         \ gthumb %c &
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-        \ vifmimg draw %px %py %pw %ph %c
-        \ %pc
-        \ vifmimg clear
+        \ viu --width %pw --height %ph -s %c
         \ identify %f
 
 " OpenRaster
