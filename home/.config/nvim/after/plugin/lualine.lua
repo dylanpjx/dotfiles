@@ -114,6 +114,45 @@ ins_left {
 }
 
 ins_left {
+    function ()
+        local cwd = '  %{fnamemodify(getcwd(), ":t")}'
+        return cwd
+    end,
+    color = { fg = colors.orange }
+}
+
+
+-- Insert mid section. You can make any number of sections in neovim :)
+-- for lualine it's any number greater then 2
+ins_left {
+  function()
+    return '%='
+  end,
+}
+
+ins_left {
+    function()
+        local modified = '%m '
+        local filename = vim.fn.expand('%:p:h:t') .. '/' .. '%t'
+        return modified .. filename
+    end,
+    color = { fg = colors.fg_inactive },
+}
+
+-- Add components to right sections
+
+ins_right {
+  'diagnostics',
+  sources = { 'nvim_diagnostic' },
+  symbols = { error = ' ', warn = ' ', info = ' ' },
+  diagnostics_color = {
+    color_error = { fg = colors.red },
+    color_warn = { fg = colors.yellow },
+    color_info = { fg = colors.cyan },
+  },
+}
+
+ins_right {
   -- Lsp server name .
   function()
     local msg = 'No Active Lsp'
@@ -133,37 +172,13 @@ ins_left {
   color = { fg = colors.cyan },
 }
 
-ins_left {
-  'diagnostics',
-  sources = { 'nvim_diagnostic' },
-  symbols = { error = ' ', warn = ' ', info = ' ' },
-  diagnostics_color = {
-    color_error = { fg = colors.red },
-    color_warn = { fg = colors.yellow },
-    color_info = { fg = colors.cyan },
-  },
+ins_right {
+    'location',
 }
 
--- Insert mid section. You can make any number of sections in neovim :)
--- for lualine it's any number greater then 2
-ins_left {
-  function()
-    return '%='
-  end,
+ins_right { 
+    'progress',
 }
-
-ins_left {
-    function()
-        local filename = '%m ' .. vim.fn.expand('%:p:h:t') .. '/' .. vim.fn.expand('%t')
-        return filename
-   end
-}
-
--- Add components to right sections
-
-ins_right { 'location' }
-
-ins_right { 'progress' }
 
 ins_right {
   'filetype',
