@@ -361,7 +361,7 @@
   (corfu-auto-delay 0.0)
   (corfu-echo-documentation 0.25) ; Enable documentation for completions
   (corfu-preview-current 'insert) ; Do not preview current candidate
-  (corfu-preselect-first nil)
+  (corfu-preselect 'prompt)
   (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
 
   ;; Optionally use TAB for cycling, default is `corfu-complete'.
