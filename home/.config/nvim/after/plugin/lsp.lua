@@ -42,10 +42,11 @@ lsp.setup_nvim_cmp({
         completeopt = 'menu,menuone,noselect'
     },
     sources = {
-        { name = 'path' },
+        { name = 'nvim_lsp_signature_help' },
         { name = 'buffer', keyword_length = 3 },
         { name = 'nvim_lsp', keyword_length = 2 },
         { name = 'luasnip', keyword_length = 2 },
+        { name = 'path' },
     },
     mapping = cmp_mappings,
 })
@@ -85,8 +86,6 @@ lsp.on_attach(function(client, bufnr)
     buf_set_keymap('n', '<leader>ld', '<cmd>lua vim.diagnostic.disable() <CR>', opts)
     buf_set_keymap('n', '<leader>le', '<cmd>lua vim.diagnostic.enable() <CR>', opts)
     buf_set_keymap('n', '<leader>lk', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-
-    buf_set_keymap('n', '<C-k>', '<cmd>NavigatorUp<CR>', opts)
 end)
 
 lsp.setup()

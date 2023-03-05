@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
             {'saadparwaiz1/cmp_luasnip'},
             {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-nvim-lua'},
+            {'hrsh7th/cmp-nvim-lsp-signature-help'},
 
             -- Snippets
             {'L3MON4D3/LuaSnip'},
@@ -55,12 +56,9 @@ return require('packer').startup(function(use)
     use 'wellle/targets.vim'
     use {
         'mbbill/undotree',
-        vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
+        vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<CR>", opts)
     }
-    use {
-        'tpope/vim-fugitive',
-        vim.keymap.set('n', '<leader>g', vim.cmd.Git, opts)
-    }
+    use 'tpope/vim-fugitive'
     use {
         'ibhagwan/fzf-lua',
         requires = { 'nvim-tree/nvim-web-devicons' }
