@@ -18,6 +18,18 @@ return require('packer').startup(function(use)
 
     -- Theme
     use 'Mofiqul/dracula.nvim'
+    use {
+        'akinsho/bufferline.nvim', 
+        requires = 'nvim-tree/nvim-web-devicons',
+        config = function()
+            require('bufferline').setup{
+                options = {
+                    mode = "tabs",
+                    always_show_bufferline = true,
+                }
+            }
+        end
+    }
 
     -- LSP
     use {
@@ -63,8 +75,9 @@ return require('packer').startup(function(use)
     }
     use {
         "akinsho/toggleterm.nvim", tag = '*', config = function()
-        require("toggleterm").setup()
-    end}
+            require("toggleterm").setup()
+        end
+    }
 
     -- File
     use 'nanotee/zoxide.vim'
