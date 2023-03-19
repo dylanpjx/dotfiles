@@ -5,7 +5,7 @@ o.title = true
 o.mouse = 'a'
 vim.cmd('set noshowmode')
 o.signcolumn = 'yes'
-o.cc = '80'
+o.cc = '' --'80'
 
 o.wildmenu = true
 o.wildignorecase = true

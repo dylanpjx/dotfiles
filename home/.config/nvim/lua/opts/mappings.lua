@@ -7,7 +7,6 @@ vim.keymap.set('i', 'jk', '<Esc>', opts)
 vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
 vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', opts)
-vim.keymap.set('n', '<leader>r', '<cmd>so<CR>', { noremap = true })
 
 vim.keymap.set('n', 'j', 'gj', opts)
 vim.keymap.set('n', 'k', 'gk', opts)
@@ -48,6 +47,7 @@ vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', { noremap=true })
 
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
+vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<CR>", opts)
 
 -- Terminal
 vim.keymap.set('n', '<leader><CR>', '<cmd>ToggleTerm<CR>', opts)

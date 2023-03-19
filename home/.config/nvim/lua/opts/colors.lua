@@ -1,7 +1,6 @@
 vim.cmd.colorscheme('dracula')
 vim.opt.termguicolors = true
 vim.opt.laststatus = 3
-vim.opt.winbar = '%t'
 
 vim.api.nvim_exec([[
     set t_Co=256

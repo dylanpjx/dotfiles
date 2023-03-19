@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
 
     -- Theme
     use 'Mofiqul/dracula.nvim'
-    use 'nvim-lualine/lualine.nvim'
 
     -- LSP
     use {
@@ -54,17 +53,16 @@ return require('packer').startup(function(use)
 
     use 'stefandtw/quickfix-reflector.vim'
     use 'wellle/targets.vim'
-    use {
-        'mbbill/undotree',
-        vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<CR>", opts)
-    }
+    use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
+    use 'lewis6991/gitsigns.nvim'
+    use 'ibhagwan/fzf-lua'
     use {
-        'ibhagwan/fzf-lua',
-        requires = { 'nvim-tree/nvim-web-devicons' }
+        'echasnovski/mini.nvim',
+        requires = { 'lewis6991/gitsigns.nvim' }
     }
-    use 'echasnovski/mini.nvim'
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    use {
+        "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
     end}
 

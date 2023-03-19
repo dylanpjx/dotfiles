@@ -2,9 +2,9 @@ local actions = require 'fzf-lua.actions'
 
 require('fzf-lua').setup {
     winopts = {
-        row = 1,
-        width = 1,
-        height = 0.4,
+        -- row = 1,
+        -- width = 1,
+        -- height = 0.4,
 
         keymap = {
             actions = {
@@ -18,17 +18,10 @@ require('fzf-lua').setup {
 }
 
 local fzf_lua = require("fzf-lua")
-local opts = { noremap = true, silent = true }
+local opts = { noremap = true }
 
-vim.keymap.set('n', '<leader>/',
-    function()
-        if fzf_lua.path.is_git_repo(vim.loop.cwd(), true) then
-            param = { cmd = "git grep --line-number --column --color=always" }
-        else
-            param = {}
-        end
-        fzf_lua.live_grep_native(param)
-    end, opts)
+vim.keymap.set('n', '<leader>/', '<cmd>FzfLua lgrep_curbuf<CR>', opts)
+vim.keymap.set('n', '<leader>?', '<cmd>FzfLua live_grep<CR>', opts)
 
 vim.keymap.set('n', '<leader>fb', '<cmd>FzfLua buffers<CR>', opts)
 vim.keymap.set('n', '<leader>fr', '<cmd>FzfLua oldfiles<CR>', opts)
