@@ -29,9 +29,9 @@ o.splitright = true
 o.nu = true
 o.relativenumber = true
 
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
+o.tabstop = 2
+o.softtabstop = 2
+o.shiftwidth = 2
 o.expandtab = true
 o.smartindent = true
 
@@ -58,13 +58,10 @@ end
 -- Autosave cursor position
 o.viewoptions = 'cursor,folds'
 
--- Auto mkdir
 o.autochdir = false
+-- Auto mkdir
 api.nvim_create_autocmd("BufWritePre", {
     callback = function()
-        if vim.tbl_contains({ "oil" }, vim.bo.ft) then
-            return
-        end
         local dir = vim.fn.expand("<afile>:p:h")
         if vim.fn.isdirectory(dir) == 0 then
             vim.fn.mkdir(dir, "p")

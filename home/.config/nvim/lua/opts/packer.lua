@@ -83,21 +83,6 @@ return require('packer').startup(function(use)
     use 'nanotee/zoxide.vim'
     vim.g.zoxide_use_select = true
     use {
-        'stevearc/oil.nvim',
-        config = function()
-            require('oil').setup{
-                keymaps = {
-                    ["<C-h>"] = false
-                },
-                view_options = {
-                    show_hidden = true,
-                },
-                vim.keymap.set('n', '<leader>e', '<cmd>vsp<bar>wincmd L<bar>Oil<CR>', opts),
-                vim.keymap.set("n", "-", require("oil").open, opts)
-            }
-        end
-    }
-    use {
         'numToStr/Navigator.nvim',
         config = function()
             require('Navigator').setup{

@@ -7,6 +7,8 @@ alias ws='nvim -S *.vim'
 alias vim='nvim'
 alias v='nvim'
 
+alias f='vifm .'
+
 alias p='zathura'
 
 alias hc='herbstclient'
