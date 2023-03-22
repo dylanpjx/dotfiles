@@ -69,6 +69,18 @@ api.nvim_create_autocmd("BufWritePre", {
     end,
 })
 
+-- netrw
+vim.netrw_winsize = 20
+vim.g.netrw_banner = 0
+vim.g.netrw_keepdir = 0
+vim.g.netrw_sort_sequence = [[[\/]$,*]] -- show directories first
+vim.g.netrw_sizestyle = "H"
+vim.g.netrw_liststyle = 0
+
+vim.g.netrw_localcopydircmd = "cp -r" -- Enable recursive copy of directories in *nix systems
+vim.g.netrw_localmkdir = "mkdir -p" -- Enable recursive creation of directories in *nix systems
+vim.g.netrw_localrmdir = "rm -r" -- Enable recursive removal of directories in *nix systems
+
 api.nvim_exec([[
     " autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=80 }
 

@@ -31,12 +31,12 @@ vim.keymap.set('n', '<leader>ws', '<cmd>mksession! ws.vim <bar> <bar> <cmd>wqa <
 vim.keymap.set('n', '<silent>gx', '<cmd>!xdg-open <c-r>=shellescape(expand("<cfile>"))<CR><CR>', opts)
 
 -- Navigation
-vim.keymap.set('n', '<C-Up>', '<C-w>+', opts)
-vim.keymap.set('n', '<C-Down>', '<C-w>-', opts)
-vim.keymap.set('n', '<C-Left>', '<C-w><', opts)
-vim.keymap.set('n', '<C-Right>', '<C-w>>', opts)
-vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts)
-vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-Up>', '<C-w>+', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-Down>', '<C-w>-', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-Left>', '<C-w><', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-Right>', '<C-w>>', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-w>O',  '<C-w>_ | <C-w>|', opts)
+vim.api.nvim_buf_set_keymap(0, 'n', '<C-c>', '<C-w>c', opts)
 
 -- Coding
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
