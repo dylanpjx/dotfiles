@@ -4,6 +4,7 @@ local api = vim.api
 o.title = true
 o.mouse = 'a'
 vim.cmd('set noshowmode')
+vim.cmd('set noshowcmd')
 o.signcolumn = 'yes'
 o.cc = '' --'80'
 
@@ -43,16 +44,16 @@ o.foldmethod = 'marker'
 vim.cmd('set suffixesadd+=.v,.sv,.lua')
 
 function YankAndConvertVerilogModule()
-    local start_line = vim.fn.search('^module')
-    local end_line = vim.fn.search(');$')
+  local start_line = vim.fn.search('^module')
+  local end_line = vim.fn.search(');$')
 
-    if start_line == 0 or end_line == 0 then
-        return
-    end
+  if start_line == 0 or end_line == 0 then
+    return
+  end
 
-    local lines = end_line - start_line + 1
-    api.nvim_command("normal! "..start_line.."gg\"+y"..lines.."j")
-    vim.fn.setreg("+", reg_content)
+  local lines = end_line - start_line + 1
+  api.nvim_command("normal! "..start_line.."gg\"+y"..lines.."j")
+  vim.fn.setreg("+", reg_content)
 end
 
 -- Autosave cursor position
@@ -61,12 +62,12 @@ o.viewoptions = 'cursor,folds'
 o.autochdir = false
 -- Auto mkdir
 api.nvim_create_autocmd("BufWritePre", {
-    callback = function()
-        local dir = vim.fn.expand("<afile>:p:h")
-        if vim.fn.isdirectory(dir) == 0 then
-            vim.fn.mkdir(dir, "p")
-        end
-    end,
+  callback = function()
+    local dir = vim.fn.expand("<afile>:p:h")
+    if vim.fn.isdirectory(dir) == 0 then
+      vim.fn.mkdir(dir, "p")
+    end
+  end,
 })
 
 -- netrw
@@ -82,26 +83,26 @@ vim.g.netrw_localmkdir = "mkdir -p" -- Enable recursive creation of directories 
 vim.g.netrw_localrmdir = "rm -r" -- Enable recursive removal of directories in *nix systems
 
 api.nvim_exec([[
-    " autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=80 }
+" autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=80 }
 
-    " qf always on bottom
-    autocmd FileType qf wincmd J
+" qf always on bottom
+autocmd FileType qf wincmd J
 
-    " start term in insert mode
-    autocmd TermOpen * startinsert
+" start term in insert mode
+autocmd TermOpen * startinsert
 
-    " restore view
-    au BufWinLeave *.* mkview!
-    au BufWinEnter *.* silent! loadview
+" restore view
+au BufWinLeave *.* mkview!
+au BufWinEnter *.* silent! loadview
 
-    au FileType md set cc=117
+au FileType md set cc=117
 
-    command! MakeTags !ctags -R .
-    command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+command! MakeTags !ctags -R .
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
-    if executable("rg")
-      set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
-      set grepformat=%f:%l:%c:%m
-    endif
-]], false)
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+  endif
+  ]], false)
 
