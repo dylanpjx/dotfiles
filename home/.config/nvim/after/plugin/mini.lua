@@ -26,7 +26,3 @@ vim.api.nvim_del_keymap('x', 'ys')
 vim.api.nvim_set_keymap('x', 'S', [[:<C-u>lua MiniSurround.add('visual')<CR>]], { noremap = true })
 -- Make special mapping for "add surrounding for line"
 vim.api.nvim_set_keymap('n', 'yss', 'ys_', { noremap = false })
-
-require('mini.statusline').setup({
-    set_vim_settings = false,
-})

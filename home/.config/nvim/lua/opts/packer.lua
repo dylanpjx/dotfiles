@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
 
   -- Theme
   use 'Mofiqul/dracula.nvim'
+  use 'nvim-lualine/lualine.nvim'
   use {
     'akinsho/bufferline.nvim', 
     requires = 'nvim-tree/nvim-web-devicons',
@@ -93,7 +94,6 @@ return require('packer').startup(function(use)
       }
     end
   }
-  use 'theprimeagen/harpoon'
   use 'nvim-lua/plenary.nvim'
 
   if packer_bootstrap then
