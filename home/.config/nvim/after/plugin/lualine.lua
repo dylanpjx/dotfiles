@@ -21,7 +21,14 @@ require('lualine').setup{
     lualine_a = {},
     lualine_b = {'branch', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'location'},
+    lualine_x = {
+      function()
+        return 'ln: %l'
+      end,
+      function()
+        return 'col: %v'
+      end
+    },
     lualine_y = {'progress'},
     lualine_z = {}
   },

@@ -71,7 +71,7 @@ api.nvim_create_autocmd("BufWritePre", {
 })
 
 -- netrw
-vim.netrw_winsize = 20
+vim.netrw_winsize = 50
 vim.g.netrw_banner = 0
 vim.g.netrw_keepdir = 0
 vim.g.netrw_sort_sequence = [[[\/]$,*]] -- show directories first

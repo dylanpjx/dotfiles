@@ -20,13 +20,13 @@ return require('packer').startup(function(use)
   use 'Mofiqul/dracula.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
-    'akinsho/bufferline.nvim', 
+    'akinsho/bufferline.nvim',
     requires = 'nvim-tree/nvim-web-devicons',
     config = function()
       require('bufferline').setup{
         options = {
           mode = "tabs",
-          always_show_bufferline = true,
+          always_show_bufferline = false,
         }
       }
     end
@@ -65,15 +65,11 @@ return require('packer').startup(function(use)
   vim.g.asyncrun_open = 8
 
   use 'stefandtw/quickfix-reflector.vim'
-  use 'wellle/targets.vim'
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
-  use 'lewis6991/gitsigns.nvim'
   use 'ibhagwan/fzf-lua'
-  use {
-    'echasnovski/mini.nvim',
-    requires = { 'lewis6991/gitsigns.nvim' }
-  }
+  use 'echasnovski/mini.nvim'
+  use 'jiangmiao/auto-pairs'
   use {
     "akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
@@ -94,7 +90,6 @@ return require('packer').startup(function(use)
       }
     end
   }
-  use 'nvim-lua/plenary.nvim'
 
   if packer_bootstrap then
     require('packer').sync()
