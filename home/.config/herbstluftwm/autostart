@@ -76,8 +76,8 @@ hc keybind $Mod-Up       resize up +$resizestep
 hc keybind $Mod-Right    resize right +$resizestep
 
 # tags
-tag_names=( {1..9} )
-tag_keys=( {1..9} 0 )
+tag_names=( {1..5} )
+tag_keys=( {1..5} 0 )
 
 hc set default_frame_layout max
 hc rename default "${tag_names[0]}" || true
@@ -132,25 +132,25 @@ hc keybind $Mod-u jumpto urgent
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 
-hc set frame_border_active_color '#222222cc'
+hc set frame_border_active_color '#44475a'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
 hc set frame_bg_active_color '#f0f0f0'
 hc set frame_transparent_width 0
-hc set frame_border_width 2
+hc set frame_border_width 1
 hc set frame_bg_transparent on
 hc set frame_gap 3
 hc set show_frame_decorations focused
 
 hc attr theme.title_when always
-hc attr theme.title_align center
 hc attr theme.title_height 15
+hc attr theme.title_align center
 hc attr theme.title_font 'Roboto:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
-hc attr theme.border_width 4
-hc attr theme.inner_width 0
+hc attr theme.border_width 1
+hc attr theme.inner_width 1
 hc attr theme.outer_width 0
 hc attr theme.active.color '#0f0f0f'
 hc attr theme.normal.color '#0f0f0f'
@@ -191,7 +191,7 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
-hc rule class='discord' tag=9
+hc rule class='discord' tag=4
 hc rule class='Quodlibet' tag=3
 hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on
 

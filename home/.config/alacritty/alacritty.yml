@@ -49,7 +49,7 @@ scrolling:
 font:
   normal:
     family: Iosevka Term
-    style: Medium
+    style: Regular
 
   bold:
     family: Iosevka Term
@@ -57,7 +57,7 @@ font:
 
   italic:
     family: Iosevka Term
-    style: Medium Oblique
+    style: Oblique
 
   bold_italic:
     family: Iosevka Term
