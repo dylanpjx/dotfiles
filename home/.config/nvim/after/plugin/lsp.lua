@@ -22,7 +22,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     else
       fallback()
     end
-  end, {'i', 's'}),
+  end, { 'i', 's' }),
   -- go to previous placeholder in the snippet
   ['<C-p>'] = cmp.mapping(function(fallback)
     if luasnip.jumpable(-1) then
@@ -30,7 +30,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     else
       fallback()
     end
-  end, {'i', 's'}),
+  end, { 'i', 's' }),
   ['<C-b>'] = cmp.mapping.scroll_docs(-4),
   ['<C-f>'] = cmp.mapping.scroll_docs(4),
 })
@@ -43,9 +43,9 @@ lsp.setup_nvim_cmp({
   },
   sources = {
     { name = 'nvim_lsp_signature_help' },
+    { name = 'luasnip', keyword_length = 2 },
     { name = 'buffer', keyword_length = 3 },
     { name = 'nvim_lsp', keyword_length = 2 },
-    { name = 'luasnip', keyword_length = 2 },
     { name = 'path' },
   },
   mapping = cmp_mappings,
@@ -78,14 +78,14 @@ lsp.on_attach(function(client, bufnr)
   local opts = { noremap = true }
 
   -- Mappings
-  keymap('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+  keymap('n', ';w', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 
-  buf_set_keymap('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-  buf_set_keymap('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-  buf_set_keymap('n', '<leader>lf', '<cmd>LspZeroFormat<CR>', opts)
-  buf_set_keymap('n', '<leader>ld', '<cmd>lua vim.diagnostic.disable() <CR>', opts)
-  buf_set_keymap('n', '<leader>le', '<cmd>lua vim.diagnostic.enable() <CR>', opts)
-  buf_set_keymap('n', '<leader>lk', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+  buf_set_keymap('n', ';r', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+  buf_set_keymap('n', ';a', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+  buf_set_keymap('n', ';f', '<cmd>LspZeroFormat<CR>', opts)
+  buf_set_keymap('n', ';d', '<cmd>lua vim.diagnostic.disable() <CR>', opts)
+  buf_set_keymap('n', ';e', '<cmd>lua vim.diagnostic.enable() <CR>', opts)
+  buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
 end)
 
 lsp.setup()

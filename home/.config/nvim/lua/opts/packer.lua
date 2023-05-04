@@ -69,7 +69,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'ibhagwan/fzf-lua'
   use 'echasnovski/mini.nvim'
-  use 'jiangmiao/auto-pairs'
   use {
     "akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()

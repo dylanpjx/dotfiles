@@ -7,6 +7,9 @@ require('fzf-lua').setup {
     -- height = 0.4,
 
     keymap = {
+      fzf = {
+        ["alt-a"] = "select-all+accept",
+      },
       actions = {
         files = {
           ["ctrl-q"] = actions.file_sel_to_qf, -- qf

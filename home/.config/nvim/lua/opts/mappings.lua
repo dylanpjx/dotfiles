@@ -6,6 +6,8 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set('i', 'jk', '<Esc>', opts)
 vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
+vim.keymap.set('n', 'yy', '0y$', opts)
+
 vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', opts)
 
 vim.keymap.set('n', 'j', 'gj', opts)
