@@ -1,3 +1,5 @@
+alias c='clear'
+
 alias xs='xset r rate 250 30'
 alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 
@@ -20,8 +22,8 @@ alias note='cd $HOME/Documents/Notes/;nvim .'
 
 alias weather='curl wttr.in/Singapore'
 
-alias pc='qmk compile -kb planck/rev6_drop -km dylan'
-alias pf='qmk flash -kb planck/rev6_drop -km dylan'
+alias qc='qmk compile -kb planck/rev6_drop -km dylan'
+alias qf='qmk flash -kb planck/rev6_drop -km dylan'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
