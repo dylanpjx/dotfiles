@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from openrazer.client import DeviceManager
 
 device_manager = DeviceManager()

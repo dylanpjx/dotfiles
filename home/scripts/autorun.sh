@@ -6,9 +6,10 @@ function run {
   fi
 }
 
+run nitrogen --restore
+run volumeicon
 run nm-applet
 run firefox
 run quodlibet
 run discord
-# run alacritty -e tmux
 run /usr/bin/emacs --daemon

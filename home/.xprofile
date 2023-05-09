@@ -1,12 +1,9 @@
 picom -b &
-ibus-daemon -drxR &
-feh --bg-fill '/mnt/HDD/Wallpapers/Desktop/Sediment in the Gulf of Mexico.jpg' &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
+nitrogen --restore &
 
-sleep 3
 xset s off
 xset -dpms
 xset s noblank
 xset r rate 250 30
-xset +fp /usr/local/share/fonts
 xset fp rehash
