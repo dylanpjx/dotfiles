@@ -26,7 +26,7 @@ hc keybind $Mod-Control-l reload
 hc keybind $Mod-Control-q spawn systemctl poweroff
 hc keybind $Mod-Control-s spawn systemctl suspend
 hc keybind $Mod-Control-r spawn reboot
-hc keybind $Mod-Control-t emit_hook togglehidepanel
+hc keybind $Mod-t emit_hook togglehidepanel
 
 # apps
 hc keybind $Mod-Return spawn alacritty
@@ -103,7 +103,7 @@ hc keybind $Mod-m spawn $configpath/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
 hc keybind $Mod-z pseudotile toggle
-hc keybind $Mod-t mirror horizontal
+hc keybind $Mod-y mirror horizontal
 
 # The following cycles through the available layouts within a frame, but skips
 # layouts, if the layout change wouldn't affect the actual window positions.
@@ -143,9 +143,9 @@ hc set frame_gap 3
 hc set show_frame_decorations focused
 
 hc attr theme.title_when always
-hc attr theme.title_height 15
+hc attr theme.title_height 14
 hc attr theme.title_align center
-hc attr theme.title_font 'Roboto:pixelsize=12'  # example using Xft
+hc attr theme.title_font 'Terminess Nerd Font:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
@@ -191,7 +191,7 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
-hc rule class='discord' tag=4
+hc rule class='discord' tag=5
 hc rule class='Quodlibet' tag=3
 hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on
 
