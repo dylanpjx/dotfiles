@@ -1,0 +1,10 @@
+nvim vifm qpdfview firefox 
+quodlibet ffmpeg pavucontrol
+python-is-python3 python3-pip default-jre npm nodejs
+fzf ripgrep stow
+texlive-latex-extra texlive-science latexmk ttf-mscorefonts-installer pandoc
+openrazer-meta
+scrot xclip libnotify
+vlc nitrogen sxiv
+qt5ct lxappearance
+xournalpp

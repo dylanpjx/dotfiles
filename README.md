@@ -1,6 +1,6 @@
 # linux-configs
 
-Using Pop!\_OS and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The
+Using Linux Mint and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The
 script uses `stow` to automatically symlink every dotfile in `dotfiles/home` to
 its corresponding config location
 
@@ -11,6 +11,23 @@ sudo add-apt-repository ppa:polychromatic/stable
 sudo add-apt-repository ppa:openrazer/stable
 sudo add-apt-repository ppa:lazka/ppa
 ```
+
+## Themeing
+
+1. lxappearance
+2. qt5ct
+
+## Herbstluftwm
+
+To update to the latest version:
+
+1. Install the latest tarbell from [here](https://herbstluftwm.org/download.html)
+2. Follow the installation instructions from [here](https://github.com/herbstluftwm/herbstluftwm/blob/master/INSTALL)
+3. Once the installation is complete, replace `/usr/bin/herbstluftwm ` and `/usr/bin/herbstclient` with the one in build
+
+## Disable Mouse Accel
+
+- [Arch Wiki](https://wiki.archlinux.org/title/Mouse_acceleration#with_libinput)
 
 ## Audio
 
@@ -37,28 +54,10 @@ sudo add-apt-repository ppa:lazka/ppa
 - `xsetwacom --list`
 - `xev -event button`: Button 1,2,3,8
 
-## AwesomeWM
-
-- Default themes are in `/usr/share/awesome/themes/`
-- [Docs](https://awesomewm.org/doc/api/index.html)
-- [ArchWiki](https://wiki.archlinux.org/title/Awesome)
-
-## Nvim
-
-- Using native LSP now, find language servers [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
-
-## Break on every kernel release
-
-- Digimend drivers
-- [Openrazer](https://openrazer.github.io/#download)
-- [Droidcam](https://www.dev47apps.com/droidcam/linux/)
-- [Ueberzug](https://github.com/seebye/ueberzug)
-
 ## Other utils
 
 - [fd](https://github.com/sharkdp/fd#installation) (Pre-installed on system, need to link to `fd`)
-- [Dragon D&D](https://github.com/mwh/dragon)
-- [Picom](https://github.com/yshui/picom)
 - [FZF](https://github.com/junegunn/fzf)
-- [PtSh](https://github.com/jszczerbinsky/ptSh)
-- [Joplin](https://joplinapp.org/terminal/)
+- [Dragon D&D](https://github.com/mwh/dragon)
+- [Ueberzug](https://github.com/ueber-devel/ueberzug)
+- [Picom](https://github.com/yshui/picom)
