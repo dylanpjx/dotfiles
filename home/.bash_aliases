@@ -22,8 +22,8 @@ alias note='cd $HOME/Documents/Notes/;nvim .'
 
 alias weather='curl wttr.in/Singapore'
 
-alias qc='qmk compile -kb planck/rev6_drop -km dylan'
-alias qf='qmk flash -kb planck/rev6_drop -km dylan'
+alias qc='source ~/venv/bin/activate && qmk compile -kb planck/rev6_drop -km dylan'
+alias qf='source ~/venv/bin/activate && qmk flash -kb planck/rev6_drop -km dylan'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

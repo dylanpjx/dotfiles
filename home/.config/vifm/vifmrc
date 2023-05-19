@@ -100,6 +100,7 @@ mark d ~/Downloads/
 mark e /mnt/HDD/Ebooks/
 mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
+mark k ~/Documents/Keyboard/qmk_firmware/keyboards/planck/keymaps/dylan
 mark n /mnt/HDD/NUS_EE/
 mark q ~/qmk_firmware/keyboards/planck/keymaps/dylan/
 mark v /mnt/HDD/Videos/

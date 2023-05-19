@@ -31,8 +31,7 @@ hc keybind $Mod-t emit_hook togglehidepanel
 # apps
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-Shift-Return spawn alacritty -e tmux
-hc keybind $Mod-d spawn rofi -modi drun,window -show window
-hc keybind $Mod-Shift-d spawn rofi -modi drun,window -show drun
+hc keybind $Mod-d spawn rofi -show combi -combi-modi "window,drun"
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifm
 hc keybind $Mod-apostrophe spawn pavucontrol

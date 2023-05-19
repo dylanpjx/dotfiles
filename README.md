@@ -29,9 +29,16 @@ To update to the latest version:
 
 - [Arch Wiki](https://wiki.archlinux.org/title/Mouse_acceleration#with_libinput)
 
-## Audio
+## Suspend BIOS issue
 
-** Pop uses pipewire now, instructions below are not useful **
+- [Fix](https://www.reddit.com/r/gigabyte/comments/p5ewjn/b550i_pro_ax_f13_bios_sleep_issue_on_linux/?ref=share&ref_source=link)
+
+## Date
+
+- Set date and time on Windows and let it automatically check
+- Go to Linux and type `timedatectl set-local-rtc 1`
+
+## Audio
 
 1. Speakers are on `line-out`, headphones are on `headphone` in `pavucontrol`
 2. If having no audio, use `alsamixer` to check sound card and check if
