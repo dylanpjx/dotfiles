@@ -20,15 +20,8 @@ return require('packer').startup(function(use)
   use 'Mofiqul/dracula.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
-    'akinsho/bufferline.nvim',
-    requires = 'nvim-tree/nvim-web-devicons',
-    config = function()
-      require('bufferline').setup{
-        options = {
-          mode = "tabs",
-          always_show_bufferline = false,
-        }
-      }
+    'crispgm/nvim-tabline', config = function ()
+      require('tabline').setup({opts})
     end
   }
 
@@ -69,13 +62,13 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'ibhagwan/fzf-lua'
   use 'echasnovski/mini.nvim'
-  use {
-    "akinsho/toggleterm.nvim", tag = '*', config = function()
-      require("toggleterm").setup()
-    end
-  }
 
   -- File
+  use 'vifm/vifm.vim'
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+  vim.g.vifm_replace_netrw = 1
+
   use 'nanotee/zoxide.vim'
   vim.g.zoxide_use_select = true
   use {

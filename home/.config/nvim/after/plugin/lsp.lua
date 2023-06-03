@@ -1,13 +1,12 @@
 local lsp = require('lsp-zero')
 
-lsp.preset('recommended')
+lsp.preset({})
 
 lsp.ensure_installed({
   'vimls',
   'pyright',
   'clangd',
-  'svlangserver',
-  'tsserver',
+  'svlangserver'
 })
 
 -- CMP

@@ -1,6 +1,8 @@
 local o = vim.opt
 local api = vim.api
 
+o.timeoutlen = 500
+o.confirm = true
 o.title = true
 o.mouse = 'a'
 vim.cmd('set noshowmode')
@@ -42,19 +44,6 @@ o.virtualedit = 'block'
 o.foldmethod = 'marker'
 
 vim.cmd('set suffixesadd+=.v,.sv,.lua')
-
-function YankAndConvertVerilogModule()
-  local start_line = vim.fn.search('^module')
-  local end_line = vim.fn.search(');$')
-
-  if start_line == 0 or end_line == 0 then
-    return
-  end
-
-  local lines = end_line - start_line + 1
-  api.nvim_command("normal! "..start_line.."gg\"+y"..lines.."j")
-  vim.fn.setreg("+", reg_content)
-end
 
 -- Autosave cursor position
 o.viewoptions = 'cursor,folds'

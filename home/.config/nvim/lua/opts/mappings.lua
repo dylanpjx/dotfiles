@@ -3,12 +3,11 @@ vim.g.mapleader = " "
 local opts = { noremap = true, silent = true }
 
 -- Editor
-vim.keymap.set('i', 'jk', '<Esc>', opts)
 vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
 vim.keymap.set('n', 'yy', '0y$', opts)
-
-vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', opts)
+vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
+vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
 
 vim.keymap.set('n', 'j', 'gj', opts)
 vim.keymap.set('n', 'k', 'gk', opts)
@@ -29,22 +28,20 @@ vim.keymap.set('n', 'H', 'gT', opts)
 vim.keymap.set('n', 'L', 'gt', opts)
 
 vim.keymap.set('n', '<leader>cd', '<cmd>tcd %:p:h<bar>pwd<CR>', opts)
-vim.keymap.set('n', '-', '<cmd>Ex<CR>', opts)
+vim.keymap.set('n', '-', '<cmd>EditVifm<CR>', opts)
 
 vim.keymap.set('n', '<leader>ws', '<cmd>mksession! ws.vim <bar> <bar> <cmd>wqa <CR>', opts)
 vim.keymap.set('n', '<silent>gx', '<cmd>!xdg-open <c-r>=shellescape(expand("<cfile>"))<CR><CR>', opts)
 
 -- Navigation
-vim.keymap.set('n', '<C-Up>', '<C-w>+', opts)
-vim.keymap.set('n', '<C-Down>', '<C-w>-', opts)
-vim.keymap.set('n', '<C-Left>', '<C-w><', opts)
-vim.keymap.set('n', '<C-Right>', '<C-w>>', opts)
-vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts)
-vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
-
+vim.keymap.set('n', 'Up', '<C-w>+', opts)
+vim.keymap.set('n', 'Down', '<C-w>-', opts)
+vim.keymap.set('n', 'Left', '<C-w><', opts)
+vim.keymap.set('n', 'Right', '<C-w>>', opts)
+vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
 -- Coding
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
-vim.keymap.set('v', '//', 'y/\\V<C-R>=escape(@","/\")<CR><cr>', opts)
+vim.keymap.set('v', '//', 'y/\\V<C-R>=escape(@","/\")<CR><CR>', opts)
 
 vim.keymap.set('n', '<leader>c', '<cmd>AsyncRun comp.sh % <CR>', { noremap=true })
 vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', { noremap=true })
@@ -52,7 +49,3 @@ vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', { noremap=true })
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<CR>", opts)
-
--- Terminal
-vim.keymap.set('n', '<leader><CR>', '<cmd>ToggleTerm<CR>', opts)
-vim.keymap.set('t', 'jk', '<C-\\><C-n>', opts)
