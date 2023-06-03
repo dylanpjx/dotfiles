@@ -37,7 +37,8 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1] /'
 }
 
-PS1='\[\e[0;96m\][\h] \[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→\[\e[0m\] '
+# Host: \[\e[0;96m\][\h] 
+PS1='\[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→\[\e[0m\] '
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then

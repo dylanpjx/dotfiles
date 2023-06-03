@@ -101,7 +101,7 @@ mark e /mnt/HDD/Ebooks/
 mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
 mark k ~/Documents/Keyboard/qmk_firmware/keyboards/planck/keymaps/dylan
-mark n /mnt/HDD/NUS_EE/
+mark n ~/Documents/Notes/
 mark q ~/qmk_firmware/keyboards/planck/keymaps/dylan/
 mark v /mnt/HDD/Videos/
 mark w /mnt/HDD/Wallpapers/
@@ -123,6 +123,7 @@ mark w /mnt/HDD/Wallpapers/
 "  %u uses command's output to build a file list
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
+command! e vim %c
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %c.zip %f
@@ -222,6 +223,8 @@ fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \ ffprobe -hide_banner -pretty %c 2>&1
 
 " Web
+filetype {*.njk}
+        \ nvim %c
 filextype {*.html,*.htm},<text/html>
         \ {Open with dwb}
         \ dwb %f %i &,
@@ -230,6 +233,7 @@ filextype {*.html,*.htm},<text/html>
         \ {Open with uzbl}
         \ uzbl-browser %f %i &,
 filetype {*.html,*.htm},<text/html> links, lynx
+
 
 " Object
 filetype {*.o},<application/x-object> nm %f | less
