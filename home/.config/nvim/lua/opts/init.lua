@@ -1,4 +1,4 @@
-require('opts.packer')
+require('opts.lazy')
 require('opts.theme')
 require('opts.settings')
 require('opts.mappings')

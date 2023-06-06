@@ -4,6 +4,7 @@ lsp.preset({})
 
 lsp.ensure_installed({
   'vimls',
+  'lua_ls',
   'pyright',
   'clangd',
   'svlangserver'
@@ -32,6 +33,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   end, { 'i', 's' }),
   ['<C-b>'] = cmp.mapping.scroll_docs(-4),
   ['<C-f>'] = cmp.mapping.scroll_docs(4),
+  ['<CR>'] = cmp.mapping.confirm({select = true})
 })
 
 lsp.setup_nvim_cmp({
