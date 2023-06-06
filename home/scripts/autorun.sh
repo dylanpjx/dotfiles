@@ -11,5 +11,5 @@ run volumeicon
 run nm-applet
 run firefox
 run quodlibet
-run discord
+run discord --disable-gpu
 run /usr/bin/emacs --daemon
