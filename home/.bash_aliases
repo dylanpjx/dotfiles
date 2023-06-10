@@ -22,6 +22,7 @@ alias note='cd $HOME/Documents/Notes/;nvim .'
 
 alias weather='curl wttr.in/Singapore'
 
+alias qmk='source ~/venv/bin/activate && qmk'
 alias qc='source ~/venv/bin/activate && qmk compile -kb planck/rev6_drop -km dylan'
 alias qf='source ~/venv/bin/activate && qmk flash -kb planck/rev6_drop -km dylan'
 
