@@ -23,7 +23,7 @@ Mod=Mod4   # Use the super key as the main modifier
 # system
 hc keybind $Mod-Control-e quit
 hc keybind $Mod-Control-l reload
-hc keybind $Mod-Control-q spawn systemctl poweroff
+hc keybind $Mod-Control-x spawn systemctl poweroff
 hc keybind $Mod-Control-s spawn systemctl suspend
 hc keybind $Mod-Control-r spawn reboot
 hc keybind $Mod-t emit_hook togglehidepanel
@@ -93,7 +93,7 @@ done
 hc keybind $Mod-Escape use_previous
 
 # layouting
-hc keybind $Mod-q close
+hc keybind $Mod-x close
 hc keybind $Mod-r remove
 hc keybind $Mod-f fullscreen toggle
 hc keybind $Mod-g set_attr clients.focus.floating toggle
