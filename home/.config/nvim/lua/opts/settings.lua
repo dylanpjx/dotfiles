@@ -13,7 +13,7 @@ o.cc = '' --'80'
 o.wildmenu = true
 o.wildignorecase = true
 o.wildmode = 'longest:list,full'
-o.completeopt='menu,menuone,noselect'
+o.completeopt = 'menu,menuone,noselect'
 
 o.showmatch = true
 o.ignorecase = true
@@ -68,11 +68,11 @@ vim.g.netrw_sizestyle = "H"
 vim.g.netrw_liststyle = 0
 
 vim.g.netrw_localcopydircmd = "cp -r" -- Enable recursive copy of directories in *nix systems
-vim.g.netrw_localmkdir = "mkdir -p" -- Enable recursive creation of directories in *nix systems
-vim.g.netrw_localrmdir = "rm -r" -- Enable recursive removal of directories in *nix systems
+vim.g.netrw_localmkdir = "mkdir -p"   -- Enable recursive creation of directories in *nix systems
+vim.g.netrw_localrmdir = "rm -r"      -- Enable recursive removal of directories in *nix systems
 
 api.nvim_exec([[
-" autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=80 }
+autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=60 }
 
 " qf always on bottom
 autocmd FileType qf wincmd J
@@ -92,6 +92,7 @@ command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=h
 if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
   set grepformat=%f:%l:%c:%m
-  endif
-  ]], false)
+endif
 
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+]], false)

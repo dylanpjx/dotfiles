@@ -36,7 +36,7 @@ function ()
 end, opts)
 vim.keymap.set('n', '<leader>fp', '<cmd>Tzi<CR>', opts)
 
-vim.keymap.set('n', 'gh', '<cmd>FzfLua lsp_document_symbols<CR>', opts)
+vim.keymap.set('n', '<leader>fs', '<cmd>FzfLua lsp_document_symbols<CR>', opts)
 vim.keymap.set('n', '<leader>h', '<cmd>FzfLua help_tags<CR>', opts)
 
 vim.cmd("FzfLua register_ui_select")

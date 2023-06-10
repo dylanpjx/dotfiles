@@ -1,14 +1,17 @@
 local opts = { noremap = true, silent = true }
 
 -- Editor
+vim.api.nvim_exec([[
+  nnoremap <expr> j v:count ? 'j' : 'gj'
+  nnoremap <expr> k v:count ? 'k' : 'gk'
+]], false)
+
 vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
 vim.keymap.set('n', 'yy', '0y$', opts)
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
 
-vim.keymap.set('n', 'j', 'gj', opts)
-vim.keymap.set('n', 'k', 'gk', opts)
 vim.keymap.set('n', '^', 'g^', opts)
 vim.keymap.set('n', '0', 'g0', opts)
 
@@ -37,6 +40,7 @@ vim.keymap.set('n', 'Down', '<C-w>-', opts)
 vim.keymap.set('n', 'Left', '<C-w><', opts)
 vim.keymap.set('n', 'Right', '<C-w>>', opts)
 vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
+
 -- Coding
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
 vim.keymap.set('v', '//', 'y/\\V<C-R>=escape(@","/\")<CR><CR>', opts)
@@ -46,4 +50,8 @@ vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', { noremap=true })
 
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
-vim.keymap.set('n', '<leader>u', "<cmd>UndotreeToggle<CR>", opts)
+vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<CR>', opts)
+
+-- Diff
+vim.keymap.set('n', 'gh', '<cmd>diffget //2<CR>')
+vim.keymap.set('n', 'gl', '<cmd>diffget //3<CR>')
