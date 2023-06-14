@@ -23,8 +23,7 @@ require('fzf-lua').setup {
 local fzf_lua = require("fzf-lua")
 local opts = { noremap = true }
 
-vim.keymap.set('n', '<leader>/', '<cmd>FzfLua lgrep_curbuf<CR>', opts)
-vim.keymap.set('n', '<leader>?', '<cmd>FzfLua live_grep<CR>', opts)
+vim.keymap.set('n', '<leader>/', '<cmd>FzfLua live_grep<CR>', opts)
 
 vim.keymap.set('n', '<leader>fb', '<cmd>FzfLua buffers<CR>', opts)
 vim.keymap.set('n', '<leader>fr', '<cmd>FzfLua oldfiles<CR>', opts)
