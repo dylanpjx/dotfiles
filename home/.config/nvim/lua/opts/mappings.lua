@@ -10,7 +10,7 @@ vim.api.nvim_exec([[
 
 vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
 
-vim.keymap.set('n', 'yy', '0y$', opts)
+-- vim.keymap.set('n', 'yy', '0y$', opts)
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
 
@@ -41,7 +41,14 @@ vim.keymap.set('n', 'Up', '<C-w>+', opts)
 vim.keymap.set('n', 'Down', '<C-w>-', opts)
 vim.keymap.set('n', 'Left', '<C-w><', opts)
 vim.keymap.set('n', 'Right', '<C-w>>', opts)
-vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
+vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) 
+vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
+
+function PrevTodo()
+  local fname = os.date('%d-%m-%y', os.time() - 24*60*60) .. '.md'
+  vim.cmd('e' .. '$HOME/Documents/Notes/Todo/' .. fname)
+end
+vim.keymap.set('n', '[n', '<cmd>lua PrevTodo()', opts)
 
 -- Coding
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
