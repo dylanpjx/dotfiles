@@ -71,6 +71,8 @@ vim.g.netrw_localcopydircmd = "cp -r" -- Enable recursive copy of directories in
 vim.g.netrw_localmkdir = "mkdir -p"   -- Enable recursive creation of directories in *nix systems
 vim.g.netrw_localrmdir = "rm -r"      -- Enable recursive removal of directories in *nix systems
 
+vim.g.markdown_recommended_style = 0
+
 api.nvim_exec([[
 autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=60 }
 

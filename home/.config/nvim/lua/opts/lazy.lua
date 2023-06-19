@@ -53,8 +53,8 @@ require("lazy").setup({
   -- Notes
   'dhruvasagar/vim-table-mode',
 
-  -- Code
   'skywind3000/asyncrun.vim',
+  -- Code
 
   'stefandtw/quickfix-reflector.vim',
   'mbbill/undotree',
@@ -63,7 +63,6 @@ require("lazy").setup({
   'echasnovski/mini.nvim',
 
   -- File
-  'vifm/vifm.vim',
   'nanotee/zoxide.vim',
   {
     'numToStr/Navigator.nvim',
@@ -80,8 +79,4 @@ require("lazy").setup({
 
 
 vim.g.asyncrun_open = 8
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-vim.g.vifm_replace_netrw = 1
 vim.g.zoxide_use_select = true
