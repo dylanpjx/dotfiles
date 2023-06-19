@@ -33,7 +33,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   end, { 'i', 's' }),
   ['<C-b>'] = cmp.mapping.scroll_docs(-4),
   ['<C-f>'] = cmp.mapping.scroll_docs(4),
-  ['<CR>'] = cmp.mapping.confirm({select = true})
+  ['<CR>'] = cmp.mapping.confirm({ select = false })
 })
 
 lsp.setup_nvim_cmp({
