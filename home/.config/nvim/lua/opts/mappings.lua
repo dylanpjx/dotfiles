@@ -45,10 +45,18 @@ vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts)
 vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
 
 function PrevTodo()
-  local fname = os.date('%d-%m-%y', os.time() - 24*60*60) .. '.md'
+  local date
+
+  if (os.date("%A") == "Monday") then
+    date = os.date('%d-%m-%y', os.time() - 72*60*60)
+  else
+    date = os.date('%d-%m-%y', os.time() - 24*60*60)
+  end
+
+  local fname = date .. '.md'
   vim.cmd('e' .. '$HOME/Documents/Notes/Todo/' .. fname)
 end
-vim.keymap.set('n', '[n', '<cmd>lua PrevTodo()', opts)
+vim.keymap.set('n', '[n', '<cmd>lua PrevTodo()<CR>', opts)
 
 -- Coding
 vim.keymap.set('n', '\\', '<cmd>s/\\s\\+$//e<CR>', opts) -- remove trailing whitespace
