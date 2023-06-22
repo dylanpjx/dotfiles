@@ -53,9 +53,8 @@ require("lazy").setup({
   -- Notes
   'dhruvasagar/vim-table-mode',
 
-  'skywind3000/asyncrun.vim',
   -- Code
-
+  'skywind3000/asyncrun.vim',
   'stefandtw/quickfix-reflector.vim',
   'mbbill/undotree',
   'tpope/vim-fugitive',
