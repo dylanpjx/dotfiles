@@ -5,8 +5,8 @@ o.timeoutlen = 500
 o.confirm = true
 o.title = true
 o.mouse = 'a'
-vim.cmd('set noshowmode')
-vim.cmd('set noshowcmd')
+o.showmode = false
+o.showcmd = false
 o.signcolumn = 'yes'
 o.cc = '' --'80'
 
