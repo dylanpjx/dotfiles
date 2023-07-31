@@ -6,7 +6,7 @@ o.confirm = true
 o.title = true
 o.mouse = 'a'
 o.showmode = false
-o.showcmd = false
+o.showcmd = true
 o.signcolumn = 'yes'
 o.cc = '' --'80'
 
