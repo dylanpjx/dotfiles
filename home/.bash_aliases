@@ -2,6 +2,7 @@ alias c='clear'
 
 alias xs='xset r rate 250 30'
 alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
+alias gl='git log --graph --pretty --all'
 
 alias tmux='TERM=xterm-256color tmux'
 
@@ -18,13 +19,14 @@ alias hc='herbstclient'
 alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 alias jn='conda activate base;jupyter notebook'
 
-alias note='cd $HOME/Documents/Notes/;nvim .'
-
 alias weather='curl wttr.in/Singapore'
 
 alias qmk='source ~/venv/bin/activate && qmk'
 alias qc='source ~/venv/bin/activate && qmk compile -kb planck/rev6_drop -km dylan'
 alias qf='source ~/venv/bin/activate && qmk flash -kb planck/rev6_drop -km dylan'
+
+alias note='cd $HOME/Documents/Notes/Todo;touch $(date +%d-%m-%y).md;nvim $(date +%d-%m-%y).md'
+alias workmnt='sshfs sigaccess:/home/dpang -p 9179 ~/Documents/sigaccess'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
