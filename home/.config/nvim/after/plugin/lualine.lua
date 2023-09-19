@@ -33,7 +33,7 @@ require('lualine').setup {
             end
           end
 
-          return '%t'
+          return '%t %m'
         end,
       },
     },
