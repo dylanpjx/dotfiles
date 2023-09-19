@@ -81,4 +81,4 @@ eval "$(zoxide init bash)"
 
 # source /tools/Xilinx/Vitis/2021.2/settings64.sh
 alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
-source ~/.bash_completion/alacritty
+# source ~/.bash_completion/alacritty
