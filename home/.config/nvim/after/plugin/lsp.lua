@@ -71,8 +71,9 @@ cmp.setup.cmdline(':', {
 
 -- LSP
 lsp.on_attach(function(client, bufnr)
-  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+  lsp.default_keymaps({buffer = bufnr})
 
+  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
   local keymap = vim.keymap.set
