@@ -10,6 +10,14 @@ lsp.ensure_installed({
   'svlangserver'
 })
 
+lsp.skip_server_setup({
+  'vimls',
+  'lua_ls',
+  'pyright',
+  'clangd',
+  'svlangserver'
+})
+
 -- CMP
 local cmp = require('cmp')
 local luasnip = require('luasnip')
