@@ -18,7 +18,8 @@ alias hc='herbstclient'
 alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 alias jn='conda activate base;jupyter notebook'
 
-alias note='cd $HOME/Documents/Notes/;nvim .'
+alias note='cd $HOME/Documents/Notes/Todo;touch $(date +%d-%m-%y).md;nvim $(date +%d-%m-%y).md'
+alias workmnt='sshfs sigaccess:/home/dpang -p 9179 ~/Documents/sigaccess'
 
 alias weather='curl wttr.in/Singapore'
 

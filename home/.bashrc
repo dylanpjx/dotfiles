@@ -38,7 +38,7 @@ parse_git_branch() {
 }
 
 # Host: \[\e[0;96m\][\h] 
-PS1='\[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→\[\e[0m\] '
+PS1='\[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→ \[\e[0m\] '
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
@@ -74,7 +74,7 @@ bind "set show-all-if-ambiguous on"
 # FZF
 export FZF_DEFAULT_COMMAND='fd --hidden --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/fzf/shell/key-bindings.bash
 
 # zoxide
 eval "$(zoxide init bash)"
