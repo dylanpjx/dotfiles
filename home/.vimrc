@@ -1,5 +1,5 @@
 set nocompatible
-colorscheme koehler
+colorscheme elflord
 
 set t_u7=
 set nu rnu
@@ -65,3 +65,17 @@ nnoremap <C-l> <C-w>l
 nnoremap Y y$
 
 nnoremap \\ <cmd>s/\\s\\+$//e<CR>
+
+set laststatus=3
+set statusline=
+set statusline+=%*
+" set statusline+=\ %y " Filetype
+set statusline+=\ %{expand('%:p:h:t')}/%t " Filename
+set statusline+=\ %m " Show if file has been modified
+set statusline+=\ %{&paste?'[P]':''}
+set statusline+=%1*
+
+set statusline+=%= " Right side settings
+set statusline+=%*
+set statusline+=\%3l/%-3L
+set statusline+=\ %3p%% " % in file
