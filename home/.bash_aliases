@@ -23,9 +23,7 @@ alias workmnt='sshfs sigaccess:/home/dpang -p 9179 ~/Documents/sigaccess'
 
 alias weather='curl wttr.in/Singapore'
 
-alias qmk='source ~/venv/bin/activate && qmk'
-alias qc='source ~/venv/bin/activate && qmk compile -kb planck/rev6_drop -km dylan'
-alias qf='source ~/venv/bin/activate && qmk flash -kb planck/rev6_drop -km dylan'
+alias venv='source ~/venv/bin/activate'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

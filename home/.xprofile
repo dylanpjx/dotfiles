@@ -1,10 +1,11 @@
 picom -b &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
 nitrogen --restore &
-kmonad $HOME/Documents/Keyboard/config.kbd &
 
 xset s off
 xset -dpms
 xset s noblank
-xset r rate 250 30
 xset fp rehash
+
+sleep 5
+xset r rate 250 30

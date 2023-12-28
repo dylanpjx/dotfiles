@@ -37,10 +37,10 @@ vim.keymap.set('n', '<leader>ws', '<cmd>mksession! ws.vim <bar> <bar> <cmd>wqa <
 vim.keymap.set('n', '<silent>gx', '<cmd>!xdg-open <c-r>=shellescape(expand("<cfile>"))<CR><CR>', opts)
 
 -- Navigation
-vim.keymap.set('n', 'Up', '<C-w>+', opts)
-vim.keymap.set('n', 'Down', '<C-w>-', opts)
-vim.keymap.set('n', 'Left', '<C-w><', opts)
-vim.keymap.set('n', 'Right', '<C-w>>', opts)
+vim.keymap.set('n', '<Up>', '<C-w>+', opts)
+vim.keymap.set('n', '<Down>', '<C-w>-', opts)
+vim.keymap.set('n', '<Left>', '<C-w><', opts)
+vim.keymap.set('n', '<Right>', '<C-w>>', opts)
 vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) 
 vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
 
