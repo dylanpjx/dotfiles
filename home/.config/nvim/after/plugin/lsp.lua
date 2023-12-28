@@ -12,28 +12,7 @@ lspconfig.pyright.setup{}
 lspconfig.clangd.setup{}
 lspconfig.svlangserver.setup{}
 
-<<<<<<< HEAD
-lsp.ensure_installed({
-  'vimls',
-  'lua_ls',
-  'pyright',
-  'clangd',
-  'svlangserver'
-})
-
-lsp.skip_server_setup({
-  'vimls',
-  'lua_ls',
-  'pyright',
-  'clangd',
-  'svlangserver'
-})
-
--- CMP
-local cmp = require('cmp')
-=======
 local cmp     = require('cmp')
->>>>>>> 34af131
 local luasnip = require('luasnip')
 
 cmp.setup({
