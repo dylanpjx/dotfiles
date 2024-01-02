@@ -41,21 +41,22 @@ vim.keymap.set('n', '<Up>', '<C-w>+', opts)
 vim.keymap.set('n', '<Down>', '<C-w>-', opts)
 vim.keymap.set('n', '<Left>', '<C-w><', opts)
 vim.keymap.set('n', '<Right>', '<C-w>>', opts)
-vim.keymap.set('n', '<C-w>O',  '<C-w>_ | <C-w>|', opts) 
+vim.keymap.set('n', '<C-w>O', '<C-w>_ | <C-w>|', opts)
 vim.keymap.set('n', '<C-c>', '<C-w>c', opts)
 
 function PrevTodo()
-  local date
+    local date
 
-  if (os.date("%A") == "Monday") then
-    date = os.date('%d-%m-%y', os.time() - 72*60*60)
-  else
-    date = os.date('%d-%m-%y', os.time() - 24*60*60)
-  end
+    if (os.date("%A") == "Monday") then
+        date = os.date('%d-%m-%y', os.time() - 72 * 60 * 60)
+    else
+        date = os.date('%d-%m-%y', os.time() - 24 * 60 * 60)
+    end
 
-  local fname = date .. '.md'
-  vim.cmd('e' .. '$HOME/Documents/Notes/Todo/' .. fname)
+    local fname = date .. '.md'
+    vim.cmd('e' .. '$HOME/Documents/Notes/Todo/' .. fname)
 end
+
 vim.keymap.set('n', '[n', '<cmd>lua PrevTodo()<CR>', opts)
 
 -- Coding

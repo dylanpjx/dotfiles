@@ -27,12 +27,8 @@ vim.keymap.set('n', '<leader>/', '<cmd>FzfLua live_grep<CR>', opts)
 
 vim.keymap.set('n', '<leader>fb', '<cmd>FzfLua buffers<CR>', opts)
 vim.keymap.set('n', '<leader>fr', '<cmd>FzfLua oldfiles<CR>', opts)
-vim.keymap.set('n', '<leader>ff',
-function ()
-  local git_root = fzf_lua.path.git_root()
-  if not git_root then return fzf_lua.files() end
-  return fzf_lua.git_files()
-end, opts)
+vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files<CR>', opts)
+vim.keymap.set('n', '<leader>fg', '<cmd>FzfLua git_files<CR>', opts)
 vim.keymap.set('n', '<leader>fp', '<cmd>Tzi<CR>', opts)
 
 vim.keymap.set('n', '<leader>fs', '<cmd>FzfLua lsp_document_symbols<CR>', opts)
