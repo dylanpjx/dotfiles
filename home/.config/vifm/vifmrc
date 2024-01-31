@@ -100,9 +100,9 @@ mark d ~/Downloads/
 mark e /mnt/HDD/Ebooks/
 mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
-mark k ~/Documents/Keyboard/qmk_firmware/keyboards/planck/keymaps/dylan
+mark k ~/Documents/Keyboard/my_qmk/
 mark n ~/Documents/Notes/
-mark q ~/qmk_firmware/keyboards/planck/keymaps/dylan/
+mark m /mnt/HDD/Music/
 mark v /mnt/HDD/Videos/
 mark w /mnt/HDD/Wallpapers/
 
@@ -175,7 +175,10 @@ filextype *.xopp xournalpp %c %i &
 " Pdf
 "filextype {*.pdf},<application/pdf> qpdfview --unique %c %i &, apvlv %c, xpdf %c
 filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
-fileviewer {*.pdf},<application/pdf> 
+fileviewer {*.pdf},<application/pdf>
+        \ vifmimg pdf %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
         \ pdftotext -nopgbrk %c -
 
 " PostScript
@@ -192,6 +195,11 @@ filextype {*.djvu},<image/vnd.djvu>
         \ {View in apvlv}
         \ apvlv %f,
 
+fileviewer *.djvu
+        \ vifmimg djvu %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
         \<audio/*>
@@ -199,6 +207,7 @@ filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus},
        \ ffplay -nodisp -hide_banner -autoexit %c,
        \ {Play using MPlayer}
        \ mplayer %f,
+
 fileviewer {*.mp3},<audio/mpeg> mp3info
 fileviewer {*.flac},<audio/flac> soxi
 
@@ -251,7 +260,11 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {View in shotwell}
         \ shotwell,
         \ gthumb %c &
+
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
         \ viu --width %pw --height %ph -s %c
         \ identify %f
 
