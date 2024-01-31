@@ -40,6 +40,25 @@ parse_git_branch() {
 # Host: \[\e[0;96m\][\h] 
 PS1='\[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→\[\e[0m\] '
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -62,6 +81,7 @@ if [[ -t 0 && $- = *i* ]]; then
 fi
 
 set -o vi
+
 # Perform file completion in a case insensitive fashion
 bind "set completion-ignore-case on"
 
@@ -71,14 +91,31 @@ bind "set completion-map-case on"
 # Display matches for ambiguous patterns at first tab press
 bind "set show-all-if-ambiguous on"
 
+# tmux
+export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
 # FZF
-export FZF_DEFAULT_COMMAND='fd --hidden --type file'
+export FZF_DEFAULT_COMMAND='fdfind --hidden --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-source /usr/share/doc/fzf/examples/key-bindings.bash
+if [ -f /usr/share/bash-completion/completions/fzf ]; then
+    source /usr/share/bash-completion/completions/fzf
+fi
+
+if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+    source /usr/share/doc/fzf/examples/key-bindings.bash
+fi
 
 # zoxide
 eval "$(zoxide init bash)"
 
-# source /tools/Xilinx/Vitis/2021.2/settings64.sh
-alias luamake=/home/dylan/Documents/Github/lua-language-server/3rd/luamake/luamake
+# alacritty
 source ~/.bash_completion/alacritty
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# vivado
+if [ -f /tools/Xilinx/Vivado/2020.2/settings64.sh ]; then
+    source /tools/Xilinx/Vivado/2020.2/settings64.sh
+fi
