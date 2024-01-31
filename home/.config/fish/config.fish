@@ -26,7 +26,7 @@ abbr -a weather 'curl wttr.in/Singapore'
 abbr -a yt 'youtube-dl -f bestaudio -x --audio-format mp3'
 
 abbr -a jn 'conda activate base;jupyter notebook'
-abbr -a venv 'source ~/venv/bin/activate'
+abbr -a venv 'source ~/venv/bin/activate.fish'
 
 abbr -a ll 'ls -alF'
 abbr -a la 'ls -A'
