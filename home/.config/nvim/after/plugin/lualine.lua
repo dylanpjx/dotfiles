@@ -7,6 +7,7 @@ local colors = {
 require('lualine').setup {
   options = {
     icons_enabled = true,
+    section_separators = '', -- weird patch to fix missing intro
     theme = {
       normal = {
         a = { fg = colors.fg, bg = colors.gray },

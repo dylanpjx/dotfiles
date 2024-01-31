@@ -75,3 +75,4 @@ require("lazy").setup({
 
 vim.g.asyncrun_open = 8
 vim.g.zoxide_use_select = true
+vim.g.undotree_SetFocusWhenToggle = true
