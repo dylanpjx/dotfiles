@@ -63,8 +63,8 @@ To update to the latest version:
 
 ## Other utils
 
-- [fd](https://github.com/sharkdp/fd#installation) (Pre-installed on system, need to link to `fd`)
+- [fd](https://github.com/sharkdp/fd#installation)
 - [FZF](https://github.com/junegunn/fzf)
 - [Dragon D&D](https://github.com/mwh/dragon)
-- [Ueberzug](https://github.com/ueber-devel/ueberzug)
+- [Ueberzug](https://github.com/jstkdng/ueberzugpp)
 - [Picom](https://github.com/yshui/picom)
