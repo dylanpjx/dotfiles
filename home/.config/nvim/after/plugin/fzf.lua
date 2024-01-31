@@ -5,6 +5,7 @@ require('fzf-lua').setup {
     -- row = 1,
     -- width = 1,
     -- height = 0.4,
+    preview = { default = 'bat' },
 
     keymap = {
       fzf = {
