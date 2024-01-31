@@ -117,7 +117,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  #vi_mode_style: None
+  vi_mode_style: Block
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -140,7 +140,7 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: /bin/bash
+ program: /bin/fish
  args:
    - --login
 
