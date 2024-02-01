@@ -6,6 +6,6 @@ function fish_user_key_bindings
 
     if test -e /usr/share/doc/fzf/examples/key-bindings.fish
         source /usr/share/doc/fzf/examples/key-bindings.fish
+        fzf_key_bindings
     end
-    fzf_key_bindings
 end
