@@ -17,6 +17,7 @@ SETUVAR _fish_abbr_venv:source\x20\x7e/venv/bin/activate\x2efish
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR _fish_abbr_weather:curl\x20wttr\x2ein/Singapore
 SETUVAR _fish_abbr_ws:nvim\x20\x2dS\x20\x2a\x2evim
+SETUVAR _fish_abbr_x:extract\x20\x2e
 SETUVAR _fish_abbr_xs:xset\x20r\x20rate\x20250\x2030
 SETUVAR _fish_abbr_yp:pwd\x20\x7c\x20xclip\x20\x2dselection\x20clipboard\x3becho\x20\x22\x5c\x22\x24PWD\x5c\x22\x20copied\x20to\x20clipboard\x22
 SETUVAR _fish_abbr_yt:youtube\x2ddl\x20\x2df\x20bestaudio\x20\x2dx\x20\x2d\x2daudio\x2dformat\x20mp3

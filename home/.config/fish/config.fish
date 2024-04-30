@@ -8,6 +8,9 @@ end
 # suppress fish greeting
 set fish_greeting
 
+# env vars
+set -gx EDITOR nvim
+
 # abbr -a
 abbr -a c 'clear'
 
@@ -32,5 +35,6 @@ abbr -a ll 'ls -alF'
 abbr -a la 'ls -A'
 abbr -a l 'ls -CF'
 abbr -a fe 'funced -e nvim'
+abbr -a x 'extract .'
 
 zoxide init fish | source
