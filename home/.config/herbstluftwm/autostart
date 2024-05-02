@@ -22,11 +22,11 @@ Mod=Mod4   # Use the super key as the main modifier
 
 # system
 hc keybind $Mod-Control-e quit
-hc keybind $Mod-Control-l reload
+hc keybind $Mod-Control-l spawn cinnamon-screensaver-command --lock
 hc keybind $Mod-Control-q spawn systemctl poweroff
 hc keybind $Mod-Control-s spawn systemctl suspend
 hc keybind $Mod-Control-r spawn reboot
-hc keybind $Mod-t emit_hook togglehidepanel
+hc keybind $Mod-t reload
 
 # apps
 hc keybind $Mod-Return spawn alacritty
@@ -75,8 +75,8 @@ hc keybind $Mod-Up       resize up +$resizestep
 hc keybind $Mod-Right    resize right +$resizestep
 
 # tags
-tag_names=( {1..5} )
-tag_keys=( {1..5} 0 )
+tag_names=( {1..6} )
+tag_keys=( {1..6} 0 )
 
 hc set default_frame_layout max
 hc rename default "${tag_names[0]}" || true
@@ -131,17 +131,7 @@ hc keybind $Mod-u jumpto urgent
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 
-hc set frame_border_active_color '#44475a'
-hc set frame_border_normal_color '#101010cc'
-hc set frame_bg_normal_color '#565656aa'
-hc set frame_bg_active_color '#f0f0f0'
-hc set frame_transparent_width 0
-hc set frame_border_width 1
-hc set frame_bg_transparent on
-hc set frame_gap 3
-hc set show_frame_decorations focused
-
-hc attr theme.title_when always
+hc attr theme.title_when one_tab
 hc attr theme.title_height 14
 hc attr theme.title_align center
 hc attr theme.title_font 'Terminess Nerd Font:pixelsize=12'  # example using Xft
@@ -160,6 +150,16 @@ hc attr theme.normal.outer_color '#0f0f0f'
 hc attr theme.active.inner_color '#bd93f9' # change this to change active border color
 hc attr theme.normal.inner_color '#0f0f0f'
 
+hc set frame_border_active_color '#44475a'
+hc set frame_border_normal_color '#101010cc'
+hc set frame_bg_normal_color '#565656aa'
+hc set frame_bg_active_color '#f0f0f0'
+hc set frame_transparent_width 0
+hc set frame_border_width 1
+hc set frame_bg_transparent on
+hc set frame_gap 5
+hc set show_frame_decorations focused
+
 # copy inner color to outer_color
 for state in active urgent normal ; do
     hc substitute C theme.${state}.inner_color \
@@ -174,7 +174,7 @@ hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
-hc set swap_monitors_to_get_tag true
+hc set swap_monitors_to_get_tag false
 hc set tabbed_max true
 
 # rules
@@ -192,7 +192,7 @@ hc rule class='Dragon' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=5
 hc rule class='Quodlibet' tag=3
-hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on
+hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on maxage=5
 
 hc set tree_style '╾│ ├└╼─┐'
 
