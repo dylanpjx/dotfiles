@@ -132,8 +132,8 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep nvim "+grep %a"
 command! reload :write | restart full
-command! x extract %d %f %n
-command! xd extract -f %a %f %n
+command! x extract %d %f
+command! xd extract -f %a %f
 command! annotate xournalpp %f &
 command! dragon dragon -a -x %f &
 command! qpdf qpdfview --unique %c %i &, apvlv %c, xpdf %c
