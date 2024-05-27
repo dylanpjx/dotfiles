@@ -33,7 +33,7 @@ vi_mode_style = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 9
+size = 8
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
