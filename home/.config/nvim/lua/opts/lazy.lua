@@ -16,7 +16,12 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 require("lazy").setup({
     -- Theme
-    'Mofiqul/dracula.nvim',
+    {
+        'Mofiqul/dracula.nvim',
+        config = function()
+            require('dracula').setup{ transparent_bg = true }
+        end
+    },
     'nvim-lualine/lualine.nvim',
     {
         'crispgm/nvim-tabline',
