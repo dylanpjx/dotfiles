@@ -8,7 +8,15 @@ vim.api.nvim_exec([[
   nnoremap <expr> k v:count ? 'k' : 'gk'
 ]], false)
 
-vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>', opts)
+vim.keymap.set('n', '<Esc>', '<cmd>lua Reset()<CR>', opts)
+function Reset()
+    vim.cmd('noh')
+    vim.opt.cursorline = true
+
+    vim.defer_fn(function()
+        vim.opt.cursorline = false
+    end, 200)
+end
 
 -- vim.keymap.set('n', 'yy', '0y$', opts)
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
