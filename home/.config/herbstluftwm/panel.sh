@@ -86,7 +86,6 @@ hc pad $monitor $panel_height
     visible=true
     date=""
     windowtitle=""
-    mouse_batt=""
     while true ; do
 
         ### Output ###
@@ -136,7 +135,7 @@ hc pad $monitor $panel_height
             $configpath/mystate;\
             notify-send -t 1000 'State saved')Save state^ca()"
         calendar="^ca(1,gsimplecal)$date^ca()"
-        right="^bg() $separator $calendar $separator $mouse_batt"
+        right="^bg() $separator $calendar"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
         width=$($textwidth "$font" "$right_text_only    ")
@@ -161,7 +160,6 @@ hc pad $monitor $panel_height
                 ;;
             date) # event refreshes every minute
                 #echo "resetting date" >&2
-                mouse_batt="$(mouse_batt.py)"
                 date="${cmd[@]:1}"
                 ;;
             quit_panel)

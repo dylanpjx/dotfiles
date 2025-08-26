@@ -21,18 +21,15 @@ hc keyunbind --all
 Mod=Mod4   # Use the super key as the main modifier
 
 # system
-hc keybind $Mod-Control-e quit
+hc keybind $Mod-Control-e spawn $HOME/scripts/rofi/powermenu.sh
 hc keybind $Mod-Control-l reload
-hc keybind $Mod-Control-q spawn systemctl poweroff
-hc keybind $Mod-Control-s spawn systemctl suspend
-hc keybind $Mod-Control-r spawn reboot
 
 # apps
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-Shift-Return spawn alacritty -e tmux
 hc keybind $Mod-d spawn rofi -show combi -combi-modi "window,drun"
 hc keybind $Mod-b spawn firefox
-hc keybind $Mod-e spawn alacritty -e vifm
+hc keybind $Mod-e spawn alacritty -e vifmrun
 hc keybind $Mod-apostrophe spawn pavucontrol
 
 # scripts
@@ -137,7 +134,7 @@ hc attr theme.title_font 'Terminess Nerd Font:pixelsize=12'  # example using Xft
 hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
-hc attr theme.border_width 1
+hc attr theme.border_width 2
 hc attr theme.inner_width 1
 hc attr theme.outer_width 0
 hc attr theme.active.color '#0f0f0f'
@@ -146,9 +143,11 @@ hc attr theme.urgent.color '#7811A1dd'
 
 hc attr theme.active.outer_color '#f0f0f0'
 hc attr theme.normal.outer_color '#0f0f0f'
-hc attr theme.active.inner_color '#bd93f9' # change this to change active border color
+hc attr theme.active.inner_color '#f4cca6' # change this to change active border color
 hc attr theme.normal.inner_color '#0f0f0f'
 
+hc set frame_gap 5
+hc set show_frame_decorations none
 hc set frame_border_active_color '#44475a'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
@@ -156,8 +155,6 @@ hc set frame_bg_active_color '#f0f0f0'
 hc set frame_transparent_width 0
 hc set frame_border_width 1
 hc set frame_bg_transparent on
-hc set frame_gap 5
-hc set show_frame_decorations focused
 
 # copy inner color to outer_color
 for state in active urgent normal ; do
@@ -173,7 +170,7 @@ hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
-hc set swap_monitors_to_get_tag false
+hc set swap_monitors_to_get_tag true
 hc set tabbed_max true
 
 # rules
@@ -215,11 +212,11 @@ done
 pkill trayer
 run=""
 while [ -z "$run" ]; do
-	sleep 1
-	run=$(ps -e | grep dzen)
-	echo "$run"
+    sleep 1
+    run=$(ps -e | grep dzen)
+    echo "$run"
 done
-trayer --edge top --align right --widthtype request --transparent false --tint 0x090909 --height 15 --margin 184 --monitor 1 &
+trayer --edge top --align right --widthtype request --transparent true --alpha 0 --tint 0x101010 --height 15 --margin 184 --monitor 1 &
 
 # restore state
 if [ -f "$configpath/mystate" ]; then
