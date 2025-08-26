@@ -29,6 +29,18 @@ To update to the latest version:
 
 - [Arch Wiki](https://wiki.archlinux.org/title/Mouse_acceleration#with_libinput)
 
+## Xset
+
+/etc/X11/xorg.conf.d/00-keyboard.conf
+
+```
+Section "InputClass"
+    Identifier "system-keyboard"
+    MatchIsKeyboard "on"
+    Option "AutoRepeat" "200 30"
+EndSection
+```
+
 ## Suspend BIOS issue
 
 - [Fix](https://www.reddit.com/r/gigabyte/comments/p5ewjn/b550i_pro_ax_f13_bios_sleep_issue_on_linux/?ref=share&ref_source=link)
@@ -68,3 +80,9 @@ To update to the latest version:
 - [Dragon D&D](https://github.com/mwh/dragon)
 - [Ueberzug](https://github.com/jstkdng/ueberzugpp)
 - [Picom](https://github.com/yshui/picom)
+- [xautocfg](https://github.com/SFTtech/xautocfg)
+
+## Tray icons
+
+- [Sound switcher](https://github.com/yktoo/indicator-sound-switcher)
+- [volumeicon](https://manpages.ubuntu.com/manpages/focal/man1/volumeicon.1.html)
