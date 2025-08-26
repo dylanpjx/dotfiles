@@ -8,9 +8,9 @@ function run {
 
 run nitrogen --restore
 run volumeicon
+run indicator-sound-switcher
 run nm-applet
 run firefox
 run quodlibet
 run discord --disable-gpu
 run /usr/bin/emacs --daemon
-run kmonad $HOME/Documents/Keyboard/config.kbd
