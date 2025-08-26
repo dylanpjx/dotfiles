@@ -1,7 +1,7 @@
 require('mason').setup()
 require('mason-lspconfig').setup {
     ensure_installed = {
-        'vimls', 'lua_ls', 'pyright', 'clangd', 'svlangserver',
+        'vimls', 'lua_ls', 'pyright', 'clangd'
     }
 }
 
@@ -27,7 +27,6 @@ lspconfig.pyright.setup {
     }
 }
 lspconfig.clangd.setup {}
-lspconfig.svlangserver.setup {}
 
 local cmp = require('cmp')
 
