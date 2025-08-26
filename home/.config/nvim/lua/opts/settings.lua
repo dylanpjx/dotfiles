@@ -73,28 +73,68 @@ vim.g.netrw_localrmdir = "rm -r"      -- Enable recursive removal of directories
 
 vim.g.markdown_recommended_style = 0
 
-api.nvim_exec([[
-autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=60 }
+-- Highlight on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        vim.highlight.on_yank { higroup = "IncSearch", timeout = 60 }
+    end,
+})
 
-" qf always on bottom
-autocmd FileType qf wincmd J
+-- Quickfix window always on bottom
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "qf",
+    command = "wincmd J",
+})
 
-" start term in insert mode
-autocmd TermOpen * startinsert
+-- Start terminal in insert mode
+vim.api.nvim_create_autocmd("TermOpen", {
+    pattern = "*",
+    command = "startinsert",
+})
 
-" restore view
-au BufWinLeave *.* mkview!
-au BufWinEnter *.* silent! loadview
+-- Restore view on buffer enter/leave
+vim.api.nvim_create_autocmd("BufWinLeave", {
+    pattern = "*.*",
+    command = "mkview!",
+})
+vim.api.nvim_create_autocmd("BufWinEnter", {
+    pattern = "*.*",
+    command = "silent! loadview",
+})
 
-au FileType md set cc=117
+-- Markdown: set colorcolumn at 117
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "md",
+    callback = function()
+        vim.opt_local.cc = "117"
+    end,
+})
 
-command! MakeTags !ctags -R .
-command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+-- MakeTags command
+vim.api.nvim_create_user_command("MakeTags", "!ctags -R .", {})
 
-if executable("rg")
-  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
-  set grepformat=%f:%l:%c:%m
-endif
+-- R command to run shell commands in a scratch buffer
+vim.api.nvim_create_user_command("R", function(opts)
+    vim.cmd("new")
+    vim.bo.buftype = "nofile"
+    vim.bo.bufhidden = "hide"
+    vim.bo.swapfile = false
+    vim.cmd("read !" .. opts.args)
+end, {
+    nargs = "*",
+    complete = "shellcmd",
+})
 
-autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
-]], false)
+-- Set grepprg and grepformat if ripgrep is available
+if vim.fn.executable("rg") == 1 then
+    vim.opt.grepprg = "rg --vimgrep --smart-case --hidden"
+    vim.opt.grepformat = "%f:%l:%c:%m"
+end
+
+-- Disable auto comment on new line
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+    pattern = "*",
+    callback = function()
+        vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+    end,
+})

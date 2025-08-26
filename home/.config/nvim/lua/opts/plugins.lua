@@ -19,36 +19,37 @@ require("lazy").setup({
     {
         'Mofiqul/dracula.nvim',
         config = function()
-            require('dracula').setup{ transparent_bg = true }
+            require('dracula').setup { transparent_bg = true }
         end
     },
-    'nvim-lualine/lualine.nvim',
+    -- 'nvim-lualine/lualine.nvim',
     {
         'crispgm/nvim-tabline',
         config = function()
             require('tabline').setup({ opts })
         end
     },
-
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+        }
+    },
     -- LSP Support
     'neovim/nvim-lspconfig',
-    'nvim-treesitter/nvim-treesitter', build = ':TSUpdate',
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+    'mason-org/mason.nvim',
+    'mason-org/mason-lspconfig.nvim',
 
     -- Autocompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
-    'saadparwaiz1/cmp_luasnip',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-nvim-lua',
     'hrsh7th/cmp-nvim-lsp-signature-help',
-
-    -- Snippets
-    'L3MON4D3/LuaSnip',
-    'rafamadriz/friendly-snippets',
-
     'hrsh7th/cmp-cmdline',
 
     -- Notes
@@ -59,6 +60,7 @@ require("lazy").setup({
     'stefandtw/quickfix-reflector.vim',
     'mbbill/undotree',
     'tpope/vim-fugitive',
+    'lewis6991/gitsigns.nvim',
     'ibhagwan/fzf-lua',
     'echasnovski/mini.nvim',
 

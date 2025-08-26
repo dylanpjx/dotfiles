@@ -6,7 +6,7 @@ require('mason-lspconfig').setup {
 }
 
 require("nvim-treesitter.configs").setup {
-    ensure_installed = { 'lua', 'vim', 'vimdoc' },
+    ensure_installed = { 'lua', 'verilog', 'vim', 'vimdoc' },
     sync_install = false,
     highlight = { enable = true },
     indent = { enable = true },
@@ -14,7 +14,11 @@ require("nvim-treesitter.configs").setup {
 
 local lspconfig = require('lspconfig')
 lspconfig.vimls.setup {}
-lspconfig.lua_ls.setup {}
+lspconfig.lua_ls.setup {
+    diagnostics = {
+        globals = 'vim'
+    },
+}
 lspconfig.pyright.setup {
     settings = {
         pyright = {
@@ -25,35 +29,12 @@ lspconfig.pyright.setup {
 lspconfig.clangd.setup {}
 lspconfig.svlangserver.setup {}
 
-local cmp     = require('cmp')
-local luasnip = require('luasnip')
+local cmp = require('cmp')
 
 cmp.setup({
     preselect = 'true',
-    snippet = {
-        expand = function(args)
-            luasnip.lsp_expand(args.body) -- For `luasnip` users.
-        end,
-    },
 
     mapping = cmp.mapping.preset.insert({
-        -- go to next placeholder in the snippet
-        ['<C-n>']     = cmp.mapping(function(fallback)
-            if luasnip.jumpable(1) then
-                luasnip.jump(1)
-            else
-                fallback()
-            end
-        end, { 'i', 's' }),
-        -- go to previous placeholder in the snippet
-        ['<C-p>']     = cmp.mapping(function(fallback)
-            if luasnip.jumpable(-1) then
-                luasnip.jump(-1)
-            else
-                fallback()
-            end
-        end, { 'i', 's' }),
-
         ["<Tab>"]     = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<S-Tab>"]   = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
         ['<C-b>']     = cmp.mapping.scroll_docs(-4),
@@ -64,7 +45,7 @@ cmp.setup({
     }),
     sources = {
         { name = 'nvim_lsp_signature_help' },
-        { name = 'luasnip' },
+        { name = 'nvim_lsp' },
         {
             name = 'buffer',
             option = {
@@ -73,7 +54,6 @@ cmp.setup({
                 end
             }
         },
-        { name = 'nvim_lsp' },
         { name = 'path' },
     },
 })
