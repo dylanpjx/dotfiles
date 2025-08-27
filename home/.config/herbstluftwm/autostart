@@ -216,7 +216,7 @@ while [ -z "$run" ]; do
     run=$(ps -e | grep dzen)
     echo "$run"
 done
-trayer --edge top --align right --widthtype request --transparent true --alpha 0 --tint 0x101010 --height 15 --margin 184 --monitor 1 &
+trayer --edge top --align right --widthtype request --transparent true --alpha 0 --tint 0x101010 --height 15 --margin 145 --monitor 1 &
 
 # restore state
 if [ -f "$configpath/mystate" ]; then
