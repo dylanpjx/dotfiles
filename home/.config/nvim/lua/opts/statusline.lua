@@ -1,7 +1,6 @@
 -- Define colors via highlights
 vim.cmd [[
   hi StatusLineNormal guifg=#bbc2cf guibg=#202328
-  hi StatusLineInactive guifg=#bbc2cf guibg=#282a36
 ]]
 
 -- LSP aware filename display

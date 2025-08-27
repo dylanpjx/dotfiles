@@ -22,20 +22,6 @@ require("lazy").setup({
             require('dracula').setup { transparent_bg = true }
         end
     },
-    -- 'nvim-lualine/lualine.nvim',
-    {
-        'crispgm/nvim-tabline',
-        config = function()
-            require('tabline').setup({ opts })
-        end
-    },
-    {
-        "folke/noice.nvim",
-        event = "VeryLazy",
-        dependencies = {
-            "MunifTanjim/nui.nvim",
-        }
-    },
     -- LSP Support
     'neovim/nvim-lspconfig',
     'nvim-treesitter/nvim-treesitter',
