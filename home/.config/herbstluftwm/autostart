@@ -22,7 +22,7 @@ Mod=Mod4   # Use the super key as the main modifier
 
 # system
 hc keybind $Mod-Control-e spawn $HOME/scripts/rofi/powermenu.sh
-hc keybind $Mod-Control-l reload
+hc keybind $Mod-Control-r reload
 
 # apps
 hc keybind $Mod-Return spawn alacritty
@@ -45,6 +45,10 @@ hc keybind $Mod-h     focus left
 hc keybind $Mod-j     focus down
 hc keybind $Mod-k     focus up
 hc keybind $Mod-l     focus right
+
+# focus monitor
+hc keybind $Mod-Control-h focus_monitor 1
+hc keybind $Mod-Control-l focus_monitor 0
 
 # moving clients in tiling and floating mode
 hc keybind $Mod-Shift-h     shift left
@@ -170,7 +174,7 @@ hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
-hc set swap_monitors_to_get_tag true
+hc set swap_monitors_to_get_tag false
 hc set tabbed_max true
 
 # rules
@@ -223,6 +227,10 @@ if [ -f "$configpath/mystate" ]; then
   $configpath/scripts/loadstate.sh < $configpath/mystate &
 fi
 
+# start with tag 3 on second monitor
+hc focus_monitor 1
+hc use 3
+hc focus_monitor 0
+
 # autostart programs
 autorun.sh &
-
