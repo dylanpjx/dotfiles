@@ -8,6 +8,9 @@ end
 # suppress fish greeting
 set fish_greeting
 
+# show full path
+set -g fish_prompt_pwd_dir_length 0
+
 # env vars
 set -gx EDITOR nvim
 
@@ -37,4 +40,5 @@ abbr -a l 'ls -CF'
 abbr -a fe 'funced -e nvim'
 abbr -a x 'extract .'
 
+fzf --fish | source
 zoxide init fish | source
