@@ -1,5 +1,5 @@
 require('opts.plugins')
 require('opts.theme')
+require('opts.statusline')
 require('opts.settings')
 require('opts.mappings')
-require('opts.statusline')

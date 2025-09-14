@@ -41,7 +41,8 @@ o.smartindent = true
 o.clipboard = 'unnamedplus'
 
 o.virtualedit = 'block'
-o.foldmethod = 'marker'
+o.foldmethod = 'indent'
+o.foldlevelstart = 99
 
 vim.cmd('set suffixesadd+=.v,.sv,.lua')
 

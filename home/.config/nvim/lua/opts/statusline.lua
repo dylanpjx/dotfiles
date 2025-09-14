@@ -6,7 +6,7 @@ vim.cmd [[
 -- LSP aware filename display
 local function lsp_file_status()
     local buf_ft = vim.bo.filetype
-    local filename = vim.fn.expand('%:t') -- get just the filename
+    local filename = vim.fn.expand('%:f')
     local modified = vim.bo.modified and '[+]' or ''
     local clients = vim.lsp.get_clients({ bufnr = 0 })
     local has_git_or_diag = (git_branch() ~= '') or (diagnostics() ~= '')

@@ -48,10 +48,21 @@ require("lazy").setup({
     'tpope/vim-fugitive',
     'lewis6991/gitsigns.nvim',
     'ibhagwan/fzf-lua',
-    'echasnovski/mini.nvim',
+    'nvim-mini/mini.nvim',
 
     -- File
-    'nanotee/zoxide.vim',
+    {
+        'stevearc/oil.nvim',
+        ---@module 'oil'
+        ---@type oil.SetupOpts
+        config = function()
+            require('oil').setup {
+                vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+            }
+        end,
+        -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+        lazy = false,
+    },
     {
         'numToStr/Navigator.nvim',
         config = function()
