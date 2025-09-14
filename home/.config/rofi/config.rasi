@@ -1,12 +1,13 @@
 configuration {
-  kb-remove-char-back:            "BackSpace";
-  kb-remove-to-eol:               "Control+Shift+e";
-  kb-accept-entry:                "Control+m,Return,KP_Enter";
-  kb-mode-next:                   "Shift+Right,Control+Tab";
-  kb-mode-previous:               "Shift+Left,Control+Shift+Tab";
-  kb-row-up:                      "Up,Control+k,Control+p";
-  kb-row-down:                    "Down,Control+j,Control+n";
-  kb-cancel:                      "Escape,Ctrl+c";
+    font:                           "Liga SFMono Nerd Font 11";
+    kb-remove-char-back:            "BackSpace";
+    kb-remove-to-eol:               "Control+Shift+e";
+    kb-accept-entry:                "Control+m,Return,KP_Enter";
+    kb-mode-next:                   "Shift+Right,Control+Tab";
+    kb-mode-previous:               "Shift+Left,Control+Shift+Tab";
+    kb-row-up:                      "Up,Control+k,Control+p";
+    kb-row-down:                    "Down,Control+j,Control+n";
+    kb-cancel:                      "Escape,Ctrl+c";
 }
 
 @theme "archlabs"
