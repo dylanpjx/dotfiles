@@ -97,13 +97,8 @@ export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 # FZF
 export FZF_DEFAULT_COMMAND='fdfind --hidden --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-if [ -f /usr/share/bash-completion/completions/fzf ]; then
-    source /usr/share/bash-completion/completions/fzf
-fi
 
-if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
-    source /usr/share/doc/fzf/examples/key-bindings.bash
-fi
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # zoxide
 eval "$(zoxide init bash)"
@@ -117,3 +112,4 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f /tools/Xilinx/Vivado/2020.2/settings64.sh ]; then
     source /tools/Xilinx/Vivado/2020.2/settings64.sh
 fi
+. "$HOME/.cargo/env"

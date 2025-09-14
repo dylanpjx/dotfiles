@@ -4,6 +4,7 @@ alias xs='xset r rate 250 30'
 alias yp='pwd | xclip -selection clipboard;echo "\"$PWD\" copied to clipboard"'
 
 alias f='vifmrun .'
+alias fd='fdfind'
 alias p='zathura'
 alias hc='herbstclient'
 alias ws='nvim -S *.vim'
