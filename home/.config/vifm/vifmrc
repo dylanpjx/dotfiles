@@ -95,12 +95,12 @@ set previewoptions+=graphicsdelay:0
 
 " :mark mark /full/directory/path [filename]
 
+mark a ~/.dotfiles/
 mark c ~/.config/
 mark d ~/Downloads/
 mark e /mnt/HDD/Ebooks/
 mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
-mark k ~/Documents/Keyboard/my_qmk/
 mark n ~/Documents/Notes/
 mark m /mnt/HDD/Music/
 mark v /mnt/HDD/Videos/
@@ -171,6 +171,9 @@ filetype ws.vim nvim -S ws.vim
 
 ".xoj
 filextype *.xopp xournalpp %c %i &
+
+" .deb
+filetype *.deb sudo dpkg -i %c
 
 " Pdf
 "filextype {*.pdf},<application/pdf> qpdfview --unique %c %i &, apvlv %c, xpdf %c
@@ -501,21 +504,13 @@ nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
 
 " Dragon
-nnoremap <C-d> :dragon<CR>
+nnoremap <C-p> :dragon<CR>
 
 " Extract
 nnoremap x :x<CR>
 
 cnoremap <esc>[1;5C <a-f>
 cnoremap <esc>[1;5D <a-b>
-
-" Midnight commander alike mappings
-" Open current directory in the other pane
-nnoremap <a-i> :sync<cr>
-" Open directory under cursor in the other pane
-nnoremap <a-o> :sync %c<cr>
-" Swap panes
-nnoremap <c-u> <c-w>x
 
 " Ranger devicons for ViFM
 " https://github.com/cirala/vifm_devicons
