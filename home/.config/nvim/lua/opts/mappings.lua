@@ -39,7 +39,7 @@ vim.keymap.set('n', 'L', 'gt', opts)
 
 vim.keymap.set('n', '<leader>cd', '<cmd>tcd %:p:h<bar>pwd<CR>', opts)
 
-vim.keymap.set('n', '<leader>ws', '<cmd>mksession! ws.vim <bar> <bar> <cmd>wqa <CR>', opts)
+vim.keymap.set('n', '<leader>ws', '<cmd>mksession! ws.vim <bar> wqa <CR>', opts)
 vim.keymap.set('n', '<silent>gx', '<cmd>!xdg-open <c-r>=shellescape(expand("<cfile>"))<CR><CR>', opts)
 
 vim.keymap.set('n', '<Up>', '<C-w>+', opts)
