@@ -4,14 +4,6 @@ Using Linux Mint and Herbstluftwm. Clone this repo and run `$ ./stow.sh`. The
 script uses `stow` to automatically symlink every dotfile in `dotfiles/home` to
 its corresponding config location
 
-## PPAs
-```
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo add-apt-repository ppa:polychromatic/stable
-sudo add-apt-repository ppa:openrazer/stable
-sudo add-apt-repository ppa:lazka/ppa
-```
-
 ## Themeing
 
 1. lxappearance
@@ -24,6 +16,10 @@ To update to the latest version:
 1. Install the latest tarbell from [here](https://herbstluftwm.org/download.html)
 2. Follow the installation instructions from [here](https://github.com/herbstluftwm/herbstluftwm/blob/master/INSTALL)
 3. Once the installation is complete, replace `/usr/bin/herbstluftwm ` and `/usr/bin/herbstclient` with the one in build
+
+## DWM
+
+A [stable and sane build of DWM](https://github.com/jitessh/voidwm) fully patched and configured.
 
 ## Disable Mouse Accel
 
@@ -76,13 +72,14 @@ EndSection
 ## Other utils
 
 - [fd](https://github.com/sharkdp/fd#installation)
-- [FZF](https://github.com/junegunn/fzf)
-- [Dragon D&D](https://github.com/mwh/dragon)
-- [Ueberzug](https://github.com/jstkdng/ueberzugpp)
-- [Picom](https://github.com/yshui/picom)
+- [fzf](https://github.com/junegunn/fzf)
+- [dragon D&D](https://github.com/mwh/dragon)
+- [ueberzug](https://github.com/jstkdng/ueberzugpp)
+- [picom](https://github.com/yshui/picom)
 - [xautocfg](https://github.com/SFTtech/xautocfg)
 
 ## Tray icons
 
 - [Sound switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [volumeicon](https://manpages.ubuntu.com/manpages/focal/man1/volumeicon.1.html)
+- nm-applet
