@@ -11,6 +11,7 @@ window {
   padding:          4;
   text-color:       #c1c1c1;
   background-color: #212121;
+  border-radius:    12px;
 }
 
 prompt {
