@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # this prints a beautifully formatted list. bash was a mistake
-notify-send "Getting list of available Wi-Fi networks..."
+notify-send "Scanning for available networks"
 LIST=$(nmcli --fields SSID,SECURITY,BARS,IN-USE device wifi list | sed '/^--/d' | sed 1d | sed -E "s/WPA*.?\S/~~/g" | sed "s/~~ ~~/~~/g;s/802\.1X//g;s/--/~~/g;s/  *~/~/g;s/~  */~/g;s/_/ /g" | column -t -s '~')
 
 # get current connection status
