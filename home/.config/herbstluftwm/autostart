@@ -3,6 +3,7 @@
 # this is a simple config for herbstluftwm
 
 configpath=~/.config/herbstluftwm
+rofipath=~/scripts/rofi
 
 hc() {
     herbstclient "$@"
@@ -12,72 +13,77 @@ hc emit_hook reload
 
 xsetroot -solid '#5A8E3A'
 
-# remove all existing keybindings
+#  remove all existing keybindings
 hc keyunbind --all
 
-# keybindings
-# if you have a super key you will be much happier with Mod set to Mod4
-# Mod=Mod1    # Use alt as the main modifier
+#  keybindings
+#  if you have a super key you will be much happier with Mod set to Mod4
+#Mod=Mod1    # Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
 
-# system
-hc keybind $Mod-Control-e spawn $HOME/scripts/rofi/powermenu.sh
+#  system
+hc keybind $Mod-Control-e spawn $rofipath/rofi-powermenu.sh
 hc keybind $Mod-Control-r reload
 
-# apps
-hc keybind $Mod-Return spawn alacritty
-hc keybind $Mod-Shift-Return spawn alacritty -e tmux
-hc keybind $Mod-d spawn rofi -show combi -combi-modi "window,drun"
+#  apps
+hc keybind $Mod-Return spawn alacritty -e tmux attach || tmux new
+hc keybind $Mod-d spawn $rofipath/rofi-run.sh
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifmrun
-hc keybind $Mod-apostrophe spawn pavucontrol
 
-# scripts
+#  scripts
 hc keybind $Mod-Prior spawn brightness.sh 1
 hc keybind $Mod-Next spawn brightness.sh -1
 hc keybind $Mod-Shift-s spawn screenshot.sh
 hc keybind $Mod-semicolon spawn $configpath/scripts/loadlayout.sh
 hc keybind $Mod-w spawn $configpath/scripts/wbring.sh
 
-# basic movement in tiling and floating mode
-# focusing clients
-hc keybind $Mod-h     focus left
-hc keybind $Mod-j     focus down
-hc keybind $Mod-k     focus up
-hc keybind $Mod-l     focus right
+#  focus
+hc keybind $Mod-Control-j cycle_monitor -1
+hc keybind $Mod-Control-k cycle_monitor +1
+hc keybind $Mod-u jumpto urgent
 
-# focus monitor
-hc keybind $Mod-Control-h focus_monitor 1
-hc keybind $Mod-Control-l focus_monitor 0
+#  focusing clients in tiling and floating mode
+hc keybind $Mod-h focus left
+hc keybind $Mod-j focus down
+hc keybind $Mod-k focus up
+hc keybind $Mod-l focus right
 
-# moving clients in tiling and floating mode
-hc keybind $Mod-Shift-h     shift left
-hc keybind $Mod-Shift-j     shift down
-hc keybind $Mod-Shift-k     shift up
-hc keybind $Mod-Shift-l     shift right
+#  focusing clients in tabbed mode
+hc keybind $Mod-n cycle +1
+hc keybind $Mod-p cycle -1
+hc keybind $Mod-Control-n cycle_all --skip-invisible +1
+hc keybind $Mod-Control-p cycle_all --skip-invisible -1
 
-# moving clients in tabbed mode
-hc keybind $Mod-Shift-n     shift --level=tabs right
-hc keybind $Mod-Shift-p     shift --level=tabs left
+#  moving clients in tiling and floating mode
+hc keybind $Mod-Shift-h shift left
+hc keybind $Mod-Shift-j shift down
+hc keybind $Mod-Shift-k shift up
+hc keybind $Mod-Shift-l shift right
 
-# splitting frames
-# create an empty frame at the specified direction
-hc keybind $Mod-s       split   bottom  0.5
-hc keybind $Mod-v       split   right   0.5
-# let the current frame explode into subframes
+#  moving clients in tabbed mode
+hc keybind $Mod-Shift-n shift --level=tabs right
+hc keybind $Mod-Shift-p shift --level=tabs left
+
+#  splitting frames
+#  create an empty frame at the specified direction
+hc keybind $Mod-s split bottom  0.5
+hc keybind $Mod-v split right   0.5
+#  let the current frame explode into subframes
 hc keybind $Mod-Control-space split explode
 
-# resizing frames and floating clients
+#  resizing frames and floating clients
 resizestep=0.02
-hc keybind $Mod-Left     resize left +$resizestep
-hc keybind $Mod-Down     resize down +$resizestep
-hc keybind $Mod-Up       resize up +$resizestep
-hc keybind $Mod-Right    resize right +$resizestep
+hc keybind $Mod-Leftresize left +$resizestep
+hc keybind $Mod-Down resize down +$resizestep
+hc keybind $Mod-Up resize up +$resizestep
+hc keybind $Mod-Right resize right +$resizestep
 
-# tags
-tag_names=( {1..6} )
-tag_keys=( {1..6} 0 )
+#  tags
+tag_names=( {1..5} )
+tag_keys=( {1..5} 0 )
 
+#  cycle through tags
 hc set default_frame_layout max
 hc rename default "${tag_names[0]}" || true
 for i in "${!tag_names[@]}" ; do
@@ -89,45 +95,34 @@ for i in "${!tag_names[@]}" ; do
     fi
 done
 
-# cycle through tags
 hc keybind $Mod-Escape use_previous
 
-# layouting
+#  layouting
 hc keybind $Mod-q close
 hc keybind $Mod-r remove
 hc keybind $Mod-f fullscreen toggle
-hc keybind $Mod-g set_attr clients.focus.floating toggle
-hc keybind $Mod-Control-g floating toggle
+hc keybind $Mod-g floating toggle
 hc keybind $Mod-m spawn $configpath/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
 hc keybind $Mod-z pseudotile toggle
 hc keybind $Mod-y mirror horizontal
 
-# The following cycles through the available layouts within a frame, but skips
-# layouts, if the layout change wouldn't affect the actual window positions.
-# I.e. if there are two windows within a frame, the grid layout is skipped.
+#  The following cycles through the available layouts within a frame, but skips
+#  layouts, if the layout change wouldn't affect the actual window positions.
+#  I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
             or , and . compare tags.focus.curframe_wcount = 2                   \
                      . cycle_layout +1 horizontal vertical max \
                , cycle_layout +1 horizontal vertical max grid
 
-# mouse
+#  mouse
 hc mouseunbind --all
 hc mousebind $Mod-Button1 move
 hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
-# focus
-hc keybind $Mod-Control-j cycle_monitor -1
-hc keybind $Mod-Control-k cycle_monitor +1
-hc keybind $Mod-n cycle +1
-hc keybind $Mod-p cycle -1
-hc keybind $Mod-Control-n cycle_all --skip-invisible +1
-hc keybind $Mod-Control-p cycle_all --skip-invisible -1
-hc keybind $Mod-u jumpto urgent
-
-# theme
+#  theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 
@@ -139,56 +134,67 @@ hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth
 hc attr theme.title_color '#f0f0f0'
 
 hc attr theme.border_width 2
-hc attr theme.inner_width 1
-hc attr theme.outer_width 0
 hc attr theme.active.color '#0f0f0f'
 hc attr theme.normal.color '#0f0f0f'
 hc attr theme.urgent.color '#7811A1dd'
 
-hc attr theme.active.outer_color '#f0f0f0'
-hc attr theme.normal.outer_color '#0f0f0f'
-hc attr theme.active.inner_color '#f4cca6' # change this to change active border color
+#  window decos
+
+# `hc attr theme.inner_width 0` disables the colours below
+hc attr theme.inner_width 2
+hc attr theme.active.inner_color '#f0f0f0'
 hc attr theme.normal.inner_color '#0f0f0f'
 
-hc set frame_gap 5
-hc set show_frame_decorations none
-hc set frame_border_active_color '#44475a'
-hc set frame_border_normal_color '#101010cc'
-hc set frame_bg_normal_color '#565656aa'
-hc set frame_bg_active_color '#f0f0f0'
-hc set frame_transparent_width 0
-hc set frame_border_width 1
-hc set frame_bg_transparent on
+# `hc attr theme.outer_width 0` disables the colours below
+hc attr theme.outer_width 2
+hc attr theme.active.outer_color '#f0f0f0'
+hc attr theme.normal.outer_color '#0f0f0f'
 
-# copy inner color to outer_color
+#  copy inner color to outer_color
 for state in active urgent normal ; do
     hc substitute C theme.${state}.inner_color \
         attr theme.${state}.outer_color C
 done
-hc attr theme.active.outer_width 1
 
-# settings
-hc set focus_follows_mouse 0
+#  frame decos
+
+# `show_frame_decorations none` disables the colours below
+hc set show_frame_decorations none
+hc set frame_border_active_color '#f0f0f0'
+hc set frame_border_normal_color '#0f0f0f'
+hc set frame_border_width 0
+
+# `frame_bg_transparent on` disables the colours below
+hc set frame_bg_transparent on
+hc set frame_bg_normal_color '#0f0f0f'
+hc set frame_bg_active_color '#f0f0f0'
+hc set frame_transparent_width 0
+
+hc set frame_gap 5
+
+#  settings
+hc set focus_follows_mouse 1
 hc set window_gap 0
 hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
-hc set swap_monitors_to_get_tag false
+hc set swap_monitors_to_get_tag true
 hc set tabbed_max true
 
-# rules
+#  rules
 hc unrule -F
 #hc rule class=XTerm tag=3 # move all xterms to tag 3
 hc rule focus=on # normally focus new clients
 hc rule floatplacement=smart
 #hc rule focus=off # normally do not focus new clients
-# give focus to most common terminals
+#  give focus to most common terminals
 #hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on floatplacement=center
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
+hc rule title='Nitrogen' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='discord' tag=5
 hc rule class='Quodlibet' tag=3
@@ -196,15 +202,15 @@ hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on m
 
 hc set tree_style '╾│ ├└╼─┐'
 
-# unlock, just to be sure
+#  unlock, just to be sure
 hc unlock
 
-# do multi monitor setup here, e.g.:
-# hc set_monitors 1280x1024+0+0 1280x1024+1280+0
-# or simply:
+#  do multi monitor setup here, e.g.:
+#hc set_monitors 1280x1024+0+0 1280x1024+1280+0
+#  or simply:
 hc detect_monitors
 
-# find the panel
+#  find the panel
 panel=~/.config/herbstluftwm/panel.sh
 [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
 for monitor in $(hc list_monitors | cut -d: -f1) ; do
@@ -212,25 +218,10 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
     "$panel" "$monitor" &
 done
 
-# run trayer after panel has started
-pkill trayer
-run=""
-while [ -z "$run" ]; do
-    sleep 1
-    run=$(ps -e | grep dzen)
-    echo "$run"
-done
-trayer --edge top --align right --widthtype request --transparent true --alpha 0 --tint 0x101010 --height 15 --margin 145 --monitor 1 &
-
-# restore state
+#  restore state
 if [ -f "$configpath/mystate" ]; then
   $configpath/scripts/loadstate.sh < $configpath/mystate &
 fi
 
-# start with tag 3 on second monitor
-hc focus_monitor 1
-hc use 3
-hc focus_monitor 0
-
-# autostart programs
+#  autostart programs
 autorun.sh &
