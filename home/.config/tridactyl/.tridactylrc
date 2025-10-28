@@ -1,0 +1,21 @@
+" General Settings
+set update.lastchecktime 1761574401131
+set update.nag true
+set update.nagwait 7
+set update.lastnaggedversion 1.14.0
+set update.checkintervalsecs 86400
+set configversion 2.0
+set hintstyles.bg none
+set hintstyles.fg none
+
+" Binds
+bind --mode=ex <C-j> ex.next_completion
+bind --mode=ex <C-k> ex.prev_completion
+bind <space>r source ~/.config/tridactyl/.tridactylrc
+
+unbind <C-f>
+
+echo "source rc"
+
+" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+" vim: set filetype=tridactyl
