@@ -1,1 +1,1 @@
-/home/dylan/.local/share/barpyrus/barpyrus.py
+/home/dylan/.local/share/barpyrus-lib/barpyrus.py

@@ -18,18 +18,20 @@ hc keyunbind --all
 
 #  keybindings
 #  if you have a super key you will be much happier with Mod set to Mod4
-#Mod=Mod1    # Use alt as the main modifier
-Mod=Mod4   # Use the super key as the main modifier
+Mod=Mod1    # Use alt as the main modifier
+# Mod=Mod4   # Use the super key as the main modifier
 
 #  system
 hc keybind $Mod-Control-e spawn $rofipath/rofi-powermenu.sh
 hc keybind $Mod-Control-r reload
 
 #  apps
-hc keybind $Mod-Return spawn alacritty -e tmux attach || tmux new
+hc keybind $Mod-Return spawn alacritty
+hc keybind $Mod-Shift-Return spawn alacritty -e tmux new -A
 hc keybind $Mod-d spawn $rofipath/rofi-run.sh
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-e spawn alacritty -e vifmrun
+hc keybind $Mod-g chain , spawn steam , use_index 3
 
 #  scripts
 hc keybind $Mod-Prior spawn brightness.sh 1
@@ -74,7 +76,7 @@ hc keybind $Mod-Control-space split explode
 
 #  resizing frames and floating clients
 resizestep=0.02
-hc keybind $Mod-Leftresize left +$resizestep
+hc keybind $Mod-Left resize left +$resizestep
 hc keybind $Mod-Down resize down +$resizestep
 hc keybind $Mod-Up resize up +$resizestep
 hc keybind $Mod-Right resize right +$resizestep
@@ -84,7 +86,7 @@ tag_names=( {1..5} )
 tag_keys=( {1..5} 0 )
 
 #  cycle through tags
-hc set default_frame_layout max
+hc set default_frame_layout horizontal
 hc rename default "${tag_names[0]}" || true
 for i in "${!tag_names[@]}" ; do
     hc add "${tag_names[$i]}"
@@ -101,7 +103,7 @@ hc keybind $Mod-Escape use_previous
 hc keybind $Mod-q close
 hc keybind $Mod-r remove
 hc keybind $Mod-f fullscreen toggle
-hc keybind $Mod-g floating toggle
+hc keybind $Mod-Shift-f floating toggle
 hc keybind $Mod-m spawn $configpath/scripts/maximize.sh
 hc keybind $Mod-Shift-m set_attr clients.focus.minimized true
 hc keybind $Mod-Control-m jumpto last-minimized
@@ -113,8 +115,11 @@ hc keybind $Mod-y mirror horizontal
 #  I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
             or , and . compare tags.focus.curframe_wcount = 2                   \
-                     . cycle_layout +1 horizontal vertical max \
-               , cycle_layout +1 horizontal vertical max grid
+                     . cycle_layout +1 horizontal vertical max                  \
+               , cycle_layout +1 horizontal vertical max
+
+hc keybind $Mod-comma set_layout horizontal
+hc keybind $Mod-period set_layout vertical
 
 #  mouse
 hc mouseunbind --all
@@ -196,8 +201,9 @@ hc rule class='zoom' floating=on
 hc rule class='Dragon' floating=on
 hc rule title='Nitrogen' floating=on
 hc rule title='gsimplecal' manage=off
-hc rule class='discord' tag=5
 hc rule class='Quodlibet' tag=3
+hc rule class='Steam' tag=4
+hc rule class='discord' tag=5
 hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on maxage=5
 
 hc set tree_style '╾│ ├└╼─┐'
