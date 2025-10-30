@@ -5,6 +5,7 @@ nitrogen --restore &
 xset s off
 xset -dpms
 xset s noblank
+xset +fp /home/dylan/.local/share/fonts
 xset fp rehash
 
 sleep 5

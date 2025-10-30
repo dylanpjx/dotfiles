@@ -7,10 +7,9 @@ function run {
 }
 
 run nitrogen --restore
-run volumeicon
-run indicator-sound-switcher
-run nm-applet
+# Apps
 run firefox
 run quodlibet
-run discord --disable-gpu
-run /usr/bin/emacs --daemon
+# run discord --disable-gpu
+# Tray
+run nm-applet
