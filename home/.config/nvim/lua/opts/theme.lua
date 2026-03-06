@@ -1,6 +1,7 @@
 vim.cmd.colorscheme('dracula')
-vim.opt.termguicolors = true
-vim.opt.laststatus = 2
+vim.o.termguicolors = true
+vim.o.laststatus = 2
+vim.o.winborder = "rounded"
 
 vim.api.nvim_exec([[
     set t_Co=256

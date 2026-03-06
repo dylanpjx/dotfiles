@@ -24,8 +24,11 @@ require("lazy").setup({
     },
     -- LSP Support
     'neovim/nvim-lspconfig',
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate',
+    },
+    'hudson-trading/slang-server.nvim',
     'mason-org/mason.nvim',
     'mason-org/mason-lspconfig.nvim',
 
@@ -35,7 +38,6 @@ require("lazy").setup({
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-nvim-lua',
-    'hrsh7th/cmp-nvim-lsp-signature-help',
     'hrsh7th/cmp-cmdline',
 
     -- Notes
@@ -44,8 +46,6 @@ require("lazy").setup({
     -- Code
     'skywind3000/asyncrun.vim',
     'stefandtw/quickfix-reflector.vim',
-    'mbbill/undotree',
-    'tpope/vim-fugitive',
     'lewis6991/gitsigns.nvim',
     'ibhagwan/fzf-lua',
     'nvim-mini/mini.nvim',

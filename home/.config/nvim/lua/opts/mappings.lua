@@ -57,4 +57,4 @@ vim.keymap.set('n', '<leader>o', '<cmd>!opout.sh % <CR>', opts)
 
 vim.keymap.set('n', 'yn', '<cmd>let @+ = expand("%") <bar> echo expand("%") "is yanked to clipboard"<CR>', opts)
 vim.keymap.set('n', 'yp', '<cmd>let @+ = expand("%:p") <bar> echo expand("%:p") "is yanked to clipboard"<CR>', opts)
-vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<CR>', opts)
+vim.keymap.set('n', '<leader>u', '<cmd>Undotree<CR>', opts)
