@@ -65,7 +65,7 @@ save_to_clipboard = true
 
 [terminal.shell]
 args = ["--login"]
-program = "/bin/fish"
+program = "/bin/bash"
 
 [window]
 decorations = "full"

@@ -13,7 +13,6 @@ alias v='nvim'
 alias note='cd $HOME/Documents/Notes/;nvim .'
 
 alias weather='curl wttr.in/Singapore'
-alias yt='youtube-dl -f bestaudio -x --audio-format mp3'
 
 alias jn='conda activate base;jupyter notebook'
 alias venv='source ~/venv/bin/activate'

@@ -14,6 +14,8 @@ set -g fish_prompt_pwd_dir_length 0
 # env vars
 set -gx EDITOR nvim
 
+fish_add_path $HOME/.profile
+
 # abbr -a
 abbr -a c 'clear'
 
@@ -29,7 +31,6 @@ abbr -a v 'nvim'
 abbr -a note 'cd $HOME/Documents/Notes/;nvim .'
 
 abbr -a weather 'curl wttr.in/Singapore'
-abbr -a yt 'youtube-dl -f bestaudio -x --audio-format mp3'
 
 abbr -a jn 'conda activate base;jupyter notebook'
 abbr -a venv 'source ~/venv/bin/activate.fish'

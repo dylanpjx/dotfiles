@@ -38,7 +38,7 @@ parse_git_branch() {
 }
 
 # Host: \[\e[0;96m\][\h] 
-PS1='\[\e[0;1;38;5;2m\]\w\[\e[0m\] \[\e[0;1;38;5;227m\]$(parse_git_branch)→\[\e[0m\] '
+PS1='\[\e[38;5;141m\][\h]\[\e[0m\] \[\e[38;5;15m\]\w\[\e[0m\] \[\e[38;5;84m\]$(parse_git_branch)\[\e[38;5;15m\]→\[\e[0m\] '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
