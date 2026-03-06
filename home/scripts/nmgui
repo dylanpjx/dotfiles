@@ -1,0 +1,4 @@
+#!/bin/sh
+nm-applet 2>&1 > /dev/null &
+trayer --monitor 1 --transparent true --alpha 0 --tint 0x101010 2>&1 > /dev/null
+killall nm-applet
