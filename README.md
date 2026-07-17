@@ -83,3 +83,7 @@ EndSection
 - [Sound switcher](https://github.com/yktoo/indicator-sound-switcher)
 - [volumeicon](https://manpages.ubuntu.com/manpages/focal/man1/volumeicon.1.html)
 - nm-applet
+
+## AMD GPU Flickering
+
+[Add `amdgpu.sg_display=0` to kernel](https://wiki.archlinux.org/title/AMDGPU#Screen_flickering_white/gray)
