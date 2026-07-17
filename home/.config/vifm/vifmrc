@@ -99,12 +99,11 @@ mark a ~/.dotfiles/
 mark c ~/.config/
 mark d ~/Downloads/
 mark e /mnt/HDD/Ebooks/
-mark f ~/Documents/FPGA/
 mark h /mnt/HDD/
-mark n ~/Documents/Notes/
 mark m /mnt/HDD/Music/
 mark v /mnt/HDD/Videos/
 mark w /mnt/HDD/Wallpapers/
+mark u /media/dylan/
 
 " ------------------------------------------------------------------------------
 
