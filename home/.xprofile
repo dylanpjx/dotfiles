@@ -1,6 +1,5 @@
 picom -b &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 2> /dev/null &
-nitrogen --restore &
 
 xset s off
 xset -dpms
