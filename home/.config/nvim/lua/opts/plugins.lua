@@ -24,10 +24,6 @@ require("lazy").setup({
     },
     -- LSP Support
     'neovim/nvim-lspconfig',
-    {
-        'nvim-treesitter/nvim-treesitter',
-        build = ':TSUpdate',
-    },
     'hudson-trading/slang-server.nvim',
     'mason-org/mason.nvim',
     'mason-org/mason-lspconfig.nvim',
@@ -49,6 +45,12 @@ require("lazy").setup({
     'lewis6991/gitsigns.nvim',
     'ibhagwan/fzf-lua',
     'nvim-mini/mini.nvim',
+    {
+        'vieitesss/minifugit.nvim',
+        config = function()
+            require('minifugit').setup()
+        end
+    },
 
     -- File
     {

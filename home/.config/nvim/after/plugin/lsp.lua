@@ -5,13 +5,6 @@ require('mason-lspconfig').setup {
     }
 }
 
-require("nvim-treesitter.configs").setup {
-    ensure_installed = { 'lua', 'verilog', 'vim', 'vimdoc' },
-    sync_install = false,
-    highlight = { enable = true },
-    indent = { enable = true },
-}
-
 vim.lsp.config('slang-server', {
     cmd = { "slang-server" },
     root_markers = { ".git", ".slang" },

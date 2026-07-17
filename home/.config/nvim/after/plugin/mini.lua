@@ -1,6 +1,5 @@
 require('mini.align').setup()
 require('mini.comment').setup()
-require('mini.git').setup()
 require('mini.surround').setup({
     custom_surroundings = {
       ['('] = { output = { left = '( ', right = ' )' } },
