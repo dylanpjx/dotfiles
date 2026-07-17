@@ -202,7 +202,7 @@ hc rule class='Dragon' floating=on
 hc rule title='Nitrogen' floating=on
 hc rule title='gsimplecal' manage=off
 hc rule class='Quodlibet' tag=3
-hc rule class='Steam' tag=4
+hc rule class='steam' tag=4
 hc rule class='discord' tag=5
 hc rule class='firefox' windowtype='_NET_WM_WINDOW_TYPE_NORMAL' tag=2 focus=on maxage=5
 
