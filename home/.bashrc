@@ -8,7 +8,7 @@ case $- in
       *) return;;
 esac
 
-export VISUAL=/usr/bin/nvim
+export VISUAL=/opt/nvim/nvim
 export EDITOR="$VISUAL"
 
 # don't put duplicate lines or lines starting with space in the history.
