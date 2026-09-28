@@ -132,13 +132,13 @@ hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 
 hc attr theme.title_when one_tab
-hc attr theme.title_height 14
+hc attr theme.title_height 13
 hc attr theme.title_align center
 hc attr theme.title_font 'Terminess Nerd Font:pixelsize=12'  # example using Xft
-hc attr theme.title_depth 3  # space below the title's baseline (i.e. text depth)
+hc attr theme.title_depth 2  # space below the title's baseline (i.e. text depth)
 hc attr theme.title_color '#f0f0f0'
 
-hc attr theme.border_width 2
+hc attr theme.border_width 8
 hc attr theme.active.color '#0f0f0f'
 hc attr theme.normal.color '#0f0f0f'
 hc attr theme.urgent.color '#7811A1dd'
@@ -146,7 +146,7 @@ hc attr theme.urgent.color '#7811A1dd'
 #  window decos
 
 # `hc attr theme.inner_width 0` disables the colours below
-hc attr theme.inner_width 2
+hc attr theme.inner_width 0
 hc attr theme.active.inner_color '#f0f0f0'
 hc attr theme.normal.inner_color '#0f0f0f'
 
@@ -170,21 +170,27 @@ hc set frame_border_normal_color '#0f0f0f'
 hc set frame_border_width 0
 
 # `frame_bg_transparent on` disables the colours below
-hc set frame_bg_transparent on
 hc set frame_bg_normal_color '#0f0f0f'
 hc set frame_bg_active_color '#f0f0f0'
 hc set frame_transparent_width 0
 
-hc set frame_gap 5
+# hack to focus frame but show no frame deco; this is required for
+# focus_follows_mouse to focus empty frames
+hc set always_show_frame on
+hc set frame_bg_transparent off
+hc set frame_active_opacity 0
+hc set frame_normal_opacity 0
+
+hc set frame_gap 4
 
 #  settings
 hc set focus_follows_mouse 1
 hc set window_gap 0
-hc set frame_padding 0
+hc set frame_padding 10
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings off
 hc set mouse_recenter_gap 0
-hc set swap_monitors_to_get_tag true
+hc set swap_monitors_to_get_tag false
 hc set tabbed_max true
 
 #  rules
