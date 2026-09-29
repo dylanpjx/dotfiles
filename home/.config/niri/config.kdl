@@ -42,6 +42,8 @@ input {
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     focus-follows-mouse max-scroll-amount="0%"
+
+    workspace-auto-back-and-forth
 }
 
 // You can configure outputs by their name, which you can find
@@ -60,7 +62,7 @@ output "HDMI-A-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080@144.001"
+    mode "1920x1080@60"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     scale 1
@@ -79,10 +81,16 @@ output "HDMI-A-1" {
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
     position x=0 y=0
+
+    layout {
+        default-column-width { proportion 0.75; }
+        default-column-display "tabbed"
+    }
 }
 output "DP-3" {
     // Uncomment this line to disable this output.
     // off
+    focus-at-startup
 
     // Resolution and, optionally, refresh rate of the output.
     // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
@@ -99,6 +107,7 @@ output "DP-3" {
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
     transform "normal"
 
+
     // Position of the output in the global coordinate space.
     // This affects directional monitor actions like "focus-monitor-left", and cursor movement.
     // The cursor can only move between directly adjacent outputs.
@@ -109,6 +118,13 @@ output "DP-3" {
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
     position x=1080 y=0
+
+    layout {
+        default-column-display "tabbed"
+        tab-indicator {
+            hide-when-single-tab
+        }
+    }
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -125,6 +141,7 @@ layout {
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
     center-focused-column "never"
+    always-center-single-column
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -273,14 +290,16 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
+spawn-at-startup "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "waybar"
+spawn-at-startup "autorun.sh"
+spawn-at-startup "ibus" "start" "--type" "wayland"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 hotkey-overlay {
-    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -293,10 +312,10 @@ prefer-no-csd
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+// screenshot-path "~/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // You can also set this to null to disable saving screenshots to disk.
-// screenshot-path null
+screenshot-path null
 
 // Animation settings.
 // The wiki explains how to configure individual animations:
@@ -307,6 +326,16 @@ animations {
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     slowdown 0.7
+}
+
+workspace "browser" {
+    open-on-output "HDMI-A-1"
+}
+workspace "music" {
+    open-on-output "HDMI-A-1"
+}
+workspace "game" {
+    open-on-output "DP-3"
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -323,13 +352,25 @@ window-rule {
 }
 
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"#
-    // open-on-workspace "2"
+    open-on-workspace "browser"
 }
 
+window-rule {
+    match app-id=r#"quodlibet"#
+    open-on-workspace "music"
+    open-maximized true
+}
+window-rule {
+    match app-id=r#"steam"#
+    open-on-workspace "gaming"
+    open-maximized true
+}
+window-rule {
+    match app-id=r#"steam_app_\d+"#
+    open-on-workspace "gaming"
+    open-fullscreen true
+}
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
@@ -356,7 +397,9 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Shift+D hotkey-overlay-title="Jump to Application: fuzzel" { spawn "/home/dylan/scripts/fuzzel/fuzzel-windows.sh"; }
     Mod+B hotkey-overlay-title="Open browser: firefox" { spawn "firefox"; }
+    Mod+E hotkey-overlay-title="Open Files: vifm" { spawn-sh "alacritty -e /home/dylan/scripts/vifmrun"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -374,11 +417,11 @@ binds {
 
     // Example media keys mapping using playerctl.
     // This will work with any MPRIS-enabled media player.
-    // XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    // XF86AudioPause       allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    // XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    // XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    // XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPause       allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
@@ -387,26 +430,28 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
-    // You can also move the mouse into the top-left hot corner,
-    // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
 
     // Focus clients/monitors
-    Mod+H             { focus-column-left; }
-    Mod+L             { focus-column-right; }
+    Mod+H             { focus-column-or-monitor-left; }
+    Mod+L             { focus-column-or-monitor-right; }
     Mod+J             { focus-window-or-workspace-down; }
     Mod+K             { focus-window-or-workspace-up; }
 
-    Mod+Shift+H       { move-column-left; }
-    Mod+Shift+L       { move-column-right; }
+    // For navigating tabs
+    Mod+N             { focus-window-down; }
+    Mod+P             { focus-window-up; }
+
+    Mod+Shift+H       { move-column-left-or-to-monitor-left; }
+    Mod+Shift+L       { move-column-right-or-to-monitor-right; }
     Mod+Shift+J       { move-window-down-or-to-workspace-down; }
     Mod+Shift+K       { move-window-up-or-to-workspace-up; }
 
-    Mod+Home          { focus-column-first; }
-    Mod+End           { focus-column-last; }
-    Mod+Shift+Home    { move-column-to-first; }
-    Mod+Shift+End     { move-column-to-last; }
+    Mod+I             { focus-column-first; }
+    Mod+A             { focus-column-last; }
+    Mod+Shift+I       { move-column-to-first; }
+    Mod+Shift+A       { move-column-to-last; }
 
     Mod+Ctrl+H        { focus-monitor-left; }
     Mod+Ctrl+J        { focus-monitor-down; }
@@ -426,23 +471,9 @@ binds {
     // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
     // ...
 
-    Mod+Page_Down      { focus-workspace-down; }
-    Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
-    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-    Mod+Ctrl+U         { move-column-to-workspace-down; }
-    Mod+Ctrl+I         { move-column-to-workspace-up; }
-
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
     // ...
-
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
-    Mod+Shift+I         { move-workspace-up; }
 
     Mod+WheelScrollDown        cooldown-ms=150 { focus-column-right; }
     Mod+WheelScrollUp          cooldown-ms=150 { focus-column-left; }
@@ -489,36 +520,36 @@ binds {
     Mod+BracketRight { consume-or-expel-window-right; }
 
     // Consume one window from the right to the bottom of the focused column.
-    Mod+S       { consume-window-into-column; }
+    Mod+S            { consume-window-into-column; }
     // Expel the bottom window from the focused column to the right.
-    Mod+Shift+S { expel-window-from-column; }
+    Mod+Shift+S      { expel-window-from-column; }
 
     // Cycle through widths set in preset-column-widths.
-    Mod+R       { switch-preset-column-width;            }
+    Mod+R            { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
-    Mod+Shift+R { switch-preset-column-width-back; }
+    Mod+Shift+R      { switch-preset-column-width-back; }
 
     Mod+Ctrl+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R       { reset-window-height; }
 
     // Column layouts
-    Mod+F       { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+F            { maximize-column; }
+    Mod+Ctrl+F       { fullscreen-window; }
 
     // While maximize-column leaves gaps and borders around the window,
     // maximize-window-to-edges doesn't: the window expands to the edges of the screen.
     // This bind corresponds to normal window maximizing,
     // e.g. by double-clicking on the titlebar.
-    Mod+M       { maximize-window-to-edges; }
+    Mod+M            { maximize-window-to-edges; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
-    Mod+Ctrl+F  { expand-column-to-available-width; }
+    Mod+Shift+F      { expand-column-to-available-width; }
 
-    Mod+C       { center-column; }
+    Mod+C            { center-column; }
 
     // Center all fully visible columns on screen.
-    Mod+Ctrl+C  { center-visible-columns; }
+    Mod+Ctrl+C       { center-visible-columns; }
 
     // Finer width adjustments.
     // This command can also:
@@ -562,11 +593,9 @@ binds {
     // which ensures niri always processes them, even when an inhibitor is active.
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    // TOOD: make a script and bind these in fuzzel
-    // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Ctrl+E { quit; }
+    // Toggle bar
+    Mod+Ctrl+B { spawn "sh" "-c" "killall waybar && waybar &"; }
 
-    // Powers off the monitors. To turn them back on, do any input like
-    // moving the mouse or pressing any other key.
-    Mod+Ctrl+S { power-off-monitors; }
+    Mod+Ctrl+E { spawn "/home/dylan/scripts/fuzzel/fuzzel-powermenu.sh"; }
+    Mod+Semicolon { screenshot; }
 }
