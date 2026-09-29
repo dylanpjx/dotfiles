@@ -1,0 +1,57 @@
+* {
+    border: none;
+    border-radius: 0px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: MesloLGS Nerd Font Mono, sans-serif;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+.modules-left {
+    margin-left: 15px;
+}
+.modules-right {
+    margin-right: 15px;
+}
+
+.modules-left, .modules-right, .modules-center {
+    background: #282a36;
+    margin-top: 10px;
+    padding: 4px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button {
+    padding: 0px 0px 0px 12px;
+    margin: 0px 0px 0px 6px;
+    background: transparent;
+    color: gray;
+}
+
+#workspaces button:hover {
+    padding: 0px 0px 0px 12px;
+    border: 0.5px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+#workspaces button.focused, 
+#workspaces button.active {
+    padding: 0px 0px 0px 12px;
+    background-color: #6699cc;
+    border: 0.5px solid #f0f0f0;
+    border-radius: 4px;
+    color: white;
+}
